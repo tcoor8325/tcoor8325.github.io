@@ -1,1 +1,84 @@
-Hello World
+<!DOCTYPE html>         <!--tells the browser this is an html5 document -->
+<html>                  <!-- html tag, everything inside is understood as html -->
+    <head>              <!-- contains info about website. also where you load CSS -->
+        <meta charset="utf-8">  <!-- converts symbols to bytes -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- important for responsive websites that scale to devices -->  
+        <title>My first Website</title> <!-- changes the title up in the webpage tab -->
+    </head>
+    <body>              <!-- main content in webpage; what you see. -->
+        <h1>Welcome to my website</h1> <!-- highest priority header tag, often used as a title -->
+        <h2>by Thomas Coor</h2>
+        <h3>B.E. Electrical Engineering</h3>
+        <h4>The Cooper Union for the Advancement of Science and Art</h4>
+        <h5>New York, NY</h5>
+        <h6>March 2024</h6>
+
+        <p>             <!-- paragraph tag -->
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+
+        <p>
+            "Sed ut perspiciatis unde omnis iste natus<br> <!-- lineabrak tag --> 
+            <b>Error sit voluptatem accusantium doloremque laudantium, </b> <br>
+            <i>totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </i> <br>
+            <u>et quasi architecto beatae vitae dicta sunt explicabo. </u> <br>
+            <em>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, </em> <br>  <!-- default for emphasize tag is just italics again -->
+            <strong>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </strong> <br> <!-- strong tag likewise defaults to bold -->
+            <hr> <!-- horizontal rule -->
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        </p>
+        
+        Hello, <b>World!</b>    <!-- bold tag -->  
+
+        <a href="https://www.google.com/">This is a cool new website I found.</a> <br> <!-- the a tag allows you to place links. -->
+        <a href="https://www.google.com/" target="blank">This website will open in a new tab.</a> <br> <!-- the a tag allows you to place links. -->
+
+        <img src="https://placehold.it/350x150.jpg"> <br>    <!-- copy an image link into here -->
+        <img src="amogus.JPG"> <br>    <!-- copy an image filename into here. I think this is the more recommended practice -->
+        
+        <button>
+            Hello
+        </button> <br>
+
+        List of fruits
+        <ul>
+            <li>apples</li>
+            <li>pears</li>
+            <li>peaches</li>
+        </ul>
+
+        List of fruits in order of tastiness
+        <ol>
+            <li>apples
+                <ul>
+                    <li>gala</li>
+                    <li>Sweetango</li>
+                    <li>Honeycrisp</li>
+                </ul>
+
+            </li>
+            <li>pears</li>
+            <li>peaches</li>
+        </ol>
+
+        <table border="10" cellpadding="10" cellspacing="2">                     <!--Make a table -->
+            <tr>                    <!--Table Row-->
+                <th>Month</th>      <!--Table header-->
+                <th>Rent</th>
+                <th colspan="2">Utilities</th>
+                <th>Groceries</th>
+                <th>Eating Out</th>
+                <th>Entertainment</th>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>1500</td>
+                <td>150</td>
+                <td>200</td>
+                <td>350</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </body>
+</html>
