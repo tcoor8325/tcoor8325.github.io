@@ -3,39 +3,211 @@
     <head>              <!-- contains info about website. also where you load CSS -->
         <meta charset="utf-8">  <!-- converts symbols to bytes -->
         <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- important for responsive websites that scale to devices -->  
-        <title>My first Website</title> <!-- changes the title up in the webpage tab -->
+        <title>a full-length tab</title> <!-- changes the title up in the webpage tab -->
+        <style>
+            #resume
+            {
+                width: 750px;
+                height: 500px;
+            }
+            #EQpic
+            {
+                width: 1000px;
+                height: 500px;
+            }
+            #headset
+            {
+                width: 20%;
+                height: 20%;
+            }
+            #boseAnechoic
+            {
+                width: 50%;
+                height: 50%;
+            }
+            #boseGraphs
+            {
+                width: 20%;
+                height: 20%;
+            }
+            #boseSetup
+            {
+                width: 20%;
+                height: 20%;
+            }
+            #boseView1
+            {
+                width: 20%;
+                height: 20%;
+            }
+            #boseView2
+            {
+                width: 50%;
+                height: 50%;
+            }
+            #boseBread
+            {
+                width: 20%;
+                height: 20%;
+            }
+            #dodecahedron
+            {
+                width: 20%;
+                height: 20%;
+            }
+            #rayTracing
+            {
+                width: 40%;
+                height: 40%;
+            }
+            #rayTracing2
+            {
+                width: 40%;
+                height: 40%;
+            }
+            #soundsource
+            {
+                width: 20%;
+                height: 20%;
+            }
+            #whale1
+            {
+                width: 40%;
+                height: 40%;
+            }#whale2
+            {
+                width: 40%;
+                height: 40%;
+            }
+        </style>
     </head>
     <body>              <!-- main content in webpage; what you see. -->
-        <h1>Welcome to my website</h1> <!-- highest priority header tag, often used as a title -->
-        <h2>by Thomas Coor</h2>
-        <h3>B.E. Electrical Engineering</h3>
-        <h4>The Cooper Union for the Advancement of Science and Art</h4>
-        <h5>New York, NY</h5>
-        <h6>March 2024</h6>
-
-        <p>             <!-- paragraph tag -->
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        <h1>Thomas Coor's Digital Portfolio</h1> <!-- highest priority header tag, often used as a title -->
+        <h6>updated December 14th 2024</h6>
+        <h2>About Me</h2>
+        <p>
+            Hi, my name is Thomas Coor. I am deeply passionate about music, the natural world, and loving others. 
         </p>
+        <p>
+            These feelings have led me to care about acoustics, architecture, cooking, sustainability, and electronics. I studied electrical engineering at The Cooper Union in New York, and now I'm sort of deciding what to do next: Go back to school, do meaningful work that helps others, some combination of the two?
+        </p>     
+        <h2>About this Website</h2>
+        <p>             <!-- paragraph tag -->
+            Hey, welcome to my website. I have lots of ideas for how I would like to use this space in the future, but for right now I am going to use it as an interactive resume to show off my projects. I'm finishing an awesome co-op and I'm looking for another job, so hopefully employers will be able to navigate this space and be wowed :) 
+        </p>   
+        <p>    
+            Here is my one-page resume; me at a glance. You can download this and share it with your friends.
+        </p>
+        <iframe id="resume" src="Thomas_Resume_Winter2024.pdf" frameborder="0"></iframe>
 
         <p>
-            "Sed ut perspiciatis unde omnis iste natus<br> <!-- lineabrak tag --> 
-            <b>Error sit voluptatem accusantium doloremque laudantium, </b> <br>
-            <i>totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </i> <br>
-            <u>et quasi architecto beatae vitae dicta sunt explicabo. </u> <br>
-            <em>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, </em> <br>  <!-- default for emphasize tag is just italics again -->
-            <strong>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </strong> <br> <!-- strong tag likewise defaults to bold -->
-            <hr> <!-- horizontal rule -->
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+            Now I'll talk more in-depth about each of these experiences!
         </p>
-        
-        Hello, <b>World!</b>    <!-- bold tag -->  
 
-        <a href="https://www.google.com/">This is a cool new website I found.</a> <br> <!-- the a tag allows you to place links. -->
-        <a href="https://www.google.com/" target="blank">This website will open in a new tab.</a> <br> <!-- the a tag allows you to place links. -->
+        <h2>
+            Work Experience
+        </h2>
+        <hr>
+        <h3>Acoustic Systems Co-op, Bose Corparation, Framingham, MA (Summer - Winter 2024)</h3>
+        <p>
+            I'll need to edit this for company secrets later, but here's my elevator pitch. I created a prototype of the new system that enables a customer to tune the EQ of their soundbar with their phone. Currently, when you buy a Bose soundbar, you can calibrate the EQ to your livingroom with a protocol called <b>AdaptIQ</b>. A speaker's EQ, or <i>Equalization Curve,</i> is a graph that shows the levels for each frequency of output. Speaker and headphone designers might have a target curve that they want their product to sound like.
+        </p>
+        <img id="EQpic" src="EQ_example"> <br>    <!-- copy an image link into here -->
+        <p>
+            However, whatever sound you play through a speaker will be drastically changed by the room it's in. To fix this, we can create a <i>Correction Curve</i> by measuring a speaker's response at the listening position, taking the difference between that and the <i>Target Curve</i>, and adding that difference to the Speaker's EQ. 
+        </p>
+            <img id="headset" src="pictures/headset.jpg"> <br>
+        <p>
+            In Bose's AdaptIQ, the user puts on a headband with a microphone in it, and the soundbar sends out a series of chirps, takes the microphone recordings, and calculates a correction. This project all about getting rid of the headband, a piece of hardware that would likely only be used onced. Instead, the user would use their own phone. 
+        </p>
+        <p>
+            The biggest challenge in this idea is that we know nothing about the phone the customer has. I developed tests to analyze and correct the phone's response before it could be used for the EQ correction.
+        </p>
+        <img id="boseAnechoic" src="pictures/boseAnechoic.jpg"> <br>
+        <p>
+            An anechoic chamber was needed to characterize the microphones of the phone
+        </p>
+        <img id="boseGraphs" src="pictures/boseGraphs.jpg"> <br>
+        <p>
+            I did a <b>lot</b> of testing to find the optimal position of the phone for the calibration
+        </p>
+        <img id="boseSetup" src="pictures/boseSetup.jpg"> <br>
+        <p>
+            Since we can't characterize every possible phone microphone, we tried to use the speaker's on-board microphones to correct the phone micrphones.
+        </p>
+        <img id="boseView1" src="pictures/boseView1.jpg"> <br>
+        <p>
+            Bose has incredible views in all seasons.
+        </p>
+        <img id="boseView2" src="pictures/boseView2.jpg"> <br>
+        <img id="boseBread" src="pictures/boseBread.jpg"> <br>
+        <p>
+            I baked a huge challah for my final presentation!
+        </p>
 
-        <img src="https://placehold.it/350x150.jpg"> <br>    <!-- copy an image link into here -->
-        <img src="amogus.JPG"> <br>    <!-- copy an image filename into here. I think this is the more recommended practice -->
+        <h3>Intern, Threshold Acoustics, LLC, Chicago, IL (Summmer 2023)</h3>
+        <p>
+            I did a lot of random things here
+        </p>
+        <img id="dodecahedron" src="pictures/dodecahedron.jpg"> <br>
+        <p>
+            One of the coolest though was building this dodecahedron speaker. Basically, low frequency sound played by a speaker radiates outward <i>omnidirectionally</i>, or in all directions. However, as the pitch rises, the beam narrows. When we create a room response, we want to put sound energy into the room and have it reflect off every surface. In large rooms like concert halls, a single transducer won't be able to throw high frequencies far around enough to accurately capture the full effect of the room. So instead, we created a multi-sided speaker to shoot sound in more directions. This is a pretty common architectural acoustics tool. I helped in wiring, assembly, mathematically modelling, and testing.  
+        </p>
+        <img id="rayTracing" src="pictures/rayTracing.jpg"> <br>
+        <p>
+            An exciting tool used in architectural acoustics is <i>ray tracing</i>, where we estimate the impulse response of a room by simulating the scattering of sound as bouncing rays. I think there are a lot of improvements that can be made here. Firstly, it's fairly inaccurate. We expected errors up to 33%, which I would consider unacceptable. It's also extremely computationally inefficient. I believe we were simulating countless 'particles' reflecting four times, then across however many room configuration parameters we wanted to test across. One of my tasks was designing the rooms from architectural plans in SketchUp. We simplified a lot of the geometry to help in computation as well (Notice the rectangular prism subbed in for individual seats). Every object also gets its own coefficients of <i>absorption</i> and <i>reflection</i>, to determine how much acoustic energy will be included in the next bounce. 
+        </p>
+        <img id="rayTracing2" src="pictures/rayTracing2.jpg"> <br>
+        <p>
+            This was some weird but pretty 2-D manual ray tracing I did in AutoCAD for a report that was going out.
+        </p>
+
+        <img id="soundsource" src="pictures/soundsource.jpg"> <br>
+        <p>
+            An unexpected task I was often handed was drawing classical concert seating layouts in AutoCAD. These were generally done to show how a venue would fit on stage along with the baffles, proscenia, risers, or extenders we were planning for them 
+        </p>
+        <h3>Intern, Andy Cavatorta Studio, Brooklyn, NY (Summmer 2022)</h3>
+        <p>
+            Between Sophomore and Junior year of college I got to work with this really cool guy, Andy Cavatorta, on one of his projects. It's hard to describe exactly what he does; in fact he describes himself with a different title depending on who he's talking to. But he creates kinetic sculptures for museums and performers, basically.
+        </p>
+        <p>
+            Over the Summer we worked on this massive piece called <i>"The Whale"</i>, a 25-foot long sculpture of a whale that plays a 250 year-long song generated from a combination of whale sounds and Hildegarde von Bingen, built for the MIT Museum. I know, it all sounds insane, but it actually does <i>sound</i> insane too when you switch it on! I took the top photo while I was up on a ladder soldering the motor controllers together, and the bottom one is of the side of The Whale while we were setting it up at its gallery space.
+        </p>
+        <img id="whale1" src="pictures/whale1.jpg"> <br>
+        <p>
+            Here's how it works: Music stored as MIDI is sent to a Raspberry Pi computer, which translates the data into instructions to the 14 DC motors. Each motor spins a set of 'ribs' on the whale, a boom with a corrugated plastic tube running its length, whose length has been tuned such that when the tube rotates at a certain speed, will begin to resonate and sing. The 14 ribs are pitched chromatically, and each can hit two or three harmonics, for a pretty good musical range.
+        </p>
+        <p>
+            While Andy was handling all of the business side of the project with the museum curators, along with wrangling the firmware, I was getting my hands dirty with electronics. I wired the whole motor mechanism together, and tuned the ribs with a cool Peterson Stroboscopic tuner. 
+        </p>
+        <p>
+            The music was pretty cool too. Woods Hole Oceanographic Institute sent us decades of Bowhead and Humpback Whale recordings, which I tried to parse into musical notes. This was my first big DSP project. I was excited to found how much high frequency information exists in whale sounds; chirps, clicks, and squeaks are not what I expected for the world's biggest animals, and I had to filter those out. Even through the recording, the low mourns of the whales were incredibly eerie. Though they were extremely loud, I knew the whales were far away, hidden in the dark water. The von Bingen stuff was much harder, actually. For one, we only know of 99 songs whe wrote. It was also difficult to find solo voice recordings of all of her music. 
+        </p>
+        <img id="whale2" src="pictures/whale2.jpg"> <br>
+        <p>
+            Processing each audio file into MIDI before feeding it into the neural network was pretty difficult. Besides filtering out high frequencies, I also had to make logic rules about the maximum and minimum length of notes. I used the RNN tutorial in Tensorflow Keras to generate more MIDI messages from my input MIDI. Frankly, it didn't really sound like anything on the scale of whale to liturgical, but we discovered that so long as we slowed down the music enough, practically any combination of spinning ribs would actually sound quite pleasant. 
+        </p>
+
+        <h2>
+            Projects
+        </h2>
+        <hr>
+        <h3>Mixed-Signal Radio, Senior Capstone Project (Fall 2023 - Spring 2024)</h3>
+
+        <h3>Cicadas, Generative AI for Architecture Final Project (Spring 2024)</h3>
+
+        <h3>Induction Tea Warmer, Junior Project (Spring 2023)</h3>
+
+        <h3>Reverberation Detection Machine Learning Model, Speech & Audio Processing Project (Fall 2022)</h3>
         
+
+        
+        <!--
+        <a href="https://www.google.com/">This is a cool new website I found.</a> <br>  -->
+        <!--
+        <a href="https://www.google.com/" target="blank">This website will open in a new tab.</a> <br> -->
+
+        <!--
         <button>
             Hello
         </button> <br>
@@ -61,9 +233,9 @@
             <li>peaches</li>
         </ol>
 
-        <table border="10" cellpadding="10" cellspacing="2">                     <!--Make a table -->
-            <tr>                    <!--Table Row-->
-                <th>Month</th>      <!--Table header-->
+        <table border="10" cellpadding="10" cellspacing="2">                    
+            <tr>                    
+                <th>Month</th>      
                 <th>Rent</th>
                 <th colspan="2">Utilities</th>
                 <th>Groceries</th>
@@ -80,5 +252,6 @@
                 <td>50</td>
             </tr>
         </table>
+        -->
     </body>
 </html>
