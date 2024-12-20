@@ -3,7 +3,7 @@
     <head>              <!-- contains info about website. also where you load CSS -->
         <meta charset="utf-8">  <!-- converts symbols to bytes -->
         <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- important for responsive websites that scale to devices -->  
-        <title>a full-length tab</title> <!-- changes the title up in the webpage tab -->
+        <title>Grüß Gott!</title> <!-- changes the title up in the webpage tab -->
         <style>
             #resume
             {
@@ -74,184 +74,425 @@
             {
                 width: 40%;
                 height: 40%;
-            }#whale2
+            }
+            #whale2
             {
                 width: 40%;
                 height: 40%;
             }
+
+            #kimcheeseQuesadillas
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #BangersAndMash 
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #Borscht
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #candiedpeels
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #Challah
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #ChickenChasseur
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #LobsterStock
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #MaineLunch
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #PaneerPressed
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #europeLunch
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #failedFalafel
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #homemadePasta
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #Jambalaya
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #JapaneseLunch
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #PaneerPress
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #PestoBismol
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #SaagFeta
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #SkilletPlov
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #TunaLunch
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #whitefishSalad
+            {
+                width: 30%;
+                height: 30%;
+            }
+            #Yoghurt
+            {
+                width: 30%;
+                height: 30%;
+            }
         </style>
+        <script src="script.js" defer></script>
+        <link href="styles.css" rel="stylesheet">
     </head>
     <body>              <!-- main content in webpage; what you see. -->
-        <h1>Thomas Coor's Digital Portfolio</h1> <!-- highest priority header tag, often used as a title -->
-        <h6>updated December 14th 2024</h6>
-        <h2>About Me</h2>
-        <p>
-            Hi, my name is Thomas Coor. I am deeply passionate about music, the natural world, and loving others. 
-        </p>
-        <p>
-            These feelings have led me to care about acoustics, architecture, cooking, sustainability, and electronics. I studied electrical engineering at The Cooper Union in New York, and now I'm sort of deciding what to do next: Go back to school, do meaningful work that helps others, some combination of the two?
-        </p>     
-        <h2>About this Website</h2>
-        <p>             <!-- paragraph tag -->
-            Hey, welcome to my website. I have lots of ideas for how I would like to use this space in the future, but for right now I am going to use it as an interactive resume to show off my projects. I'm finishing an awesome co-op and I'm looking for another job, so hopefully employers will be able to navigate this space and be wowed :) 
-        </p>   
-        <p>    
-            Here is my one-page resume; me at a glance. You can download this and share it with your friends.
-        </p>
-        <iframe id="resume" src="Thomas_Resume_Winter2024.pdf" frameborder="0"></iframe>
-
-        <p>
-            Now I'll talk more in-depth about each of these experiences!
-        </p>
-
-        <h2>
-            Work Experience
-        </h2>
-        <hr>
-        <h3>Acoustic Systems Co-op, Bose Corparation, Framingham, MA (Summer - Winter 2024)</h3>
-        <p>
-            I'll need to edit this for company secrets later, but here's my elevator pitch. I created a prototype of the new system that enables a customer to tune the EQ of their soundbar with their phone. Currently, when you buy a Bose soundbar, you can calibrate the EQ to your livingroom with a protocol called <b>AdaptIQ</b>. A speaker's EQ, or <i>Equalization Curve,</i> is a graph that shows the levels for each frequency of output. Speaker and headphone designers might have a target curve that they want their product to sound like.
-        </p>
-        <img id="EQpic" src="EQ_example"> <br>    <!-- copy an image link into here -->
-        <p>
-            However, whatever sound you play through a speaker will be drastically changed by the room it's in. To fix this, we can create a <i>Correction Curve</i> by measuring a speaker's response at the listening position, taking the difference between that and the <i>Target Curve</i>, and adding that difference to the Speaker's EQ. 
-        </p>
-            <img id="headset" src="pictures/headset.jpg"> <br>
-        <p>
-            In Bose's AdaptIQ, the user puts on a headband with a microphone in it, and the soundbar sends out a series of chirps, takes the microphone recordings, and calculates a correction. This project all about getting rid of the headband, a piece of hardware that would likely only be used onced. Instead, the user would use their own phone. 
-        </p>
-        <p>
-            The biggest challenge in this idea is that we know nothing about the phone the customer has. I developed tests to analyze and correct the phone's response before it could be used for the EQ correction.
-        </p>
-        <img id="boseAnechoic" src="pictures/boseAnechoic.jpg"> <br>
-        <p>
-            An anechoic chamber was needed to characterize the microphones of the phone
-        </p>
-        <img id="boseGraphs" src="pictures/boseGraphs.jpg"> <br>
-        <p>
-            I did a <b>lot</b> of testing to find the optimal position of the phone for the calibration
-        </p>
-        <img id="boseSetup" src="pictures/boseSetup.jpg"> <br>
-        <p>
-            Since we can't characterize every possible phone microphone, we tried to use the speaker's on-board microphones to correct the phone micrphones.
-        </p>
-        <img id="boseView1" src="pictures/boseView1.jpg"> <br>
-        <p>
-            Bose has incredible views in all seasons.
-        </p>
-        <img id="boseView2" src="pictures/boseView2.jpg"> <br>
-        <img id="boseBread" src="pictures/boseBread.jpg"> <br>
-        <p>
-            I baked a huge challah for my final presentation!
-        </p>
-
-        <h3>Intern, Threshold Acoustics, LLC, Chicago, IL (Summmer 2023)</h3>
-        <p>
-            I did a lot of random things here
-        </p>
-        <img id="dodecahedron" src="pictures/dodecahedron.jpg"> <br>
-        <p>
-            One of the coolest though was building this dodecahedron speaker. Basically, low frequency sound played by a speaker radiates outward <i>omnidirectionally</i>, or in all directions. However, as the pitch rises, the beam narrows. When we create a room response, we want to put sound energy into the room and have it reflect off every surface. In large rooms like concert halls, a single transducer won't be able to throw high frequencies far around enough to accurately capture the full effect of the room. So instead, we created a multi-sided speaker to shoot sound in more directions. This is a pretty common architectural acoustics tool. I helped in wiring, assembly, mathematically modelling, and testing.  
-        </p>
-        <img id="rayTracing" src="pictures/rayTracing.jpg"> <br>
-        <p>
-            An exciting tool used in architectural acoustics is <i>ray tracing</i>, where we estimate the impulse response of a room by simulating the scattering of sound as bouncing rays. I think there are a lot of improvements that can be made here. Firstly, it's fairly inaccurate. We expected errors up to 33%, which I would consider unacceptable. It's also extremely computationally inefficient. I believe we were simulating countless 'particles' reflecting four times, then across however many room configuration parameters we wanted to test across. One of my tasks was designing the rooms from architectural plans in SketchUp. We simplified a lot of the geometry to help in computation as well (Notice the rectangular prism subbed in for individual seats). Every object also gets its own coefficients of <i>absorption</i> and <i>reflection</i>, to determine how much acoustic energy will be included in the next bounce. 
-        </p>
-        <img id="rayTracing2" src="pictures/rayTracing2.jpg"> <br>
-        <p>
-            This was some weird but pretty 2-D manual ray tracing I did in AutoCAD for a report that was going out.
-        </p>
-
-        <img id="soundsource" src="pictures/soundsource.jpg"> <br>
-        <p>
-            An unexpected task I was often handed was drawing classical concert seating layouts in AutoCAD. These were generally done to show how a venue would fit on stage along with the baffles, proscenia, risers, or extenders we were planning for them 
-        </p>
-        <h3>Intern, Andy Cavatorta Studio, Brooklyn, NY (Summmer 2022)</h3>
-        <p>
-            Between Sophomore and Junior year of college I got to work with this really cool guy, Andy Cavatorta, on one of his projects. It's hard to describe exactly what he does; in fact he describes himself with a different title depending on who he's talking to. But he creates kinetic sculptures for museums and performers, basically.
-        </p>
-        <p>
-            Over the Summer we worked on this massive piece called <i>"The Whale"</i>, a 25-foot long sculpture of a whale that plays a 250 year-long song generated from a combination of whale sounds and Hildegarde von Bingen, built for the MIT Museum. I know, it all sounds insane, but it actually does <i>sound</i> insane too when you switch it on! I took the top photo while I was up on a ladder soldering the motor controllers together, and the bottom one is of the side of The Whale while we were setting it up at its gallery space.
-        </p>
-        <img id="whale1" src="pictures/whale1.jpg"> <br>
-        <p>
-            Here's how it works: Music stored as MIDI is sent to a Raspberry Pi computer, which translates the data into instructions to the 14 DC motors. Each motor spins a set of 'ribs' on the whale, a boom with a corrugated plastic tube running its length, whose length has been tuned such that when the tube rotates at a certain speed, will begin to resonate and sing. The 14 ribs are pitched chromatically, and each can hit two or three harmonics, for a pretty good musical range.
-        </p>
-        <p>
-            While Andy was handling all of the business side of the project with the museum curators, along with wrangling the firmware, I was getting my hands dirty with electronics. I wired the whole motor mechanism together, and tuned the ribs with a cool Peterson Stroboscopic tuner. 
-        </p>
-        <p>
-            The music was pretty cool too. Woods Hole Oceanographic Institute sent us decades of Bowhead and Humpback Whale recordings, which I tried to parse into musical notes. This was my first big DSP project. I was excited to found how much high frequency information exists in whale sounds; chirps, clicks, and squeaks are not what I expected for the world's biggest animals, and I had to filter those out. Even through the recording, the low mourns of the whales were incredibly eerie. Though they were extremely loud, I knew the whales were far away, hidden in the dark water. The von Bingen stuff was much harder, actually. For one, we only know of 99 songs whe wrote. It was also difficult to find solo voice recordings of all of her music. 
-        </p>
-        <img id="whale2" src="pictures/whale2.jpg"> <br>
-        <p>
-            Processing each audio file into MIDI before feeding it into the neural network was pretty difficult. Besides filtering out high frequencies, I also had to make logic rules about the maximum and minimum length of notes. I used the RNN tutorial in Tensorflow Keras to generate more MIDI messages from my input MIDI. Frankly, it didn't really sound like anything on the scale of whale to liturgical, but we discovered that so long as we slowed down the music enough, practically any combination of spinning ribs would actually sound quite pleasant. 
-        </p>
-
-        <h2>
-            Projects
-        </h2>
-        <hr>
-        <h3>Mixed-Signal Radio, Senior Capstone Project (Fall 2023 - Spring 2024)</h3>
-
-        <h3>Cicadas, Generative AI for Architecture Final Project (Spring 2024)</h3>
-
-        <h3>Induction Tea Warmer, Junior Project (Spring 2023)</h3>
-
-        <h3>Reverberation Detection Machine Learning Model, Speech & Audio Processing Project (Fall 2022)</h3>
-        
-
-        
-        <!--
-        <a href="https://www.google.com/">This is a cool new website I found.</a> <br>  -->
-        <!--
-        <a href="https://www.google.com/" target="blank">This website will open in a new tab.</a> <br> -->
-
-        <!--
-        <button>
-            Hello
-        </button> <br>
-
-        List of fruits
         <ul>
-            <li>apples</li>
-            <li>pears</li>
-            <li>peaches</li>
+            <li data-tab-target="#About" class="active tab">About</li>
+            
+            <li data-tab-target="#Cooking" class="tab">Cooking</li>
         </ul>
+        <div class="tab-content">
+            <div id="About" data-tab-content class="active">
+                <h1>Thomas Coor's Digital Portfolio</h1> <!-- highest priority header tag, often used as a title -->
+                <h6>updated December 19th 2024</h6>
+                <h2>About Me</h2>
+                <p>
+                    Hi, my name is Thomas Coor. I am deeply passionate about music, the natural world, and loving others. 
+                </p>
+                <p>
+                    These feelings have led me to care about acoustics, architecture, cooking, sustainability, and electronics. I studied electrical engineering at The Cooper Union in New York, and now I'm sort of deciding what to do next: Go back to school, do meaningful work that helps others, some combination of the two?
+                </p>     
+                <h2>About this Website</h2>
+                <p>             <!-- paragraph tag -->
+                    Hey, welcome to my website. I have lots of ideas for how I would like to use this space in the future, but for right now I am going to use it as an interactive resume to show off my projects. I'm finishing an awesome co-op and I'm looking for another job, so hopefully employers will be able to navigate this space and be wowed :) 
+                </p>   
+                <p>    
+                    Here is my one-page resume; me at a glance. You can download this and share it with your friends.
+                </p>
+                <iframe id="resume" src="Thomas_Resume_Winter2024.pdf" frameborder="0"></iframe>
 
-        List of fruits in order of tastiness
-        <ol>
-            <li>apples
+                <p>
+                    Now I'll talk more in-depth about each of these experiences!
+                </p>
+
+                <h2>
+                    Work Experience
+                </h2>
+                <hr>
+                <h3>Acoustic Systems Co-op, Bose Corparation, Framingham, MA (Summer - Winter 2024)</h3>
+                <p>
+                    I'll need to edit this for company secrets later, but here's my elevator pitch. I created a prototype of the new system that enables a customer to tune the EQ of their soundbar with their phone. Currently, when you buy a Bose soundbar, you can calibrate the EQ to your livingroom with a protocol called <b>AdaptIQ</b>. A speaker's EQ, or <i>Equalization Curve,</i> is a graph that shows the levels for each frequency of output. Speaker and headphone designers might have a target curve that they want their product to sound like.
+                </p>
+                <img id="EQpic" src="EQ_example"> <br>    <!-- copy an image link into here -->
+                <p>
+                    However, whatever sound you play through a speaker will be drastically changed by the room it's in. To fix this, we can create a <i>Correction Curve</i> by measuring a speaker's response at the listening position, taking the difference between that and the <i>Target Curve</i>, and adding that difference to the Speaker's EQ. 
+                </p>
+                    <img id="headset" src="pictures/headset.jpg"> <br>
+                <p>
+                    In Bose's AdaptIQ, the user puts on a headband with a microphone in it, and the soundbar sends out a series of chirps, takes the microphone recordings, and calculates a correction. This project all about getting rid of the headband, a piece of hardware that would likely only be used onced. Instead, the user would use their own phone. 
+                </p>
+                <p>
+                    The biggest challenge in this idea is that we know nothing about the phone the customer has. I developed tests to analyze and correct the phone's response before it could be used for the EQ correction.
+                </p>
+                <img id="boseAnechoic" src="pictures/boseAnechoic.jpg"> <br>
+                <p>
+                    An anechoic chamber was needed to characterize the microphones of the phone
+                </p>
+                <img id="boseGraphs" src="pictures/boseGraphs.jpg"> <br>
+                <p>
+                    I did a <b>lot</b> of testing to find the optimal position of the phone for the calibration
+                </p>
+                <img id="boseSetup" src="pictures/boseSetup.jpg"> <br>
+                <p>
+                    Since we can't characterize every possible phone microphone, we tried to use the speaker's on-board microphones to correct the phone micrphones.
+                </p>
+                <img id="boseView1" src="pictures/boseView1.jpg"> <br>
+                <p>
+                    Bose has incredible views in all seasons.
+                </p>
+                <img id="boseView2" src="pictures/boseView2.jpg"> <br>
+                <img id="boseBread" src="pictures/boseBread.jpg"> <br>
+                <p>
+                    I baked a huge challah for my final presentation!
+                </p>
+
+                <h3>Intern, Threshold Acoustics, LLC, Chicago, IL (Summmer 2023)</h3>
+                <p>
+                    I did a lot of random things here
+                </p>
+                <img id="dodecahedron" src="pictures/dodecahedron.jpg"> <br>
+                <p>
+                    One of the coolest though was building this dodecahedron speaker. Basically, low frequency sound played by a speaker radiates outward <i>omnidirectionally</i>, or in all directions. However, as the pitch rises, the beam narrows. When we create a room response, we want to put sound energy into the room and have it reflect off every surface. In large rooms like concert halls, a single transducer won't be able to throw high frequencies far around enough to accurately capture the full effect of the room. So instead, we created a multi-sided speaker to shoot sound in more directions. This is a pretty common architectural acoustics tool. I helped in wiring, assembly, mathematically modelling, and testing.  
+                </p>
+                <img id="rayTracing" src="pictures/rayTracing.jpg"> <br>
+                <p>
+                    An exciting tool used in architectural acoustics is <i>ray tracing</i>, where we estimate the impulse response of a room by simulating the scattering of sound as bouncing rays. I think there are a lot of improvements that can be made here. Firstly, it's fairly inaccurate. We expected errors up to 33%, which I would consider unacceptable. It's also extremely computationally inefficient. I believe we were simulating countless 'particles' reflecting four times, then across however many room configuration parameters we wanted to test across. One of my tasks was designing the rooms from architectural plans in SketchUp. We simplified a lot of the geometry to help in computation as well (Notice the rectangular prism subbed in for individual seats). Every object also gets its own coefficients of <i>absorption</i> and <i>reflection</i>, to determine how much acoustic energy will be included in the next bounce. 
+                </p>
+                <img id="rayTracing2" src="pictures/rayTracing2.jpg"> <br>
+                <p>
+                    This was some weird but pretty 2-D manual ray tracing I did in AutoCAD for a report that was going out.
+                </p>
+
+                <img id="soundsource" src="pictures/soundsource.jpg"> <br>
+                <p>
+                    An unexpected task I was often handed was drawing classical concert seating layouts in AutoCAD. These were generally done to show how a venue would fit on stage along with the baffles, proscenia, risers, or extenders we were planning for them 
+                </p>
+                <h3>Intern, Andy Cavatorta Studio, Brooklyn, NY (Summmer 2022)</h3>
+                <p>
+                    Between Sophomore and Junior year of college I got to work with this really cool guy, Andy Cavatorta, on one of his projects. It's hard to describe exactly what he does; in fact he describes himself with a different title depending on who he's talking to. But he creates kinetic sculptures for museums and performers, basically.
+                </p>
+                <p>
+                    Over the Summer we worked on this massive piece called <i>"The Whale"</i>, a 25-foot long sculpture of a whale that plays a 250 year-long song generated from a combination of whale sounds and Hildegarde von Bingen, built for the MIT Museum. I know, it all sounds insane, but it actually does <i>sound</i> insane too when you switch it on! I took the top photo while I was up on a ladder soldering the motor controllers together, and the bottom one is of the side of The Whale while we were setting it up at its gallery space.
+                </p>
+                <img id="whale1" src="pictures/whale1.jpg"> <br>
+                <p>
+                    Here's how it works: Music stored as MIDI is sent to a Raspberry Pi computer, which translates the data into instructions to the 14 DC motors. Each motor spins a set of 'ribs' on the whale, a boom with a corrugated plastic tube running its length, whose length has been tuned such that when the tube rotates at a certain speed, will begin to resonate and sing. The 14 ribs are pitched chromatically, and each can hit two or three harmonics, for a pretty good musical range.
+                </p>
+                <p>
+                    While Andy was handling all of the business side of the project with the museum curators, along with wrangling the firmware, I was getting my hands dirty with electronics. I wired the whole motor mechanism together, and tuned the ribs with a cool Peterson Stroboscopic tuner. 
+                </p>
+                <p>
+                    The music was pretty cool too. Woods Hole Oceanographic Institute sent us decades of Bowhead and Humpback Whale recordings, which I tried to parse into musical notes. This was my first big DSP project. I was excited to found how much high frequency information exists in whale sounds; chirps, clicks, and squeaks are not what I expected for the world's biggest animals, and I had to filter those out. Even through the recording, the low mourns of the whales were incredibly eerie. Though they were extremely loud, I knew the whales were far away, hidden in the dark water. The von Bingen stuff was much harder, actually. For one, we only know of 99 songs whe wrote. It was also difficult to find solo voice recordings of all of her music. 
+                </p>
+                <img id="whale2" src="pictures/whale2.jpg"> <br>
+                <p>
+                    Processing each audio file into MIDI before feeding it into the neural network was pretty difficult. Besides filtering out high frequencies, I also had to make logic rules about the maximum and minimum length of notes. I used the RNN tutorial in Tensorflow Keras to generate more MIDI messages from my input MIDI. Frankly, it didn't really sound like anything on the scale of whale to liturgical, but we discovered that so long as we slowed down the music enough, practically any combination of spinning ribs would actually sound quite pleasant. 
+                </p>
+
+                <h2>
+                    Projects [TODO]
+                </h2>
+                <hr>
+                <h3>Mixed-Signal Radio, Senior Capstone Project (Fall 2023 - Spring 2024)</h3>
+
+                <h3>Cicadas, Generative AI for Architecture Final Project (Spring 2024)</h3>
+
+                <h3>Induction Tea Warmer, Junior Project (Spring 2023)</h3>
+
+                <h3>Reverberation Detection Machine Learning Model, Speech & Audio Processing Project (Fall 2022)</h3>
+                
+
+                
+                <!--
+                <a href="https://www.google.com/">This is a cool new website I found.</a> <br>  -->
+                <!--
+                <a href="https://www.google.com/" target="blank">This website will open in a new tab.</a> <br> -->
+
+                <!--
+                <button>
+                    Hello
+                </button> <br>
+
+                List of fruits
                 <ul>
-                    <li>gala</li>
-                    <li>Sweetango</li>
-                    <li>Honeycrisp</li>
+                    <li>apples</li>
+                    <li>pears</li>
+                    <li>peaches</li>
                 </ul>
 
-            </li>
-            <li>pears</li>
-            <li>peaches</li>
-        </ol>
+                List of fruits in order of tastiness
+                <ol>
+                    <li>apples
+                        <ul>
+                            <li>gala</li>
+                            <li>Sweetango</li>
+                            <li>Honeycrisp</li>
+                        </ul>
 
-        <table border="10" cellpadding="10" cellspacing="2">                    
-            <tr>                    
-                <th>Month</th>      
-                <th>Rent</th>
-                <th colspan="2">Utilities</th>
-                <th>Groceries</th>
-                <th>Eating Out</th>
-                <th>Entertainment</th>
-            </tr>
-            <tr>
-                <td>August</td>
-                <td>1500</td>
-                <td>150</td>
-                <td>200</td>
-                <td>350</td>
-                <td>100</td>
-                <td>50</td>
-            </tr>
-        </table>
-        -->
+                    </li>
+                    <li>pears</li>
+                    <li>peaches</li>
+                </ol>
+
+                <table border="10" cellpadding="10" cellspacing="2">                    
+                    <tr>                    
+                        <th>Month</th>      
+                        <th>Rent</th>
+                        <th colspan="2">Utilities</th>
+                        <th>Groceries</th>
+                        <th>Eating Out</th>
+                        <th>Entertainment</th>
+                    </tr>
+                    <tr>
+                        <td>August</td>
+                        <td>1500</td>
+                        <td>150</td>
+                        <td>200</td>
+                        <td>350</td>
+                        <td>100</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+                -->
+            </div>
+            
+            <div id="Cooking" data-tab-content>
+                <h1>Cooking</h1>
+                <p>
+                    This is my food blog!
+                </p>
+                <img id="kimcheeseQuesadillas" src="pictures/food/kimcheeseQuesadillas.jpg"> <br>
+                <p>
+                    Another Bento lunch, I'm calling these Kimcheese Quesadillas! Kimchi, beans, and cheddar cheese in a corn tortilla. I can make the beans ahead of time in my pressure cooker, and then I can assemble the quesadillas in my skillet the morning of. 
+                    Here are some steps
+                    <ol>
+                        <li>Heat up skillet, no oil.</li>
+                        <li>You can probably just fit one tortilla on the skillet at a time, but it's ok if two overlap by like 1cm at this point.</li>
+                        <li>No need to shred cheese here, just cut it thin and cover as much surface as possible.</li>
+                        <li>Pop a lid overhead and let the cheese melt for like 20 seconds</li>
+                        <li>Place the beans and kimchi ontp only one side of the quesadillas. Be sure to add less than you think, so keep things ~0.5in from the edge. Also, transfer as little bean/kimchi liquid as possible</li>
+                        <li>Fold the quesadilla over and pop a lid on. Let cheese glue everything together for 30 seconds.</li>
+                    </ol>
+                </p>
+                <img id="Borscht" src="pictures/food/Borscht.jpg"> <br>
+                <p>
+                    This is a Borscht my parents made, an Eastern European beet soup. This one included potato, carrot, dill, and a vegetable stock. Borscht is often served with sour cream. Ukraine has a richer kind of sour cream called <i>Smetana.</i>
+                </p>
+
+                <img id="candiedpeels" src="pictures/food/candiedpeels.jpg"> <br>
+
+                <p>
+                    I made these candied citrus peels for Halloween in 2024. I was getting pretty upset with all things plastic at the time, and the combination of cheap costumes, cheap decorations and cheaper chocolate seemed like such a monumental waste. I did the little I could about this; I made my costume out of natural fibers (and well enough that I'll wear it again). I made a small wreath from fallen leaves. And I made the best candy in the World! Here how you make it:
+                    <ol>
+                        <li>Pick out your fruit. I used lemons, limes, and oranges, but I bet grapefruit would work too. You should probably cook one at a time, otherwise the tastes kinda mix.</li>
+                        <li>Cut each fruit into slices, cut across lines of longitude.</li>
+                        <li>Carefully cut the flesh from the peel. You will not need the flesh for anything else, so you can snack on them and save for a fruit salad.</li>                        
+                        <li>Cut the peels lengthwise so no piece is more than 5mm at their widest.</li>
+                        <li>We now have to blach the peels to remove bitterness. Blanch the peels in water for 10 minutes, drain the water, and repeat three times total.</li>
+                        <li>Now we'll make a sugar syrup. That's easy, just equal parts water and sugar. Don't let it fully boil.</li>
+                        <li>Add the peels to the syrup, and let this cook for 30 minutes.</li>
+                        <li>In the meantime, prepare a cooling rack to allow the peels to be fully suspended.</li>
+                        <li>Fish out the peels and let them dry for 10 minutes.</li>
+                        <li>Roll the peels in sugar.</li>
+                        <li>You're done!</li>
+                    </ol>
+                </p>
+
+                <img id="BangersAndMash" src="pictures/food/BangersAndMash.jpg"> <br>
+                <p>
+                    THis is a Northern European stirfry! Potatoes are the carbs, bacon is the fat and protein, cabbage and onion fill it in, and vinegar, worcestershire sauce, and mustard temper it. November 2024
+                </p>
+
+                <img id="Challah" src="pictures/food/Challah.jpg"> <br>
+                <p>
+                    The biggest Challay I've made. December 2024
+                </p>
+
+                <img id="ChickenChasseur" src="pictures/food/ChickenChasseur.jpg"> <br>  
+                <p>
+                    Chicken Chasseur, the french cousin of Chicken Cacciatore. A chicken and tomato stew. I made enough for 4 servings. October 2024
+                </p>              
+
+                <img id="europeLunch" src="pictures/food/europeLunch.jpg"> <br>
+                <p>
+                    When I was exploring South England in June of 2024 I would go to farmers markets and buy random assortments of fruits, veggies, cheese, bread, and cured meats, whatever I could find.
+                </p>
+
+
+                <img id="failedFalafel" src="pictures/food/failedFalafel.jpg"> <br>
+                <p>
+                    I'll write more about this one later, but this is my failed falafel in action. I was supposed to use dry chickpeas soaked overnight, but instead I used dry chickpeas that I cooked until half done (half of 45 minutes) in my pressure cooker. They fell apart the moment I took them out of the fry oil. September 2024
+                </p>
+
+                <img id="homemadePasta" src="pictures/food/homemadePasta.jpg"> <br>
+                <p>
+                    My first attempt with homemade pasta! I couldn't roll the pasta out as thin as I would like, so that increased cook time from 30 seconds to 1 minute. You can see I also tried to roll in herbs, but they did not adhere. I cut them into wide noodles with a knife. August 2024
+                </p>
+
+                <img id="Jambalaya" src="pictures/food/Jambalaya.jpg"> <br>
+                <p>
+                    This is an excellent batch meal, very similar in make to Plov, though much wetter. Some things to mention: Cajun cooking like this will use a Trinity base instead of a Mire Poix, which substitutes the carrot for green bell pepper. Also, the spice blend used requires a few interesting guys, so I gut a premade mix at my food co-op. August 2024
+                </p>
+
+                <img id="JapaneseLunch" src="pictures/food/JapaneseLunch.jpg"> <br>
+                <p>TODO</p>
+
+                <img id="LobsterStock" src="pictures/food/LobsterStock.jpg"> <br>
+                <p>My roommate bought some pre-cooked lobsters at Market Basket and ate them plain. Literally. I took the discarded shells and cooked them down into an awesome lobster stock which Ive been using for my cooking all the time. August 2024</p>
+
+                <img id="MaineLunch" src="pictures/food/MaineLunch.jpg"> <br>
+                <p>
+                    This i a work lunch featuring food I had when staying at my genius friend Cat's house. Tuna fishcakes with tartar sauce, anadama bread, blueberries, cheddar cheese, brussels sprouts, and a Needham, which is chocolate-covered mashed potato. 
+                </p>
+
+                <img id="Meatless Gnoicchi bolognese" src="pictures/food/Meatless Gnoicchi bolognese.jpg"> <br>
+
+                <p>
+                    Homemade gnocchi and then a giant beyond beef meastsauce and mirepoix. Averything in my fridge went into this. I dislike how bejond beef sticks and burns. Seuptemer 2024
+                </p>
+
+                <img id="PaneerPress" src="pictures/food/PaneerPress.jpg"> <br>
+                <p>
+                    Paneer is extremely easy to make. Start with 1 Quart of milk, brought just barely to a boil. Then squeeze in one lemon worth of juice. Mix for 2 minutes as it curdles. Line a colander with cheesecloth. Start by ladelling the solids onto the cheesecloth, then slowly pour the rest through. Discard the whey, and wrap, wash, drain, and squeeze the curd. Form into a brick and press with a heavy object in your fridge for 4 hours. At that point you can cut it and fry it. Dember 2024
+                </p>
+
+                <img id="PestoBismol" src="pictures/food/PestoBismol.jpg"> <br>
+                <p>
+                    A beet and walnut pesto with my gnocchi. Reddit called this 'Pesto Bismol'.
+                </p>
+
+                <img id="SaagFeta" src="pictures/food/SaagFeta.jpg"> <br>
+                <p>
+                    A saag curry made in my mortar and pestle, along with feta cheese, which I thought would work in another way, compared to paneer
+                </p>
+
+                <img id="SkilletPlov" src="pictures/food/SkilletPlov.jpg"> <br>
+                <p>
+                    A weeknight plov. July 2024
+                </p>
+
+                <img id="TunaLunch" src="pictures/food/TunaLunch.jpg"> <br>
+
+                <img id="whitefishSalad" src="pictures/food/whitefishSalad.jpg"> <br>
+
+                <img id="Yoghurt" src="pictures/food/Yoghurt.jpg"> <br>
+            </div>
+        </div>
+        
     </body>
 </html>
