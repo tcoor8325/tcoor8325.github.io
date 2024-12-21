@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- important for responsive websites that scale to devices -->  
         <title>Grüß Gott!</title> <!-- changes the title up in the webpage tab -->
         <style>
+            #ThomasDodec
+            {
+                width: 50%;
+                height: 50%;
+            }
             #resume
             {
                 width: 750px;
@@ -186,6 +191,12 @@
                 width: 30%;
                 height: 30%;
             }
+            canvas {
+                display: block;
+                margin: 20px auto;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+            }
         </style>
         <script src="script.js" defer></script>
         <link href="styles.css" rel="stylesheet">
@@ -195,6 +206,8 @@
             <li data-tab-target="#About" class="active tab">About</li>
             
             <li data-tab-target="#Cooking" class="tab">Cooking</li>
+
+            <li data-tab-target="#Boids" class="tab">Boids</li>
         </ul>
         <div class="tab-content">
             <div id="About" data-tab-content class="active">
@@ -202,17 +215,11 @@
                 <h6>updated December 19th 2024</h6>
                 <h2>About Me</h2>
                 <p>
-                    Hi, my name is Thomas Coor. I am deeply passionate about music, the natural world, and loving others. 
-                </p>
-                <p>
-                    These feelings have led me to care about acoustics, architecture, cooking, sustainability, and electronics. I studied electrical engineering at The Cooper Union in New York, and now I'm sort of deciding what to do next: Go back to school, do meaningful work that helps others, some combination of the two?
-                </p>     
-                <h2>About this Website</h2>
-                <p>             <!-- paragraph tag -->
-                    Hey, welcome to my website. I have lots of ideas for how I would like to use this space in the future, but for right now I am going to use it as an interactive resume to show off my projects. I'm finishing an awesome co-op and I'm looking for another job, so hopefully employers will be able to navigate this space and be wowed :) 
-                </p>   
+                    Hi, my name is Thomas Coor. I build electro-acoustic systems, play music, and cook. I share my ideas on these subjects on this website. 
+                </p>                                     
+                <img id="ThomasDodec" src="pictures/ThomasDodec.png"> <br>   
                 <p>    
-                    Here is my one-page resume; me at a glance. You can download this and share it with your friends.
+                    First, here is my one-page resume
                 </p>
                 <iframe id="resume" src="Thomas_Resume_Winter2024.pdf" frameborder="0"></iframe>
 
@@ -226,7 +233,7 @@
                 <hr>
                 <h3>Acoustic Systems Co-op, Bose Corparation, Framingham, MA (Summer - Winter 2024)</h3>
                 <p>
-                    I'll need to edit this for company secrets later, but here's my elevator pitch. I created a prototype of the new system that enables a customer to tune the EQ of their soundbar with their phone. Currently, when you buy a Bose soundbar, you can calibrate the EQ to your livingroom with a protocol called <b>AdaptIQ</b>. A speaker's EQ, or <i>Equalization Curve,</i> is a graph that shows the levels for each frequency of output. Speaker and headphone designers might have a target curve that they want their product to sound like.
+                    I created a prototype of a customer-led room EQ protocol for their soundbar products. A speaker's EQ, or <i>Equalization Curve,</i> is a graph that shows the levels for each frequency of output. Speaker and headphone designers might have a target curve that they want their product to sound like.
                 </p>
                 <img id="EQpic" src="EQ_example"> <br>    <!-- copy an image link into here -->
                 <p>
@@ -234,22 +241,22 @@
                 </p>
                     <img id="headset" src="pictures/headset.jpg"> <br>
                 <p>
-                    In Bose's AdaptIQ, the user puts on a headband with a microphone in it, and the soundbar sends out a series of chirps, takes the microphone recordings, and calculates a correction. This project all about getting rid of the headband, a piece of hardware that would likely only be used onced. Instead, the user would use their own phone. 
+                    The system uses this headband with a built-in microphone that the user wears at their listening position (their couch) while the speaker plays a series of calibration tones. I can't say much more about the project right now for confidentiality but that is the *very* basic idea. 
                 </p>
                 <p>
-                    The biggest challenge in this idea is that we know nothing about the phone the customer has. I developed tests to analyze and correct the phone's response before it could be used for the EQ correction.
+                    Crucial to the system is a microphone calibration step, so we know the actual pressure measured at a position, compared to what the (often poor quality) microphone tells us.
                 </p>
                 <img id="boseAnechoic" src="pictures/boseAnechoic.jpg"> <br>
                 <p>
-                    An anechoic chamber was needed to characterize the microphones of the phone
+                    An anechoic chamber was needed to characterize the microphones.
                 </p>
                 <img id="boseGraphs" src="pictures/boseGraphs.jpg"> <br>
                 <p>
-                    I did a <b>lot</b> of testing to find the optimal position of the phone for the calibration
+                    We did a <b>lot</b> of testing to find the optimal physical setup for the calibration.
                 </p>
                 <img id="boseSetup" src="pictures/boseSetup.jpg"> <br>
                 <p>
-                    Since we can't characterize every possible phone microphone, we tried to use the speaker's on-board microphones to correct the phone micrphones.
+                    Here's a slice of a day of taking measurements.
                 </p>
                 <img id="boseView1" src="pictures/boseView1.jpg"> <br>
                 <p>
@@ -491,6 +498,109 @@
                 <img id="whitefishSalad" src="pictures/food/whitefishSalad.jpg"> <br>
 
                 <img id="Yoghurt" src="pictures/food/Yoghurt.jpg"> <br>
+            </div>
+
+            <div id="Boids" data-tab-content>  
+                <canvas id="circleCanvas" width="900" height="900"></canvas>
+
+                <script>
+                    const canvas = document.getElementById('circleCanvas');
+                    const ctx = canvas.getContext('2d');
+
+                    const numBoids = 30;
+                    const boids = [];
+                    let range = 200;
+                    let alignmentStrength = 0.05;
+
+                    // Track mouse position
+                    let mouseX = canvas.width / 2;
+                    let mouseY = canvas.height / 2;
+
+                    // Initialize circles with random properties
+                    for (let i = 0; i < numBoids; i++) {
+                        boids.push({
+                            x: Math.random() * canvas.width, // Random x position
+                            y: Math.random() * canvas.height, // Random y position
+                            radius: 20, 
+                            dx: (Math.random() - 0.5) * 4, // Random horizontal speed
+                            dy: (Math.random() - 0.5) * 4, // Random vertical speed
+                            color: `hsl(${Math.random() * 360}, 70%, 60%)` // Random color
+                        });
+                    }
+
+                    // Function to draw a circle
+                    function drawBoid(boid) {
+                        ctx.beginPath();
+                        ctx.arc(boid.x, boid.y, boid.radius, 0, Math.PI * 2);
+                        ctx.fillStyle = boid.color;
+                        ctx.fill();
+                        ctx.strokeStyle = 'black';                        
+                        ctx.stroke();
+                    }
+
+                    // Update position and handle bouncing off walls
+                    function updateBoid(boid) {                        
+                        alignmentForce_x = 0;
+                        alignmentForce_y = 0;
+
+                        for (const otherBoid of boids) {
+                            if (otherBoid.x != boid.x && otherBoid.y != boid.y) { // if the two boids are in different locations, we are looking at different boids.
+                                
+                                distance_x = Math.abs(otherBoid.x - boid.x);
+                                distance_y = Math.abs(otherBoid.y - boid.y);
+                                distance = Math.sqrt((distance_x*distance_x) + (distance_y*distance_y));
+                                if (distance <= range) {
+                                    ctx.beginPath(); 
+                                    ctx.moveTo(boid.x, boid.y); // Starting point
+                                    ctx.lineTo(otherBoid.x, otherBoid.y); // Ending point
+                                    ctx.stroke(); // Draw the line
+                                }
+                            }
+                        }
+                        // Normalize the force vectors
+                        alignmentForce_x = alignmentForce_x / numBoids;
+                        alignmentForce_y = alignmentForce_y / numBoids;
+                    
+                        // Update velocity
+                        //boid.dx = alignmentForce_x * alignmentStrength;
+                        //boid.dy = alignmentForce_y * alignmentStrength;                        
+
+                        // Update position
+                        boid.x += boid.dx;
+                        boid.y += boid.dy;
+
+                        // Bounce off walls
+                        if (boid.x - boid.radius < 0 || boid.x + boid.radius > canvas.width) {
+                            boid.dx *= -1; // Reverse horizontal direction
+                        }
+                        if (boid.y - boid.radius < 0 || boid.y + boid.radius > canvas.height) {
+                            boid.dy *= -1; // Reverse vertical direction
+                        }
+                                }
+
+                    // Animation loop
+                    function animate() {
+                        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+
+                        for (const boid of boids) { // For every boid,
+                            drawBoid(boid); // Draw each circle
+                            updateBoid(boid); // Update its position
+                        }
+
+                        requestAnimationFrame(animate); // Call animate again
+                    }
+
+                    // Track mouse movements
+                    canvas.addEventListener('mousemove', (event) => {
+                        const rect = canvas.getBoundingClientRect();
+                        mouseX = event.clientX - rect.left;
+                        mouseY = event.clientY - rect.top;
+                    });
+
+                    animate(); // Start the animation
+                </script>
+
+
             </div>
         </div>
         
