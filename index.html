@@ -199,6 +199,8 @@
             }
         </style>
         <script src="script.js" defer></script>
+        <script src="boid.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>              <!-- main content in webpage; what you see. -->
@@ -501,104 +503,9 @@
             </div>
 
             <div id="Boids" data-tab-content>  
-                <canvas id="circleCanvas" width="900" height="900"></canvas>
+                <canvas id="circleCanvas" width="100" height="100"></canvas>
 
-                <script>
-                    const canvas = document.getElementById('circleCanvas');
-                    const ctx = canvas.getContext('2d');
-
-                    const numBoids = 30;
-                    const boids = [];
-                    let range = 200;
-                    let alignmentStrength = 0.05;
-
-                    // Track mouse position
-                    let mouseX = canvas.width / 2;
-                    let mouseY = canvas.height / 2;
-
-                    // Initialize circles with random properties
-                    for (let i = 0; i < numBoids; i++) {
-                        boids.push({
-                            x: Math.random() * canvas.width, // Random x position
-                            y: Math.random() * canvas.height, // Random y position
-                            radius: 20, 
-                            dx: (Math.random() - 0.5) * 4, // Random horizontal speed
-                            dy: (Math.random() - 0.5) * 4, // Random vertical speed
-                            color: `hsl(${Math.random() * 360}, 70%, 60%)` // Random color
-                        });
-                    }
-
-                    // Function to draw a circle
-                    function drawBoid(boid) {
-                        ctx.beginPath();
-                        ctx.arc(boid.x, boid.y, boid.radius, 0, Math.PI * 2);
-                        ctx.fillStyle = boid.color;
-                        ctx.fill();
-                        ctx.strokeStyle = 'black';                        
-                        ctx.stroke();
-                    }
-
-                    // Update position and handle bouncing off walls
-                    function updateBoid(boid) {                        
-                        alignmentForce_x = 0;
-                        alignmentForce_y = 0;
-
-                        for (const otherBoid of boids) {
-                            if (otherBoid.x != boid.x && otherBoid.y != boid.y) { // if the two boids are in different locations, we are looking at different boids.
-                                
-                                distance_x = Math.abs(otherBoid.x - boid.x);
-                                distance_y = Math.abs(otherBoid.y - boid.y);
-                                distance = Math.sqrt((distance_x*distance_x) + (distance_y*distance_y));
-                                if (distance <= range) {
-                                    ctx.beginPath(); 
-                                    ctx.moveTo(boid.x, boid.y); // Starting point
-                                    ctx.lineTo(otherBoid.x, otherBoid.y); // Ending point
-                                    ctx.stroke(); // Draw the line
-                                }
-                            }
-                        }
-                        // Normalize the force vectors
-                        alignmentForce_x = alignmentForce_x / numBoids;
-                        alignmentForce_y = alignmentForce_y / numBoids;
-                    
-                        // Update velocity
-                        //boid.dx = alignmentForce_x * alignmentStrength;
-                        //boid.dy = alignmentForce_y * alignmentStrength;                        
-
-                        // Update position
-                        boid.x += boid.dx;
-                        boid.y += boid.dy;
-
-                        // Bounce off walls
-                        if (boid.x - boid.radius < 0 || boid.x + boid.radius > canvas.width) {
-                            boid.dx *= -1; // Reverse horizontal direction
-                        }
-                        if (boid.y - boid.radius < 0 || boid.y + boid.radius > canvas.height) {
-                            boid.dy *= -1; // Reverse vertical direction
-                        }
-                                }
-
-                    // Animation loop
-                    function animate() {
-                        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
-
-                        for (const boid of boids) { // For every boid,
-                            drawBoid(boid); // Draw each circle
-                            updateBoid(boid); // Update its position
-                        }
-
-                        requestAnimationFrame(animate); // Call animate again
-                    }
-
-                    // Track mouse movements
-                    canvas.addEventListener('mousemove', (event) => {
-                        const rect = canvas.getBoundingClientRect();
-                        mouseX = event.clientX - rect.left;
-                        mouseY = event.clientY - rect.top;
-                    });
-
-                    animate(); // Start the animation
-                </script>
+                <script src="flocking.js"></script>
 
 
             </div>
