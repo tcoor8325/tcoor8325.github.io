@@ -4,6 +4,7 @@ ctx.font = "50px Arial";
 
 canvas.width = 700;
 canvas.height = 700;
+canvas.fillStyle = "rgb(255 0 0)";
 
 class Boid {
     constructor(x, y) {
@@ -24,7 +25,7 @@ class Boid {
         this.alignmentCoefficient = 1.0;
         this.cohesionCoefficient = 1.0;
         this.separationCoefficient = 0.1;
-        this.wallAvoidanceCoefficient = 5.0;
+        this.wallAvoidanceCoefficient = 2.0;
     }
 
     distance(other) {
@@ -149,7 +150,6 @@ class Boid {
     wallAvoidance() {
         let steering = { x: 0, y: 0 };
         let difference = { x: 0, y: 0 };
-        let total = 0;
         
         // now add wall avoid component
         if (this.position.x - this.radius < this.perceptionRadius) { //|| this.position.x + this.radius > canvas.width - this.perceptionRadius) {
@@ -239,8 +239,11 @@ for (let i = 0; i < 200; i++) {
 }
 
 function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+    ctx.rect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "rgb(0 0 0)";
+    ctx.fill();
+    ctx.stroke();
+    
     for (const boid of boids) {
         boid.flock(boids);
         boid.update();
