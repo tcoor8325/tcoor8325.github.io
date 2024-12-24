@@ -2,7 +2,7 @@ const canvas = document.getElementById('circleCanvas');
 const ctx = canvas.getContext('2d');
 ctx.font = "50px Arial";
 
-canvas.width = 700;
+canvas.width = 500;
 canvas.height = 700;
 canvas.fillStyle = "rgb(255 0 0)";
 
@@ -19,13 +19,13 @@ class Boid {
         };
         this.acceleration = { x: 0, y: 0 };
         this.maxSpeed = 4;
-        this.maxForce = 0.1;
+        this.maxForce = 0.4;
+        this.wallRepelForce = 0.5;
         this.radius = 2;
         this.perceptionRadius = 40;
-        this.alignmentCoefficient = 1.0;
-        this.cohesionCoefficient = 1.0;
-        this.separationCoefficient = 0.1;
-        this.wallAvoidanceCoefficient = 2.0;
+        this.alignmentCoefficient = 0.4;
+        this.cohesionCoefficient = 0.2;
+        this.separationCoefficient = 0.015;
     }
 
     distance(other) {
@@ -152,23 +152,26 @@ class Boid {
         let difference = { x: 0, y: 0 };
         
         // now add wall avoid component
+        // if the boid is within perception radius of the left wall,
         if (this.position.x - this.radius < this.perceptionRadius) { //|| this.position.x + this.radius > canvas.width - this.perceptionRadius) {
+            // calculate the distance to the wall
             difference.x = this.position.x - 0;
-            steering.x += ((this.perceptionRadius - difference.x) / this.perceptionRadius) * this.maxForce;
+            // the steering vector will be made from 
+            steering.x += ((this.perceptionRadius - difference.x) / this.perceptionRadius) * this.wallRepelForce;
         } else if (this.position.x + this.radius > canvas.width - this.perceptionRadius) {
-            difference.x = this.position.x - canvas.width;
-            steering.x += -((this.perceptionRadius - difference.x) / this.perceptionRadius) * this.maxForce;
+            difference.x = canvas.width - this.position.x;
+            steering.x += -((this.perceptionRadius - difference.x) / this.perceptionRadius) * this.wallRepelForce;
         }
 
         if (this.position.y - this.radius < this.perceptionRadius) { //|| this.position.x + this.radius > canvas.width - this.perceptionRadius) {
             difference.y = this.position.y - 0;
-            steering.y += ((this.perceptionRadius - difference.y) / this.perceptionRadius) * this.maxForce;
+            steering.y += ((this.perceptionRadius - difference.y) / this.perceptionRadius) * this.wallRepelForce;
         } else if (this.position.y + this.radius > canvas.height - this.perceptionRadius) {
-            difference.y = this.position.y - canvas.height;
-            steering.y += -((this.perceptionRadius - difference.y) / this.perceptionRadius) * this.maxForce;
+            difference.y = canvas.height - this.position.y;
+            steering.y += -((this.perceptionRadius - difference.y) / this.perceptionRadius) * this.wallRepelForce;
         }
-        steering.x *= this.wallAvoidanceCoefficient;
-        steering.y *= this.wallAvoidanceCoefficient;
+        //steering.x *= this.wallAvoidanceCoefficient;
+        //steering.y *= this.wallAvoidanceCoefficient;
         
         return steering;
     }
@@ -234,7 +237,7 @@ class Boid {
 }
 
 const boids = [];
-for (let i = 0; i < 200; i++) {
+for (let i = 0; i < 300; i++) {
     boids.push(new Boid());
 }
 
