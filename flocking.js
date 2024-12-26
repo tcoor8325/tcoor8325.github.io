@@ -6,6 +6,14 @@ canvas.width = 500;
 canvas.height = 700;
 canvas.fillStyle = "rgb(255 0 0)";
 
+const c_canvas = document.getElementById('companyCanvas');
+const c_ctx = canvas.getContext('2d');
+c_ctx.font = "50px Arial";
+
+c_canvas.width = 500;
+c_canvas.height = 700;
+c_canvas.fillStyle = "rgb(255 0 0)";
+
 class Boid {
     constructor(x, y) {
         //this.position = { x: x, y: y };
@@ -241,6 +249,7 @@ for (let i = 0; i < 300; i++) {
     boids.push(new Boid());
 }
 
+
 function animate() {
     ctx.rect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "rgb(0 0 0)";
@@ -252,6 +261,13 @@ function animate() {
         boid.update();
         boid.draw();
     }
+    /*
+    c_ctx.rect(0, 0, c_canvas.width, c_canvas.height);
+    c_ctx.fillStyle = "rgb(0 0 0)";
+    c_ctx.fill();
+    c_ctx.stroke();
+    */
+    
 
     requestAnimationFrame(animate);
 }

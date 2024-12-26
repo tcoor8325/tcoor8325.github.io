@@ -1,46 +1,134 @@
-[data-tab-content] {
-    display: none;
-  }
-  
-  .active[data-tab-content] {
-    display: block;
-  }
-  
-  body {
-    padding: 0;
-    margin: 0;
-  }
-
-  canvas {
-    position: fixed;
-    left: 100;
-    top: 100;
-    z-index: -1;
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
 }
-  
-  .tabs {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid black;
-  }
-  
-  .tab {
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  .tab.active {
-    background-color: #CCC;
-  }
-  
-  .tab:hover {
-    background-color: #AAA;
-  }
-  
-  .tab-content {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+
+.tabs {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.tab-button:hover {
+  background-color: #ddd;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+/* Nested Tabs */
+.nested-tabs {
+  margin-top: 20px;
+}
+
+.nested-tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.nested-tab-button {
+  flex: 1;
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.nested-tab-button.active {
+  background-color: #d0d0d0;
+  font-weight: bold;
+}
+
+.nested-tab-button:hover {
+  background-color: #ccc;
+}
+
+.nested-tab-content {
+  margin-top: 15px;
+}
+
+.nested-tab-panel {
+  display: none;
+}
+
+.nested-tab-panel.active {
+  display: block;
+}
+
+/* Nested Tabs in Projects Tab */
+.projects-nested-tabs {
+  margin-top: 20px;
+}
+
+.projects-nested-tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.projects-nested-tab-button {
+  flex: 1;
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.projects-nested-tab-button.active {
+  background-color: #d0d0d0;
+  font-weight: bold;
+}
+
+.projects-nested-tab-button:hover {
+  background-color: #ccc;
+}
+
+.projects-nested-tab-content {
+  margin-top: 15px;
+}
+
+.projects-nested-tab-panel {
+  display: none;
+}
+
+.projects-nested-tab-panel.active {
+  display: block;
+}

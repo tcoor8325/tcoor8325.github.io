@@ -1,239 +1,384 @@
-<!DOCTYPE html>         <!--tells the browser this is an html5 document -->
-<html>                  <!-- html tag, everything inside is understood as html -->
-    <head>              <!-- contains info about website. also where you load CSS -->
-        <meta charset="utf-8">  <!-- converts symbols to bytes -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">    <!-- important for responsive websites that scale to devices -->  
-        <title>Grüß Gott!</title> <!-- changes the title up in the webpage tab -->
-        <style>
-            #ThomasDodec
-            {
-                width: 50%;
-                height: 50%;
-            }
-            #resume
-            {
-                width: 750px;
-                height: 500px;
-            }
-            #EQpic
-            {
-                width: 1000px;
-                height: 500px;
-            }
-            #headset
-            {
-                width: 20%;
-                height: 20%;
-            }
-            #boseAnechoic
-            {
-                width: 50%;
-                height: 50%;
-            }
-            #boseGraphs
-            {
-                width: 20%;
-                height: 20%;
-            }
-            #boseSetup
-            {
-                width: 20%;
-                height: 20%;
-            }
-            #boseView1
-            {
-                width: 20%;
-                height: 20%;
-            }
-            #boseView2
-            {
-                width: 50%;
-                height: 50%;
-            }
-            #boseBread
-            {
-                width: 20%;
-                height: 20%;
-            }
-            #dodecahedron
-            {
-                width: 20%;
-                height: 20%;
-            }
-            #rayTracing
-            {
-                width: 40%;
-                height: 40%;
-            }
-            #rayTracing2
-            {
-                width: 40%;
-                height: 40%;
-            }
-            #soundsource
-            {
-                width: 20%;
-                height: 20%;
-            }
-            #whale1
-            {
-                width: 40%;
-                height: 40%;
-            }
-            #whale2
-            {
-                width: 40%;
-                height: 40%;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Tabs Example</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <style>
+    #ThomasDodec
+    {
+        width: 50%;
+        height: 50%;
+    }
+    #resume
+    {
+        width: 750px;
+        height: 500px;
+    }
+    #radio
+    {
+        width: 800px;
+        height: 1000px;
+    }
+    #EQpic
+    {
+        width: 1000px;
+        height: 500px;
+    }
+    #headset
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #boseAnechoic
+    {
+        width: 50%;
+        height: 50%;
+    }
+    #boseGraphs
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #boseSetup
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #boseView1
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #boseView2
+    {
+        width: 50%;
+        height: 50%;
+    }
+    #boseBread
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #dodecahedron
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #rayTracing
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #rayTracing2
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #soundsource
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #whale1
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #whale2
+    {
+        width: 40%;
+        height: 40%;
+    }
 
-            #kimcheeseQuesadillas
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #BangersAndMash 
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #Borscht
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #candiedpeels
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #Challah
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #ChickenChasseur
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #LobsterStock
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #MaineLunch
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #PaneerPressed
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #europeLunch
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #failedFalafel
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #homemadePasta
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #Jambalaya
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #JapaneseLunch
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #PaneerPress
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #PestoBismol
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #SaagFeta
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #SkilletPlov
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #TunaLunch
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #whitefishSalad
-            {
-                width: 30%;
-                height: 30%;
-            }
-            #Yoghurt
-            {
-                width: 30%;
-                height: 30%;
-            }
-            canvas {
-                display: block;
-                margin: 20px auto;
-                background-color: #f0f0f0;
-                border: 1px solid #ccc;
-            }
-        </style>
-        <script src="script.js" defer></script>
-        <script src="boid.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body style="background-color:rgb(117, 100, 100);">              <!-- main content in webpage; what you see. -->
-        <ul>
-            <li data-tab-target="#About" class="active tab">About</li>
+    #kimcheeseQuesadillas
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #BangersAndMash 
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #Borscht
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #candiedpeels
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #Challah
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #ChickenChasseur
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #LobsterStock
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #MaineLunch
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #PaneerPressed
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #europeLunch
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #failedFalafel
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #homemadePasta
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #Jambalaya
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #JapaneseLunch
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #PaneerPress
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #PestoBismol
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #SaagFeta
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #SkilletPlov
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #TunaLunch
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #whitefishSalad
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #Yoghurt
+    {
+        width: 30%;
+        height: 30%;
+    }
+    #LV_assembled
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_backstage
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_bender
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_bridge
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_clamping
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_cutting
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_electronics
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_keyboard
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_matching
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_noiseWheel
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_pedal
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_portrait
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_pulley
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_sineWheel
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_skeleton
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_soundpost
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_staining
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #LV_wood
+    {
+        width: 20%;
+        height: 20%;
+    }
+    #cicadaCall
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #cicadaCircle
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #cicadaFriends
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #cicadaSchematic
+    {
+        width: 80%;
+        height: 80%;
+    }
+    #cicadaText
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #cicadaTree
+    {
+        width: 40%;
+        height: 40%;
+    }
+    #cicadaWork
+    {
+        width: 40%;
+        height: 40%;
+    }
+    circleCanvas {
+        display: block;
+        margin: 20px auto;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+    }
+    companyCanvas {
+        display: block;
+        margin: 20px auto;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body style="background-color:rgb(117, 100, 100);">
+  <div class="tabs">
+    <!-- Main Tab buttons -->
+    <div class="tab-buttons">
+      <button class="tab-button active" data-tab="tab1">About</button>
+      <button class="tab-button" data-tab="tab2">Work Experience</button>
+      <button class="tab-button" data-tab="tab3">Projects</button>
+      <button class="tab-button" data-tab="tab4">Boids</button>
+      <button class="tab-button" data-tab="tab5">Food Blog</button>
+      <button class="tab-button" data-tab="tab6">Blah</button>
+    </div>
+    <!-- Main Tab content -->
+    <div class="tab-content">
+      <div id="tab1" class="tab-panel active">
+        
+        <h1>Thomas Coor's Digital Portfolio</h1> <!-- highest priority header tag, often used as a title -->
+        <h6>updated December 25th 2024</h6>
+        <h2>About Me</h2>
+        <p>
+            Hi, my name is Thomas Coor. I build electro-acoustic systems, play music, and cook. I share my ideas on these subjects on this website. 
+        </p>                                     
+        <img id="ThomasDodec" src="pictures/ThomasDodec.png"> <br>   
+        <p>    
+            First, here is my one-page resume
+        </p>
+        <iframe id="resume" src="Thomas_Resume_Winter2024.pdf" frameborder="0"></iframe>
+
+      </div>
+      <div id="tab2" class="tab-panel">
+        
+        <div class="nested-tabs">
+          <!-- Nested Tab buttons -->
+          <div class="nested-tab-buttons">
+            <button class="nested-tab-button active" data-tab="nested-tab1">Bose</button>
             
-            <li data-tab-target="#Cooking" class="tab">Cooking</li>
-
-            <li data-tab-target="#Boids" class="tab">Boids</li>
-        </ul>
-        <div class="tab-content">
-            <div id="About" data-tab-content class="active">
-                <h1>Thomas Coor's Digital Portfolio</h1> <!-- highest priority header tag, often used as a title -->
-                <h6>updated December 19th 2024</h6>
-                <h2>About Me</h2>
-                <p>
-                    Hi, my name is Thomas Coor. I build electro-acoustic systems, play music, and cook. I share my ideas on these subjects on this website. 
-                </p>                                     
-                <img id="ThomasDodec" src="pictures/ThomasDodec.png"> <br>   
-                <p>    
-                    First, here is my one-page resume
-                </p>
-                <iframe id="resume" src="Thomas_Resume_Winter2024.pdf" frameborder="0"></iframe>
-
-                <p>
-                    Now I'll talk more in-depth about each of these experiences!
-                </p>
-
-                <h2>
-                    Work Experience
-                </h2>
-                <hr>
-                <h3>Acoustic Systems Co-op, Bose Corparation, Framingham, MA (Summer - Winter 2024)</h3>
+            <button class="nested-tab-button" data-tab="nested-tab2">Threshold Acoustics</button>
+            <button class="nested-tab-button" data-tab="nested-tab3">Andy Cavatorta Studio</button>
+          </div>
+          <!-- Nested Tab content -->
+          <div class="nested-tab-content">
+            <div id="nested-tab1" class="nested-tab-panel active">
+              <h3>Acoustic Systems Co-op, Bose Corparation, Framingham, MA (Summer - Winter 2024)</h3>
                 <p>
                     I created a prototype of a customer-led room EQ protocol for their soundbar products. A speaker's EQ, or <i>Equalization Curve,</i> is a graph that shows the levels for each frequency of output. Speaker and headphone designers might have a target curve that they want their product to sound like.
                 </p>
@@ -269,8 +414,10 @@
                 <p>
                     I baked a huge challah for my final presentation!
                 </p>
-
-                <h3>Intern, Threshold Acoustics, LLC, Chicago, IL (Summmer 2023)</h3>
+            </div>
+            
+            <div id="nested-tab2" class="nested-tab-panel">
+              <h3>Intern, Threshold Acoustics, LLC, Chicago, IL (Summmer 2023)</h3>
                 <p>
                     I did a lot of random things here
                 </p>
@@ -291,7 +438,9 @@
                 <p>
                     An unexpected task I was often handed was drawing classical concert seating layouts in AutoCAD. These were generally done to show how a venue would fit on stage along with the baffles, proscenia, risers, or extenders we were planning for them 
                 </p>
-                <h3>Intern, Andy Cavatorta Studio, Brooklyn, NY (Summmer 2022)</h3>
+            </div>
+            <div id="nested-tab3" class="nested-tab-panel">
+              <h3>Intern, Andy Cavatorta Studio, Brooklyn, NY (Summmer 2022)</h3>
                 <p>
                     Between Sophomore and Junior year of college I got to work with this really cool guy, Andy Cavatorta, on one of his projects. It's hard to describe exactly what he does; in fact he describes himself with a different title depending on who he's talking to. But he creates kinetic sculptures for museums and performers, basically.
                 </p>
@@ -312,204 +461,349 @@
                 <p>
                     Processing each audio file into MIDI before feeding it into the neural network was pretty difficult. Besides filtering out high frequencies, I also had to make logic rules about the maximum and minimum length of notes. I used the RNN tutorial in Tensorflow Keras to generate more MIDI messages from my input MIDI. Frankly, it didn't really sound like anything on the scale of whale to liturgical, but we discovered that so long as we slowed down the music enough, practically any combination of spinning ribs would actually sound quite pleasant. 
                 </p>
-
-                <h2>
-                    Projects [TODO]
-                </h2>
-                <hr>
-                <h3>Mixed-Signal Radio, Senior Capstone Project (Fall 2023 - Spring 2024)</h3>
-
-                <h3>Cicadas, Generative AI for Architecture Final Project (Spring 2024)</h3>
-
-                <h3>Induction Tea Warmer, Junior Project (Spring 2023)</h3>
-
-                <h3>Reverberation Detection Machine Learning Model, Speech & Audio Processing Project (Fall 2022)</h3>
-                
-
-                
-                <!--
-                <a href="https://www.google.com/">This is a cool new website I found.</a> <br>  -->
-                <!--
-                <a href="https://www.google.com/" target="blank">This website will open in a new tab.</a> <br> -->
-
-                <!--
-                <button>
-                    Hello
-                </button> <br>
-
-                List of fruits
-                <ul>
-                    <li>apples</li>
-                    <li>pears</li>
-                    <li>peaches</li>
-                </ul>
-
-                List of fruits in order of tastiness
-                <ol>
-                    <li>apples
-                        <ul>
-                            <li>gala</li>
-                            <li>Sweetango</li>
-                            <li>Honeycrisp</li>
-                        </ul>
-
-                    </li>
-                    <li>pears</li>
-                    <li>peaches</li>
-                </ol>
-
-                <table border="10" cellpadding="10" cellspacing="2">                    
-                    <tr>                    
-                        <th>Month</th>      
-                        <th>Rent</th>
-                        <th colspan="2">Utilities</th>
-                        <th>Groceries</th>
-                        <th>Eating Out</th>
-                        <th>Entertainment</th>
-                    </tr>
-                    <tr>
-                        <td>August</td>
-                        <td>1500</td>
-                        <td>150</td>
-                        <td>200</td>
-                        <td>350</td>
-                        <td>100</td>
-                        <td>50</td>
-                    </tr>
-                </table>
-                -->
             </div>
-            
-            <div id="Cooking" data-tab-content>
-                <h1>Cooking</h1>
-                <p>
-                    This is my food blog!
-                </p>
-                <img id="kimcheeseQuesadillas" src="pictures/food/kimcheeseQuesadillas.jpg"> <br>
-                <p>
-                    Another Bento lunch, I'm calling these Kimcheese Quesadillas! Kimchi, beans, and cheddar cheese in a corn tortilla. I can make the beans ahead of time in my pressure cooker, and then I can assemble the quesadillas in my skillet the morning of. 
-                    Here are some steps
-                    <ol>
-                        <li>Heat up skillet, no oil.</li>
-                        <li>You can probably just fit one tortilla on the skillet at a time, but it's ok if two overlap by like 1cm at this point.</li>
-                        <li>No need to shred cheese here, just cut it thin and cover as much surface as possible.</li>
-                        <li>Pop a lid overhead and let the cheese melt for like 20 seconds</li>
-                        <li>Place the beans and kimchi ontp only one side of the quesadillas. Be sure to add less than you think, so keep things ~0.5in from the edge. Also, transfer as little bean/kimchi liquid as possible</li>
-                        <li>Fold the quesadilla over and pop a lid on. Let cheese glue everything together for 30 seconds.</li>
-                    </ol>
-                </p>
-                <img id="Borscht" src="pictures/food/Borscht.jpg"> <br>
-                <p>
-                    This is a Borscht my parents made, an Eastern European beet soup. This one included potato, carrot, dill, and a vegetable stock. Borscht is often served with sour cream. Ukraine has a richer kind of sour cream called <i>Smetana.</i>
-                </p>
-
-                <img id="candiedpeels" src="pictures/food/candiedpeels.jpg"> <br>
-
-                <p>
-                    I made these candied citrus peels for Halloween in 2024. I was getting pretty upset with all things plastic at the time, and the combination of cheap costumes, cheap decorations and cheaper chocolate seemed like such a monumental waste. I did the little I could about this; I made my costume out of natural fibers (and well enough that I'll wear it again). I made a small wreath from fallen leaves. And I made the best candy in the World! Here how you make it:
-                    <ol>
-                        <li>Pick out your fruit. I used lemons, limes, and oranges, but I bet grapefruit would work too. You should probably cook one at a time, otherwise the tastes kinda mix.</li>
-                        <li>Cut each fruit into slices, cut across lines of longitude.</li>
-                        <li>Carefully cut the flesh from the peel. You will not need the flesh for anything else, so you can snack on them and save for a fruit salad.</li>                        
-                        <li>Cut the peels lengthwise so no piece is more than 5mm at their widest.</li>
-                        <li>We now have to blach the peels to remove bitterness. Blanch the peels in water for 10 minutes, drain the water, and repeat three times total.</li>
-                        <li>Now we'll make a sugar syrup. That's easy, just equal parts water and sugar. Don't let it fully boil.</li>
-                        <li>Add the peels to the syrup, and let this cook for 30 minutes.</li>
-                        <li>In the meantime, prepare a cooling rack to allow the peels to be fully suspended.</li>
-                        <li>Fish out the peels and let them dry for 10 minutes.</li>
-                        <li>Roll the peels in sugar.</li>
-                        <li>You're done!</li>
-                    </ol>
-                </p>
-
-                <img id="BangersAndMash" src="pictures/food/BangersAndMash.jpg"> <br>
-                <p>
-                    THis is a Northern European stirfry! Potatoes are the carbs, bacon is the fat and protein, cabbage and onion fill it in, and vinegar, worcestershire sauce, and mustard temper it. November 2024
-                </p>
-
-                <img id="Challah" src="pictures/food/Challah.jpg"> <br>
-                <p>
-                    The biggest Challay I've made. December 2024
-                </p>
-
-                <img id="ChickenChasseur" src="pictures/food/ChickenChasseur.jpg"> <br>  
-                <p>
-                    Chicken Chasseur, the french cousin of Chicken Cacciatore. A chicken and tomato stew. I made enough for 4 servings. October 2024
-                </p>              
-
-                <img id="europeLunch" src="pictures/food/europeLunch.jpg"> <br>
-                <p>
-                    When I was exploring South England in June of 2024 I would go to farmers markets and buy random assortments of fruits, veggies, cheese, bread, and cured meats, whatever I could find.
-                </p>
-
-
-                <img id="failedFalafel" src="pictures/food/failedFalafel.jpg"> <br>
-                <p>
-                    I'll write more about this one later, but this is my failed falafel in action. I was supposed to use dry chickpeas soaked overnight, but instead I used dry chickpeas that I cooked until half done (half of 45 minutes) in my pressure cooker. They fell apart the moment I took them out of the fry oil. September 2024
-                </p>
-
-                <img id="homemadePasta" src="pictures/food/homemadePasta.jpg"> <br>
-                <p>
-                    My first attempt with homemade pasta! I couldn't roll the pasta out as thin as I would like, so that increased cook time from 30 seconds to 1 minute. You can see I also tried to roll in herbs, but they did not adhere. I cut them into wide noodles with a knife. August 2024
-                </p>
-
-                <img id="Jambalaya" src="pictures/food/Jambalaya.jpg"> <br>
-                <p>
-                    This is an excellent batch meal, very similar in make to Plov, though much wetter. Some things to mention: Cajun cooking like this will use a Trinity base instead of a Mire Poix, which substitutes the carrot for green bell pepper. Also, the spice blend used requires a few interesting guys, so I gut a premade mix at my food co-op. August 2024
-                </p>
-
-                <img id="JapaneseLunch" src="pictures/food/JapaneseLunch.jpg"> <br>
-                <p>TODO</p>
-
-                <img id="LobsterStock" src="pictures/food/LobsterStock.jpg"> <br>
-                <p>My roommate bought some pre-cooked lobsters at Market Basket and ate them plain. Literally. I took the discarded shells and cooked them down into an awesome lobster stock which Ive been using for my cooking all the time. August 2024</p>
-
-                <img id="MaineLunch" src="pictures/food/MaineLunch.jpg"> <br>
-                <p>
-                    This i a work lunch featuring food I had when staying at my genius friend Cat's house. Tuna fishcakes with tartar sauce, anadama bread, blueberries, cheddar cheese, brussels sprouts, and a Needham, which is chocolate-covered mashed potato. 
-                </p>
-
-                <img id="Meatless Gnoicchi bolognese" src="pictures/food/Meatless Gnoicchi bolognese.jpg"> <br>
-
-                <p>
-                    Homemade gnocchi and then a giant beyond beef meastsauce and mirepoix. Averything in my fridge went into this. I dislike how bejond beef sticks and burns. Seuptemer 2024
-                </p>
-
-                <img id="PaneerPress" src="pictures/food/PaneerPress.jpg"> <br>
-                <p>
-                    Paneer is extremely easy to make. Start with 1 Quart of milk, brought just barely to a boil. Then squeeze in one lemon worth of juice. Mix for 2 minutes as it curdles. Line a colander with cheesecloth. Start by ladelling the solids onto the cheesecloth, then slowly pour the rest through. Discard the whey, and wrap, wash, drain, and squeeze the curd. Form into a brick and press with a heavy object in your fridge for 4 hours. At that point you can cut it and fry it. Dember 2024
-                </p>
-
-                <img id="PestoBismol" src="pictures/food/PestoBismol.jpg"> <br>
-                <p>
-                    A beet and walnut pesto with my gnocchi. Reddit called this 'Pesto Bismol'.
-                </p>
-
-                <img id="SaagFeta" src="pictures/food/SaagFeta.jpg"> <br>
-                <p>
-                    A saag curry made in my mortar and pestle, along with feta cheese, which I thought would work in another way, compared to paneer
-                </p>
-
-                <img id="SkilletPlov" src="pictures/food/SkilletPlov.jpg"> <br>
-                <p>
-                    A weeknight plov. July 2024
-                </p>
-
-                <img id="TunaLunch" src="pictures/food/TunaLunch.jpg"> <br>
-
-                <img id="whitefishSalad" src="pictures/food/whitefishSalad.jpg"> <br>
-
-                <img id="Yoghurt" src="pictures/food/Yoghurt.jpg"> <br>
-            </div>
-
-            <div id="Boids" data-tab-content>  
-                <canvas id="circleCanvas" width="100" height="100"></canvas>
-
-                <script src="flocking.js"></script>
-
-
-            </div>
+          </div>
         </div>
+      </div>
+      <div id="tab3" class="tab-panel">
+        <p>project nested tabs</p>
+        <div class="projects-nested-tabs">
+          <!-- Nested Tab buttons -->
+          <div class="projects-nested-tab-buttons">
+            <button class="projects-nested-tab-button active" data-tab="projects-nested-tab1">Lorentz Violin</button>
+            <button class="projects-nested-tab-button" data-tab="projects-nested-tab2">Radio</button>
+            <button class="projects-nested-tab-button" data-tab="projects-nested-tab3">Cicadas</button>
+            <button class="projects-nested-tab-button" data-tab="projects-nested-tab4">Induction Tea Warmer</button>
+          </div>
+          <!-- Nested Tab content -->
+          <div class="projects-nested-tab-content">
+            <div id="projects-nested-tab1" class="projects-nested-tab-panel active">
+              <h3>Mixed-Signal Radio, Senior Capstone Project (Fall 2023 - Spring 2024)</h3>
+                
+                <h3>Lorentz Violin, Personal Project (2023 - 2024)</h3>
+                <img id="LV_portrait" src="pictures/Lorentz Violin/LV_portrait.jpg"> <br>    <!-- copy an image link into here -->
+                <p>
+                    This is the Lorentz Violin, an electromechanical musical instrument that uses spinning disks to make sound. I brought this to the 2023 Guthman Musical Instrument Competition at Georgia Tech this year, which was the coolest engineering and music experience of my life.
+                </p>
+                <img id="LV_sineWheel" src="pictures/Lorentz Violin/LV_sineWheel.jpg"> <br>
+                <p>
+                    Sound is generated by these steel disks with waveforms cut into their circumference, called 'tonewheels'. They spin over a guitar pickup (a <p>very</p> strong induct) to induce their shape as a current. The Hammond B3 organ was the first use of tonewheels, where every key controlled a different wheel spinning at a fixed speed. The Lorentz Violin uses only one wheel spinning at a veriable speed to produce different notes. 
+                </p>
+                <img id="LV_noiseWheel" src="pictures/Lorentz Violin/LV_noiseWheel.jpg"> <br>
+                <p>This is the scary (and dangerous) white noise tone wheel. The tonewheel shapes were generated in python, then the points were exported to Autodesk Inventor via Excel, where I added axle and screw holes. From there I sent that .dxf to a lasercutter.</p>
+                <img id="LV_pulley" src="pictures/Lorentz Violin/LV_pulley.jpg"> <br>
+                <p>
+                    The wheels are turned via DC motor with an encoder.
+                </p>
+                <img id="LV_keyboard" src="pictures/Lorentz Violin/LV_keyboard.jpg"> <br>
+                <p>
+                    The motor speed is controlled by a keyboard, where a cursor slides along a marked track. The cursor position is monitored by an Arduino, which converts the position to a target speed to be reached by the motor. The Arduino has a simple PID algorithm to keep ensure the motor stays in tune, changes note quickly, and does not overshoot the target speed.
+                </p>
+                <img id="LV_pedal" src="pictures/Lorentz Violin/LV_pedal.jpg"> <br>
+                <p>
+                    Volume is controlled with this pedal, actuated by the right hand. The right arm cradles the body.
+                </p>
+                <img id="LV_electronics" src="pictures/Lorentz Violin/LV_electronics.jpg"> <br>
+                <p>
+                    The electronics are incredibly messy and it's a wonder it all works. 12V power is used by the motor, motor controller and audio amplifier. 5V is used by the arduino, motor controller (for logic), keyboard, and pedal. The signal from the guitar pickup is amplified and sent to the transducer on the bridge.
+                </p>
+                <img id="LV_skeleton" src="pictures/Lorentz Violin/LV_skeleton.jpg"> <br>
+                <p>
+                    Building the body tested and expanded my woodworking skills. I was very interested in how real violins make sound; the strings themselves move very little air, and must conduct their signal into an object with a large surface area. The body was created over this skeleton made of MDF; I found inspiration for the alien shape in the Hysteresis Curve, which shows how ferrous materials will magnetize when in the presence of an electric field, and then maintain their magnetism even after the electric field disappears.
+                </p>
+                
+                <img id="LV_bender" src="pictures/Lorentz Violin/LV_bender.jpg"> <br>     
+                <p>
+                    The sides were made from specialty guitar wood for the sides. In order to bend them to fit the shape of the skeleton, I bent them on this wood bender I rigged up from a piece of an old fuel cell and a heat gun. I kept the wood soaking in water, and with gentle hands rocked the piece back and forth on the bender until it was too dry to continue. 
+                </p>
+                <img id="LV_matching" src="pictures/Lorentz Violin/LV_matching.jpg"> <br>
+                <p>
+                    I switched through the pieces, checking the curve to the skeleton, until each piece was done.
+                </p>
+                <img id="LV_clamping" src="pictures/Lorentz Violin/LV_clamping.jpg"> <br>
+                <p>
+                    The finished sides were clamped and glued into place.
+                </p>
+                <img id="LV_wood" src="pictures/Lorentz Violin/LV_wood.jpg"> <br>
+                <p>
+                    This matched, aged, African Rosewood I bought for the top and bottom plates is the most expensive wood by density I've ever bought.
+                </p>
+                <img id="LV_cutting" src="pictures/Lorentz Violin/LV_cutting.jpg"> <br>
+                <p>
+                    The Sigma motif in the top plate is an inside joke. Violins of course have F holes cut into their top plate, which as I understand act as the speaker port. I always thought they looked like integral signs. Since the Lorentz Violin performs digital signal processing, I thought to pay homage to the F holes by cutting them as Sigmas, the mathematical symbol for summation.
+                </p>
+                <img id="LV_wood" src="pictures/Lorentz Violin/LV_staining.jpg"> <br>
+                <p>
+                    Love the smell, color and gratification of shellac.
+                </p>
+                <img id="LV_assembled" src="pictures/Lorentz Violin/LV_assembled.jpg"> <br>
+                <p>
+                    Here it is again, assembled.
+                </p>
+                <img id="LV_bridge" src="pictures/Lorentz Violin/LV_bridge.jpg"> <br>
+                <p>
+                    Like the strings of a violin, the excites sits on a <b>bridge</b> to conduct its signal into the body.
+                </p>
+                <img id="LV_soundpost" src="pictures/Lorentz Violin/LV_soundpost.jpg"> <br>
+                <p>
+                    The two legs of the bridge sit over one of the main structural segments of the skeleton, as well as the <b>soundpost</b>. The skeleton conducts the signal laterally through the plates, while the soundpost conducts the signal to the bottom plate.
+                </p>
+                <img id="LV_backstage" src="pictures/Lorentz Violin/LV_backstage.jpg"> <br>
+                <p>
+                    Here's the Lorentz Violin backstage at Georgia Tech while I practice my performance.
+                </p>
+            </div>
+            <div id="projects-nested-tab2" class="projects-nested-tab-panel">
+                <h3>
+                    Mixed-Signal Radio, Senior Final Project
+                </h3>
+                <p>
+                    I can't actually find the finished paper, so here's our nearly completed draft.
+                </p>
+              <iframe id="radio" src="MixedSignalRadio_CoorLeeMurphyVanWestYoon.pdf" frameborder="0"></iframe>
+            </div>
+            <div id="projects-nested-tab3" class="projects-nested-tab-panel">
+              <img id="cicadaTree" src="pictures/cicadas/cicadaTree.jpg"> <br>   
+              <p>
+                These delightful creatures are little musicians. When you turn one on, it starts to chirp at a random note. It also listens for sounds around it and slowly drifts the note it sings towards the pitch that it hears. The emergent phenomenon of eight of these guys is absolute cacophany that eventually merges into a single (honestly still piercing) note. Shown in the picture, we built a tree habitat for them to live on, but guests at our presentation were invited to pick one up and move around the space with it, to hear the chirps go crazy as it lost connection to the group, then have the chirps link up with some new sound it picks up. 
+              </p>
+              <img id="cicadaText" src="pictures/cicadas/cicadaText.jpg"> <br>  
+              <p>
+                This is the pamphlet we handed out at the demo.
+              </p> 
+              <img id="cicadaWork" src="pictures/cicadas/cicadaWork.jpg"> <br> 
+              <img id="cicadaSchematic" src="pictures/cicadas/cicadaSchematic.jpg"> <br> 
+              <p>
+                The guts of the bugs
+              </p>
+              <img id="cicadaCircle" src="pictures/cicadas/cicadaCircle.jpg"> <br> 
+              <p>
+                They like to hang out together
+              </p>
+
+              <img id="cicadaFriends" src="pictures/cicadas/cicadaFriends.jpg"> <br> 
+              <p>
+                My groupmates, across the Art and Architecture schools.
+              </p>
+
+              <img id="cicadaCall" src="pictures/cicadas/cicadaCall.jpg"> <br> 
+              <p>
+                Not great for phone calls.
+              </p>
+            </div>
+            <div id="projects-nested-tab4" class="projects-nested-tab-panel">
+              <p>why is this disappearing?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab4" class="tab-panel">
+        <div id="circleCanvas"></div>
+        <div id="companyCanvas"></div>
+        <!--
+        <circleCanvas id="circleCanvas" width="100" height="100"></canvas>
+        <circleCanvas id="companyCanvas" width="100" height="100"></canvas>
         
-    </body>
+        <script src="animateProjects.js"></script> 
+        <script src="company.js"></script>  
+         --> 
+        <script src="flocking.js"></script>
+        
+      </div>
+      <div id="tab5" class="tab-panel">
+        <div id="Cooking" data-tab-content>
+          <h1>Cooking</h1>
+          <p>
+              This is my food blog!
+          </p>
+          <img id="kimcheeseQuesadillas" src="pictures/food/kimcheeseQuesadillas.jpg"> <br>
+          <p>
+              Another Bento lunch, I'm calling these Kimcheese Quesadillas! Kimchi, beans, and cheddar cheese in a corn tortilla. I can make the beans ahead of time in my pressure cooker, and then I can assemble the quesadillas in my skillet the morning of. 
+              Here are some steps
+              <ol>
+                  <li>Heat up skillet, no oil.</li>
+                  <li>You can probably just fit one tortilla on the skillet at a time, but it's ok if two overlap by like 1cm at this point.</li>
+                  <li>No need to shred cheese here, just cut it thin and cover as much surface as possible.</li>
+                  <li>Pop a lid overhead and let the cheese melt for like 20 seconds</li>
+                  <li>Place the beans and kimchi ontp only one side of the quesadillas. Be sure to add less than you think, so keep things ~0.5in from the edge. Also, transfer as little bean/kimchi liquid as possible</li>
+                  <li>Fold the quesadilla over and pop a lid on. Let cheese glue everything together for 30 seconds.</li>
+              </ol>
+          </p>
+          <img id="Borscht" src="pictures/food/Borscht.jpg"> <br>
+          <p>
+              When I went back home for Thanksgiving this year, my parents made Borscht an Eastern European beet soup. This one included potato, carrot, dill, and a vegetable stock. Borscht is often served with sour cream. Ukraine has a richer kind of sour cream called <i>Smetana.</i>
+          </p>
+
+          <img id="candiedpeels" src="pictures/food/candiedpeels.jpg"> <br>
+
+          <p>
+              I made these candied citrus peels for Halloween in 2024. I was getting pretty upset with all things plastic at the time, and the combination of cheap costumes, cheap decorations and cheaper chocolate seemed like such a monumental waste. I did the little I could about this; I made my costume out of natural fibers (and well enough that I'll wear it again). I made a small wreath from fallen leaves. And I made the best candy in the World! Here how you make it:
+              <ol>
+                  <li>Pick out your fruit. I used lemons, limes, and oranges, but I bet grapefruit would work too. You should probably cook one at a time, otherwise the tastes kinda mix.</li>
+                  <li>Cut each fruit into slices, cut across lines of longitude.</li>
+                  <li>Carefully cut the flesh from the peel. You will not need the flesh for anything else, so you can snack on them and save for a fruit salad.</li>                        
+                  <li>Cut the peels lengthwise so no piece is more than 5mm at their widest.</li>
+                  <li>We now have to blach the peels to remove bitterness. Blanch the peels in water for 10 minutes, drain the water, and repeat three times total.</li>
+                  <li>Now we'll make a sugar syrup. That's easy, just equal parts water and sugar. Don't let it fully boil.</li>
+                  <li>Add the peels to the syrup, and let this cook for 30 minutes.</li>
+                  <li>In the meantime, prepare a cooling rack to allow the peels to be fully suspended.</li>
+                  <li>Fish out the peels and let them dry for 10 minutes.</li>
+                  <li>Roll the peels in sugar.</li>
+                  <li>You're done!</li>
+              </ol>
+          </p>
+
+          <img id="BangersAndMash" src="pictures/food/BangersAndMash.jpg"> <br>
+          <p>
+              This one came from an old German cookbook, and is called "Himmel und Erde", which means "Heaven and Earth". Can you guess what two featured foods might refer to Heaven and Earth? I can think of a few, but in this case, it's <b>apples</b> for Heaven and <b>potatoes</b> for earth. The only faithful part of my dinner is the ingredients, you're supposed to serve stewed apples over mashed potatoes. I simply stir-fried the ingredients together. Potatoes are the carbs, bacon is the fat and protein, cabbage and onion for flavor and texture, apples add sweetness, and vinegar, worcestershire sauce, and mustard temper it. November 2024
+          </p>
+
+          <img id="Challah" src="pictures/food/Challah.jpg"> <br>
+          <p>
+              For my final presentation at Bose I baked a huge Challah for the attendees. Heres the recipe: 
+              <b>Ingredients</b>
+              <ul>
+                  <li>1.5 tablespoons dry yeast</li>
+                  <li>0.75 cups of sugar</li>
+                  <li>1.75 cups of warm water</li>
+                  <li>3 eggs (2 for dough, 1 for wash)</li>
+                  <li>0.5 cups of oil (I used olive)</li>
+                  <li>1 tablespoon salt</li>
+                  <li>half of a 5 lb bag of flour (~9 cups)</li>
+              </ul>
+              <b>Instructions</b>
+              <ol>
+                  <li>Mix the yeast & sugar, then add the warm water and mix.</li>
+                  <li>Let it sit for about 10 minutes, until the yeast bubbles.</li>
+                  <li>Add in eggs, oil, and salt.</li>
+                  <li>Add flour into the mixture a few cups at a time, and keep mixing until it becomes too thick to continue. You will likely need only 7 cups of the flour.</li>
+                  <li>Knead the dough with your hands for ~5 minutes until the dough toughens and isn't sticky (you might not need to use all the flour).</li>
+                  <li>Take the dough out, oil the bowl, and place it back in.</li>
+                  <li>Cover the dough with a wet kitchen towel and let it rise for 2 hours.</li>
+                  <li>Divide the dough in half. Cut each half into three equal pieces.</li>
+                  <li>Stretch and roll them into long braids no thinner than an inch in diameter.</li>
+                  <li>10.Braid*, then fold the end slightly. Let them rise for an additional 30 minutes.</li>
+                  <li>Mix one egg in a bowl and lightly coat the surface of the challas.</li>
+                  <li>Preheat oven to 350 and bake for ~35 minutes (middle rack, or switch racks after 18 minutes)</li>
+              </ol>
+              <p>*To Braid: lightly stick together the ends of the three braids at one point, and fold one side into the middle, then the opposing side into the middle and repeat. Fold the finished end when done to keep it together.<b>TODO: add diagram of braiding</b></p>
+              
+              December 2024
+          </p>
+
+          <img id="ChickenChasseur" src="pictures/food/ChickenChasseur.jpg"> <br>  
+          <p>
+              Chicken Chasseur, the french cousin of Chicken Cacciatore. A chicken and tomato stew. I made enough for 4 servings. The recipe comes from Adam Ragusea:
+              <p><b>Ingredients:</b></p>
+              <ul>
+                  <li>4 lb bone-in, skin-on chicken</li>
+                  <li>1 lb button mushrooms</li>
+                  <li>1-2 shallots</li>
+                  <li>1-2 carrots</li>
+                  <li>14 oz crushed tomatoes (they generally come in cans of 16 oz)</li>
+                  <li>flour</li>
+                  <li>shicken stock</li>
+                  <li>soy sauce (there has to be a euro-centric form of vegetarian fermented sauce)</li>
+                  <li>strong liquor like cognac or barnady</li>
+                  <li>white wine</li>
+                  <li>oil</li>
+                  <li>butter</li>
+                  <li>herbs for garnush</li>
+                  <li>egg noodles or rice</li>
+                  <li>S + P</li>
+              </ul>
+              <b>Instructions:</b>
+              <ol>
+                  <li>Cut the mushrooms and carrot and get them sauteing in a little fat. Dice the shallot and add it to the pan once the mushrooms and carrot look almost done.</li>
+                  <li>Meanwhile, season the chicken pieces heavily with salt and pepper and dust lightly with the flour. When the veg is soft, remove it or push it to the side so you can brown the chicken pieces. </li>
+                  <li>When the chicken is golden brown, deglaze the pan with brandy, add the vegetables back if necessary, stir in the tomatoes, a little white wine if you're using it, and enough stock to cover everything. Simmer until the chicken is as tender as you want it — I gave mine an hour.</li>
+                  <li>When the chicken is done, take the pieces out and boil the sauce down until thick. Taste and adjust seasoning — I really like a dash of soy sauce, assuming the sauce can handle the salt. Return the chicken to the pan to coat and reheat, garnish with fresh herbs and serve with noodles.</li>
+              </ol>
+              
+              <p>October 2024</p>
+          </p>              
+
+          <img id="europeLunch" src="pictures/food/europeLunch.jpg"> <br>
+          <p>
+              When I was exploring South England in June of 2024 I would go to farmers markets and buy random assortments of fruits, veggies, cheese, bread, and cured meats, whatever I could find.
+          </p>
+
+
+          <img id="failedFalafel" src="pictures/food/failedFalafel.jpg"> <br>
+          <p>
+              I'll write more about this one later, but this is my failed falafel in action. I was supposed to use dry chickpeas soaked overnight, but instead I used dry chickpeas that I cooked until half done (half of 45 minutes) in my pressure cooker. They fell apart the moment I took them out of the fry oil. September 2024
+          </p>
+
+          <img id="homemadePasta" src="pictures/food/homemadePasta.jpg"> <br>
+          <p>
+              My first attempt with homemade pasta! I couldn't roll the pasta out as thin as I would like, so that increased cook time from 30 seconds to 1 minute. You can see I also tried to roll in herbs, but they did not adhere. I cut them into wide noodles with a knife. August 2024
+          </p>
+
+          <img id="Jambalaya" src="pictures/food/Jambalaya.jpg"> <br>
+          <p>
+              This is an excellent batch meal, very similar in make to Plov, though much wetter. Some things to mention: Cajun cooking like this will use a Trinity base instead of a Mire Poix, which substitutes the carrot for green bell pepper. Also, the spice blend used requires a few interesting guys, so I gut a premade mix at my food co-op. August 2024
+          </p>
+
+          <img id="JapaneseLunch" src="pictures/food/JapaneseLunch.jpg"> <br>
+          <p>TODO</p>
+
+          <img id="LobsterStock" src="pictures/food/LobsterStock.jpg"> <br>
+          <p>My roommate bought some pre-cooked lobsters at Market Basket and ate them plain. Literally. I took the discarded shells and cooked them down into an awesome lobster stock which Ive been using for my cooking all the time. August 2024</p>
+
+          <img id="MaineLunch" src="pictures/food/MaineLunch.jpg"> <br>
+          <p>
+              This i a work lunch featuring food I had when staying at my genius friend Cat's house. Tuna fishcakes with tartar sauce, anadama bread, blueberries, cheddar cheese, brussels sprouts, and a Needham, which is chocolate-covered mashed potato. 
+          </p>
+
+          <img id="Meatless Gnoicchi bolognese" src="pictures/food/Meatless Gnoicchi bolognese.jpg"> <br>
+
+          <p>
+              Homemade gnocchi and then a giant beyond beef meastsauce and mirepoix. Averything in my fridge went into this. I dislike how bejond beef sticks and burns. Seuptemer 2024
+          </p>
+
+          <img id="PaneerPress" src="pictures/food/PaneerPress.jpg"> <br>
+          <p>
+              Paneer is extremely easy to make. Start with 1 Quart of milk, brought just barely to a boil. Then squeeze in one lemon worth of juice. Mix for 2 minutes as it curdles. Line a colander with cheesecloth. Start by ladelling the solids onto the cheesecloth, then slowly pour the rest through. Discard the whey, and wrap, wash, drain, and squeeze the curd. Form into a brick and press with a heavy object in your fridge for 4 hours. At that point you can cut it and fry it. Dember 2024
+          </p>
+
+          <img id="PestoBismol" src="pictures/food/PestoBismol.jpg"> <br>
+          <p>
+              A beet and walnut pesto with my gnocchi. Reddit called this 'Pesto Bismol'.
+          </p>
+
+          <img id="SaagFeta" src="pictures/food/SaagFeta.jpg"> <br>
+          <p>
+              A saag curry made in my mortar and pestle, along with feta cheese, which I thought would work in another way, compared to paneer
+          </p>
+
+          <img id="SkilletPlov" src="pictures/food/SkilletPlov.jpg"> <br>
+          <p>
+              A weeknight plov. July 2024
+          </p>
+
+          <img id="TunaLunch" src="pictures/food/TunaLunch.jpg"> <br>
+
+          <img id="whitefishSalad" src="pictures/food/whitefishSalad.jpg"> <br>
+
+          <img id="Yoghurt" src="pictures/food/Yoghurt.jpg"> <br>
+        </div>
+      </div>
+
+      <div id="tab6" class="tab-panel">
+        
+        
+        <!--
+        <script src="company.js"></script>  
+        
+        <script src="animateProjects.js"></script>  
+        -->
+        
+        
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
 </html>
