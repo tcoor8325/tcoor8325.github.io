@@ -2,17 +2,9 @@ const canvas = document.getElementById('circleCanvas');
 const ctx = canvas.getContext('2d');
 ctx.font = "50px Arial";
 
-canvas.width = 500;
+canvas.width = 700;
 canvas.height = 700;
 canvas.fillStyle = "rgb(255 0 0)";
-
-const c_canvas = document.getElementById('companyCanvas');
-const c_ctx = canvas.getContext('2d');
-c_ctx.font = "50px Arial";
-
-c_canvas.width = 500;
-c_canvas.height = 700;
-c_canvas.fillStyle = "rgb(255 0 0)";
 
 class Boid {
     constructor(x, y) {
@@ -26,14 +18,14 @@ class Boid {
             y: (Math.random() - 0.5) * 4 
         };
         this.acceleration = { x: 0, y: 0 };
-        this.maxSpeed = 4;
+        this.maxSpeed = 5;
         this.maxForce = 0.4;
-        this.wallRepelForce = 0.5;
-        this.radius = 2;
-        this.perceptionRadius = 40;
-        this.alignmentCoefficient = 0.4;
+        this.wallRepelForce = 1.0;
+        this.radius = 4;
+        this.perceptionRadius = 30;
+        this.alignmentCoefficient = 0.5;
         this.cohesionCoefficient = 0.2;
-        this.separationCoefficient = 0.015;
+        this.separationCoefficient = 0.02;
     }
 
     distance(other) {
@@ -261,13 +253,6 @@ function animate() {
         boid.update();
         boid.draw();
     }
-    /*
-    c_ctx.rect(0, 0, c_canvas.width, c_canvas.height);
-    c_ctx.fillStyle = "rgb(0 0 0)";
-    c_ctx.fill();
-    c_ctx.stroke();
-    */
-    
 
     requestAnimationFrame(animate);
 }

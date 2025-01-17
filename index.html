@@ -323,18 +323,14 @@
         width: 40%;
         height: 40%;
     }
-    circleCanvas {
+    canvas {
         display: block;
         margin: 20px auto;
         background-color: #f0f0f0;
         border: 1px solid #ccc;
     }
-    companyCanvas {
-        display: block;
-        margin: 20px auto;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-    }
+
+    
   </style>
 </head>
 <body style="background-color:rgb(117, 100, 100);">
@@ -598,15 +594,11 @@
         </div>
       </div>
       <div id="tab4" class="tab-panel">
-        <div id="circleCanvas"></div>
-        <div id="companyCanvas"></div>
-        <!--
-        <circleCanvas id="circleCanvas" width="100" height="100"></canvas>
-        <circleCanvas id="companyCanvas" width="100" height="100"></canvas>
         
-        <script src="animateProjects.js"></script> 
-        <script src="company.js"></script>  
-         --> 
+        <canvas id="circleCanvas"></canvas>
+        <!--
+        <script src="company.js"></script>
+        -->
         <script src="flocking.js"></script>
         
       </div>
