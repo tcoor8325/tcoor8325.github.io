@@ -6,6 +6,22 @@ canvas.width = 700;
 canvas.height = 700;
 canvas.fillStyle = "rgb(255 0 0)";
 
+// globals
+maxSpeed = 5;
+alignmentCoefficient = 0.5;
+cohesionCoefficient = 0.4;
+separationCoefficient = 0.05;
+perceptionRadius = 100;
+/*
+maxForce = 0.4;
+wallRepelForce = 1.0;
+radius = 20;
+perceptionRadius = 100;
+alignmentCoefficient = 0.5;
+cohesionCoefficient = 0.4;
+this.separationCoefficient = 0.05;
+*/
+
 class Boid {
     constructor(x, y) {
         //this.position = { x: x, y: y };
@@ -18,14 +34,13 @@ class Boid {
             y: (Math.random() - 0.5) * 4 
         };
         this.acceleration = { x: 0, y: 0 };
-        this.maxSpeed = 5;
         this.maxForce = 0.4;
         this.wallRepelForce = 1.0;
-        this.radius = 4;
-        this.perceptionRadius = 30;
-        this.alignmentCoefficient = 0.5;
-        this.cohesionCoefficient = 0.2;
-        this.separationCoefficient = 0.02;
+        this.radius = 5;
+        //this.perceptionRadius = 100;
+        //this.alignmentCoefficient = 0.5;
+        //this.cohesionCoefficient = 0.4;
+        //this.separationCoefficient = 0.05;
     }
 
     distance(other) {
@@ -39,7 +54,7 @@ class Boid {
         let steering = { x: 0, y: 0 };
         let total = 0;
         for (const other of boids) {
-            if (this !== other && this.distance(other) < this.perceptionRadius) {
+            if (this !== other && this.distance(other) < perceptionRadius) {
                 steering.x += other.velocity.x;
                 steering.y += other.velocity.y;
                 total++;
@@ -53,7 +68,7 @@ class Boid {
             steering.x /= total;
             steering.y /= total;
             const magnitude = Math.sqrt(steering.x ** 2 + steering.y ** 2);
-            const scale = this.maxSpeed/magnitude;
+            const scale = maxSpeed/magnitude;
             //ctx.fillText(scale.toPrecision(3),this.position.x,this.position.y-10);
             // set the magnitude of steering to the max speed
             steering.x *= scale;
@@ -65,8 +80,8 @@ class Boid {
             steering.x = (steering.x / magnitude) * this.maxForce;
             steering.y = (steering.y / magnitude) * this.maxForce;
             //apply the coefficient
-            steering.x *= this.alignmentCoefficient;
-            steering.y *= this.alignmentCoefficient;
+            steering.x *= alignmentCoefficient;
+            steering.y *= alignmentCoefficient;
         }                            
         return steering;
     }
@@ -75,7 +90,7 @@ class Boid {
         let steering = { x: 0, y: 0 };
         let total = 0;
         for (const other of boids) {
-            if (this !== other && this.distance(other) < this.perceptionRadius) {
+            if (this !== other && this.distance(other) < perceptionRadius) {
                 // Here, steering holds the position of the average (the center of mass)
                 steering.x += other.position.x;
                 steering.y += other.position.y;
@@ -88,7 +103,7 @@ class Boid {
             steering.x = steering.x - this.position.x;
             steering.y = steering.y - this.position.y;
             const magnitude = Math.sqrt(steering.x ** 2 + steering.y ** 2);
-            const scale = this.maxSpeed/magnitude;
+            const scale = maxSpeed/magnitude;
             // set the magnitude of steering to the max speed
             steering.x *= scale;
             steering.y *= scale;
@@ -99,8 +114,8 @@ class Boid {
             steering.x = (steering.x / magnitude) * this.maxForce;
             steering.y = (steering.y / magnitude) * this.maxForce;
             //apply the coefficient
-            steering.x *= this.cohesionCoefficient;
-            steering.y *= this.cohesionCoefficient;
+            steering.x *= cohesionCoefficient;
+            steering.y *= cohesionCoefficient;
         }
         
         return steering;
@@ -111,7 +126,7 @@ class Boid {
         let difference = { x: 0, y: 0 };
         let total = 0;
         for (const other of boids) {
-            if (this !== other && this.distance(other) < this.perceptionRadius) {
+            if (this !== other && this.distance(other) < perceptionRadius) {
                 // find the difference between this and the other boid's positions
                 difference.x = this.position.x - other.position.x;
                 difference.y = this.position.y - other.position.y;
@@ -129,7 +144,7 @@ class Boid {
             steering.x /= total;
             steering.y /= total;
             const magnitude = Math.sqrt(steering.x ** 2 + steering.y ** 2);
-            const scale = this.maxSpeed/magnitude;
+            const scale = maxSpeed/magnitude;
             // set the magnitude of steering to the max speed
             steering.x *= scale;
             steering.y *= scale;
@@ -140,8 +155,8 @@ class Boid {
             steering.x = (steering.x / magnitude) * this.maxForce;
             steering.y = (steering.y / magnitude) * this.maxForce;
             //apply the coefficient
-            steering.x *= this.separationCoefficient;
-            steering.y *= this.separationCoefficient;
+            steering.x *= separationCoefficient;
+            steering.y *= separationCoefficient;
         }
         
         return steering;
@@ -153,22 +168,22 @@ class Boid {
         
         // now add wall avoid component
         // if the boid is within perception radius of the left wall,
-        if (this.position.x - this.radius < this.perceptionRadius) { //|| this.position.x + this.radius > canvas.width - this.perceptionRadius) {
+        if (this.position.x - this.radius < perceptionRadius) { //|| this.position.x + this.radius > canvas.width - this.perceptionRadius) {
             // calculate the distance to the wall
             difference.x = this.position.x - 0;
             // the steering vector will be made from 
-            steering.x += ((this.perceptionRadius - difference.x) / this.perceptionRadius) * this.wallRepelForce;
-        } else if (this.position.x + this.radius > canvas.width - this.perceptionRadius) {
+            steering.x += ((perceptionRadius - difference.x) / perceptionRadius) * this.wallRepelForce;
+        } else if (this.position.x + this.radius > canvas.width - perceptionRadius) {
             difference.x = canvas.width - this.position.x;
-            steering.x += -((this.perceptionRadius - difference.x) / this.perceptionRadius) * this.wallRepelForce;
+            steering.x += -((perceptionRadius - difference.x) / perceptionRadius) * this.wallRepelForce;
         }
 
-        if (this.position.y - this.radius < this.perceptionRadius) { //|| this.position.x + this.radius > canvas.width - this.perceptionRadius) {
+        if (this.position.y - this.radius < perceptionRadius) { //|| this.position.x + this.radius > canvas.width - this.perceptionRadius) {
             difference.y = this.position.y - 0;
-            steering.y += ((this.perceptionRadius - difference.y) / this.perceptionRadius) * this.wallRepelForce;
-        } else if (this.position.y + this.radius > canvas.height - this.perceptionRadius) {
+            steering.y += ((perceptionRadius - difference.y) / perceptionRadius) * this.wallRepelForce;
+        } else if (this.position.y + this.radius > canvas.height - perceptionRadius) {
             difference.y = canvas.height - this.position.y;
-            steering.y += -((this.perceptionRadius - difference.y) / this.perceptionRadius) * this.wallRepelForce;
+            steering.y += -((perceptionRadius - difference.y) / perceptionRadius) * this.wallRepelForce;
         }
         //steering.x *= this.wallAvoidanceCoefficient;
         //steering.y *= this.wallAvoidanceCoefficient;
@@ -190,8 +205,8 @@ class Boid {
 
         // limit the velocity
         const magnitude = Math.sqrt(this.velocity.x ** 2 + this.velocity.y ** 2);
-        if (magnitude > this.maxSpeed) {
-            const scale = this.maxSpeed/magnitude;
+        if (magnitude > maxSpeed) {
+            const scale = maxSpeed/magnitude;
             // set the magnitude of steering to the max speed
             this.velocity.x *= scale;
             this.velocity.y *= scale;
@@ -224,7 +239,7 @@ class Boid {
 
     draw() {
         const velocityMagnitude = Math.sqrt(this.velocity.x ** 2 + this.velocity.y ** 2);            
-        const greenChannel = ((this.maxSpeed - velocityMagnitude) / this.maxSpeed) * 255;
+        const greenChannel = ((maxSpeed - velocityMagnitude) / maxSpeed) * 255;
         const redChannel = 255 - greenChannel;
         
         ctx.beginPath();
@@ -237,12 +252,16 @@ class Boid {
 }
 
 const boids = [];
-for (let i = 0; i < 300; i++) {
+for (let i = 0; i < 100; i++) {
     boids.push(new Boid());
 }
 
 
 function animate() {
+    alignmentCoefficient = currentValues[0] / 200;
+    cohesionCoefficient = currentValues[1] / 250;
+    separationCoefficient = currentValues[2] / 2000;
+    perceptionRadius = currentValues[3];
     ctx.rect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "rgb(0 0 0)";
     ctx.fill();

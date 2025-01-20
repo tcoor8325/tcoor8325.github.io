@@ -132,3 +132,43 @@ body {
 .projects-nested-tab-panel.active {
   display: block;
 }
+
+/* Stuff for the sliders! */
+.slider-container {
+  width: 300px;
+  margin: 20px;
+  position: relative;
+}
+
+.slider-track {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  position: relative;
+}
+
+.slider-thumb {
+  width: 16px;
+  height: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.value-display {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #ff5722;
+  border-radius: 50%;
+  margin-top: 20px;
+  transition: width 0.2s, height 0.2s;
+}
