@@ -1,139 +1,103 @@
-// script.js
-const canvas = document.getElementById('circleCanvas');
-const ctx = canvas.getContext('2d');
-
-ctx.font = "50px Arial";
-canvas.width = 500;
-canvas.height = 700;
-canvas.fillStyle = "rgb(255 0 0)";
+const canvasCom = document.getElementById('lineCanvas');
+const ctxCom = canvasCom.getContext('2d');
 
 let isDragging = false;
-let startX, startY;
+let startX = 0;
+let startY = 0;
+let boidCount = 50;
+let boidRadius = 5;
+let boidSpacing = 10;
+let boidsX = new Array(boidCount).fill(0);
+let boidsY = new Array(boidCount).fill(0);
+let placementCounter = 0;
 
-// Create a block 
-class Block {
-    constructor(x, y) {
-        //this.position = { x: x, y: y };
-        this.position = {
-            x: Math.random() * canvas.width, 
-            y: Math.random() * canvas.height 
-        };
-        this.radius = 20;
-    }
-
-    draw() {
-        ctx.beginPath();
-        ctx.moveTo(this.position.x, this.position.y);
-        ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'blue';
-        ctx.fill();
-        ctx.closePath();
-    }
+// Function to calculate the length of the line
+function calculateLineLength(x1, y1, x2, y2) {
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)).toFixed(2);
 }
 
-// Function to draw a rectangle
-function drawRectangle(x, y, width, height) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = 'blue';
-    ctx.fillRect(x, y, width, height);
-}
-
-let rect = { x: 100, y: 100, width: 100, height: 100 };
-//drawRectangle(rect.x, rect.y, rect.width, rect.height);
-let boidCount = 1;
-let boidSpacing = 5;
-let boidRadius = 20;
-
-canvas.addEventListener('mousedown', (e) => {
-    const rectBounds = canvas.getBoundingClientRect();
-    startX = e.clientX - rectBounds.left;
-    startY = e.clientY - rectBounds.top;
-
-   
-    // Check if the click is inside the rectangle
-    /*
-    if (
-        startX >= rect.x &&
-        startX <= rect.x + rect.width &&
-        startY >= rect.y &&
-        startY <= rect.y + rect.height
-    ) {
-        isDragging = true;
-    }
-    */
+// Mouse down to set the starting point
+canvasCom.addEventListener('mousedown', (e) => {
+    startX = e.offsetX;
+    startY = e.offsetY;
     isDragging = true;
 });
 
-canvas.addEventListener('mousemove', (e) => {
+// Mouse move to adjust the endpoint and show the line length
+canvasCom.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
 
-    const rectBounds = canvas.getBoundingClientRect();
-    const mouseX = e.clientX - rectBounds.left;
-    const mouseY = e.clientY - rectBounds.top;
+    // Clear the canvas
+    ctxCom.clearRect(0, 0, canvasCom.width, canvasCom.height);
 
-    const dx = mouseX - startX;
-    const dy = mouseY - startY;
+    const endX = e.offsetX;
+    const endY = e.offsetY;
 
-    rect.x += dx;
-    rect.y += dy;
-
-    //startX = mouseX;
-    //startY = mouseY;
-
-    // Start a new Path
+    /*
+    // Draw the line
     ctx.beginPath();
     ctx.moveTo(startX, startY);
-    ctx.lineTo(mouseX, mouseY);
-
-    // Draw the Path
+    ctx.lineTo(endX, endY);
+    ctx.strokeStyle = 'white';
+    ctx.lineWidth = 4;
     ctx.stroke();
+    ctx.closePath();
+    */
+    // Calculate the line length
+    const lineLength = calculateLineLength(startX, startY, endX, endY);
+    let angle = Math.atan((endY-startY) / (endX-startX)) * 180/Math.PI;
+    // check if we are in quadrant 2
+    if (endX < startX && endY > startY) {
+        angle = angle + 180;
+    } else if (endX < startX && endY < startY) {    // quadrant 3
+        angle = angle + 180;
+    } else if (endX > startX && endY < startY) {    // quadrant 3
+        angle = angle + 360;
+    } 
 
-    // Calculate number of rows, columns, and remainder
-    // Calculate length of dragged line
-    const lineLength = Math.sqrt( Math.pow((mouseX-startX),2) + Math.pow((mouseY-startY),2));
-    const slope = (mouseY-startY) - (mouseX-startX);
-    // Draw the boid target positions
-    const rowLength = lineLength / boidRadius;
-    
-    for (let i = 0; i < boidCount; i++) {
-        ctx.beginPath();
-        ctx.moveTo(startX, startY);
-        ctx.arc(startX, startY, boidRadius, 0, Math.PI * 2);
-        ctx.fillStyle = 'blue';
-        ctx.fill();
-        ctx.closePath();
+    // Calculate the rows and columns
+    const rowCapacity = Math.min(Math.floor(lineLength / boidSpacing),boidCount);
+    const numberOfColumns = Math.ceil(boidCount / rowCapacity);
+    const overflow = boidCount % rowCapacity;
+
+    // display debug info
+    ctxCom.font = '14px Arial';
+    ctxCom.fillStyle = 'white';
+    ctxCom.fillText(`(${startX}, ${startY})`, startX + 10, startY - 10);
+    ctxCom.fillText(`(${endX}, ${endY})`, endX + 10, endY - 10);
+    ctxCom.fillText(`angle: ${angle}`, endX + 10, endY + 10);
+    ctxCom.fillText(`Length: ${lineLength}`, endX + 10, endY + 30);
+    ctxCom.fillText(`Row Capacity: ${rowCapacity}`, endX + 10, endY + 50);
+    ctxCom.fillText(`Number of Columns: ${numberOfColumns}`, endX + 10, endY + 70);
+    ctxCom.fillText(`Overflow: ${overflow}`, endX + 10, endY + 90);
+
+    placementCounter = 0
+    for (let i = 0; i < Math.min(numberOfColumns,boidCount); i++) {
+        for (let j = 0; j < rowCapacity; j++) {
+            boidsX[placementCounter] = startX + boidSpacing*j*Math.cos(angle*(Math.PI/180)) - boidSpacing*i*Math.sin(angle*(Math.PI/180));
+            boidsY[placementCounter] = startY + boidSpacing*j*Math.sin(angle*(Math.PI/180)) + boidSpacing*i*Math.cos(angle*(Math.PI/180));
+            placementCounter ++
+        }
     }
-    
-    // the length of the line divided by the boid spacing is the max number of boids that can fit in each row. 
-    // Start at startX,Y. 
 
-    // place a boid. 
-    // if boidCounter is less than the number of boids, then proceed to the next boid position
-    // Loop through the rows
-    
-    //      Loop through the columns
-}); 
+    for (let i = 0; i < boidCount; i++) {
+        // draw a boid
+        ctxCom.beginPath();
+        ctxCom.moveTo(boidsX[i], boidsY[i]);
+        ctxCom.arc(boidsX[i], boidsY[i], boidRadius, 0, Math.PI * 2);
+        ctxCom.fillStyle = "red";
+        ctxCom.fill();
+        ctxCom.closePath();   
+    }
 
-canvas.addEventListener('mouseup', () => {
+});
+
+// Mouse up to finalize the line
+canvasCom.addEventListener('mouseup', () => {
     isDragging = false;
 });
 
-const blocks = [];
-for (let i = 0; i < 1; i++) {
-    blocks.push(new Block());
-}
-
-function animate() {
-    ctx.rect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "rgb(255 255 255)";
-    ctx.fill();
-    ctx.stroke();
-    //drawRectangle(rect.x, rect.y, rect.width, rect.height);
-
-    //for (const block of blocks) {
-    //    block.draw();
-    //}
-    requestAnimationFrame(animate);
-}
-
-animate();
+// Stop dragging if the mouse leaves the canvas
+canvasCom.addEventListener('mouseleave', () => {
+    isDragging = false;
+});
