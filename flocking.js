@@ -1,10 +1,10 @@
-const canvas = document.getElementById('circleCanvas');
-const ctx = canvas.getContext('2d');
-ctx.font = "50px Arial";
+const canvasFlo = document.getElementById('circleCanvas');
+const ctxFlo = canvasFlo.getContext('2d');
+ctxFlo.font = "50px Arial";
 
-canvas.width = 700;
-canvas.height = 700;
-canvas.fillStyle = "rgb(255 0 0)";
+//canvas.width = 700;
+//canvas.height = 700;
+canvasFlo.fillStyle = "rgb(255 0 0)";
 
 // globals
 maxSpeed = 5;
@@ -26,8 +26,8 @@ class Boid {
     constructor(x, y) {
         //this.position = { x: x, y: y };
         this.position = {
-            x: Math.random() * canvas.width, 
-            y: Math.random() * canvas.height 
+            x: Math.random() * canvasFlo.width, 
+            y: Math.random() * canvasFlo.height 
         };
         this.velocity = { 
             x: (Math.random() - 0.5) * 4, 
@@ -173,16 +173,16 @@ class Boid {
             difference.x = this.position.x - 0;
             // the steering vector will be made from 
             steering.x += ((perceptionRadius - difference.x) / perceptionRadius) * this.wallRepelForce;
-        } else if (this.position.x + this.radius > canvas.width - perceptionRadius) {
-            difference.x = canvas.width - this.position.x;
+        } else if (this.position.x + this.radius > canvasFlo.width - perceptionRadius) {
+            difference.x = canvasFlo.width - this.position.x;
             steering.x += -((perceptionRadius - difference.x) / perceptionRadius) * this.wallRepelForce;
         }
 
         if (this.position.y - this.radius < perceptionRadius) { //|| this.position.x + this.radius > canvas.width - this.perceptionRadius) {
             difference.y = this.position.y - 0;
             steering.y += ((perceptionRadius - difference.y) / perceptionRadius) * this.wallRepelForce;
-        } else if (this.position.y + this.radius > canvas.height - perceptionRadius) {
-            difference.y = canvas.height - this.position.y;
+        } else if (this.position.y + this.radius > canvasFlo.height - perceptionRadius) {
+            difference.y = canvasFlo.height - this.position.y;
             steering.y += -((perceptionRadius - difference.y) / perceptionRadius) * this.wallRepelForce;
         }
         //steering.x *= this.wallAvoidanceCoefficient;
@@ -193,10 +193,10 @@ class Boid {
 
     update() {
         // Bounce off walls
-        if (this.position.x - this.radius < 0 || this.position.x + this.radius > canvas.width) {
+        if (this.position.x - this.radius < 0 || this.position.x + this.radius > canvasFlo.width) {
             this.velocity.x *= -1; // Reverse horizontal direction
         }
-        if (this.position.y - this.radius < 0 || this.position.y + this.radius > canvas.height) {
+        if (this.position.y - this.radius < 0 || this.position.y + this.radius > canvasFlo.height) {
             this.velocity.y *= -1; // Reverse vertical direction
         }        
         // update the velocity
@@ -242,12 +242,12 @@ class Boid {
         const greenChannel = ((maxSpeed - velocityMagnitude) / maxSpeed) * 255;
         const redChannel = 255 - greenChannel;
         
-        ctx.beginPath();
-        ctx.moveTo(this.position.x, this.position.y);
-        ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgb(${redChannel} ${greenChannel} 0)`;
-        ctx.fill();
-        ctx.closePath();
+        ctxFlo.beginPath();
+        ctxFlo.moveTo(this.position.x, this.position.y);
+        ctxFlo.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
+        ctxFlo.fillStyle = `rgb(${redChannel} ${greenChannel} 0)`;
+        ctxFlo.fill();
+        ctxFlo.closePath();
     }
 }
 
@@ -262,10 +262,10 @@ function animate() {
     cohesionCoefficient = currentValues[1] / 250;
     separationCoefficient = currentValues[2] / 2000;
     perceptionRadius = currentValues[3];
-    ctx.rect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "rgb(0 0 0)";
-    ctx.fill();
-    ctx.stroke();
+    ctxFlo.rect(0, 0, canvasFlo.width, canvasFlo.height);
+    ctxFlo.fillStyle = "rgb(0 0 0)";
+    ctxFlo.fill();
+    ctxFlo.stroke();
     
     for (const boid of boids) {
         boid.flock(boids);

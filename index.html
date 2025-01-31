@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nested Tabs Example</title>
+  <title>Welcome to my Garden</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
   <style>
@@ -327,7 +327,7 @@
     
   </style>
 </head>
-<body style="background-color:rgb(117, 100, 100);">
+<body style="background-color:rgb(101, 219, 71);">
   <div class="tabs">
     <!-- Main Tab buttons -->
     <div class="tab-buttons">
@@ -336,8 +336,9 @@
       <button class="tab-button" data-tab="tab3">Projects</button>
       <button class="tab-button" data-tab="tab4">Boids</button>
       <button class="tab-button" data-tab="tab5">Food Blog</button>
-      <button class="tab-button" data-tab="tab6">Blah</button>
+      <button class="tab-button" data-tab="tab6">Army</button>
       <button class="tab-button" data-tab="tab7">Cool Websites</button>
+      <button class="tab-button" data-tab="tab8">About and Contact</button>
     </div>
     <!-- Main Tab content -->
     <div class="tab-content">
@@ -350,6 +351,13 @@
             Hi, my name is Thomas Coor. I build electro-acoustic systems, play music, and cook. I share my ideas on these subjects on this website. 
         </p>                                     
         <img id="ThomasDodec" src="pictures/ThomasDodec.png"> <br>   
+        <canvas id="cumCanvas" width="1000" height="1000"></canvas>
+        <script src="tree.js"></script>
+        <!--
+        <canvas id="treeCanvas"></canvas>
+        
+        <script src="tree.js"></script>
+        -->
         <p>    
             First, here is my one-page resume
         </p>
@@ -628,7 +636,7 @@
           <script src="slider.js"></script>
           
 
-        <canvas id="circleCanvas"></canvas>
+        <canvas id="circleCanvas" width="600" height="400"></canvas>
         <!--
         <script src="company.js"></script>
         -->
@@ -837,8 +845,17 @@
       </div>
 
       <div id="tab6" class="tab-panel">
+        <p>
+            Ok this one is weird. 'Total War' is a real-time strategy video game in which two players lead armies against each other. The settings span the Ancient Era to Napoleon, and within that time we generally fought battles by grouping soldiers into relatively close formations. Players arrange their armies by drawing out the shape of each unit. The algorithm for that is pretty cool, and I think I got it.
+        </p>
+        <p>
+            Try here: simply click and drag on the box
+        </p>
         <canvas id="lineCanvas" width="600" height="400"></canvas>
         <script src="company.js"></script>
+        <p>
+            Imagine that each of these 50 red dots are British Red Coats. If I order them into a column, they'll march faster since they don't have to match the speed of a longer row, but a pesky cannonball from the front could be devastating. In a box only the first couple rows (I think 3?) will be able to fire at a time, but if I spread them out thin I could leave the flanks exposed to cavalry...
+        </p>
         
         <!--
         <script src="company.js"></script>  
@@ -850,11 +867,15 @@
         
       </div>
 
-        <div id="tab7" class="tab-panel"></div>
-            https://maps.vvolhejn.com/?ref=youtube&city=newyork_transit
+    <div id="tab7" class="tab-panel">
+        <ul>
+            <li>https://maps.vvolhejn.com/?ref=youtube&city=newyork_transit</li>
 
-            https://www.eatthismuch.com/
-        </div>
+            <li>https://www.eatthismuch.com/</li>
+
+            <li>https://linesofbattle.net/home</li>
+        </ul>
+    </div>
     </div>
   </div>
   

@@ -6,7 +6,7 @@ canvas {
   display: block;
   margin: 20px auto;
   background-color: #242424;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
 }
 .tabs {
   width: 100%;
