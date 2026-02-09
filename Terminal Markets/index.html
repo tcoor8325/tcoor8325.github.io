@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terminal Markets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="terminal-page">
+    <header class="page-header">
+      <a class="back-link" href="../index.html">Back to Portfolio</a>
+      <h1>Terminal Markets</h1>
+      <p>USDA AMS Terminal Market snapshot. Click a food button to fetch the latest matching market lines.</p>
+      <p id="proxy-status" class="proxy-status">Connecting to local proxy...</p>
+    </header>
+
+    <section class="date-panel" aria-label="Date Selection">
+      <div class="date-row">
+        <label class="year-label" for="year-select">Year</label>
+        <select id="year-select" class="year-select">
+          <!-- Populated dynamically by app.js based on current year -->
+        </select>
+      </div>
+      <p id="selected-date" class="selected-date"></p>
+      <input id="date-slider" class="date-slider" type="range" min="0" max="364" step="1" value="0" />
+    </section>
+
+    <section class="city-panel" aria-label="City Selection">
+      <p class="city-label">Select city:</p>
+      <div class="city-buttons">
+        <button class="city-button is-active" data-city="Atlanta">Atlanta</button>
+        <button class="city-button" data-city="Baltimore">Baltimore</button>
+        <button class="city-button" data-city="Boston">Boston</button>
+        <button class="city-button" data-city="Chicago">Chicago</button>
+        <button class="city-button" data-city="Columbia">Columbia</button>
+        <button class="city-button" data-city="Detroit">Detroit</button>
+        <button class="city-button" data-city="Los Angeles">Los Angeles</button>
+        <button class="city-button" data-city="Miami">Miami</button>
+        <button class="city-button" data-city="New York">New York</button>
+        <button class="city-button" data-city="Philadelphia">Philadelphia</button>
+        <button class="city-button" data-city="Asheville, NC">Asheville, NC</button>
+      </div>
+    </section>
+
+    <section class="foods-panel" aria-label="Food Queries">
+      <div class="food-row">
+        <button class="food-button" data-food="apples">Apples</button>
+        <div class="food-result" id="result-apples">No query yet.</div>
+      </div>
+      <div class="food-row">
+        <button class="food-button" data-food="bananas">Bananas</button>
+        <div class="food-result" id="result-bananas">No query yet.</div>
+      </div>
+      <div class="food-row">
+        <button class="food-button" data-food="oranges">Oranges</button>
+        <div class="food-result" id="result-oranges">No query yet.</div>
+      </div>
+      <div class="food-row">
+        <button class="food-button" data-food="tomatoes">Tomatoes</button>
+        <div class="food-result" id="result-tomatoes">No query yet.</div>
+      </div>
+      <div class="food-row">
+        <button class="food-button" data-food="lettuce">Lettuce</button>
+        <div class="food-result" id="result-lettuce">No query yet.</div>
+      </div>
+      <div class="food-row">
+        <button class="food-button" data-food="onions">Onions</button>
+        <div class="food-result" id="result-onions">No query yet.</div>
+      </div>
+      <div class="food-row">
+        <button class="food-button" data-food="potatoes">Potatoes</button>
+        <div class="food-result" id="result-potatoes">No query yet.</div>
+      </div>
+      <div class="food-row">
+        <button class="food-button" data-food="almonds">Almonds</button>
+        <div class="food-result" id="result-almonds">No query yet.</div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
