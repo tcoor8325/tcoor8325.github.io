@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap");
+
+:root {
+  --bg: #f3f2ee;
+  --ink: #111111;
+  --panel: #ffffff;
+  --border: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.page {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  padding: 32px 20px 40px;
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 42px);
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 2px solid var(--border);
+  color: var(--ink);
+  background: var(--panel);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+.back-button:hover,
+.back-button:focus-visible {
+  background: var(--ink);
+  color: var(--panel);
+}
+
+.card {
+  background: var(--panel);
+  border: 2px solid var(--border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+  padding: 18px;
+}
+
+.project-image {
+  margin: 0 0 16px;
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+  border: 2px solid var(--border);
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
