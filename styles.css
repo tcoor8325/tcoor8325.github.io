@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap");
+
+:root {
+  color-scheme: light;
+  --bg: #f3f2ee;
+  --ink: #111111;
+  --border: #111111;
+  --tab-bg: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.3);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+  --title-glow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px 32px 32px;
+}
+
+.landing-title {
+  margin: 0;
+  width: min(980px, 100%);
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+}
+
+.project-grid {
+  width: min(980px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: max(140px, calc(50vh - 120px));
+}
+
+.project-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  background: #000;
+  text-decoration: none;
+  color: inherit;
+  aspect-ratio: 1 / 1;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.project-card--placeholder {
+  background: linear-gradient(145deg, #1c1a2a, #3b2e4a 45%, #624554);
+}
+
+.project-card--blank-image {
+  background: #202020;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.project-card--board-game {
+  background: #111;
+}
+
+.project-card--board-game img {
+  object-fit: contain;
+  object-position: center;
+  transform: scale(1.8);
+  transform-origin: center center;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--overlay);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.project-title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: var(--title-glow);
+  background: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.project-card--placeholder .project-title {
+  opacity: 1;
+}
+
+.project-card--blank-image .project-title {
+  opacity: 1;
+}
+
+.project-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.35);
+}
+
+.project-card:hover::after,
+.project-card:focus-visible::after,
+.project-card:hover .project-title,
+.project-card:focus-visible .project-title {
+  opacity: 1;
+}
+
+.project-card:hover img,
+.project-card:focus-visible img {
+  transform: scale(1.05);
+}
+
+.project-card--board-game:hover img,
+.project-card--board-game:focus-visible img {
+  transform: scale(1.8);
+}
+
+.project-card:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.project-card.is-inactive {
+  cursor: default;
+}
+
+.landing-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.landing-link {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 2px solid var(--border);
+  background: var(--tab-bg);
+  color: var(--ink);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+.landing-link:hover,
+.landing-link:focus-visible {
+  background: var(--ink);
+  color: var(--tab-bg);
+}
+
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .landing {
+    padding: 20px;
+  }
+
+  .landing-title {
+    font-size: 22px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: max(96px, calc(40vh - 72px));
+  }
+
+  .project-title {
+    font-size: 12px;
+  }
+}
