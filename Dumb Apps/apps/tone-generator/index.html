@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tone Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app" aria-labelledby="title">
+    <h1 id="title">Tone Generator</h1>
+
+    <p class="hint">Press Start, then shape the tone.</p>
+
+    <label class="frequency" for="frequency">
+      <span class="label">Frequency</span>
+      <output id="frequency-value" for="frequency">440 Hz</output>
+    </label>
+    <input id="frequency" type="range" min="0" max="1000" step="1" value="0" aria-label="Logarithmic frequency slider">
+
+    <label class="custom-frequency" for="custom-frequency">
+      <span>Custom Frequency (Hz)</span>
+      <input id="custom-frequency" type="number" min="1" max="20000" step="0.01" value="440" inputmode="decimal">
+    </label>
+
+    <fieldset class="waveforms" aria-label="Waveform">
+      <legend>Waveform</legend>
+      <label><input type="radio" name="waveform" value="sine" checked> Sine</label>
+      <label><input type="radio" name="waveform" value="square"> Square</label>
+      <label><input type="radio" name="waveform" value="sawtooth"> Saw</label>
+      <label><input type="radio" name="waveform" value="triangle"> Triangle</label>
+    </fieldset>
+
+    <button id="start-stop" class="toggle" type="button" aria-pressed="false">Start</button>
+
+    <a class="back" href="../../index.html">back</a>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
