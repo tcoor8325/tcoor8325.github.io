@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="Scene placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e2a78" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#111111" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#111111" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sky)"/>
+  <rect y="330" width="900" height="270" fill="url(#ground)"/>
+  <path d="M0 380 C140 340 260 420 420 390 C560 360 660 440 900 400 L900 600 L0 600 Z" fill="rgba(30,42,120,0.14)"/>
+  <circle cx="720" cy="150" r="55" fill="rgba(30,42,120,0.2)"/>
+  <text x="50%" y="92%" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="28" fill="rgba(17,17,17,0.5)">
+    Replace with a project photo
+  </text>
+</svg>
+

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap");
 
 :root {
   color-scheme: light;
@@ -6,7 +6,7 @@
   --ink: #111111;
   --border: #111111;
   --tab-bg: #ffffff;
-  --overlay: rgba(0, 0, 0, 0.3);
+  --overlay: rgba(0, 0, 0, 0.68);
   --shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
   --title-glow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
@@ -31,15 +31,23 @@ body {
   flex-direction: column;
   gap: 24px;
   padding: 28px 32px 32px;
+  --grid-top-offset: max(98px, calc(35vh - 84px));
+  --title-drop: max(18px, calc((var(--grid-top-offset) * 0.5) - 18px));
 }
 
 .landing-title {
   margin: 0;
   width: min(980px, 100%);
-  font-size: clamp(24px, 3vw, 38px);
+  position: relative;
+  top: var(--title-drop);
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: clamp(32px, 4.4vw, 58px);
   font-weight: 600;
   letter-spacing: 0.02em;
+  text-align: center;
   text-wrap: balance;
+  opacity: 0;
+  animation: landing-title-fade 900ms ease-out 120ms forwards;
 }
 
 .project-grid {
@@ -47,7 +55,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  margin-top: max(140px, calc(50vh - 120px));
+  margin-top: var(--grid-top-offset);
 }
 
 .project-card {
@@ -64,11 +72,11 @@ body {
 }
 
 .project-card--placeholder {
-  background: linear-gradient(145deg, #1c1a2a, #3b2e4a 45%, #624554);
+  background: #000;
 }
 
 .project-card--blank-image {
-  background: #202020;
+  background: #000;
 }
 
 .project-card img {
@@ -94,6 +102,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: var(--overlay);
   opacity: 0;
   transition: opacity 0.25s ease;
@@ -102,20 +111,21 @@ body {
 .project-title {
   position: absolute;
   inset: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
-  text-shadow: var(--title-glow);
-  background: rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.95);
+  background: transparent;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 14px;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.25s ease;
+  transition: none;
 }
 
 .project-card--placeholder .project-title {
@@ -161,34 +171,192 @@ body {
   outline-offset: 3px;
 }
 
+.project-card[data-under-construction] {
+  cursor: not-allowed;
+}
+
+.under-construction-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translate(-50%, 6px);
+  z-index: 3;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  background: rgba(0, 0, 0, 0.88);
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.project-card[data-under-construction]:hover .under-construction-tooltip,
+.project-card[data-under-construction]:focus-visible .under-construction-tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 .project-card.is-inactive {
   cursor: default;
 }
 
-.landing-actions {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  width: 100%;
+.about-inline {
+  width: min(980px, 100%);
+  margin-top: 88px;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
-.landing-link {
-  display: inline-block;
-  padding: 10px 18px;
+.about-inline-title {
+  margin: 0 0 14px;
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.about-inline-content {
+  display: grid;
+  grid-template-columns: minmax(240px, 340px) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.about-inline-photo {
+  margin: 0;
+}
+
+.about-inline-photo img {
+  width: 100%;
+  display: block;
+  height: auto;
   border: 2px solid var(--border);
-  background: var(--tab-bg);
-  color: var(--ink);
-  text-decoration: none;
+}
+
+.about-inline-text {
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.75;
+  font-size: 19px;
+}
+
+.about-inline-lede {
+  margin: 0 0 16px;
+}
+
+.about-inline-contact h3 {
+  margin: 0 0 8px;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 12px;
 }
 
-.landing-link:hover,
-.landing-link:focus-visible {
-  background: var(--ink);
-  color: var(--tab-bg);
+.about-inline-contact-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.about-inline-contact-list--icons {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.about-inline-contact-list--icons li {
+  margin: 0;
+}
+
+.about-contact-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.about-contact-item:hover,
+.about-contact-item:focus-visible {
+  background: transparent;
+}
+
+.about-contact-item:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.about-contact-item--link {
+  color: inherit;
+}
+
+.about-contact-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
+.about-contact-text {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translate(-50%, 4px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 4;
+  background: #111111;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.about-contact-item:hover .about-contact-text,
+.about-contact-item:focus-visible .about-contact-text,
+.about-contact-item.is-active .about-contact-text {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.about-inline-resume {
+  margin: 16px 0 0;
+}
+
+.about-inline-download {
+  color: #0a1630;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.about-inline-download:hover,
+.about-inline-download:focus-visible {
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) {
@@ -200,19 +368,48 @@ body {
 @media (max-width: 600px) {
   .landing {
     padding: 20px;
+    --grid-top-offset: max(68px, calc(28vh - 50px));
+    --title-drop: max(12px, calc((var(--grid-top-offset) * 0.5) - 14px));
   }
 
   .landing-title {
-    font-size: 22px;
+    font-size: clamp(30px, 8vw, 40px);
   }
 
   .project-grid {
     grid-template-columns: 1fr;
     gap: 16px;
-    margin-top: max(96px, calc(40vh - 72px));
+    margin-top: var(--grid-top-offset);
   }
 
   .project-title {
     font-size: 12px;
+  }
+
+  .about-inline {
+    padding: 0;
+  }
+
+  .about-inline-content {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-title {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+@keyframes landing-title-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

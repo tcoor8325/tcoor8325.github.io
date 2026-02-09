@@ -8,9 +8,9 @@
 </head>
 <body>
   <main class="landing">
-    <h1 class="landing-title">Hi, I'm Thomas, welcome to my garden</h1>
+    <h1 class="landing-title">Hi, I'm Thomas Welcome to my garden</h1>
     <section class="project-grid" aria-label="Projects">
-      <a class="project-card project-card--board-game" href="board-game/index.html">
+      <a class="project-card project-card--board-game" href="board-game/index.html" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Board%20Game%20Picture.jpg" alt="Board Game project preview">
         <span class="project-title">Board Game</span>
       </a>
@@ -22,11 +22,11 @@
         <img src="Tab%20Pictures/Cicadas%20Picture.jpg" alt="Cicadas project preview">
         <span class="project-title">Cicadas</span>
       </div>
-      <a class="project-card" href="Food%20Map/food-map.html">
+      <a class="project-card" href="Food%20Map/food-map.html" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Food%20Map%20Picture.png" alt="Food Map project preview">
         <span class="project-title">Food Map</span>
       </a>
-      <a class="project-card" href="Ingredients%20Analyzer/index.html">
+      <a class="project-card" href="Ingredients%20Analyzer/index.html" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Ingredient%20Analyzer%20Picture.png" alt="Ingredients Analyzer project preview">
         <span class="project-title">Ingredients Analyzer</span>
       </a>
@@ -34,33 +34,120 @@
         <img src="Tab%20Pictures/Lorentz%20Violin%20Picture.jpg" alt="Lorentz Violin project preview">
         <span class="project-title">Lorentz Violin</span>
       </div>
-      <a class="project-card" href="music/index.html">
+      <a class="project-card" href="music/index.html" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Music%20Picture.png" alt="Music project preview">
         <span class="project-title">Music</span>
       </a>
-      <a class="project-card" href="Rotary%20Subwoofer/index.html">
+      <a class="project-card" href="Rotary%20Subwoofer/index.html" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Rotary%20Subwoofer.png" alt="Rotary Subwoofer project preview">
         <span class="project-title">Rotary Subwoofer</span>
       </a>
-      <a class="project-card" href="Tech%20Tree%20Project/public/index.html">
+      <a class="project-card" href="Tech%20Tree%20Project/public/index.html" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Tech%20Tree%20Picture.png" alt="Tech Tree project preview">
         <span class="project-title">Tech Tree</span>
       </a>
-      <a class="project-card project-card--blank-image" href="Dumb%20Apps/index.html" aria-label="Dumb Apps project">
+      <a class="project-card project-card--blank-image" href="Dumb%20Apps/index.html" aria-label="Dumb Apps project" data-under-construction="Under Construction">
         <span class="project-title">Dumb Apps</span>
       </a>
-      <a class="project-card project-card--placeholder" href="Terminal%20Markets/index.html" aria-label="Terminal Markets project">
+      <a class="project-card" href="Terminal%20Markets/index.html" aria-label="Terminal Markets project" data-under-construction="Under Construction">
+        <img src="Tab%20Pictures/Terminal%20Markets.png" alt="Terminal Markets project preview">
         <span class="project-title">Terminal Markets</span>
-        <span class="project-placeholder">Terminal</span>
       </a>
-      <a class="project-card project-card--placeholder" href="World%20Sim/index.html" aria-label="World simulation project">
-        <span class="project-title">World</span>
-        <span class="project-placeholder">World Sim</span>
+      <!-- Add data-under-construction="Under Construction" on any project-card link to temporarily gate it. -->
+      <a class="project-card project-card--placeholder" href="World%20Sim/index.html" aria-label="World simulation project" data-under-construction="Under Construction">
+        <span class="project-title">Divlab</span>
       </a>
     </section>
-    <div class="landing-actions" aria-label="About">
-      <a class="landing-link" href="about/index.html">About</a>
-    </div>
+    <section class="about-inline" aria-labelledby="about-inline-title">
+      <h2 id="about-inline-title" class="about-inline-title">About</h2>
+      <div class="about-inline-content">
+        <figure class="about-inline-photo">
+          <img src="about/assets/pictures/ThomasDodec.png?v=20260202a" alt="Thomas Coor portrait">
+        </figure>
+        <div class="about-inline-text">
+          <p class="about-inline-lede">
+            Thomas Coor is an electrical engineer and designer from New York City. His hobby of musical instrument design lead him to a career in Audio and Acoustic Engineering and Manufacturing. However, his work in the field showed him that the field - and all of modern production for that matter - wasn't sustainable. He now wants to trnsition to designing sustainable and envirnmentally-minded devices for Humanity.
+          </p>
+          <section class="about-inline-contact" aria-label="Contact">
+            <h3>Contact</h3>
+            <ul class="about-inline-contact-list about-inline-contact-list--icons">
+              <li>
+                <button class="about-contact-item" type="button" aria-label="Show email">
+                  <img class="about-contact-icon" src="about/gmail.png" alt="" aria-hidden="true">
+                  <span class="about-contact-text">tcoor8325@gmail.com</span>
+                </button>
+              </li>
+              <li>
+                <button class="about-contact-item" type="button" aria-label="Show phone">
+                  <img class="about-contact-icon" src="about/phone-call.png" alt="" aria-hidden="true">
+                  <span class="about-contact-text">1-516-312-9046</span>
+                </button>
+              </li>
+              <li>
+                <a class="about-contact-item about-contact-item--link" href="https://www.linkedin.com/in/thomas-coor" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+                  <img class="about-contact-icon" src="about/linkedin.png" alt="" aria-hidden="true">
+                  <span class="about-contact-text">linkedin.com/in/thomas-coor</span>
+                </a>
+              </li>
+              <li>
+                <a class="about-contact-item about-contact-item--link" href="https://www.instagram.com/thomas.coor?igsh=ZDAxeWdqZDhhNHJj" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile">
+                  <img class="about-contact-icon" src="about/instagram.png" alt="" aria-hidden="true">
+                  <span class="about-contact-text">@thomas.coor</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <p class="about-inline-resume">
+            <a class="about-inline-download" href="about/assets/documents/Thomas%20Coor%20Resume%20Fall%202025.pdf?v=20260202a">Resume (PDF)</a>
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
+  <script>
+    (() => {
+      const blockedCards = document.querySelectorAll(".project-card[data-under-construction]");
+      if (!blockedCards.length) return;
+
+      blockedCards.forEach((card) => {
+        let tooltip = card.querySelector(".under-construction-tooltip");
+        if (!tooltip) {
+          tooltip = document.createElement("span");
+          tooltip.className = "under-construction-tooltip";
+          tooltip.setAttribute("role", "status");
+          tooltip.setAttribute("aria-hidden", "true");
+          card.appendChild(tooltip);
+        }
+        tooltip.textContent = card.getAttribute("data-under-construction") || "Under Construction";
+        card.addEventListener("click", (event) => {
+          event.preventDefault();
+        });
+      });
+    })();
+
+    (() => {
+      const contactItems = document.querySelectorAll(".about-contact-item");
+      if (!contactItems.length) return;
+
+      contactItems.forEach((item) => {
+        item.addEventListener("click", (event) => {
+          if (item.tagName !== "A") {
+            event.preventDefault();
+          }
+          contactItems.forEach((other) => {
+            if (other !== item) {
+              other.classList.remove("is-active");
+            }
+          });
+          item.classList.toggle("is-active");
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        if (event.target.closest(".about-contact-item")) return;
+        contactItems.forEach((item) => item.classList.remove("is-active"));
+      });
+    })();
+  </script>
 </body>
 </html>
