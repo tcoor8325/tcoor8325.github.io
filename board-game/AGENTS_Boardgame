@@ -1,0 +1,9 @@
+# Agent Notes (Board Game)
+
+If this is your first command read the README.md and HANDOFF.md before executing the commands here
+
+Artillery should not be able to attack when it is inside a forest.
+
+Remove the automatic +1 morale gain by every unit per turn.
+
+Please stop before or during your run to ask clarifications, give feedback, or suggest improvements.

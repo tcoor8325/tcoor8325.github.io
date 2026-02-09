@@ -1,0 +1,36 @@
+# Board Game (Digital Portfolio)
+
+No-build HTML/CSS/JS sandbox for a topographic map + turn-based pieces (movement/rotation/attacks) using morale.
+
+## Run
+
+- Static (no disk saving; uses `localStorage`): `python3 -m http.server 8000` then open `http://localhost:8000/`
+- With auto-save for the damage spreadsheet: `python3 dev-server.py` then open `http://localhost:8000/`
+
+## Controls & Interactions
+
+- **Generate map**: set `Map Size`, `Noise Scale`, `Octaves`, then click `Start`.
+- **Paint terrain** (before finalizing): select `Forest` or `River`, then click + drag on the map.
+- **Finalize map**: `Finalize Map` closes settings and disables terrain painting.
+- **Spawn pieces**: use the top `Pieces` toolbar to spawn Infantry/Cavalry/Artillery for Team 1 (red) and Team 2 (blue).
+- **Select**: click a piece to select it; details appear in “Selected Unit”.
+- **Move (once/turn)**: drag the selected unit within the dashed movement circle.
+- **Rotate (once/turn)**: hold `Ctrl` and drag the selected unit.
+- **Attack (once/turn)**: right-click an enemy unit within your unit’s *front 90° arc* and range (melee or ranged).
+  - Hovering an enemy shows the expected morale damage breakdown.
+- **Turns**: `End Turn` toggles Red/Blue; at turn start, each active-team unit regains `+1` morale (capped).
+
+## Files
+
+- `index.html`: layout + UI elements.
+- `styles.css`: page + component styling.
+- `simulation.js`: map generation, painting overlay, pieces, turns, movement/rotation/attacks, tooltip.
+- `damage-matrix.md`: persisted attack damage matrix (auto-updated when running `dev-server.py`).
+- `update_damage_matrix_md.py`: script that writes `damage-matrix.md` from the in-browser editor.
+- `dev-server.py`: optional local server that auto-saves the damage spreadsheet to `damage-matrix.md`.
+
+## Notes / Limitations
+
+- Morale is the current “health” mechanic; at 0 morale a unit becomes “broken” (white) and cannot move/attack.
+- `python3 -m http.server` cannot write to disk; spreadsheet edits persist in `localStorage`. Use `python3 dev-server.py` if you want edits to persist to `damage-matrix.md`.
+- The header nav assumes the larger “Digital Portfolio” folder layout; the `Tech Tree` link points at `http://localhost:3000`.

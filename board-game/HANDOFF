@@ -1,0 +1,58 @@
+# HANDOFF: Board Game Prototype Sandbox
+
+This folder is a no-build, static prototype for experimenting with: generate a topographic map, paint terrain (forest/river), spawn pieces, and play with turn-based movement/rotation/attacks using morale.
+
+## Run
+
+- Static: `python3 -m http.server 8000` then `http://localhost:8000/`
+- With spreadsheet auto-save: `python3 dev-server.py` then `http://localhost:8000/`
+  - Server endpoints:
+    - `GET /api/damage-matrix` loads `damage-matrix.md`
+    - `POST /api/damage-matrix` overwrites `damage-matrix.md`
+
+## UI Overview
+
+- **Stage**: 3-column layout (left: map settings, center: canvas, right: selected unit).
+- **Top toolbar**: piece spawn palette + turn indicator + `End Turn`.
+- **Below stage**: Log, then the “Attack Damage Matrix” spreadsheet.
+
+## Current Rules Implemented
+
+- Map generation:
+  - Perlin-noise heightmap, quantized to 10-level elevation bands.
+  - Green palette; contour lines are black.
+  - Seed is randomized per `Start`.
+- Painting (before finalizing):
+  - `Forest` and `River` paint onto an overlay, and also write into a terrain grid used by attack modifiers.
+  - `Finalize Map` hides map settings and disables painting.
+- Pieces:
+  - Pieces are rectangles (Infantry/Cavalry) or squares (Artillery), with per-type markings.
+  - Spawn buttons create pieces at random positions on the map.
+  - Morale is the “health” mechanic; when morale reaches 0 the unit becomes “broken” (white) and can’t move/attack.
+- Turns:
+  - `End Turn` toggles Red/Blue and resets per-turn actions for the active team.
+  - At turn start, each active-team unit regains `+1` morale (capped at max).
+- Movement:
+  - All units can move once per turn within their movement radius (drag to reposition).
+  - The movement circle stays anchored to the unit’s start-of-turn position.
+- Rotation:
+  - Hold `Ctrl` and drag to rotate (once per turn).
+- Attacks:
+  - Right-click an enemy unit to attack (once per turn).
+  - Attacks only apply within the unit’s front 90° arc and within melee/ranged radius.
+  - Hovering an enemy shows expected morale damage + modifier breakdown.
+  - Damage uses the editable 3×3 “Attack Damage Matrix” (split per defender into ranged/melee columns).
+
+## Key Files
+
+- `index.html`: UI structure (controls, tool palettes, status).
+- `styles.css`: layout and visual styles.
+- `simulation.js`: map generator, paint overlay, pieces, turns, movement/rotation/attacks, tooltip, spreadsheet wiring.
+- `damage-matrix.md`: persisted spreadsheet values when running `dev-server.py`.
+- `update_damage_matrix_md.py`: script that writes `damage-matrix.md` from the in-browser editor.
+- `dev-server.py`: minimal local server that can save the spreadsheet to disk.
+
+## Known Caveats
+
+- 1024×1024 generation can be slow on some machines; generation yields to keep the UI responsive.
+- If you run the page without `dev-server.py`, the spreadsheet persists in `localStorage`, but it cannot auto-write to `damage-matrix.md`.

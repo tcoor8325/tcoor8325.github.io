@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Board Game | Digital Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html">Digital Portfolio</a>
+      <nav class="nav" aria-label="Portfolio pages">
+        <a class="nav-link" href="../about/index.html">About</a>
+        <a class="nav-link" href="../DSP%20Sandbox/index.html">DSP Sandbox</a>
+        <a class="nav-link" href="http://localhost:3000">Tech Tree</a>
+        <a class="nav-link" href="../music/index.html">Music</a>
+        <a class="nav-link is-active" href="index.html">Board Game</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <header class="title">
+      <h1>Board Game</h1>
+      <p class="subtitle">
+        Map building sandbox (no build tools required).
+      </p>
+    </header>
+
+    <div class="grid">
+      <section aria-label="Map Builder Sandbox">
+        <div class="sim sim--bare">
+          <div class="sim-stage sim-stage--fullscreen sim-stage--bare">
+            <div class="stage-toolbar overlay-toolbar" aria-label="Piece palette">
+              <div class="stage-toolbar-title">Pieces</div>
+              <div class="stage-toolbar-group" role="group" aria-label="Team 1 pieces">
+                <span class="stage-toolbar-label">Team 1</span>
+                <button id="spawn-t1-inf" type="button" class="spawn-button" disabled>Infantry</button>
+                <button id="spawn-t1-cav" type="button" class="spawn-button" disabled>Cavalry</button>
+                <button id="spawn-t1-art" type="button" class="spawn-button" disabled>Artillery</button>
+              </div>
+              <div class="stage-toolbar-group" role="group" aria-label="Team 2 pieces">
+                <span class="stage-toolbar-label">Team 2</span>
+                <button id="spawn-t2-inf" type="button" class="spawn-button" disabled>Infantry</button>
+                <button id="spawn-t2-cav" type="button" class="spawn-button" disabled>Cavalry</button>
+                <button id="spawn-t2-art" type="button" class="spawn-button" disabled>Artillery</button>
+              </div>
+              <div class="turn-controls" aria-label="Turn controls">
+                <div id="turn-indicator" class="turn-indicator" aria-live="polite">Turn: -</div>
+                <button id="end-turn" type="button" class="end-turn" disabled>End Turn</button>
+              </div>
+            </div>
+
+            <div class="overlay-stack" aria-label="Left sidebar">
+              <div id="map-settings" class="controls overlay-panel overlay-controls" aria-label="Map generator controls">
+                <label class="field">
+                  <span>Map Size</span>
+                  <input id="map-size" type="number" min="256" max="2048" step="256" value="1024">
+                </label>
+                <label class="field">
+                  <span>Noise Scale</span>
+                  <input id="noise-scale" type="number" min="8" max="2048" step="1" value="160">
+                </label>
+                <label class="field">
+                  <span>Octaves</span>
+                  <input id="octaves" type="number" min="1" max="8" step="1" value="4">
+                </label>
+
+                <div class="toolbox" aria-label="Drawing tools">
+                  <div class="toolbox-title">Tools</div>
+                  <div class="toolbox-buttons" role="group" aria-label="Draw tools">
+                    <button id="tool-forest" type="button" class="tool-button is-active">Forest</button>
+                    <button id="tool-river" type="button" class="tool-button">River</button>
+                  </div>
+                  <p class="toolbox-hint">Click + drag on the map to paint.</p>
+                </div>
+
+                <div class="buttons">
+                  <button id="start" type="button">Start</button>
+                  <button id="reset" type="button">Clear</button>
+                  <button id="finalize-map" type="button" aria-controls="map-settings">Finalize Map</button>
+                </div>
+              </div>
+            </div>
+
+            <canvas id="board" width="820" height="520" aria-label="Elevation map canvas"></canvas>
+            <div id="hover-attack-tooltip" class="hover-tooltip is-hidden" role="status" aria-live="polite"></div>
+
+            <aside class="unit-panel overlay-panel overlay-unit" aria-label="Selected unit">
+	              <div class="unit-panel-title">Selected Unit</div>
+	              <div class="unit-panel-body">
+	                <div class="unit-stats">
+	                  <div><span class="k">Name</span> <span id="status-piece"></span></div>
+	                  <div><span class="k">Type</span> <span id="status-type"></span></div>
+	                  <div><span class="k">Team</span> <span id="status-team"></span></div>
+	                  <div><span class="k">Morale</span> <span id="status-morale"></span></div>
+	                  <div><span class="k">Move Range</span> <span id="status-move-range"></span></div>
+	                  <div><span class="k">Ranged Radius</span> <span id="status-ranged-radius"></span></div>
+	                  <div><span class="k">Melee Radius</span> <span id="status-melee-radius"></span></div>
+	                </div>
+
+	                <div class="unit-actions" aria-label="Moves left">
+	                  <div class="unit-actions-title">Moves Left (This Turn)</div>
+	                  <div id="status-move-row" class="availability">
+	                    <span class="k">Move</span> <span id="status-move"></span>
+	                  </div>
+	                  <div id="status-rotate-row" class="availability">
+	                    <span class="k">Rotate</span> <span id="status-rotate"></span>
+	                  </div>
+	                  <div id="status-attack-row" class="availability">
+	                    <span class="k">Attack</span> <span id="status-attack"></span>
+	                  </div>
+	                  <button id="rest" type="button" class="unit-action-button">Rest (+2 morale)</button>
+	                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="sim-below" aria-label="Log and damage matrix">
+            <div class="log overlay-panel overlay-log" aria-label="Generator log">
+              <div class="log-title">Log</div>
+              <pre id="log"></pre>
+            </div>
+
+              <div id="attack-matrix" class="overlay-panel overlay-attack" aria-label="Attack damage matrix">
+	                <div class="attack-title">Attack Damage Matrix</div>
+	                <div class="attack-hint">Each defender column splits into Ranged (left) and Melee (right). Right-click an enemy unit to attack (if in range).</div>
+	                <div class="attack-actions" aria-label="Matrix persistence controls">
+	                  <button id="matrix-export-csv" type="button">Export CSV</button>
+	                  <span id="matrix-save-status" class="matrix-status" aria-live="polite"></span>
+	                </div>
+	              <div class="attack-hint">
+	                If you run <code>python3 dev-server.py</code>, edits auto-save to <code>damage-matrix.md</code> (otherwise they stay in your
+                browser).
+              </div>
+              <div id="attack-matrix-table" class="attack-table-wrap" aria-label="Damage matrix table"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Digital Portfolio</span>
+  </footer>
+
+  <script src="simulation.js"></script>
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
