@@ -1,0 +1,13 @@
+
+> tech-tree-project@1.0.0 start
+> node server.js
+
+[2025-12-26T23:13:43.083Z] [INFO] Tech Tree viewer running at http://localhost:3000
+[2025-12-26T23:13:50.242Z] [INFO] REQ HEAD /
+[2025-12-26T23:13:51.101Z] [INFO] REQ GET /api/tree
+[2025-12-26T23:13:52.177Z] [INFO] REQ GET /api/minitree
+[2025-12-26T23:13:53.098Z] [INFO] REQ GET /api/emergent
+[2025-12-26T23:13:58.797Z] [INFO] REQ GET /api/tree
+[2025-12-26T23:13:59.755Z] [INFO] REQ GET /api/emergent
+[2025-12-26T23:14:00.890Z] [INFO] REQ GET /api/citations
+Terminated

@@ -1,0 +1,13 @@
+{
+  "name": "tech-tree-project",
+  "version": "1.0.0",
+  "description": "Static tech tree viewer with API endpoints for editing connections and capturing layout screenshots.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.42.0"
+  }
+}

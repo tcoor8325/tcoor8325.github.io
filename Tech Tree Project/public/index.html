@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Tree Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">Tech Tree Canvas</div>
+      <div class="controls">
+        <a class="home-link" href="http://localhost:8000">Return to Homepage</a>
+        <button id="clear-connections">Delete All Connections</button>
+        <button id="reset-positions">Reset Node Positions</button>
+        <button id="resnap-timeline" title="Snap all nodes and supernodes back to their date-based Y positions">
+          Snap to Timeline
+        </button>
+        <button id="resnap-supernode" title="Snap node X positions to their supernode centers">
+          Snap to Supernode
+        </button>
+        <button id="reload">Reload TREE.md</button>
+        <button id="zoom-out">Zoom Out</button>
+        <button id="zoom-in">Zoom In</button>
+        <button id="zoom-reset">Reset Zoom</button>
+        <button id="add-group">New Supernode</button>
+        <label class="scale-control" title="Adjust time axis spacing; nodes snap to their dates">
+          Time scale
+          <input type="range" id="time-scale" min="0.4" max="3" step="0.05" />
+          <span id="time-scale-value">1.00x</span>
+        </label>
+        <span id="status">Loading tree…</span>
+      </div>
+      <div class="instructions">
+        Drag nodes to arrange them. Drag from the bottom handle to another node to say it leads to that node. Drag from a node’s top handle onto another node to add an incoming prerequisite. Click a connection line to delete it.
+      </div>
+      <div class="toggles">
+        <label><input type="checkbox" id="toggle-theme" /> Light mode</label>
+        <label><input type="checkbox" id="toggle-type" checked /> Show type</label>
+        <label><input type="checkbox" id="toggle-date" checked /> Show approximate date</label>
+        <label><input type="checkbox" id="toggle-resources" checked /> Show resources</label>
+        <label><input type="checkbox" id="toggle-qual" checked /> Show qualitative effects</label>
+        <label><input type="checkbox" id="toggle-labor" checked /> Show labor</label>
+        <label><input type="checkbox" id="toggle-emergent" checked /> Show emergent properties</label>
+        <label><input type="checkbox" id="toggle-timegrid" checked /> Show time grid</label>
+        <label><input type="checkbox" id="toggle-connections" checked /> Show connections</label>
+      </div>
+    </header>
+    <main>
+      <aside id="details-panel" class="hidden">
+        <div class="details-title" id="detail-title">Select a node</div>
+        <div class="details-body" id="detail-effects">
+          Click any node to see its qualitative effects.
+        </div>
+      </aside>
+      <div id="viewport">
+        <div id="workspace">
+          <svg id="connections"></svg>
+          <div id="demarcations"></div>
+          <div id="groups"></div>
+          <div id="nodes"></div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

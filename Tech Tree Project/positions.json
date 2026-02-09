@@ -1,0 +1,3178 @@
+{
+  "Basic Gathering": {
+    "x": 13685,
+    "y": 704
+  },
+  "Patterned Gathering": {
+    "x": 11440,
+    "y": 3495.000000000001
+  },
+  "Accidental Planting": {
+    "x": 12688.75,
+    "y": 4612.375
+  },
+  "Basic Digging Tools": {
+    "x": 12565,
+    "y": 3573.409090909091
+  },
+  "Tending Wild Stands": {
+    "x": 12688.75,
+    "y": 4852.375
+  },
+  "Deliberate Planting": {
+    "x": 12688.75,
+    "y": 4852.375
+  },
+  "Hoe Agriculture": {
+    "x": 12455,
+    "y": 5687.500000000001
+  },
+  "Fields & Plots": {
+    "x": 12213.75,
+    "y": 5530.000000000001
+  },
+  "Basic Hunting": {
+    "x": 13600,
+    "y": 760
+  },
+  "Opportunistic Carrying Aids": {
+    "x": 13685,
+    "y": 594
+  },
+  "Carrying Devices": {
+    "x": 13685,
+    "y": 924
+  },
+  "Tracking & Sign Reading": {
+    "x": 13685,
+    "y": 1100
+  },
+  "Oldowan Stone Tools": {
+    "x": 19605,
+    "y": 748
+  },
+  "Acheulean Stone Tools": {
+    "x": 19605,
+    "y": 1276.0000000000002
+  },
+  "Tool Curation Behavior": {
+    "x": 19605,
+    "y": 1276.0000000000002
+  },
+  "Control of Fire": {
+    "x": 28552.14285714286,
+    "y": 2421.428571428572
+  },
+  "Opportunistic Fire Control": {
+    "x": 28525,
+    "y": 1848.0000000000005
+  },
+  "Fire Maintenance": {
+    "x": 28525,
+    "y": 1848.0000000000005
+  },
+  "Basic Cooking": {
+    "x": 18720,
+    "y": 2392.0000000000005
+  },
+  "Basic Vocal Signaling": {
+    "x": 10350,
+    "y": 1424.0000000000002
+  },
+  "Spoken Language": {
+    "x": 205,
+    "y": 3432.0000000000005
+  },
+  "Oral Traditions": {
+    "x": 205,
+    "y": 4180
+  },
+  "Hafting": {
+    "x": 18820,
+    "y": 2920.0000000000005
+  },
+  "Basic Cordage": {
+    "x": 21600,
+    "y": 2920.0000000000005
+  },
+  "Bone Tools": {
+    "x": 20150,
+    "y": 3890.000000000001
+  },
+  "Hide Clothing": {
+    "x": 21600,
+    "y": 3717.142857142857
+  },
+  "Bow and Arrow": {
+    "x": 38200,
+    "y": 3777.1428571428582
+  },
+  "Dugout Canoe": {
+    "x": 40185,
+    "y": 5720.000000000001
+  },
+  "Permanent Shelters": {
+    "x": 33345,
+    "y": 3496.818181818182
+  },
+  "Fire-based Land Management": {
+    "x": 16170,
+    "y": 3835.000000000001
+  },
+  "Early Open-Fire Pottery": {
+    "x": 26020,
+    "y": 5090.000000000001
+  },
+  "Lime Calcination": {
+    "x": 27145,
+    "y": 6600.000000000001
+  },
+  "Carpentry": {
+    "x": 24130,
+    "y": 6530.000000000001
+  },
+  "The Arch": {
+    "x": 28425,
+    "y": 8360.000000000002
+  },
+  "Threshing": {
+    "x": 21540,
+    "y": 5100.000000000001
+  },
+  "Winnowing": {
+    "x": 21540,
+    "y": 5320.000000000001
+  },
+  "Pit Storage": {
+    "x": 21540,
+    "y": 5080.000000000001
+  },
+  "Granaries & Raised Storage": {
+    "x": 21540,
+    "y": 5100.000000000001
+  },
+  "Controlled Fermentation": {
+    "x": 21540,
+    "y": 5980.000000000001
+  },
+  "Seed Selection": {
+    "x": 19385,
+    "y": 5280.000000000001
+  },
+  "Selective Animal Breeding": {
+    "x": 16665,
+    "y": 5260.000000000001
+  },
+  "Bread Baking": {
+    "x": 21540,
+    "y": 5540.000000000001
+  },
+  "Bartering": {
+    "x": 3330,
+    "y": 5420.000000000001
+  },
+  "Urban Water Planning": {
+    "x": 21505,
+    "y": 8360.000000000002
+  },
+  "Intensive Selective Hunting & Game Management": {
+    "x": 11440,
+    "y": 4245.000000000001
+  },
+  "Live Capture & Short-Term Keeping": {
+    "x": 14660,
+    "y": 3910.000000000001
+  },
+  "Herd Shadowing": {
+    "x": 14660,
+    "y": 3910.000000000001
+  },
+  "Full Husbandry & Breeding Control": {
+    "x": 3484.383331298828,
+    "y": 645
+  },
+  "Tribal Chiefdoms": {
+    "x": 2445,
+    "y": 6160.000000000001
+  },
+  "Harnesses": {
+    "x": 19985,
+    "y": 7500.000000000001
+  },
+  "Crop Rotation": {
+    "x": 573.1666564941406,
+    "y": 1093.6666870117188
+  },
+  "Domestication of Dogs": {
+    "x": 14660,
+    "y": 3870.000000000001
+  },
+  "Domestication of Sheep": {
+    "x": 16665,
+    "y": 5280.000000000001
+  },
+  "Domestication of Goats": {
+    "x": 16665,
+    "y": 5280.000000000001
+  },
+  "Domestication of Cattle": {
+    "x": 16665,
+    "y": 5500.000000000001
+  },
+  "Domestication of Oxen": {
+    "x": 3637,
+    "y": 1331
+  },
+  "Pastoral Nomadism": {
+    "x": 16665,
+    "y": 6600.000000000001
+  },
+  "Corralls and Weirs": {
+    "x": 11250,
+    "y": 6090.000000000001
+  },
+  "Domestication of Horses": {
+    "x": 19985,
+    "y": 7700.000000000001
+  },
+  "Domestication of Pigs": {
+    "x": 16665,
+    "y": 5280.000000000001
+  },
+  "Domestication of Chickens": {
+    "x": 14080,
+    "y": 8640.000000000002
+  },
+  "Domestication of Wheat": {
+    "x": 14305,
+    "y": 5280.000000000001
+  },
+  "Domestication of Rice": {
+    "x": 14305,
+    "y": 5720.000000000001
+  },
+  "Domestication of Maize": {
+    "x": 14305,
+    "y": 6160.000000000001
+  },
+  "Domestication of Cotton": {
+    "x": 14305,
+    "y": 7040.000000000001
+  },
+  "Domestication of Flax": {
+    "x": 14305,
+    "y": 6160.000000000001
+  },
+  "Domestication of Potatoes": {
+    "x": 14305,
+    "y": 5720.000000000001
+  },
+  "Domestication of Fruit Trees": {
+    "x": 14305,
+    "y": 6600.000000000001
+  },
+  "Domestication of Legumes": {
+    "x": 14305,
+    "y": 5280.000000000001
+  },
+  "Domestication of Silkworms": {
+    "x": 25985,
+    "y": 7920.000000000001
+  },
+  "Domestication of Honey Bees": {
+    "x": 19985,
+    "y": 8184.000000000002
+  },
+  "Salt Mining": {
+    "x": 28965,
+    "y": 6600.000000000001
+  },
+  "Salt Evaporation": {
+    "x": 21540,
+    "y": 6860.000000000001
+  },
+  "Salt Preservation": {
+    "x": 21540,
+    "y": 7140.000000000001
+  },
+  "Candles": {
+    "x": 35665,
+    "y": 7920.000000000001
+  },
+  "Surface Oil Collection": {
+    "x": 35665,
+    "y": 7700.000000000001
+  },
+  "Raw Rubber": {
+    "x": 32660,
+    "y": 7870.000000000002
+  },
+  "Cured Rubber": {
+    "x": 32660,
+    "y": 7870.000000000002
+  },
+  "Organic Fertilization": {
+    "x": 23205,
+    "y": 7500.000000000001
+  },
+  "Plowshares": {
+    "x": 17840,
+    "y": 7750.000000000001
+  },
+  "Domestication of Dromedary Camels": {
+    "x": 19985,
+    "y": 7920.000000000001
+  },
+  "Domestication of Llamas and Alpacas": {
+    "x": 19985,
+    "y": 7500.000000000001
+  },
+  "Yoke for Plowing": {
+    "x": 17840,
+    "y": 7330.000000000001
+  },
+  "Ard Plough": {
+    "x": 17840,
+    "y": 7530.000000000001
+  },
+  "Draft Animal Plowing": {
+    "x": 17840,
+    "y": 7618.000000000001
+  },
+  "Seed Drill": {
+    "x": 17840,
+    "y": 8410.000000000002
+  },
+  "Leathermaking": {
+    "x": 24825,
+    "y": 7040.000000000001
+  },
+  "Saponification": {
+    "x": 45240,
+    "y": 7628.000000000002
+  },
+  "Sewing": {
+    "x": 21600,
+    "y": 4440.000000000001
+  },
+  "Cheesemaking": {
+    "x": 21540,
+    "y": 6640.000000000001
+  },
+  "Milking": {
+    "x": 16665,
+    "y": 6600.000000000001
+  },
+  "Nixtamalization": {
+    "x": 24090,
+    "y": 7870.000000000002
+  },
+  "Native Metal Gathering": {
+    "x": 28965,
+    "y": 5280.000000000001
+  },
+  "Percussive Mining": {
+    "x": 30245,
+    "y": 7500.000000000001
+  },
+  "Stone Quarrying": {
+    "x": 28425,
+    "y": 7920.000000000001
+  },
+  "Firesetting Mining": {
+    "x": 30245,
+    "y": 7920.000000000001
+  },
+  "Hushing Mining": {
+    "x": 21670,
+    "y": 8970.000000000002
+  },
+  "Potter's Wheel": {
+    "x": 27080,
+    "y": 7720.000000000001
+  },
+  "Stoneware": {
+    "x": 26950,
+    "y": 7908.285714285716
+  },
+  "Glazed Ceramics": {
+    "x": 27060,
+    "y": 8321.428571428572
+  },
+  "Basic Field Shaping": {
+    "x": 12185,
+    "y": 7040.000000000001
+  },
+  "Property Boundaries": {
+    "x": 1680,
+    "y": 5980.000000000001
+  },
+  "Land Tenure Systems": {
+    "x": 1680,
+    "y": 6860.000000000001
+  },
+  "Manual Water Lifts": {
+    "x": 21505,
+    "y": 7920.000000000001
+  },
+  "Wheel & Axle": {
+    "x": 34240,
+    "y": 7430.000000000001
+  },
+  "Spinning Wheel": {
+    "x": 19470,
+    "y": 9795.000000000002
+  },
+  "Waterwheels": {
+    "x": 27005,
+    "y": 9242.640000000001
+  },
+  "Bronze Metallurgy": {
+    "x": 31045,
+    "y": 7788.000000000001
+  },
+  "Iron Metallurgy": {
+    "x": 31930,
+    "y": 7870.000000000002
+  },
+  "Bloomery": {
+    "x": 22905,
+    "y": 8820.000000000002
+  },
+  "Blast Furnace Ironmaking": {
+    "x": 23810,
+    "y": 9795.000000000002
+  },
+  "Crucible Steelmaking": {
+    "x": 22905,
+    "y": 9108.000000000002
+  },
+  "Early Number Systems": {
+    "x": 6748.75,
+    "y": 7500.000000000001
+  },
+  "Numerical Notation System": {
+    "x": 6748.75,
+    "y": 7744.000000000001
+  },
+  "Bureaucratic Record Keeping": {
+    "x": 4265,
+    "y": 7832.000000000001
+  },
+  "Metal Movable Type": {
+    "x": 8600,
+    "y": 10050.000000000002
+  },
+  "Gunpowder Weaponry": {
+    "x": 35420,
+    "y": 9647.142857142859
+  },
+  "Mechanical Clockwork": {
+    "x": 6240,
+    "y": 9945.714285714288
+  },
+  "Mechanical Calculators": {
+    "x": 10950,
+    "y": 10455.000000000002
+  },
+  "Catapult": {
+    "x": 34540,
+    "y": 8884.000000000002
+  },
+  "Chainmail": {
+    "x": 34540,
+    "y": 8928.000000000002
+  },
+  "Trebuchet": {
+    "x": 35420,
+    "y": 9835.714285714288
+  },
+  "Volta's Pile": {
+    "x": 30955,
+    "y": 10840.000000000002
+  },
+  "Oersted Effect": {
+    "x": 3780,
+    "y": 10908.000000000002
+  },
+  "Ampere's Law": {
+    "x": 3780,
+    "y": 10908.000000000002
+  },
+  "Biot-Savart Law": {
+    "x": 3780,
+    "y": 10908.000000000002
+  },
+  "Ohm's Law": {
+    "x": 3780,
+    "y": 10938.800000000001
+  },
+  "Faraday's Law": {
+    "x": 3780,
+    "y": 10956.400000000001
+  },
+  "Maxwell's Equations": {
+    "x": 3780,
+    "y": 11106.000000000002
+  },
+  "Vacuum Tube": {
+    "x": 30955,
+    "y": 11285.142857142859
+  },
+  "Fast Fourier Transform (FFT)": {
+    "x": 9230,
+    "y": 11170.000000000002
+  },
+  "Electric Dynamo": {
+    "x": 33165,
+    "y": 11136.400000000001
+  },
+  "Precision Machining": {
+    "x": 25888.75,
+    "y": 10840.000000000002
+  },
+  "Nitroglycerin": {
+    "x": 39150,
+    "y": 10972.800000000001
+  },
+  "Pasteurization": {
+    "x": 16490,
+    "y": 11198.600000000002
+  },
+  "Refrigeration": {
+    "x": 35945,
+    "y": 11220.000000000002
+  },
+  "Coke Production": {
+    "x": 27970,
+    "y": 10455.000000000002
+  },
+  "Printing Press": {
+    "x": 8600,
+    "y": 10110.000000000002
+  },
+  "Steam Engine": {
+    "x": 29480,
+    "y": 10451.400000000001
+  },
+  "The Factory": {
+    "x": 25888.75,
+    "y": 10840.000000000002
+  },
+  "Industrial Automation": {
+    "x": 25040,
+    "y": 11269.142857142859
+  },
+  "Assembly Line Production": {
+    "x": 25040,
+    "y": 11070.857142857145
+  },
+  "Windmills": {
+    "x": 27005,
+    "y": 9247.920000000002
+  },
+  "Solvent Dissolved Rubber": {
+    "x": 23640,
+    "y": 10854.000000000002
+  },
+  "Vulcanization": {
+    "x": 23640,
+    "y": 10937.600000000002
+  },
+  "Rubber Compounding": {
+    "x": 23640,
+    "y": 11231.142857142859
+  },
+  "Synthetic Rubber": {
+    "x": 23640,
+    "y": 11262.571428571431
+  },
+  "Electricity Generation & Distribution": {
+    "x": 33165,
+    "y": 11176.000000000002
+  },
+  "Astrolabe": {
+    "x": 33465,
+    "y": 9174.000000000002
+  },
+  "Pulley": {
+    "x": 34240,
+    "y": 8310.000000000002
+  },
+  "Digital Signaling (Conceptual)": {
+    "x": 8380,
+    "y": 10952.828571428574
+  },
+  "Telegraph Infrastructure": {
+    "x": 8380,
+    "y": 10966.028571428575
+  },
+  "Petroleum Refining": {
+    "x": 27368.75,
+    "y": 10840.000000000002
+  },
+  "Internal Combustion Engine": {
+    "x": 57015,
+    "y": 22134.4
+  },
+  "Bicycles": {
+    "x": 37260,
+    "y": 10884.000000000002
+  },
+  "Lighter-Than-Air Flight": {
+    "x": 34430,
+    "y": 10455.000000000002
+  },
+  "Automobiles": {
+    "x": 37260,
+    "y": 11187.600000000002
+  },
+  "Heavier-Than-Air Flight": {
+    "x": 37260,
+    "y": 11268.057142857146
+  },
+  "Aluminum Smelting": {
+    "x": 21770,
+    "y": 11170.000000000002
+  },
+  "Incandescent Lightbulb": {
+    "x": 30955,
+    "y": 11167.600000000002
+  },
+  "Semiconductor Transistor": {
+    "x": 30955,
+    "y": 11540.000000000002
+  },
+  "Early Computer Networking": {
+    "x": 7465,
+    "y": 11900.000000000002
+  },
+  "Internet Protocol Suite": {
+    "x": 7465,
+    "y": 12070.666666666668
+  },
+  "Smartphones": {
+    "x": 7715,
+    "y": 12873.000000000002
+  },
+  "Multilayer Perceptrons": {
+    "x": 9345,
+    "y": 12114.666666666668
+  },
+  "Large Language Models": {
+    "x": 9345,
+    "y": 13346.666666666668
+  },
+  "Early Codified Law": {
+    "x": 1630,
+    "y": 8970.000000000002
+  },
+  "Territorial States": {
+    "x": 4265,
+    "y": 7920.000000000001
+  },
+  "Standing Armies": {
+    "x": 44165,
+    "y": 8184.000000000002
+  },
+  "Divine Kingship": {
+    "x": 1740,
+    "y": 7740.000000000001
+  },
+  "Citizen Assembly Democracy": {
+    "x": 2290,
+    "y": 8970.000000000002
+  },
+  "Slavery": {
+    "x": 3500,
+    "y": 7805.000000000001
+  },
+  "Coinage": {
+    "x": 2865,
+    "y": 8976.000000000002
+  },
+  "Taxation": {
+    "x": 5150,
+    "y": 7870.000000000002
+  },
+  "Feudal Contracts & Vassalage": {
+    "x": 2185,
+    "y": 9868.571428571431
+  },
+  "Imperial Civil Service Examinations": {
+    "x": 2185,
+    "y": 9746.000000000002
+  },
+  "Patent Systems": {
+    "x": 1870,
+    "y": 10455.000000000002
+  },
+  "Double-Entry Bookkeeping": {
+    "x": 3380,
+    "y": 10290.000000000002
+  },
+  "Guilds": {
+    "x": 3380,
+    "y": 9740.000000000002
+  },
+  "Universities": {
+    "x": 4540,
+    "y": 9889.285714285717
+  },
+  "Banking": {
+    "x": 3380,
+    "y": 9912.857142857145
+  },
+  "Joint-Stock Corporation": {
+    "x": 3380,
+    "y": 10380.000000000002
+  },
+  "Central Banking": {
+    "x": 3380,
+    "y": 10586.800000000001
+  },
+  "Abolitionism": {
+    "x": 1020,
+    "y": 10485.000000000002
+  },
+  "Enlightenment Humanism": {
+    "x": 1020,
+    "y": 10425.000000000002
+  },
+  "The Scientific Method": {
+    "x": 4660,
+    "y": 10338.500000000002
+  },
+  "Mass Public Schooling": {
+    "x": 3780,
+    "y": 10840.000000000002
+  },
+  "Algebra": {
+    "x": 5510,
+    "y": 9704.428571428572
+  },
+  "Geometry": {
+    "x": 6748.75,
+    "y": 8640.000000000002
+  },
+  "Positional Notation": {
+    "x": 4325,
+    "y": 9246.160000000002
+  },
+  "Zero": {
+    "x": 4325,
+    "y": 9246.160000000002
+  },
+  "Calculus": {
+    "x": 5665,
+    "y": 10470.000000000002
+  },
+  "Statistics": {
+    "x": 5665,
+    "y": 10470.000000000002
+  },
+  "Classical Kinematics": {
+    "x": 4660,
+    "y": 10338.500000000002
+  },
+  "Geocentrism": {
+    "x": 3750,
+    "y": 8970.000000000002
+  },
+  "Ritual": {
+    "x": 2760,
+    "y": 2068
+  },
+  "Local Animism": {
+    "x": 13247.5,
+    "y": 2330
+  },
+  "Mythic Systems & Creation Cosmologies": {
+    "x": 2316,
+    "y": 1446.0000000000002
+  },
+  "Ancestor Cults": {
+    "x": 12612.5,
+    "y": 2717.5
+  },
+  "Shamanism (Ritual Specialists)": {
+    "x": 12910,
+    "y": 2612.5
+  },
+  "Temples": {
+    "x": 1210,
+    "y": 3890.000000000001
+  },
+  "Polytheism": {
+    "x": 13081.666666666666,
+    "y": 3277.5
+  },
+  "State Religions": {
+    "x": 1740,
+    "y": 7960.000000000002
+  },
+  "Henotheism": {
+    "x": 1740,
+    "y": 8400.000000000002
+  },
+  "Scripture": {
+    "x": 745,
+    "y": 8820.000000000002
+  },
+  "Monotheism": {
+    "x": 745,
+    "y": 8976.000000000002
+  },
+  "Wooden Shield": {
+    "x": 41730,
+    "y": 6750.000000000001
+  },
+  "Shield": {
+    "x": 34540,
+    "y": 8640.000000000002
+  },
+  "Helmet": {
+    "x": 34540,
+    "y": 8640.000000000002
+  },
+  "Pike": {
+    "x": 34540,
+    "y": 8884.000000000002
+  },
+  "Ballista": {
+    "x": 34540,
+    "y": 8884.000000000002
+  },
+  "Counterweight Trebuchet": {
+    "x": 35420,
+    "y": 9835.714285714288
+  },
+  "Fuse": {
+    "x": 35420,
+    "y": 9647.142857142859
+  },
+  "Fire Lance": {
+    "x": 35420,
+    "y": 9710.000000000002
+  },
+  "Eruptor": {
+    "x": 35420,
+    "y": 9772.857142857145
+  },
+  "Handgonne": {
+    "x": 35420,
+    "y": 9945.714285714288
+  },
+  "Bombard": {
+    "x": 35420,
+    "y": 10000.714285714288
+  },
+  "Basic Grenade": {
+    "x": 35890,
+    "y": 10355.000000000002
+  },
+  "Musket": {
+    "x": 35890,
+    "y": 10445.000000000002
+  },
+  "Bayonet": {
+    "x": 35890,
+    "y": 10555.000000000002
+  },
+  "Percussion Cap": {
+    "x": 39150,
+    "y": 10854.000000000002
+  },
+  "Rifled Bore": {
+    "x": 39150,
+    "y": 10898.000000000002
+  },
+  "Breech-Load Mechanism": {
+    "x": 39150,
+    "y": 11030.000000000002
+  },
+  "Fulling Mill": {
+    "x": 19470,
+    "y": 9795.000000000002
+  },
+  "Water Clock": {
+    "x": 8420,
+    "y": 8156.000000000002
+  },
+  "Hourglass": {
+    "x": 6240,
+    "y": 9584.285714285717
+  },
+  "Endless Chain Drive": {
+    "x": 25110,
+    "y": 8992.000000000002
+  },
+  "Nitric Acid": {
+    "x": 4522,
+    "y": 9984.714285714288
+  },
+  "Long Division": {
+    "x": 5510,
+    "y": 9873.000000000002
+  },
+  "Algorithm": {
+    "x": 5510,
+    "y": 9885.57142857143
+  },
+  "Arithmetic Mean": {
+    "x": 4325,
+    "y": 9020.000000000002
+  },
+  "Flying Shuttle": {
+    "x": 20190,
+    "y": 10455.000000000002
+  },
+  "Spinning Jenny": {
+    "x": 20190,
+    "y": 10455.000000000002
+  },
+  "Detent Escapement": {
+    "x": 7100,
+    "y": 10598.850000000002
+  },
+  "Lever Escapement": {
+    "x": 7100,
+    "y": 10598.850000000002
+  },
+  "Cream of Tartar": {
+    "x": 18210,
+    "y": 10455.000000000002
+  },
+  "Baking Powder": {
+    "x": 16490,
+    "y": 11141.400000000001
+  },
+  "S-Trap": {
+    "x": 33110,
+    "y": 10455.000000000002
+  },
+  "Flush Toilet": {
+    "x": 33110,
+    "y": 10455.000000000002
+  },
+  "Boring Machine": {
+    "x": 25888.75,
+    "y": 10840.000000000002
+  },
+  "Puddling": {
+    "x": 24530,
+    "y": 10455.000000000002
+  },
+  "I-Beam": {
+    "x": 22430,
+    "y": 11134.800000000003
+  },
+  "Combine Harvester": {
+    "x": 12530,
+    "y": 11264.285714285716
+  },
+  "Atomic Theory": {
+    "x": 6770,
+    "y": 12930.000000000002
+  },
+  "Periodic Table": {
+    "x": 6770,
+    "y": 12930.000000000002
+  },
+  "Spear Fishing": {
+    "x": 11440,
+    "y": 4245.000000000001
+  },
+  "Horseback Riding": {
+    "x": 19985,
+    "y": 7920.000000000001
+  },
+  "Saddles": {
+    "x": 14080,
+    "y": 8708.000000000002
+  },
+  "Stirrups": {
+    "x": 14080,
+    "y": 9324.000000000002
+  },
+  "Pack Animal Caravans": {
+    "x": 42225,
+    "y": 8140.000000000002
+  },
+  "Two- and Four-Wheeled Carts & Wagons": {
+    "x": 42225,
+    "y": 7920.000000000001
+  },
+  "Chariot": {
+    "x": 42225,
+    "y": 8360.000000000002
+  },
+  "Horseboots": {
+    "x": 32700,
+    "y": 8728.000000000002
+  },
+  "Horseshoes": {
+    "x": 33480,
+    "y": 9530.000000000002
+  },
+  "Celestial Calendar": {
+    "x": 8420,
+    "y": 7980.000000000002
+  },
+  "North Star Navigation": {
+    "x": 43590,
+    "y": 7870.000000000002
+  },
+  "Globe Model": {
+    "x": 5870,
+    "y": 8970.000000000002
+  },
+  "Sericulture": {
+    "x": 25985,
+    "y": 8140.000000000002
+  },
+  "Basic Weaving": {
+    "x": 21600,
+    "y": 4900.000000000001
+  },
+  "Loom Weaving": {
+    "x": 24825,
+    "y": 7040.000000000001
+  },
+  "Serfdom": {
+    "x": 2185,
+    "y": 9931.428571428572
+  },
+  "Cotton Gin": {
+    "x": 20190,
+    "y": 10455.000000000002
+  },
+  "Marxism": {
+    "x": 830,
+    "y": 11170.000000000002
+  },
+  "Oceanic Sailing Ships": {
+    "x": 33480,
+    "y": 9824.285714285716
+  },
+  "Magnetic Compass": {
+    "x": 34570,
+    "y": 9795.000000000002
+  },
+  "Glassmaking & Glassblowing": {
+    "x": 20785,
+    "y": 9218.000000000002
+  },
+  "Optical Lenses (Spectacles)": {
+    "x": 21640,
+    "y": 9968.014285714287
+  },
+  "Hydraulic Pozzolanic Concrete": {
+    "x": 20210,
+    "y": 8970.000000000002
+  },
+  "Bessemer Steelmaking": {
+    "x": 22430,
+    "y": 11205.200000000003
+  },
+  "Mechanized Farm Equipment": {
+    "x": 12530,
+    "y": 11075.714285714286
+  },
+  "Steam Railways": {
+    "x": 37260,
+    "y": 10919.200000000003
+  },
+  "Photography": {
+    "x": 10550,
+    "y": 11170.000000000002
+  },
+  "Telephone": {
+    "x": 8380,
+    "y": 11124.428571428574
+  },
+  "Radio Communication": {
+    "x": 8380,
+    "y": 11208.028571428575
+  },
+  "Vaccination": {
+    "x": 36620,
+    "y": 10455.000000000002
+  },
+  "Germ Theory of Disease": {
+    "x": 40600,
+    "y": 11082.800000000001
+  },
+  "Antibiotics (Penicillin)": {
+    "x": 40600,
+    "y": 11390.800000000001
+  },
+  "Haber-Bosch Ammonia Synthesis": {
+    "x": 15830,
+    "y": 11170.000000000002
+  },
+  "Synthetic Polymers (Plastics)": {
+    "x": 23640,
+    "y": 11250.000000000002
+  },
+  "Nuclear Fission Power": {
+    "x": 27368.75,
+    "y": 11280.000000000002
+  },
+  "Orbital Launch & Artificial Satellites": {
+    "x": 38420,
+    "y": 11415.600000000002
+  },
+  "Global Positioning System": {
+    "x": 33630,
+    "y": 12930.000000000002
+  },
+  "Personal Computer": {
+    "x": 9345,
+    "y": 11982.666666666668
+  },
+  "Social Health Taboos": {
+    "x": 39325,
+    "y": 4290.000000000001
+  },
+  "Bone Setting & Trephination": {
+    "x": 42390,
+    "y": 6420.000000000001
+  },
+  "Patterned-Mined Pharmacology": {
+    "x": 45240,
+    "y": 7540.000000000001
+  },
+  "Codified Pharmacology": {
+    "x": 45240,
+    "y": 8200.000000000002
+  },
+  "Anatomy": {
+    "x": 35390,
+    "y": 8970.000000000002
+  },
+  "Thermoscope": {
+    "x": 7100,
+    "y": 10311.150000000001
+  },
+  "Gas Thermometer": {
+    "x": 7100,
+    "y": 10538.850000000002
+  },
+  "Mercury Thermometer": {
+    "x": 7100,
+    "y": 10569.650000000001
+  },
+  "Bimetallic Strip": {
+    "x": 7100,
+    "y": 10582.850000000002
+  },
+  "Thermocouple": {
+    "x": 5423,
+    "y": 10902.914285714287
+  },
+  "Thermistor": {
+    "x": 5480,
+    "y": 11438.085714285717
+  },
+  "Thermometer": {
+    "x": 7100,
+    "y": 10569.650000000001
+  },
+  "Stethoscope": {
+    "x": 40600,
+    "y": 10845.2
+  },
+  "Anesthesia": {
+    "x": 40600,
+    "y": 10977.2
+  },
+  "Health Campaigns": {
+    "x": 40600,
+    "y": 10994.800000000001
+  },
+  "Genetics": {
+    "x": 3780,
+    "y": 11110.400000000001
+  },
+  "X-Ray Machine": {
+    "x": 40600,
+    "y": 11192.800000000001
+  },
+  "Synthetic Medicine": {
+    "x": 40600,
+    "y": 11201.6
+  },
+  "MRI Machine": {
+    "x": 34985,
+    "y": 11982.666666666668
+  },
+  "Robotic Surgery": {
+    "x": 34985,
+    "y": 12320.000000000002
+  },
+  "Targeted Therapies": {
+    "x": 34985,
+    "y": 12364.000000000002
+  },
+  "CRISPR": {
+    "x": 3470,
+    "y": 12885.714285714288
+  },
+  "Police Force": {
+    "x": 2150,
+    "y": 11170.000000000002
+  },
+  "Formal Judiciary": {
+    "x": 3500,
+    "y": 8355.000000000002
+  },
+  "Hospitals": {
+    "x": 36270,
+    "y": 9795.000000000002
+  },
+  "Domestic Servitude": {
+    "x": 3500,
+    "y": 7385.000000000001
+  },
+  "Engineering": {
+    "x": 4660,
+    "y": 10338.500000000002
+  },
+  "Birthing Forceps": {
+    "x": 36620,
+    "y": 10455.000000000002
+  },
+  "Cooperative Care": {
+    "x": 678.5,
+    "y": 814.5
+  },
+  "Lomekwian Stone Tools": {
+    "x": 19605,
+    "y": 374
+  },
+  "Basic Wood Tools": {
+    "x": 21040,
+    "y": 283
+  },
+  "Collective Fictions": {
+    "x": 205,
+    "y": 3928.5714285714284
+  },
+  "Teaching": {
+    "x": 796.5,
+    "y": 1207.0000000000002
+  },
+  "Sequential Planning": {
+    "x": 403.5,
+    "y": 1216.0000000000002
+  },
+  "Wayfinding": {
+    "x": 36150,
+    "y": 1424.0000000000002
+  },
+  "Cooperative Hunting": {
+    "x": 13685,
+    "y": 1320.0000000000002
+  },
+  "Clan / Kinship Dominance": {
+    "x": 3160.9303002543484,
+    "y": 533.8466972303602
+  },
+  "Cultural Mixing / Cosmopolitanism": {
+    "x": 33640,
+    "y": 9764.285714285716
+  },
+  "Status Through Tradition": {
+    "x": 2640,
+    "y": 1400
+  },
+  "Status Through Innovation": {
+    "x": 2120,
+    "y": 1400
+  },
+  "Copying / Imitative Mode": {
+    "x": 2089.8866989851604,
+    "y": 2252.568649329365
+  },
+  "Path Dependence / Legacy Systems": {
+    "x": 37420,
+    "y": 11170.000000000002
+  },
+  "Experimentation-at-Scale": {
+    "x": 2460.754160625955,
+    "y": 2252.568649329365
+  },
+  "Deliberate Throwing": {
+    "x": 36725,
+    "y": 770
+  },
+  "The Spear": {
+    "x": 36725,
+    "y": 2530.0000000000005
+  },
+  "Low Trust / High Paranoia": {
+    "x": 8540,
+    "y": 11418.000000000002
+  },
+  "Basic Artificial Shelters": {
+    "x": 33500,
+    "y": 3412.5
+  },
+  "Woodworking": {
+    "x": 21040,
+    "y": 2373.0000000000005
+  },
+  "Nets and Snares": {
+    "x": 11440,
+    "y": 3935.000000000001
+  },
+  "Floodplain and Marsh Planting": {
+    "x": 12688.75,
+    "y": 4852.375
+  },
+  "Manual Plant Watering": {
+    "x": 12222.5,
+    "y": 5245.000000000001
+  },
+  "Water Containers": {
+    "x": 18150,
+    "y": 5870.000000000001
+  },
+  "Canals": {
+    "x": 21505,
+    "y": 7500.000000000001
+  },
+  "Regular Fallowing": {
+    "x": 19385,
+    "y": 6600.000000000001
+  },
+  "Legume-Cereal Alternation": {
+    "x": 23205,
+    "y": 7500.000000000001
+  },
+  "Scientific Crop Rotation": {
+    "x": 17550,
+    "y": 10455.000000000002
+  },
+  "Earthenware": {
+    "x": 26020,
+    "y": 6430.000000000001
+  },
+  "Tempered Stoneware": {
+    "x": 27271.42857142857,
+    "y": 8087.428571428574
+  },
+  "Porcelain": {
+    "x": 20130,
+    "y": 9795.000000000002
+  },
+  "Fabric Clothing": {
+    "x": 21600,
+    "y": 4900.000000000001
+  },
+  "Mobile Shelters (Hide, Leather, Cloth)": {
+    "x": 37440,
+    "y": 6255.000000000001
+  },
+  "Crossbow": {
+    "x": 34540,
+    "y": 8840.000000000002
+  },
+  "<!-- CHANGE: Split and clarified the mining and ore refinement cluster into Mining Extraction, Ore Refinement and Smelting, Mining Engineering, and Alloy Production nodes with refined edges and resource assignments -->": {
+    "x": 131.66666666666666,
+    "y": 26.666666666666686
+  },
+  "Ore Refinement and Smelting": {
+    "x": 636.6666666666667,
+    "y": 390
+  },
+  "Mining Engineering": {
+    "x": 900,
+    "y": 228.33333333333337
+  },
+  "Alloy Production": {
+    "x": 598.3333333333335,
+    "y": 596.6666666666667
+  },
+  "<!-- Existing resources remain unchanged -->": {
+    "x": 1601.4285714285713,
+    "y": 31.428571428571416
+  },
+  "Flint": {
+    "x": 2120,
+    "y": 40
+  },
+  "Trade Routes": {
+    "x": 2120,
+    "y": 380
+  },
+  "Kilns": {
+    "x": 25865,
+    "y": 4941.818181818182
+  },
+  "Dry Distillation": {
+    "x": 33860,
+    "y": 4803.636363636364
+  },
+  "Sun-dried Mud Bricks": {
+    "x": 27145,
+    "y": 6160.000000000001
+  },
+  "Kiln-Fired Bricks": {
+    "x": 28425,
+    "y": 7500.000000000001
+  },
+  "Stonemasonry": {
+    "x": 28425,
+    "y": 7744.000000000001
+  },
+  "Brickmasonry": {
+    "x": 28425,
+    "y": 7788.000000000001
+  },
+  "Defensive Walls": {
+    "x": 41730,
+    "y": 5430.000000000001
+  },
+  "Earth Construction": {
+    "x": 27145,
+    "y": 5500.000000000001
+  },
+  "Lime Mortar": {
+    "x": 27145,
+    "y": 6380.000000000001
+  },
+  "Solar Panels": {
+    "x": 27368.75,
+    "y": 11296.000000000002
+  },
+  "Domestication of Barley": {
+    "x": 14305,
+    "y": 5280.000000000001
+  },
+  "Grinding Stone": {
+    "x": 21540,
+    "y": 5100.000000000001
+  },
+  "Afterlife": {
+    "x": 12627.5,
+    "y": 2445
+  },
+  "Domestication of Millet": {
+    "x": 14305,
+    "y": 5940.000000000001
+  },
+  "Universal Deism": {
+    "x": 13252.5,
+    "y": 2875
+  },
+  "Local Deism": {
+    "x": 13242.5,
+    "y": 2620
+  },
+  "The Crucible": {
+    "x": 29765,
+    "y": 7040.000000000001
+  },
+  "Copper Smelting": {
+    "x": 29765,
+    "y": 7040.000000000001
+  },
+  "Lead Smelting": {
+    "x": 31045,
+    "y": 7500.000000000001
+  },
+  "Basic Raft": {
+    "x": 36690,
+    "y": 3890.000000000001
+  },
+  "Sewn Boat": {
+    "x": 42225,
+    "y": 7920.000000000001
+  },
+  "Lashed-Lug Boat": {
+    "x": 42225,
+    "y": 8360.000000000002
+  },
+  "Clinker Boat Construction": {
+    "x": 32700,
+    "y": 9212.000000000002
+  },
+  "Drydock": {
+    "x": 32700,
+    "y": 8838.000000000002
+  },
+  "Carvel Boat Construction": {
+    "x": 33480,
+    "y": 10060.000000000002
+  },
+  "Mortar and Pestle": {
+    "x": 21540,
+    "y": 5080.000000000001
+  },
+  "The Oar": {
+    "x": 40185,
+    "y": 5260.000000000001
+  },
+  "Balance Scale": {
+    "x": 8420,
+    "y": 7540.000000000001
+  },
+  "Papyrus": {
+    "x": 12205,
+    "y": 7920.000000000001
+  },
+  "Solar Calendar": {
+    "x": 8420,
+    "y": 7760.000000000002
+  },
+  "Luni-solar Calendar": {
+    "x": 8420,
+    "y": 7980.000000000002
+  },
+  "State Calendar": {
+    "x": 8420,
+    "y": 8200.000000000002
+  },
+  "Sundial": {
+    "x": 8420,
+    "y": 8200.000000000002
+  },
+  "Parchment": {
+    "x": 12205,
+    "y": 8360.000000000002
+  },
+  "The Book": {
+    "x": 7640,
+    "y": 9102.000000000002
+  },
+  "Pound Lock": {
+    "x": 33480,
+    "y": 9950.000000000002
+  },
+  "Flash Lock": {
+    "x": 33480,
+    "y": 9887.142857142859
+  },
+  "Roads": {
+    "x": 42225,
+    "y": 7500.000000000001
+  },
+  "Reservoir": {
+    "x": 21505,
+    "y": 7920.000000000001
+  },
+  "Mousterian Stone Tools": {
+    "x": 18820,
+    "y": 3528.571428571429
+  },
+  "Block Printing": {
+    "x": 8600,
+    "y": 9625.714285714288
+  },
+  "Flying Cash": {
+    "x": 2865,
+    "y": 9247.040000000003
+  },
+  "Aurignacian Stone Tools": {
+    "x": 18820,
+    "y": 4187.000000000001
+  },
+  "Composite Bow": {
+    "x": 44165,
+    "y": 8360.000000000002
+  },
+  "Ritual Time": {
+    "x": 3043.9999999999995,
+    "y": 1358.0000000000002
+  },
+  "Lunar Calendar": {
+    "x": 8420,
+    "y": 7540.000000000001
+  },
+  "Microlith": {
+    "x": 18820,
+    "y": 4330.000000000001
+  },
+  "Sewing Needle": {
+    "x": 21600,
+    "y": 4165.000000000001
+  },
+  "Abacus": {
+    "x": 6748.75,
+    "y": 8184.000000000002
+  },
+  "Distillation": {
+    "x": 17490,
+    "y": 9795.000000000002
+  },
+  "Sulfuric Acid": {
+    "x": 4425,
+    "y": 9608.285714285717
+  },
+  "Hydrochloric Acid": {
+    "x": 4788,
+    "y": 9768.142857142859
+  },
+  "Aqueduct": {
+    "x": 31190,
+    "y": 8970.000000000002
+  },
+  "Quern-Stone": {
+    "x": 21540,
+    "y": 6420.000000000001
+  },
+  "Mold-Board Plow": {
+    "x": 13530,
+    "y": 9795.000000000002
+  },
+  "Linen": {
+    "x": 24825,
+    "y": 6380.000000000001
+  },
+  "Screw": {
+    "x": 25110,
+    "y": 8948.000000000002
+  },
+  "Hand-spinning": {
+    "x": 21600,
+    "y": 4660.000000000001
+  },
+  "Lens Grinding": {
+    "x": 21640,
+    "y": 9621.985714285716
+  },
+  "Reading Stones": {
+    "x": 21640,
+    "y": 9747.7
+  },
+  "Radio Telescope": {
+    "x": 6770,
+    "y": 12930.000000000002
+  },
+  "Reflector Telescope": {
+    "x": 22360,
+    "y": 10535.300000000001
+  },
+  "Refractor Telescope": {
+    "x": 22360,
+    "y": 10403.300000000001
+  },
+  "Compound Microscope": {
+    "x": 22360,
+    "y": 10374.7
+  },
+  "Geometric Optics": {
+    "x": 4540,
+    "y": 9807.571428571431
+  },
+  "The Mirror": {
+    "x": 20770.714285714286,
+    "y": 8782.308571428572
+  },
+  "Fireworks": {
+    "x": 35420,
+    "y": 9584.285714285717
+  },
+  "Paper Money": {
+    "x": 3380,
+    "y": 9677.142857142859
+  },
+  "Greenhouse": {
+    "x": 31850,
+    "y": 8970.000000000002
+  },
+  "Early Suspension Bridge": {
+    "x": 30530,
+    "y": 8970.000000000002
+  },
+  "Horse Collar": {
+    "x": 12570,
+    "y": 8970.000000000002
+  },
+  "Latitude and Longitude": {
+    "x": 33465,
+    "y": 9152.000000000002
+  },
+  "The Cell": {
+    "x": 4660,
+    "y": 10571.500000000002
+  },
+  "Accounting Tokens": {
+    "x": 6630,
+    "y": 6090.000000000001
+  },
+  "Logograms": {
+    "x": 10840,
+    "y": 7532.000000000001
+  },
+  "Pictographs": {
+    "x": 10840,
+    "y": 7400.000000000001
+  },
+  "Phoneticization": {
+    "x": 16386,
+    "y": 2482
+  },
+  "Consonantal Alphabet (Abjad)": {
+    "x": 10840,
+    "y": 8148.000000000002
+  },
+  "Full Alphabet (with Vowels)": {
+    "x": 6445,
+    "y": 8888.000000000002
+  },
+  "Clay Tablets": {
+    "x": 12205,
+    "y": 7700.000000000001
+  },
+  "Scrolls": {
+    "x": 12205,
+    "y": 7920.000000000001
+  },
+  "Woodpulp Paper": {
+    "x": 7640,
+    "y": 9018.400000000001
+  },
+  "Rag Paper": {
+    "x": 7640,
+    "y": 8838.000000000002
+  },
+  "Clay Bullae & Sealed Envelopes": {
+    "x": 12205,
+    "y": 7568.000000000001
+  },
+  "Phoneticization & Rebus Principle": {
+    "x": 10840,
+    "y": 7840.000000000002
+  },
+  "Chinese Character Tradition": {
+    "x": 10840,
+    "y": 8340.000000000002
+  },
+  "Mesoamerican Glyphic Systems": {
+    "x": 6445,
+    "y": 9108.000000000002
+  },
+  "Plant-Fiber Paper (East Asian)": {
+    "x": 7640,
+    "y": 9014.000000000002
+  },
+  "Movable Type System": {
+    "x": 8600,
+    "y": 9520.000000000002
+  },
+  "Social Hierarchies": {
+    "x": 2530,
+    "y": 3890.000000000001
+  },
+  "Basic Bone Breaking & Marrow Extraction": {
+    "x": 21040,
+    "y": 195
+  },
+  "Social Inequality & Large-Scale Cooperation": {
+    "x": 2445,
+    "y": 5260.000000000001
+  },
+  "Basic Hide Scraping": {
+    "x": 22010,
+    "y": 1424.0000000000002
+  },
+  "Opportunistic Tool Use": {
+    "x": 19605,
+    "y": 328
+  },
+  "Systematic Butchery": {
+    "x": 18720,
+    "y": 456
+  },
+  "Efficient Hunting Points": {
+    "x": 38200,
+    "y": 3352.857142857143
+  },
+  "Re-sharpening & Repair Practices": {
+    "x": 18820,
+    "y": 3685.714285714286
+  },
+  "Early Adhesives": {
+    "x": 21040,
+    "y": 2653.0000000000005
+  },
+  "Stone Axes & Adzes": {
+    "x": 18820,
+    "y": 3835
+  },
+  "Sickle Blades": {
+    "x": 11860,
+    "y": 5181.250000000001
+  },
+  "Modular Tool Repair": {
+    "x": 18820,
+    "y": 4900.000000000001
+  },
+  "Barbed Points": {
+    "x": 38200,
+    "y": 4427.142857142859
+  },
+  "Decorative Bone Objects": {
+    "x": 9705,
+    "y": 4510.000000000001
+  },
+  "Tailored Clothing": {
+    "x": 21600,
+    "y": 4550.000000000001
+  },
+  "Personal Ornamentation": {
+    "x": 10590,
+    "y": 4196.4285714285725
+  },
+  "Portable Art": {
+    "x": 9705,
+    "y": 4510.000000000001
+  },
+  "Animism": {
+    "x": 2486,
+    "y": 2030.0000000000002
+  },
+  "Basic Empirical Health Knowledge / Food Safety": {
+    "x": 39325,
+    "y": 4180
+  },
+  "Polytheistic Pantheons & State Cults": {
+    "x": 1870,
+    "y": 3890.000000000001
+  },
+  "Missionary Religions": {
+    "x": 830,
+    "y": 9795.000000000002
+  },
+  "Universal Deism (Universalizing Monotheism)": {
+    "x": 1020,
+    "y": 10425.000000000002
+  },
+  "Moralizing High Gods": {
+    "x": 1740,
+    "y": 8460.000000000002
+  },
+  "Symbolic Burial & Grave Goods": {
+    "x": 2002,
+    "y": 1490.0000000000002
+  },
+  "Afterlife Beliefs": {
+    "x": 2782,
+    "y": 1792.0000000000002
+  },
+  "Ancestor Veneration": {
+    "x": 2488,
+    "y": 1728.0000000000002
+  },
+  "Ritual Specialists & Shamans": {
+    "x": 3009.9999999999995,
+    "y": 1602.0000000000002
+  },
+  "Temple Priesthoods": {
+    "x": 1740,
+    "y": 7320.000000000001
+  },
+  "Local Gods & Spirit Patrons": {
+    "x": 1740,
+    "y": 7740.000000000001
+  },
+  "Sacred Places & Shrines": {
+    "x": 1740,
+    "y": 7740.000000000001
+  },
+  "Temple Cults": {
+    "x": 1740,
+    "y": 7960.000000000002
+  },
+  "Cognitive Agency Detection": {
+    "x": 678.5,
+    "y": 2759.0000000000005
+  },
+  "Spirit Appeasement Rituals": {
+    "x": 3075.9999999999995,
+    "y": 1934.0000000000002
+  },
+  "Class Stratification": {
+    "x": 2350,
+    "y": 2100
+  },
+  "Multi-Room Houses": {
+    "x": 37440,
+    "y": 6475.000000000001
+  },
+  "Timber Framing": {
+    "x": 37440,
+    "y": 6805.000000000001
+  },
+  "Post-and-Lintel Framing": {
+    "x": 33500,
+    "y": 3687.500000000001
+  },
+  "Kinship Systems": {
+    "x": 4410,
+    "y": 1424.0000000000002
+  },
+  "Dry Stone Construction": {
+    "x": 27145,
+    "y": 5500.000000000001
+  },
+  "Sleeping Site Selection": {
+    "x": 32625,
+    "y": 770
+  },
+  "Camps": {
+    "x": 32625,
+    "y": 1100
+  },
+  "Semi-Permanent Shelters": {
+    "x": 33500,
+    "y": 3467.5
+  },
+  "Roofing & Thatched Covers": {
+    "x": 33500,
+    "y": 3467.5
+  },
+  "Weather-Resistant Houses": {
+    "x": 33500,
+    "y": 3687.500000000001
+  },
+  "Stone Gateways": {
+    "x": 39850,
+    "y": 7870.000000000002
+  },
+  "Food Taboos & Dietary Codes": {
+    "x": 39325,
+    "y": 3574.318181818182
+  },
+  "Totemism": {
+    "x": 2216,
+    "y": 1850.0000000000002
+  },
+  "Purity & Pollution Systems": {
+    "x": 39325,
+    "y": 3574.318181818182
+  },
+  "Ritual Cleanliness Practices": {
+    "x": 39325,
+    "y": 3574.318181818182
+  },
+  "Stable Hegemon": {
+    "x": 3108.316786428138,
+    "y": 820.5468875153347
+  },
+  "Low Stability / Chronic Civil Strife": {
+    "x": 3852.750015258788,
+    "y": 823.318197076971
+  },
+  "Backpropagation & Gradient Descent Training": {
+    "x": 9345,
+    "y": 12114.666666666668
+  },
+  "High-Speed Communication Network": {
+    "x": 3332.750015258788,
+    "y": 1503.318197076971
+  },
+  "Open Intellectual Commons": {
+    "x": 4372.750015258788,
+    "y": 1503.318197076971
+  },
+  "Frequent Natural Disasters": {
+    "x": 12751.25,
+    "y": 2920.0000000000005
+  },
+  "Religious Pluralism": {
+    "x": 8760,
+    "y": 10230.000000000002
+  },
+  "Technological Stratification": {
+    "x": 3852.750015258788,
+    "y": 2183.318197076971
+  },
+  "Protective Mountains / Hard Borders": {
+    "x": 3852.750015258788,
+    "y": 1843.318197076971
+  },
+  "Conservative Lock-In": {
+    "x": 3540,
+    "y": 9680.000000000002
+  },
+  "State Control of Knowledge": {
+    "x": 3852.750015258788,
+    "y": 1503.318197076971
+  },
+  "Open Plains / Porous Borders": {
+    "x": 4372.750015258788,
+    "y": 1843.318197076971
+  },
+  "Militarized Society": {
+    "x": 35395,
+    "y": 9649.642857142859
+  },
+  "High Literacy": {
+    "x": 8760,
+    "y": 10110.000000000002
+  },
+  "Relative Egalitarianism": {
+    "x": 4206.663666212651,
+    "y": 501.51046086430017
+  },
+  "GPUs for General Compute / Accelerators for Deep Learning": {
+    "x": 9345,
+    "y": 12760.000000000002
+  },
+  "High Wealth Inequality": {
+    "x": 3540,
+    "y": 10276.600000000002
+  },
+  "Low Literacy": {
+    "x": 4372.750015258788,
+    "y": 1163.318197076971
+  },
+  "Economic Autarky / Local Self-Sufficiency": {
+    "x": 3108.316786428138,
+    "y": 652.6573347818993
+  },
+  "Deep Learning (High-Depth Neural Networks)": {
+    "x": 9345,
+    "y": 12885.714285714288
+  },
+  "Inheritance Systems": {
+    "x": 1680,
+    "y": 6420.000000000001
+  },
+  "Integrated Circuits": {
+    "x": 30955,
+    "y": 11540.000000000002
+  },
+  "Microprocessor": {
+    "x": 9345,
+    "y": 11900.000000000002
+  },
+  "Hypertext Concepts & Early Systems": {
+    "x": 7465,
+    "y": 11900.000000000002
+  },
+  "World Wide Web": {
+    "x": 7465,
+    "y": 12188.000000000002
+  },
+  "Data Centers & Cloud Computing": {
+    "x": 9345,
+    "y": 12584.000000000002
+  },
+  "Sequence Models & Word Embeddings": {
+    "x": 9345,
+    "y": 12948.571428571431
+  },
+  "Transformer Architecture": {
+    "x": 9345,
+    "y": 13200.000000000002
+  },
+  "Specialized Division of Labor": {
+    "x": 25797.5,
+    "y": 11170.000000000002
+  },
+  "High Population Density": {
+    "x": 68325,
+    "y": 6535.000000000001
+  },
+  "Strong Central Authority": {
+    "x": 4580,
+    "y": 7952.000000000001
+  },
+  "Strong Bureaucratic Apparatus": {
+    "x": 4580,
+    "y": 7832.000000000001
+  },
+  "Demilitarized / Pacified Society": {
+    "x": 3145.672464155867,
+    "y": 758.8789444391799
+  },
+  "Knowledge Fragmentation": {
+    "x": 2939.166895233697,
+    "y": 537.5846037292639
+  },
+  "Standardized Language/Script": {
+    "x": 3149.9840261491245,
+    "y": 537.5846037292639
+  },
+  "Food Surplus": {
+    "x": 12751.25,
+    "y": 2927.625000000001
+  },
+  "Centralized Knowledge Repositories": {
+    "x": 7922.5,
+    "y": 9102.000000000002
+  },
+  "Fragmented Authority": {
+    "x": 2724.0382023250127,
+    "y": 758.8789444391799
+  },
+  "Honor / Shame Culture": {
+    "x": 2517.5326334028423,
+    "y": 537.5846037292639
+  },
+  "Warring States": {
+    "x": 2934.85533324044,
+    "y": 758.8789444391799
+  },
+  "Chronic Food Insecurity": {
+    "x": 39760,
+    "y": 5100.000000000001
+  },
+  "High Trust / Social Capital": {
+    "x": 1790,
+    "y": 9195.840000000002
+  },
+  "Monetized Economy": {
+    "x": 3180,
+    "y": 8976.000000000002
+  },
+  "Barter / In-Kind Economy": {
+    "x": 3356.4895950712944,
+    "y": 600.0179182357688
+  },
+  "Generalist Labor": {
+    "x": 2934.85533324044,
+    "y": 600.0179182357688
+  },
+  "Low Population Density": {
+    "x": 3145.672464155867,
+    "y": 441.1568920323575
+  },
+  "Rapid Population Growth": {
+    "x": 15990,
+    "y": 11436.571428571431
+  },
+  "Nomadic or Semi-Nomadic Lifestyles": {
+    "x": 2513.221071409585,
+    "y": 600.0179182357688
+  },
+  "Population Stagnation/Decline": {
+    "x": 2513.221071409585,
+    "y": 441.1568920323575
+  },
+  "High Urbanization": {
+    "x": 21820,
+    "y": 8360.000000000002
+  },
+  "Rural Dominance": {
+    "x": 3174.968768305417,
+    "y": 441.1568920323575
+  },
+  "Legal-Formalistic Order": {
+    "x": 2513.221071409585,
+    "y": 609.046444765793
+  },
+  "Cultural Insularity": {
+    "x": 2844.0949198575013,
+    "y": 609.046444765793
+  },
+  "Riverine/Navigable Water Network": {
+    "x": 2844.0949198575013,
+    "y": 776.9359974992285
+  },
+  "Maritime Orientation": {
+    "x": 3174.968768305417,
+    "y": 776.9359974992285
+  },
+  "Religious Uniformity": {
+    "x": 3174.968768305417,
+    "y": 609.046444765793
+  },
+  "Environmental Buffering": {
+    "x": 2513.221071409585,
+    "y": 776.9359974992285
+  },
+  "Patronage / Personal Rule": {
+    "x": 2667.5228180415465,
+    "y": 433.75000000000006
+  },
+  "Information Bottlenecks": {
+    "x": 2998.3966664894624,
+    "y": 433.75000000000006
+  },
+  "High Disease Burden": {
+    "x": 68325,
+    "y": 6415.000000000001
+  },
+  "Resource Scarcity": {
+    "x": 26332.5,
+    "y": 10442.000000000002
+  },
+  "Innovation Culture": {
+    "x": 4817.5,
+    "y": 9889.285714285717
+  },
+  "Epidemiological Shielding": {
+    "x": 4091.4067357158033,
+    "y": 241.25000000000003
+  },
+  "Electrostatic Generator": {
+    "x": 30400,
+    "y": 10384.300000000003
+  },
+  "Suction Pump": {
+    "x": 31730,
+    "y": 9795.000000000002
+  },
+  "Mercury Barometer": {
+    "x": 7100,
+    "y": 10413.450000000003
+  },
+  "Vacuum Pump": {
+    "x": 4660,
+    "y": 10538.500000000002
+  },
+  "Helical Spring": {
+    "x": 25790,
+    "y": 9795.000000000002
+  },
+  "Leyden Jar": {
+    "x": 30400,
+    "y": 10525.700000000003
+  },
+  "Octant": {
+    "x": 35160,
+    "y": 10455.000000000002
+  },
+  "Marine Chronometer": {
+    "x": 35160,
+    "y": 10455.000000000002
+  },
+  "CNC Machine": {
+    "x": 25040,
+    "y": 11269.142857142859
+  },
+  "Flywheel": {
+    "x": 34240,
+    "y": 7650.000000000001
+  },
+  "Condenser": {
+    "x": 29480,
+    "y": 10485.000000000002
+  },
+  "Heat Pump": {
+    "x": 35945,
+    "y": 11242.000000000002
+  },
+  "Electrolysis": {
+    "x": 30955,
+    "y": 10840.000000000002
+  },
+  "Hygrometer": {
+    "x": 6240,
+    "y": 10005.714285714288
+  },
+  "Gyroscope": {
+    "x": 38420,
+    "y": 10924.400000000001
+  },
+  "Pneumatic Tire": {
+    "x": 37260,
+    "y": 11196.400000000003
+  },
+  "Ebonite": {
+    "x": 23640,
+    "y": 10990.400000000001
+  },
+  "Piezoelectric Effect": {
+    "x": 3780,
+    "y": 11172.000000000002
+  },
+  "Autoclave": {
+    "x": 40600,
+    "y": 11122.400000000001
+  },
+  "Aeolipile": {
+    "x": 27890,
+    "y": 8970.000000000002
+  },
+  "Metal Boilers": {
+    "x": 29480,
+    "y": 10425.000000000002
+  },
+  "Crystal Oscillator": {
+    "x": 30955,
+    "y": 11392.000000000002
+  },
+  "Radioactivity": {
+    "x": 7465,
+    "y": 11900.000000000002
+  },
+  "Gift Exchange Networks": {
+    "x": 3190,
+    "y": 3890.000000000001
+  },
+  "Counting & Tallying": {
+    "x": 4510,
+    "y": 3890.000000000001
+  },
+  "Music (Percussion & Voice)": {
+    "x": 9130,
+    "y": 3835.000000000001
+  },
+  "Dance": {
+    "x": 9130,
+    "y": 3835.000000000001
+  },
+  "Musical Instruments": {
+    "x": 9130,
+    "y": 3945.000000000001
+  },
+  "Bone Flutes": {
+    "x": 9130,
+    "y": 3945.000000000001
+  },
+  "Parietal Art (Cave Painting)": {
+    "x": 9705,
+    "y": 4400.000000000001
+  },
+  "Body Decoration (Ochre Use)": {
+    "x": 10590,
+    "y": 3583.5714285714284
+  },
+  "Resource Caching": {
+    "x": 11440,
+    "y": 3605.000000000001
+  },
+  "Game Drives": {
+    "x": 11440,
+    "y": 3825.000000000001
+  },
+  "Fish Weirs": {
+    "x": 11440,
+    "y": 4145.000000000001
+  },
+  "Wild Honey Collection": {
+    "x": 11440,
+    "y": 4285.000000000001
+  },
+  "Composite Digging Tools": {
+    "x": 12688.75,
+    "y": 4852.375
+  },
+  "Water Carrying (Pre-Pottery)": {
+    "x": 15510,
+    "y": 3890.000000000001
+  },
+  "Controlled Burning for Hunting": {
+    "x": 16170,
+    "y": 3945.000000000001
+  },
+  "Food Smoking & Drying": {
+    "x": 17490,
+    "y": 3670.000000000001
+  },
+  "Wild Fermentation Recognition": {
+    "x": 17490,
+    "y": 4110.000000000001
+  },
+  "Fiber Processing": {
+    "x": 21600,
+    "y": 3120.0000000000005
+  },
+  "Hide Smoking/Curing": {
+    "x": 21600,
+    "y": 4165.000000000001
+  },
+  "Mat-Making": {
+    "x": 21600,
+    "y": 4440.000000000001
+  },
+  "Basketry": {
+    "x": 21600,
+    "y": 4594.000000000001
+  },
+  "Shelter Insulation": {
+    "x": 33500,
+    "y": 3687.500000000001
+  },
+  "Sedentary Foraging Settlements": {
+    "x": 33500,
+    "y": 4367.500000000001
+  },
+  "Spatial Mapping": {
+    "x": 37350,
+    "y": 4000.000000000001
+  },
+  "Specialized Resource Sites": {
+    "x": 37350,
+    "y": 3780.000000000001
+  },
+  "The Atlatl": {
+    "x": 38200,
+    "y": 4107.142857142859
+  },
+  "Health & Purity Taboo System": {
+    "x": 39325,
+    "y": 4400.000000000001
+  },
+  "Agricultural Festivals": {
+    "x": 906.25,
+    "y": 5650.000000000001
+  },
+  "Agricultural Ritual Calendars": {
+    "x": 1680,
+    "y": 5320.000000000001
+  },
+  "Fertility Cults": {
+    "x": 1586,
+    "y": 5212.000000000001
+  },
+  "Earth / Land Spirits": {
+    "x": 997.5,
+    "y": 6262.500000000001
+  },
+  "Sacrifice / Offerings": {
+    "x": 753.75,
+    "y": 5995.000000000001
+  },
+  "Foundation Rituals": {
+    "x": 3460,
+    "y": 6207.000000000001
+  },
+  "Agricultural Magic": {
+    "x": 1032.5,
+    "y": 5955.000000000001
+  },
+  "Ancestor Fields": {
+    "x": 906.25,
+    "y": 6530.000000000001
+  },
+  "Conflict Resolution Mechanisms": {
+    "x": 1680,
+    "y": 5760.000000000001
+  },
+  "Village Governance": {
+    "x": 2445,
+    "y": 5720.000000000001
+  },
+  "Marriage Alliances": {
+    "x": 2445,
+    "y": 6160.000000000001
+  },
+  "Common-Pool Resource Management": {
+    "x": 2445,
+    "y": 6160.000000000001
+  },
+  "Gift Exchange / Prestige Economy": {
+    "x": 3330,
+    "y": 6320.000000000001
+  },
+  "Exchange Centers": {
+    "x": 3330,
+    "y": 5880.000000000001
+  },
+  "Informal Debt / Credit": {
+    "x": 3330,
+    "y": 6320.000000000001
+  },
+  "Part-Time Craft Specialization": {
+    "x": 3330,
+    "y": 6320.000000000001
+  },
+  "Craft Specialization": {
+    "x": 3330,
+    "y": 6760.000000000001
+  },
+  "Long-Distance Trade Networks": {
+    "x": 3330,
+    "y": 6320.000000000001
+  },
+  "Feasting": {
+    "x": 3330,
+    "y": 5420.000000000001
+  },
+  "Pigment Preparation": {
+    "x": 9930,
+    "y": 6090.000000000001
+  },
+  "Standardized Bead Production": {
+    "x": 10590,
+    "y": 6090.000000000001
+  },
+  "Weeding & Cultivation": {
+    "x": 11917.5,
+    "y": 5308.750000000001
+  },
+  "Seed Storage Protocols": {
+    "x": 12481.25,
+    "y": 5448.750000000001
+  },
+  "Pest & Predator Management": {
+    "x": 12687.5,
+    "y": 5672.500000000001
+  },
+  "Multi-cropping & Garden Plots": {
+    "x": 11931.25,
+    "y": 5675.000000000001
+  },
+  "Informal Crop Rotation": {
+    "x": 12543.75,
+    "y": 6135.000000000001
+  },
+  "Basic Terracing": {
+    "x": 11895,
+    "y": 6075.000000000001
+  },
+  "Intensified Agriculture": {
+    "x": 11920,
+    "y": 5460.000000000001
+  },
+  "Plant Propagation (Cuttings & Grafting)": {
+    "x": 14305,
+    "y": 6600.000000000001
+  },
+  "Fodder Cultivation": {
+    "x": 16665,
+    "y": 6160.000000000001
+  },
+  "Pack Saddles": {
+    "x": 16665,
+    "y": 6160.000000000001
+  },
+  "Irrigation Furrows & Ditches": {
+    "x": 18150,
+    "y": 6310.000000000001
+  },
+  "Early Composting": {
+    "x": 19385,
+    "y": 5720.000000000001
+  },
+  "Beer Brewing": {
+    "x": 21540,
+    "y": 5980.000000000001
+  },
+  "Drying Racks": {
+    "x": 21540,
+    "y": 5540.000000000001
+  },
+  "Root Cellars": {
+    "x": 21540,
+    "y": 5980.000000000001
+  },
+  "Smokehouses": {
+    "x": 21540,
+    "y": 5980.000000000001
+  },
+  "Oil Pressing": {
+    "x": 21540,
+    "y": 6420.000000000001
+  },
+  "Fish Fermentation": {
+    "x": 21540,
+    "y": 6420.000000000001
+  },
+  "Butter & Yogurt Making": {
+    "x": 21540,
+    "y": 6420.000000000001
+  },
+  "Vegetable Fermentation": {
+    "x": 21540,
+    "y": 6420.000000000001
+  },
+  "Fruit Wine Fermentation": {
+    "x": 21540,
+    "y": 6420.000000000001
+  },
+  "Tool Hafting Diversity": {
+    "x": 23470,
+    "y": 6310.000000000001
+  },
+  "Ground Stone Technology": {
+    "x": 23470,
+    "y": 5870.000000000001
+  },
+  "Woodworking Tool Diversity": {
+    "x": 24130,
+    "y": 6090.000000000001
+  },
+  "Lashing & Joinery": {
+    "x": 24130,
+    "y": 5650.000000000001
+  },
+  "Glue Production": {
+    "x": 24130,
+    "y": 5650.000000000001
+  },
+  "Fiber Preparation (Retting & Beating)": {
+    "x": 24825,
+    "y": 6160.000000000001
+  },
+  "Tanning Pits & Frames": {
+    "x": 24825,
+    "y": 7040.000000000001
+  },
+  "Spindle Whorl": {
+    "x": 24825,
+    "y": 6600.000000000001
+  },
+  "Spindle Diversification": {
+    "x": 27145,
+    "y": 6600.000000000001
+  },
+  "Mat Weaving": {
+    "x": 24825,
+    "y": 5720.000000000001
+  },
+  "Dye Production": {
+    "x": 24825,
+    "y": 6600.000000000001
+  },
+  "The Tournette (Slow Wheel)": {
+    "x": 26020,
+    "y": 7090.000000000001
+  },
+  "Pit Kilns": {
+    "x": 26020,
+    "y": 6210.000000000001
+  },
+  "Updraft Kilns": {
+    "x": 26020,
+    "y": 6650.000000000001
+  },
+  "Charcoal Production": {
+    "x": 33950,
+    "y": 5870.000000000001
+  },
+  "Oil Lamps": {
+    "x": 33950,
+    "y": 6310.000000000001
+  },
+  "Reed/Grass Construction": {
+    "x": 37440,
+    "y": 5375.000000000001
+  },
+  "Wattle-and-Daub": {
+    "x": 37440,
+    "y": 5375.000000000001
+  },
+  "Smoke Management Systems": {
+    "x": 37440,
+    "y": 5375.000000000001
+  },
+  "Flooring Technologies": {
+    "x": 37440,
+    "y": 5815.000000000001
+  },
+  "Village Layout Planning": {
+    "x": 38290,
+    "y": 5870.000000000001
+  },
+  "Community Buildings": {
+    "x": 38290,
+    "y": 6310.000000000001
+  },
+  "The Sail": {
+    "x": 40185,
+    "y": 7040.000000000001
+  },
+  "Sledges": {
+    "x": 40185,
+    "y": 5720.000000000001
+  },
+  "Trail Maintenance": {
+    "x": 40185,
+    "y": 5720.000000000001
+  },
+  "Simple Bridges": {
+    "x": 40185,
+    "y": 6160.000000000001
+  },
+  "Childcare Arrangements": {
+    "x": 42390,
+    "y": 5760.000000000001
+  },
+  "Formalized Midwifery": {
+    "x": 42390,
+    "y": 5760.000000000001
+  },
+  "Weaning Practices": {
+    "x": 42390,
+    "y": 5760.000000000001
+  },
+  "Birth Spacing Practices": {
+    "x": 42390,
+    "y": 5760.000000000001
+  },
+  "Systematic Herbal Medicine": {
+    "x": 42390,
+    "y": 6200.000000000001
+  },
+  "Formalized Bone-Setting": {
+    "x": 42390,
+    "y": 6420.000000000001
+  },
+  "Population Growth (Neolithic)": {
+    "x": 43050,
+    "y": 6090.000000000001
+  },
+  "Downdraft Kilns": {
+    "x": 27314.285714285717,
+    "y": 7779.166666666668
+  },
+  "Strong Guilds/Corporate Bodies": {
+    "x": 1080,
+    "y": 40
+  },
+  "Censorship Apparatus": {
+    "x": 8760,
+    "y": 9990.000000000002
+  },
+  "Standardized Measures": {
+    "x": 6811.25,
+    "y": 7320.000000000001
+  },
+  "Multigenerational Planning": {
+    "x": 4580,
+    "y": 7712.000000000001
+  },
+  "Intellectual Property Hoarding": {
+    "x": 3540,
+    "y": 10396.600000000002
+  },
+  "Short-termism / Presentism": {
+    "x": 3540,
+    "y": 10516.600000000002
+  },
+  "Risk Aversion": {
+    "x": 40760,
+    "y": 11074.800000000001
+  },
+  "Strong Public Health & Sanitation Systems": {
+    "x": 40760,
+    "y": 11194.800000000001
+  },
+  "Institutional Amnesia": {
+    "x": 25951.25,
+    "y": 10290.000000000002
+  },
+  "Dense Transport Infrastructure": {
+    "x": 37420,
+    "y": 11050.000000000002
+  },
+  "Technological Animism": {
+    "x": 31240,
+    "y": 11540.000000000002
+  },
+  "Energy Poverty": {
+    "x": 33227.5,
+    "y": 10995.500000000002
+  },
+  "Energy Surplus / Energy Abundance": {
+    "x": 33227.5,
+    "y": 11357.500000000002
+  },
+  "Cheap Labor Trap": {
+    "x": 3660,
+    "y": 7805.000000000001
+  },
+  "Global Supply Chain Integration": {
+    "x": 8540,
+    "y": 11176.000000000002
+  },
+  "Financialization": {
+    "x": 3540,
+    "y": 10603.400000000001
+  },
+  "Rent-Seeking Dominance": {
+    "x": 3540,
+    "y": 9800.000000000002
+  },
+  "High Social Mobility / Meritocratic Mobility": {
+    "x": 4085,
+    "y": 10862.571428571431
+  },
+  "Gerontocracy": {
+    "x": 36780,
+    "y": 10455.000000000002
+  },
+  "Youth Bulge": {
+    "x": 15990,
+    "y": 11556.571428571431
+  },
+  "Brain Drain": {
+    "x": 37420,
+    "y": 11458.857142857145
+  },
+  "Legal-Formalistic Order / Rule of Law": {
+    "x": 1790,
+    "y": 9315.840000000002
+  },
+  "Open Intellectual Commons / Open Source Ethos": {
+    "x": 7780,
+    "y": 12128.000000000002
+  },
+  "Post-Truth / Narrative Fragmentation": {
+    "x": 7780,
+    "y": 12248.000000000002
+  },
+  "Surveillance State": {
+    "x": 7780,
+    "y": 12628.000000000002
+  },
+  "Infrastructure Debt": {
+    "x": 42540,
+    "y": 7440.000000000001
+  },
+  "Market Integration / Long-Distance Trade Networks": {
+    "x": 42540,
+    "y": 7560.000000000001
+  },
+  "Just-In-Time Fragility": {
+    "x": 7780,
+    "y": 12070.666666666668
+  },
+  "Nomadic Lifestyles": {
+    "x": 20047.5,
+    "y": 7700.000000000001
+  },
+  "Aging Population": {
+    "x": 40760,
+    "y": 11442.800000000001
+  },
+  "Credit & Debt Institutions": {
+    "x": 8923,
+    "y": 6475.000000000001
+  },
+  "Fragmented Authority / Warring States": {
+    "x": 1705,
+    "y": 6360.000000000001
+  },
+  "Hereditary Caste / Rigid Stratification": {
+    "x": 1705,
+    "y": 6480.000000000001
+  },
+  "Professional Standing Army": {
+    "x": 5310,
+    "y": 7920.000000000001
+  },
+  "Frontier Expansion": {
+    "x": 33640,
+    "y": 9884.285714285716
+  },
+  "Environmental Degradation": {
+    "x": 27431.25,
+    "y": 20679.000000000004
+  },
+  "Infrastructure Decay / Maintenance Failure": {
+    "x": 20370,
+    "y": 9152.000000000002
+  },
+  "Principle of Falsification": {
+    "x": 3780,
+    "y": 11473.714285714288
+  },
+  "Nuclear Magnetic Resonance": {
+    "x": 3780,
+    "y": 11540.000000000002
+  },
+  "Discovery and Characterization of CRISPR Loci": {
+    "x": 3470,
+    "y": 13079.809523809525
+  },
+  "CRISPR-Cas9 Genome Editing": {
+    "x": 3470,
+    "y": 13337.523809523811
+  },
+  "Early Smartphones": {
+    "x": 7465,
+    "y": 12320.000000000002
+  },
+  "Modern Smartphones": {
+    "x": 7465,
+    "y": 12628.000000000002
+  },
+  "Enabler of Mass Digital Surveillance": {
+    "x": 783,
+    "y": 148
+  },
+  "Inductor": {
+    "x": 31205,
+    "y": 10954.400000000001
+  },
+  "Air Conditioner": {
+    "x": 35945,
+    "y": 11452.571428571431
+  },
+  "Steel Ship": {
+    "x": 37260,
+    "y": 11161.200000000003
+  },
+  "Steam Ship": {
+    "x": 37260,
+    "y": 10840.000000000002
+  },
+  "Aircraft Carrier": {
+    "x": 39150,
+    "y": 11331.714285714288
+  },
+  "Radar": {
+    "x": 39150,
+    "y": 11426.000000000002
+  },
+  "Light-Emitting Diode": {
+    "x": 29010,
+    "y": 12881.333333333336
+  },
+  "Drones": {
+    "x": 32970,
+    "y": 12930.000000000002
+  },
+  "Personalized Medicine": {
+    "x": 34985,
+    "y": 12540.000000000002
+  },
+  "Capacitor": {
+    "x": 30955,
+    "y": 11216.000000000002
+  },
+  "Resistor": {
+    "x": 30955,
+    "y": 11040.000000000002
+  },
+  "Rocketry": {
+    "x": 35420,
+    "y": 9835.714285714288
+  },
+  "General Relativity": {
+    "x": 3780,
+    "y": 11354.285714285716
+  },
+  "Moving Coil Acoustic Transducer": {
+    "x": 8380,
+    "y": 11362.028571428575
+  },
+  "Loudspeaker": {
+    "x": 8380,
+    "y": 11387.171428571432
+  },
+  "Headphones": {
+    "x": 8380,
+    "y": 11292.885714285718
+  },
+  "Wind Turbine": {
+    "x": 27368.75,
+    "y": 11296.000000000002
+  },
+  "Solenoid": {
+    "x": 30955,
+    "y": 10930.000000000002
+  },
+  "Continuous Tracks": {
+    "x": 37260,
+    "y": 11274.34285714286
+  },
+  "Helicopter": {
+    "x": 37260,
+    "y": 11475.485714285716
+  },
+  "Submarine": {
+    "x": 37260,
+    "y": 11249.200000000003
+  },
+  "Nuclear Submarine": {
+    "x": 37260,
+    "y": 11529.200000000003
+  },
+  "The Tank": {
+    "x": 39150,
+    "y": 11306.571428571431
+  },
+  "Main Battle Tank": {
+    "x": 39150,
+    "y": 11486.000000000002
+  },
+  "Night Vision Goggles": {
+    "x": 39150,
+    "y": 11457.428571428572
+  },
+  "Ballistic Missile": {
+    "x": 39150,
+    "y": 11482.571428571431
+  },
+  "Condoms": {
+    "x": 40600,
+    "y": 11038.800000000001
+  },
+  "Sanitary Pads": {
+    "x": 40600,
+    "y": 11162.000000000002
+  },
+  "Earbuds": {
+    "x": 7465,
+    "y": 12364.000000000002
+  },
+  "Lithium Battery": {
+    "x": 29670,
+    "y": 12930.000000000002
+  },
+  "Futures Trading": {
+    "x": 3380,
+    "y": 10660.000000000002
+  },
+  "Information Theory": {
+    "x": 9230,
+    "y": 11170.000000000002
+  },
+  "Digital Filters": {
+    "x": 9230,
+    "y": 11170.000000000002
+  },
+  "Float Glass": {
+    "x": 20450,
+    "y": 11170.000000000002
+  },
+  "Torpedo": {
+    "x": 39150,
+    "y": 11056.400000000001
+  },
+  "Derivatives Trading": {
+    "x": 2810,
+    "y": 12930.000000000002
+  },
+  "Packet Switching": {
+    "x": 7465,
+    "y": 11900.000000000002
+  },
+  "Photolithography": {
+    "x": 25040,
+    "y": 11269.142857142859
+  },
+  "The Planar Process": {
+    "x": 25040,
+    "y": 11269.142857142859
+  },
+  "MOSFET": {
+    "x": 30955,
+    "y": 11540.000000000002
+  },
+  "VLSI": {
+    "x": 29010,
+    "y": 12978.66666666667
+  },
+  "Lamellar Armor": {
+    "x": 34540,
+    "y": 9340.000000000002
+  },
+  "Plate Armor": {
+    "x": 35420,
+    "y": 10005.714285714288
+  },
+  "Air Quality Regulations": {
+    "x": 1490,
+    "y": 11170.000000000002
+  },
+  "Polyethylene": {
+    "x": 23640,
+    "y": 11413.428571428572
+  },
+  "Plastic Packaging": {
+    "x": 23640,
+    "y": 11486.000000000002
+  },
+  "Kevlar": {
+    "x": 23640,
+    "y": 11486.000000000002
+  },
+  "Cavity Magnetron": {
+    "x": 30955,
+    "y": 11511.428571428572
+  },
+  "Microwave Oven": {
+    "x": 34050,
+    "y": 11170.000000000002
+  },
+  "Catalytic Converter": {
+    "x": 37260,
+    "y": 11529.200000000003
+  },
+  "Three-point Seatbelt": {
+    "x": 37260,
+    "y": 11529.200000000003
+  },
+  "Shipping Container": {
+    "x": 37260,
+    "y": 11529.200000000003
+  },
+  "Container Ship": {
+    "x": 37260,
+    "y": 11529.200000000003
+  },
+  "Marker Degradation": {
+    "x": 40600,
+    "y": 11459.942857142858
+  },
+  "Polymerase Chain Reaction": {
+    "x": 3470,
+    "y": 12522.47619047619
+  },
+  "Frequency Hopping": {
+    "x": 7465,
+    "y": 11900.000000000002
+  },
+  "Monoclonal Antibodies": {
+    "x": 34985,
+    "y": 11953.333333333336
+  },
+  "Investment Banks": {
+    "x": 3397.9999999999995,
+    "y": 1496.0000000000002
+  },
+  "de Laval Nozzle": {
+    "x": 57015,
+    "y": 22196.000000000004
+  },
+  "Zone Refining": {
+    "x": 25040,
+    "y": 11269.142857142859
+  },
+  "Fiber Optics": {
+    "x": 7465,
+    "y": 11900.000000000002
+  },
+  "Insurance": {
+    "x": 3380,
+    "y": 10578.000000000002
+  },
+  "Oral Contraceptives": {
+    "x": 40600,
+    "y": 11494.800000000001
+  },
+  "Oral Rehydration Therapy": {
+    "x": 40600,
+    "y": 11494.800000000001
+  },
+  "Sword": {
+    "x": 34540,
+    "y": 8640.000000000002
+  },
+  "Basic Lamellophone": {
+    "x": 14770,
+    "y": 7870.000000000002
+  },
+  "Turbosupercharger": {
+    "x": 28820,
+    "y": 10840.000000000002
+  },
+  "Turbojet": {
+    "x": 29340,
+    "y": 10840.000000000002
+  },
+  "Turbofan": {
+    "x": 29860,
+    "y": 10840.000000000002
+  },
+  "Ramjet": {
+    "x": 30380,
+    "y": 10840.000000000002
+  },
+  "Pulsejet": {
+    "x": 30900,
+    "y": 10840.000000000002
+  }
+}

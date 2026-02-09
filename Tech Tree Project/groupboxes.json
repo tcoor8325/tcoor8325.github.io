@@ -1,0 +1,3215 @@
+{
+  "Early Foraging Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 308,
+    "width": 1360,
+    "height": 2772.0000000000005,
+    "color": "hsl( 0, 70%, 60%)"
+  },
+  "Early Foraging Age - Beliefs, Ritual & Religion": {
+    "x": 1560,
+    "y": 308,
+    "width": 2560,
+    "height": 2772.0000000000005,
+    "color": "hsl( 37, 70%, 60%)"
+  },
+  "Early Foraging Age - Law, Justice & Contract": {
+    "x": 4280,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 74, 70%, 60%)"
+  },
+  "Early Foraging Age - Governance, Administration & Institutions": {
+    "x": 4940,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 111, 70%, 60%)"
+  },
+  "Early Foraging Age - Trade, Markets & Finance": {
+    "x": 5600,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 148, 70%, 60%)"
+  },
+  "Early Foraging Age - Science, Education & Inquiry": {
+    "x": 6260,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 185, 70%, 60%)"
+  },
+  "Early Foraging Age - Mathematics & Quantification": {
+    "x": 6920,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 222, 70%, 60%)"
+  },
+  "Early Foraging Age - Timekeeping, Weights & Measures": {
+    "x": 7580,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 259, 70%, 60%)"
+  },
+  "Early Foraging Age - Cartography & Geographic Knowledge": {
+    "x": 8240,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 296, 70%, 60%)"
+  },
+  "Early Foraging Age - Writing & Notation Systems": {
+    "x": 8900,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 333, 70%, 60%)"
+  },
+  "Early Foraging Age - Texts, Print & Archives": {
+    "x": 9560,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 10, 70%, 60%)"
+  },
+  "Early Foraging Age - Communication & Telecommunications": {
+    "x": 10220,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 47, 70%, 60%)"
+  },
+  "Early Foraging Age - Algorithms, Data & AI": {
+    "x": 10880,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 84, 70%, 60%)"
+  },
+  "Early Foraging Age - Music, Rhythm & Dance": {
+    "x": 11540,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 121, 70%, 60%)"
+  },
+  "Early Foraging Age - Visual Art & Iconography": {
+    "x": 12200,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 158, 70%, 60%)"
+  },
+  "Early Foraging Age - Cosmetics, Dress & Body Adornment": {
+    "x": 12860,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 195, 70%, 60%)"
+  },
+  "Early Foraging Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 13520,
+    "y": 308,
+    "width": 880,
+    "height": 2772.0000000000005,
+    "color": "hsl( 232, 70%, 60%)"
+  },
+  "Early Foraging Age - Agriculture & Field Systems": {
+    "x": 14560,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 269, 70%, 60%)"
+  },
+  "Early Foraging Age - Plant Domestication & Crop Diversity": {
+    "x": 15220,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 306, 70%, 60%)"
+  },
+  "Early Foraging Age - Pastoralism, Herding & Draft Animals": {
+    "x": 15880,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 343, 70%, 60%)"
+  },
+  "Early Foraging Age - Irrigation & Water Management": {
+    "x": 16540,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 20, 70%, 60%)"
+  },
+  "Early Foraging Age - Landscape & Environmental Engineering": {
+    "x": 17200,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 57, 70%, 60%)"
+  },
+  "Early Foraging Age - Crop Improvement, Soils & Fertility": {
+    "x": 17860,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 94, 70%, 60%)"
+  },
+  "Early Foraging Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 18520,
+    "y": 308,
+    "width": 640,
+    "height": 2772.0000000000005,
+    "color": "hsl( 131, 70%, 60%)"
+  },
+  "Early Foraging Age - Lithics & Early Tool Materials": {
+    "x": 19320,
+    "y": 308,
+    "width": 1120,
+    "height": 2772.0000000000005,
+    "color": "hsl( 168, 70%, 60%)"
+  },
+  "Early Foraging Age - Wood, Bone & Organic Craft": {
+    "x": 20600,
+    "y": 308,
+    "width": 1120,
+    "height": 2772.0000000000005,
+    "color": "hsl( 205, 70%, 60%)"
+  },
+  "Early Foraging Age - Textiles & Clothing": {
+    "x": 21880,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 242, 70%, 60%)"
+  },
+  "Early Foraging Age - Ceramics, Pottery & Kilns": {
+    "x": 22540,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 279, 70%, 60%)"
+  },
+  "Early Foraging Age - Bricks, Masonry & Mortars": {
+    "x": 23200,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 316, 70%, 60%)"
+  },
+  "Early Foraging Age - Glass & Optics": {
+    "x": 23860,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 353, 70%, 60%)"
+  },
+  "Early Foraging Age - Mining & Ore Processing": {
+    "x": 24520,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 30, 70%, 60%)"
+  },
+  "Early Foraging Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 25180,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 67, 70%, 60%)"
+  },
+  "Early Foraging Age - Metallurgy: Iron & Steel": {
+    "x": 25840,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 104, 70%, 60%)"
+  },
+  "Early Foraging Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 26500,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 141, 70%, 60%)"
+  },
+  "Early Foraging Age - Precision Manufacturing & Machine Tools": {
+    "x": 27160,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 178, 70%, 60%)"
+  },
+  "Early Foraging Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 27820,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 215, 70%, 60%)"
+  },
+  "Early Foraging Age - Fire, Combustion & Heat Management": {
+    "x": 28480,
+    "y": 308,
+    "width": 640,
+    "height": 2772.0000000000005,
+    "color": "hsl( 252, 70%, 60%)"
+  },
+  "Early Foraging Age - Fuels & Energy Sources": {
+    "x": 29280,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 289, 70%, 60%)"
+  },
+  "Early Foraging Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 29940,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 326, 70%, 60%)"
+  },
+  "Early Foraging Age - Engines, Turbines & Industrial Power": {
+    "x": 30600,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 3, 70%, 60%)"
+  },
+  "Early Foraging Age - Electricity & Magnetism": {
+    "x": 31260,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 40, 70%, 60%)"
+  },
+  "Early Foraging Age - Power Transmission, Grids & Storage": {
+    "x": 31920,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 77, 70%, 60%)"
+  },
+  "Early Foraging Age - Shelter, Housing & Domestic Architecture": {
+    "x": 32580,
+    "y": 308,
+    "width": 640,
+    "height": 2772.0000000000005,
+    "color": "hsl( 114, 70%, 60%)"
+  },
+  "Early Foraging Age - Urban Infrastructure & Public Works": {
+    "x": 33380,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 151, 70%, 60%)"
+  },
+  "Early Foraging Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 34040,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 188, 70%, 60%)"
+  },
+  "Early Foraging Age - Climate Control, Heating & Ventilation": {
+    "x": 34700,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 225, 70%, 60%)"
+  },
+  "Early Foraging Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 35360,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 262, 70%, 60%)"
+  },
+  "Early Foraging Age - Navigation, Orientation & Exploration": {
+    "x": 36020,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 299, 70%, 60%)"
+  },
+  "Early Foraging Age - Warfare, Weapons & Fortification": {
+    "x": 36680,
+    "y": 308,
+    "width": 640,
+    "height": 2772.0000000000005,
+    "color": "hsl( 336, 70%, 60%)"
+  },
+  "Early Foraging Age - Health, Medicine & Public Health": {
+    "x": 37480,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 13, 70%, 60%)"
+  },
+  "Early Foraging Age - Uncategorized / Cross-cutting Systems": {
+    "x": 38140,
+    "y": 308,
+    "width": 500,
+    "height": 2772.0000000000005,
+    "color": "hsl( 50, 70%, 60%)"
+  },
+  "Late Foraging Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 3080.0000000000005,
+    "width": 880,
+    "height": 2160.0000000000005,
+    "color": "hsl(352, 70%, 60%)"
+  },
+  "Late Foraging Age - Beliefs, Ritual & Religion": {
+    "x": 1080,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(281, 70%, 60%)"
+  },
+  "Late Foraging Age - Law, Justice & Contract": {
+    "x": 1740,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(132, 70%, 60%)"
+  },
+  "Late Foraging Age - Governance, Administration & Institutions": {
+    "x": 2400,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(242, 70%, 60%)"
+  },
+  "Late Foraging Age - Trade, Markets & Finance": {
+    "x": 3060,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(78, 70%, 60%)"
+  },
+  "Late Foraging Age - Science, Education & Inquiry": {
+    "x": 3720,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(148, 70%, 60%)"
+  },
+  "Late Foraging Age - Mathematics & Quantification": {
+    "x": 4380,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(94, 70%, 60%)"
+  },
+  "Late Foraging Age - Timekeeping, Weights & Measures": {
+    "x": 5040,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(329, 70%, 60%)"
+  },
+  "Late Foraging Age - Cartography & Geographic Knowledge": {
+    "x": 5700,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(260, 70%, 60%)"
+  },
+  "Late Foraging Age - Writing & Notation Systems": {
+    "x": 6360,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(283, 70%, 60%)"
+  },
+  "Late Foraging Age - Texts, Print & Archives": {
+    "x": 7020,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(105, 70%, 60%)"
+  },
+  "Late Foraging Age - Communication & Telecommunications": {
+    "x": 7680,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(130, 70%, 60%)"
+  },
+  "Late Foraging Age - Algorithms, Data & AI": {
+    "x": 8340,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(89, 70%, 60%)"
+  },
+  "Late Foraging Age - Music, Rhythm & Dance": {
+    "x": 9000,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(177, 70%, 60%)"
+  },
+  "Late Foraging Age - Visual Art & Iconography": {
+    "x": 9660,
+    "y": 3080.0000000000005,
+    "width": 640,
+    "height": 2160.0000000000005,
+    "color": "hsl(137, 70%, 60%)"
+  },
+  "Late Foraging Age - Cosmetics, Dress & Body Adornment": {
+    "x": 10460,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(260, 70%, 60%)"
+  },
+  "Late Foraging Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 11120,
+    "y": 3080.0000000000005,
+    "width": 880,
+    "height": 2160.0000000000005,
+    "color": "hsl(122, 70%, 60%)"
+  },
+  "Late Foraging Age - Agriculture & Field Systems": {
+    "x": 12160,
+    "y": 3080.0000000000005,
+    "width": 1360,
+    "height": 2160.0000000000005,
+    "color": "hsl(342, 70%, 60%)"
+  },
+  "Late Foraging Age - Plant Domestication & Crop Diversity": {
+    "x": 13680,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(72, 70%, 60%)"
+  },
+  "Late Foraging Age - Pastoralism, Herding & Draft Animals": {
+    "x": 14340,
+    "y": 3080.0000000000005,
+    "width": 880,
+    "height": 2160.0000000000005,
+    "color": "hsl(73, 70%, 60%)"
+  },
+  "Late Foraging Age - Irrigation & Water Management": {
+    "x": 15380,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(73, 70%, 60%)"
+  },
+  "Late Foraging Age - Landscape & Environmental Engineering": {
+    "x": 16040,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(35, 70%, 60%)"
+  },
+  "Late Foraging Age - Crop Improvement, Soils & Fertility": {
+    "x": 16700,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(51, 70%, 60%)"
+  },
+  "Late Foraging Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 17360,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(39, 70%, 60%)"
+  },
+  "Late Foraging Age - Lithics & Early Tool Materials": {
+    "x": 18020,
+    "y": 3080.0000000000005,
+    "width": 1840,
+    "height": 2160.0000000000005,
+    "color": "hsl(274, 70%, 60%)"
+  },
+  "Late Foraging Age - Wood, Bone & Organic Craft": {
+    "x": 20020,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(165, 70%, 60%)"
+  },
+  "Late Foraging Age - Textiles & Clothing": {
+    "x": 20680,
+    "y": 3080.0000000000005,
+    "width": 2080,
+    "height": 2160.0000000000005,
+    "color": "hsl(61, 70%, 60%)"
+  },
+  "Late Foraging Age - Ceramics, Pottery & Kilns": {
+    "x": 22920,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(302, 70%, 60%)"
+  },
+  "Late Foraging Age - Bricks, Masonry & Mortars": {
+    "x": 23580,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(348, 70%, 60%)"
+  },
+  "Late Foraging Age - Glass & Optics": {
+    "x": 24240,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(179, 70%, 60%)"
+  },
+  "Late Foraging Age - Mining & Ore Processing": {
+    "x": 24900,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(196, 70%, 60%)"
+  },
+  "Late Foraging Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 25560,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(99, 70%, 60%)"
+  },
+  "Late Foraging Age - Metallurgy: Iron & Steel": {
+    "x": 26220,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(306, 70%, 60%)"
+  },
+  "Late Foraging Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 26880,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(255, 70%, 60%)"
+  },
+  "Late Foraging Age - Precision Manufacturing & Machine Tools": {
+    "x": 27540,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(237, 70%, 60%)"
+  },
+  "Late Foraging Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 28200,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(212, 70%, 60%)"
+  },
+  "Late Foraging Age - Fire, Combustion & Heat Management": {
+    "x": 28860,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(301, 70%, 60%)"
+  },
+  "Late Foraging Age - Fuels & Energy Sources": {
+    "x": 29520,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(108, 70%, 60%)"
+  },
+  "Late Foraging Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 30180,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(184, 70%, 60%)"
+  },
+  "Late Foraging Age - Engines, Turbines & Industrial Power": {
+    "x": 30840,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(102, 70%, 60%)"
+  },
+  "Late Foraging Age - Electricity & Magnetism": {
+    "x": 31500,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(353, 70%, 60%)"
+  },
+  "Late Foraging Age - Power Transmission, Grids & Storage": {
+    "x": 32160,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(100, 70%, 60%)"
+  },
+  "Late Foraging Age - Shelter, Housing & Domestic Architecture": {
+    "x": 32820,
+    "y": 3080.0000000000005,
+    "width": 1600,
+    "height": 2160.0000000000005,
+    "color": "hsl(230, 70%, 60%)"
+  },
+  "Late Foraging Age - Urban Infrastructure & Public Works": {
+    "x": 34580,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(341, 70%, 60%)"
+  },
+  "Late Foraging Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 35240,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(41, 70%, 60%)"
+  },
+  "Late Foraging Age - Climate Control, Heating & Ventilation": {
+    "x": 35900,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(334, 70%, 60%)"
+  },
+  "Late Foraging Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 36560,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(8, 70%, 60%)"
+  },
+  "Late Foraging Age - Navigation, Orientation & Exploration": {
+    "x": 37220,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(130, 70%, 60%)"
+  },
+  "Late Foraging Age - Warfare, Weapons & Fortification": {
+    "x": 37880,
+    "y": 3080.0000000000005,
+    "width": 880,
+    "height": 2160.0000000000005,
+    "color": "hsl(69, 70%, 60%)"
+  },
+  "Late Foraging Age - Health, Medicine & Public Health": {
+    "x": 38920,
+    "y": 3080.0000000000005,
+    "width": 1360,
+    "height": 2160.0000000000005,
+    "color": "hsl(226, 70%, 60%)"
+  },
+  "Late Foraging Age - Uncategorized / Cross-cutting Systems": {
+    "x": 40440,
+    "y": 3080.0000000000005,
+    "width": 500,
+    "height": 2160.0000000000005,
+    "color": "hsl(145, 70%, 60%)"
+  },
+  "Early Farming Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(126, 70%, 60%)"
+  },
+  "Early Farming Age - Beliefs, Ritual & Religion": {
+    "x": 700,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(55, 70%, 60%)"
+  },
+  "Early Farming Age - Law, Justice & Contract": {
+    "x": 1360,
+    "y": 5240.000000000001,
+    "width": 880,
+    "height": 2240,
+    "color": "hsl(86, 70%, 60%)"
+  },
+  "Early Farming Age - Governance, Administration & Institutions": {
+    "x": 2400,
+    "y": 5240.000000000001,
+    "width": 640,
+    "height": 2240,
+    "color": "hsl(196, 70%, 60%)"
+  },
+  "Early Farming Age - Trade, Markets & Finance": {
+    "x": 3200,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(92, 70%, 60%)"
+  },
+  "Early Farming Age - Science, Education & Inquiry": {
+    "x": 3860,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(42, 70%, 60%)"
+  },
+  "Early Farming Age - Mathematics & Quantification": {
+    "x": 4520,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(348, 70%, 60%)"
+  },
+  "Early Farming Age - Timekeeping, Weights & Measures": {
+    "x": 5180,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(43, 70%, 60%)"
+  },
+  "Early Farming Age - Cartography & Geographic Knowledge": {
+    "x": 5840,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(154, 70%, 60%)"
+  },
+  "Early Farming Age - Writing & Notation Systems": {
+    "x": 6500,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(57, 70%, 60%)"
+  },
+  "Early Farming Age - Texts, Print & Archives": {
+    "x": 7160,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(59, 70%, 60%)"
+  },
+  "Early Farming Age - Communication & Telecommunications": {
+    "x": 7820,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(24, 70%, 60%)"
+  },
+  "Early Farming Age - Algorithms, Data & AI": {
+    "x": 8480,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(283, 70%, 60%)"
+  },
+  "Early Farming Age - Music, Rhythm & Dance": {
+    "x": 9140,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(11, 70%, 60%)"
+  },
+  "Early Farming Age - Visual Art & Iconography": {
+    "x": 9800,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(151, 70%, 60%)"
+  },
+  "Early Farming Age - Cosmetics, Dress & Body Adornment": {
+    "x": 10460,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(94, 70%, 60%)"
+  },
+  "Early Farming Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 11120,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(316, 70%, 60%)"
+  },
+  "Early Farming Age - Agriculture & Field Systems": {
+    "x": 11780,
+    "y": 5240.000000000001,
+    "width": 1360,
+    "height": 2240,
+    "color": "hsl(176, 70%, 60%)"
+  },
+  "Early Farming Age - Plant Domestication & Crop Diversity": {
+    "x": 13300,
+    "y": 5240.000000000001,
+    "width": 2560,
+    "height": 2240,
+    "color": "hsl(86, 70%, 60%)"
+  },
+  "Early Farming Age - Pastoralism, Herding & Draft Animals": {
+    "x": 16020,
+    "y": 5240.000000000001,
+    "width": 1840,
+    "height": 2240,
+    "color": "hsl(87, 70%, 60%)"
+  },
+  "Early Farming Age - Irrigation & Water Management": {
+    "x": 18020,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(27, 70%, 60%)"
+  },
+  "Early Farming Age - Landscape & Environmental Engineering": {
+    "x": 18680,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(109, 70%, 60%)"
+  },
+  "Early Farming Age - Crop Improvement, Soils & Fertility": {
+    "x": 19340,
+    "y": 5240.000000000001,
+    "width": 640,
+    "height": 2240,
+    "color": "hsl(5, 70%, 60%)"
+  },
+  "Early Farming Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 20140,
+    "y": 5240.000000000001,
+    "width": 3040,
+    "height": 2240,
+    "color": "hsl(233, 70%, 60%)"
+  },
+  "Early Farming Age - Lithics & Early Tool Materials": {
+    "x": 23340,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(288, 70%, 60%)"
+  },
+  "Early Farming Age - Wood, Bone & Organic Craft": {
+    "x": 24000,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(299, 70%, 60%)"
+  },
+  "Early Farming Age - Textiles & Clothing": {
+    "x": 24660,
+    "y": 5240.000000000001,
+    "width": 880,
+    "height": 2240,
+    "color": "hsl(135, 70%, 60%)"
+  },
+  "Early Farming Age - Ceramics, Pottery & Kilns": {
+    "x": 25700,
+    "y": 5240.000000000001,
+    "width": 880,
+    "height": 2240,
+    "color": "hsl(16, 70%, 60%)"
+  },
+  "Early Farming Age - Bricks, Masonry & Mortars": {
+    "x": 26740,
+    "y": 5240.000000000001,
+    "width": 1360,
+    "height": 2240,
+    "color": "hsl(62, 70%, 60%)"
+  },
+  "Early Farming Age - Glass & Optics": {
+    "x": 28260,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(313, 70%, 60%)"
+  },
+  "Early Farming Age - Mining & Ore Processing": {
+    "x": 28920,
+    "y": 5240.000000000001,
+    "width": 640,
+    "height": 2240,
+    "color": "hsl(150, 70%, 60%)"
+  },
+  "Early Farming Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 29720,
+    "y": 5240.000000000001,
+    "width": 640,
+    "height": 2240,
+    "color": "hsl(293, 70%, 60%)"
+  },
+  "Early Farming Age - Metallurgy: Iron & Steel": {
+    "x": 30520,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(320, 70%, 60%)"
+  },
+  "Early Farming Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 31180,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(89, 70%, 60%)"
+  },
+  "Early Farming Age - Precision Manufacturing & Machine Tools": {
+    "x": 31840,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(71, 70%, 60%)"
+  },
+  "Early Farming Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 32500,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(166, 70%, 60%)"
+  },
+  "Early Farming Age - Fire, Combustion & Heat Management": {
+    "x": 33160,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(195, 70%, 60%)"
+  },
+  "Early Farming Age - Fuels & Energy Sources": {
+    "x": 33820,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(2, 70%, 60%)"
+  },
+  "Early Farming Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 34480,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(78, 70%, 60%)"
+  },
+  "Early Farming Age - Engines, Turbines & Industrial Power": {
+    "x": 35140,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(116, 70%, 60%)"
+  },
+  "Early Farming Age - Electricity & Magnetism": {
+    "x": 35800,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(307, 70%, 60%)"
+  },
+  "Early Farming Age - Power Transmission, Grids & Storage": {
+    "x": 36460,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(54, 70%, 60%)"
+  },
+  "Early Farming Age - Shelter, Housing & Domestic Architecture": {
+    "x": 37120,
+    "y": 5240.000000000001,
+    "width": 880,
+    "height": 2240,
+    "color": "hsl(124, 70%, 60%)"
+  },
+  "Early Farming Age - Urban Infrastructure & Public Works": {
+    "x": 38160,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(295, 70%, 60%)"
+  },
+  "Early Farming Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 38820,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(295, 70%, 60%)"
+  },
+  "Early Farming Age - Climate Control, Heating & Ventilation": {
+    "x": 39480,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(108, 70%, 60%)"
+  },
+  "Early Farming Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 40140,
+    "y": 5240.000000000001,
+    "width": 640,
+    "height": 2240,
+    "color": "hsl(142, 70%, 60%)"
+  },
+  "Early Farming Age - Navigation, Orientation & Exploration": {
+    "x": 40940,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(204, 70%, 60%)"
+  },
+  "Early Farming Age - Warfare, Weapons & Fortification": {
+    "x": 41600,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(203, 70%, 60%)"
+  },
+  "Early Farming Age - Health, Medicine & Public Health": {
+    "x": 42260,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(0, 70%, 60%)"
+  },
+  "Early Farming Age - Uncategorized / Cross-cutting Systems": {
+    "x": 42920,
+    "y": 5240.000000000001,
+    "width": 500,
+    "height": 2240,
+    "color": "hsl(219, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(158, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Beliefs, Ritual & Religion": {
+    "x": 700,
+    "y": 7480.000000000001,
+    "width": 2320,
+    "height": 1320.000000000001,
+    "color": "hsl(87, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Law, Justice & Contract": {
+    "x": 3180,
+    "y": 7480.000000000001,
+    "width": 880,
+    "height": 1320.000000000001,
+    "color": "hsl(118, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Governance, Administration & Institutions": {
+    "x": 4220,
+    "y": 7480.000000000001,
+    "width": 640,
+    "height": 1320.000000000001,
+    "color": "hsl(228, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Trade, Markets & Finance": {
+    "x": 5020,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(4, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Science, Education & Inquiry": {
+    "x": 5680,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(194, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Mathematics & Quantification": {
+    "x": 6340,
+    "y": 7480.000000000001,
+    "width": 1120,
+    "height": 1320.000000000001,
+    "color": "hsl(140, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Timekeeping, Weights & Measures": {
+    "x": 7620,
+    "y": 7480.000000000001,
+    "width": 1840,
+    "height": 1320.000000000001,
+    "color": "hsl(195, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Cartography & Geographic Knowledge": {
+    "x": 9620,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(306, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Writing & Notation Systems": {
+    "x": 10280,
+    "y": 7480.000000000001,
+    "width": 1360,
+    "height": 1320.000000000001,
+    "color": "hsl(89, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Texts, Print & Archives": {
+    "x": 11800,
+    "y": 7480.000000000001,
+    "width": 1360,
+    "height": 1320.000000000001,
+    "color": "hsl(91, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Communication & Telecommunications": {
+    "x": 13320,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(176, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Algorithms, Data & AI": {
+    "x": 13980,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(195, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Music, Rhythm & Dance": {
+    "x": 14640,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(283, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Visual Art & Iconography": {
+    "x": 15300,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(63, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Cosmetics, Dress & Body Adornment": {
+    "x": 15960,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(6, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 16620,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(228, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Agriculture & Field Systems": {
+    "x": 17280,
+    "y": 7480.000000000001,
+    "width": 1360,
+    "height": 1320.000000000001,
+    "color": "hsl(88, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Plant Domestication & Crop Diversity": {
+    "x": 18800,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(358, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Pastoralism, Herding & Draft Animals": {
+    "x": 19460,
+    "y": 7480.000000000001,
+    "width": 1600,
+    "height": 1320.000000000001,
+    "color": "hsl(359, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Irrigation & Water Management": {
+    "x": 21220,
+    "y": 7480.000000000001,
+    "width": 1120,
+    "height": 1320.000000000001,
+    "color": "hsl(59, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Landscape & Environmental Engineering": {
+    "x": 22500,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(261, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Crop Improvement, Soils & Fertility": {
+    "x": 23160,
+    "y": 7480.000000000001,
+    "width": 640,
+    "height": 1320.000000000001,
+    "color": "hsl(37, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 23960,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(145, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Lithics & Early Tool Materials": {
+    "x": 24620,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(200, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Wood, Bone & Organic Craft": {
+    "x": 25280,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(331, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Textiles & Clothing": {
+    "x": 25940,
+    "y": 7480.000000000001,
+    "width": 640,
+    "height": 1320.000000000001,
+    "color": "hsl(287, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Ceramics, Pottery & Kilns": {
+    "x": 26740,
+    "y": 7480.000000000001,
+    "width": 1120,
+    "height": 1320.000000000001,
+    "color": "hsl(168, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Bricks, Masonry & Mortars": {
+    "x": 28020,
+    "y": 7480.000000000001,
+    "width": 1360,
+    "height": 1320.000000000001,
+    "color": "hsl(214, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Glass & Optics": {
+    "x": 29540,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(345, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Mining & Ore Processing": {
+    "x": 30200,
+    "y": 7480.000000000001,
+    "width": 640,
+    "height": 1320.000000000001,
+    "color": "hsl(182, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 31000,
+    "y": 7480.000000000001,
+    "width": 640,
+    "height": 1320.000000000001,
+    "color": "hsl(205, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Metallurgy: Iron & Steel": {
+    "x": 31800,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(232, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 32460,
+    "y": 7480.000000000001,
+    "width": 640,
+    "height": 1320.000000000001,
+    "color": "hsl(1, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Precision Manufacturing & Machine Tools": {
+    "x": 33260,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(343, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 33920,
+    "y": 7480.000000000001,
+    "width": 880,
+    "height": 1320.000000000001,
+    "color": "hsl(198, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Fire, Combustion & Heat Management": {
+    "x": 34960,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(347, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Fuels & Energy Sources": {
+    "x": 35620,
+    "y": 7480.000000000001,
+    "width": 640,
+    "height": 1320.000000000001,
+    "color": "hsl(154, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 36420,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(230, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Engines, Turbines & Industrial Power": {
+    "x": 37080,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(28, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Electricity & Magnetism": {
+    "x": 37740,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(339, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Power Transmission, Grids & Storage": {
+    "x": 38400,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(86, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Shelter, Housing & Domestic Architecture": {
+    "x": 39060,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(276, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Urban Infrastructure & Public Works": {
+    "x": 39720,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(327, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 40380,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(87, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Climate Control, Heating & Ventilation": {
+    "x": 41040,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(140, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 41700,
+    "y": 7480.000000000001,
+    "width": 1600,
+    "height": 1320.000000000001,
+    "color": "hsl(174, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Navigation, Orientation & Exploration": {
+    "x": 43460,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(356, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Warfare, Weapons & Fortification": {
+    "x": 44120,
+    "y": 7480.000000000001,
+    "width": 640,
+    "height": 1320.000000000001,
+    "color": "hsl(235, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Health, Medicine & Public Health": {
+    "x": 44920,
+    "y": 7480.000000000001,
+    "width": 880,
+    "height": 1320.000000000001,
+    "color": "hsl(32, 70%, 60%)"
+  },
+  "Urban Agrarian Age - Uncategorized / Cross-cutting Systems": {
+    "x": 45960,
+    "y": 7480.000000000001,
+    "width": 500,
+    "height": 1320.000000000001,
+    "color": "hsl(11, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(23, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Beliefs, Ritual & Religion": {
+    "x": 700,
+    "y": 8800.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(312, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Law, Justice & Contract": {
+    "x": 1500,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(253, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Governance, Administration & Institutions": {
+    "x": 2160,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(3, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Trade, Markets & Finance": {
+    "x": 2820,
+    "y": 8800.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(229, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Science, Education & Inquiry": {
+    "x": 3620,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(59, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Mathematics & Quantification": {
+    "x": 4280,
+    "y": 8800.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(5, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Timekeeping, Weights & Measures": {
+    "x": 5080,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(330, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Cartography & Geographic Knowledge": {
+    "x": 5740,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(171, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Writing & Notation Systems": {
+    "x": 6400,
+    "y": 8800.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(314, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Texts, Print & Archives": {
+    "x": 7200,
+    "y": 8800.000000000002,
+    "width": 1120,
+    "height": 880,
+    "color": "hsl(226, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Communication & Telecommunications": {
+    "x": 8480,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(41, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Algorithms, Data & AI": {
+    "x": 9140,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(330, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Music, Rhythm & Dance": {
+    "x": 9800,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(58, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Visual Art & Iconography": {
+    "x": 10460,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(288, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Cosmetics, Dress & Body Adornment": {
+    "x": 11120,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(141, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 11780,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(3, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Agriculture & Field Systems": {
+    "x": 12440,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(223, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Plant Domestication & Crop Diversity": {
+    "x": 13100,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(223, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Pastoralism, Herding & Draft Animals": {
+    "x": 13760,
+    "y": 8800.000000000002,
+    "width": 880,
+    "height": 880,
+    "color": "hsl(224, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Irrigation & Water Management": {
+    "x": 14800,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(194, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Landscape & Environmental Engineering": {
+    "x": 15460,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(36, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Crop Improvement, Soils & Fertility": {
+    "x": 16120,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(172, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 16780,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(280, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Lithics & Early Tool Materials": {
+    "x": 17440,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(65, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Wood, Bone & Organic Craft": {
+    "x": 18100,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(196, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Textiles & Clothing": {
+    "x": 18760,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(62, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Ceramics, Pottery & Kilns": {
+    "x": 19420,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(303, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Bricks, Masonry & Mortars": {
+    "x": 20080,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(349, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Glass & Optics": {
+    "x": 20740,
+    "y": 8800.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(210, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Mining & Ore Processing": {
+    "x": 21540,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(317, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 22200,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(340, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Metallurgy: Iron & Steel": {
+    "x": 22860,
+    "y": 8800.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(97, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 23660,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(136, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Precision Manufacturing & Machine Tools": {
+    "x": 24320,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(118, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 24980,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(333, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Fire, Combustion & Heat Management": {
+    "x": 25640,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(212, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Fuels & Energy Sources": {
+    "x": 26300,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(19, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 26960,
+    "y": 8800.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(95, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Engines, Turbines & Industrial Power": {
+    "x": 27760,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(253, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Electricity & Magnetism": {
+    "x": 28420,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(114, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Power Transmission, Grids & Storage": {
+    "x": 29080,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(221, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Shelter, Housing & Domestic Architecture": {
+    "x": 29740,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(141, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Urban Infrastructure & Public Works": {
+    "x": 30400,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(102, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 31060,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(312, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Climate Control, Heating & Ventilation": {
+    "x": 31720,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(5, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 32380,
+    "y": 8800.000000000002,
+    "width": 880,
+    "height": 880,
+    "color": "hsl(39, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Navigation, Orientation & Exploration": {
+    "x": 33420,
+    "y": 8800.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(131, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Warfare, Weapons & Fortification": {
+    "x": 34220,
+    "y": 8800.000000000002,
+    "width": 880,
+    "height": 880,
+    "color": "hsl(100, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Health, Medicine & Public Health": {
+    "x": 35260,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(257, 70%, 60%)"
+  },
+  "Imperial Agrarian Age - Uncategorized / Cross-cutting Systems": {
+    "x": 35920,
+    "y": 8800.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(146, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(269, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Beliefs, Ritual & Religion": {
+    "x": 700,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(198, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Law, Justice & Contract": {
+    "x": 1360,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(319, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Governance, Administration & Institutions": {
+    "x": 2020,
+    "y": 9680.000000000002,
+    "width": 880,
+    "height": 770,
+    "color": "hsl(69, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Trade, Markets & Finance": {
+    "x": 3060,
+    "y": 9680.000000000002,
+    "width": 880,
+    "height": 770,
+    "color": "hsl(115, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Science, Education & Inquiry": {
+    "x": 4100,
+    "y": 9680.000000000002,
+    "width": 1120,
+    "height": 770,
+    "color": "hsl(305, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Mathematics & Quantification": {
+    "x": 5380,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(251, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Timekeeping, Weights & Measures": {
+    "x": 6040,
+    "y": 9680.000000000002,
+    "width": 640,
+    "height": 770,
+    "color": "hsl(36, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Cartography & Geographic Knowledge": {
+    "x": 6840,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(57, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Writing & Notation Systems": {
+    "x": 7500,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(200, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Texts, Print & Archives": {
+    "x": 8160,
+    "y": 9680.000000000002,
+    "width": 1120,
+    "height": 770,
+    "color": "hsl(292, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Communication & Telecommunications": {
+    "x": 9440,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(287, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Algorithms, Data & AI": {
+    "x": 10100,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(36, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Music, Rhythm & Dance": {
+    "x": 10760,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(124, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Visual Art & Iconography": {
+    "x": 11420,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(174, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Cosmetics, Dress & Body Adornment": {
+    "x": 12080,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(207, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 12740,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(69, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Agriculture & Field Systems": {
+    "x": 13400,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(289, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Plant Domestication & Crop Diversity": {
+    "x": 14060,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(109, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Pastoralism, Herding & Draft Animals": {
+    "x": 14720,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(110, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Irrigation & Water Management": {
+    "x": 15380,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(260, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Landscape & Environmental Engineering": {
+    "x": 16040,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(102, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Crop Improvement, Soils & Fertility": {
+    "x": 16700,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(238, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 17360,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(346, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Lithics & Early Tool Materials": {
+    "x": 18020,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(311, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Wood, Bone & Organic Craft": {
+    "x": 18680,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(82, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Textiles & Clothing": {
+    "x": 19340,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(128, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Ceramics, Pottery & Kilns": {
+    "x": 20000,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(9, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Bricks, Masonry & Mortars": {
+    "x": 20660,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(55, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Glass & Optics": {
+    "x": 21320,
+    "y": 9680.000000000002,
+    "width": 880,
+    "height": 770,
+    "color": "hsl(96, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Mining & Ore Processing": {
+    "x": 22360,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(23, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 23020,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(46, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Metallurgy: Iron & Steel": {
+    "x": 23680,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(343, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 24340,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(202, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Precision Manufacturing & Machine Tools": {
+    "x": 25000,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(184, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 25660,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(39, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Fire, Combustion & Heat Management": {
+    "x": 26320,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(98, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Fuels & Energy Sources": {
+    "x": 26980,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(265, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 27640,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(341, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Engines, Turbines & Industrial Power": {
+    "x": 28300,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(139, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Electricity & Magnetism": {
+    "x": 28960,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(180, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Power Transmission, Grids & Storage": {
+    "x": 29620,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(287, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Shelter, Housing & Domestic Architecture": {
+    "x": 30280,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(27, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Urban Infrastructure & Public Works": {
+    "x": 30940,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(168, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 31600,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(198, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Climate Control, Heating & Ventilation": {
+    "x": 32260,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(251, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 32920,
+    "y": 9680.000000000002,
+    "width": 1360,
+    "height": 770,
+    "color": "hsl(285, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Navigation, Orientation & Exploration": {
+    "x": 34440,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(197, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Warfare, Weapons & Fortification": {
+    "x": 35100,
+    "y": 9680.000000000002,
+    "width": 880,
+    "height": 770,
+    "color": "hsl(346, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Health, Medicine & Public Health": {
+    "x": 36140,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(143, 70%, 60%)"
+  },
+  "Connected Agrarian Age - Uncategorized / Cross-cutting Systems": {
+    "x": 36800,
+    "y": 9680.000000000002,
+    "width": 500,
+    "height": 770,
+    "color": "hsl(212, 70%, 60%)"
+  },
+  "Mechanized Production Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(118, 70%, 60%)"
+  },
+  "Mechanized Production Age - Beliefs, Ritual & Religion": {
+    "x": 700,
+    "y": 10450.000000000002,
+    "width": 880,
+    "height": 550,
+    "color": "hsl(47, 70%, 60%)"
+  },
+  "Mechanized Production Age - Law, Justice & Contract": {
+    "x": 1740,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(78, 70%, 60%)"
+  },
+  "Mechanized Production Age - Governance, Administration & Institutions": {
+    "x": 2400,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(188, 70%, 60%)"
+  },
+  "Mechanized Production Age - Trade, Markets & Finance": {
+    "x": 3060,
+    "y": 10450.000000000002,
+    "width": 880,
+    "height": 550,
+    "color": "hsl(204, 70%, 60%)"
+  },
+  "Mechanized Production Age - Science, Education & Inquiry": {
+    "x": 4100,
+    "y": 10450.000000000002,
+    "width": 1360,
+    "height": 550,
+    "color": "hsl(274, 70%, 60%)"
+  },
+  "Mechanized Production Age - Mathematics & Quantification": {
+    "x": 5620,
+    "y": 10450.000000000002,
+    "width": 640,
+    "height": 550,
+    "color": "hsl(220, 70%, 60%)"
+  },
+  "Mechanized Production Age - Timekeeping, Weights & Measures": {
+    "x": 6420,
+    "y": 10450.000000000002,
+    "width": 1600,
+    "height": 550,
+    "color": "hsl(275, 70%, 60%)"
+  },
+  "Mechanized Production Age - Cartography & Geographic Knowledge": {
+    "x": 8180,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(26, 70%, 60%)"
+  },
+  "Mechanized Production Age - Writing & Notation Systems": {
+    "x": 8840,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(49, 70%, 60%)"
+  },
+  "Mechanized Production Age - Texts, Print & Archives": {
+    "x": 9500,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(51, 70%, 60%)"
+  },
+  "Mechanized Production Age - Communication & Telecommunications": {
+    "x": 10160,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(256, 70%, 60%)"
+  },
+  "Mechanized Production Age - Algorithms, Data & AI": {
+    "x": 10820,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(35, 70%, 60%)"
+  },
+  "Mechanized Production Age - Music, Rhythm & Dance": {
+    "x": 11480,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(123, 70%, 60%)"
+  },
+  "Mechanized Production Age - Visual Art & Iconography": {
+    "x": 12140,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(263, 70%, 60%)"
+  },
+  "Mechanized Production Age - Cosmetics, Dress & Body Adornment": {
+    "x": 12800,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(206, 70%, 60%)"
+  },
+  "Mechanized Production Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 13460,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(68, 70%, 60%)"
+  },
+  "Mechanized Production Age - Agriculture & Field Systems": {
+    "x": 14120,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(288, 70%, 60%)"
+  },
+  "Mechanized Production Age - Plant Domestication & Crop Diversity": {
+    "x": 14780,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(198, 70%, 60%)"
+  },
+  "Mechanized Production Age - Pastoralism, Herding & Draft Animals": {
+    "x": 15440,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(199, 70%, 60%)"
+  },
+  "Mechanized Production Age - Irrigation & Water Management": {
+    "x": 16100,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(19, 70%, 60%)"
+  },
+  "Mechanized Production Age - Landscape & Environmental Engineering": {
+    "x": 16760,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(341, 70%, 60%)"
+  },
+  "Mechanized Production Age - Crop Improvement, Soils & Fertility": {
+    "x": 17420,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(357, 70%, 60%)"
+  },
+  "Mechanized Production Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 18080,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(345, 70%, 60%)"
+  },
+  "Mechanized Production Age - Lithics & Early Tool Materials": {
+    "x": 18740,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(40, 70%, 60%)"
+  },
+  "Mechanized Production Age - Wood, Bone & Organic Craft": {
+    "x": 19400,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(291, 70%, 60%)"
+  },
+  "Mechanized Production Age - Textiles & Clothing": {
+    "x": 20060,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(7, 70%, 60%)"
+  },
+  "Mechanized Production Age - Ceramics, Pottery & Kilns": {
+    "x": 20720,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(248, 70%, 60%)"
+  },
+  "Mechanized Production Age - Bricks, Masonry & Mortars": {
+    "x": 21380,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(294, 70%, 60%)"
+  },
+  "Mechanized Production Age - Glass & Optics": {
+    "x": 22040,
+    "y": 10450.000000000002,
+    "width": 880,
+    "height": 550,
+    "color": "hsl(305, 70%, 60%)"
+  },
+  "Mechanized Production Age - Mining & Ore Processing": {
+    "x": 23080,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(142, 70%, 60%)"
+  },
+  "Mechanized Production Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 23740,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(45, 70%, 60%)"
+  },
+  "Mechanized Production Age - Metallurgy: Iron & Steel": {
+    "x": 24400,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(72, 70%, 60%)"
+  },
+  "Mechanized Production Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 25060,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(201, 70%, 60%)"
+  },
+  "Mechanized Production Age - Precision Manufacturing & Machine Tools": {
+    "x": 25720,
+    "y": 10450.000000000002,
+    "width": 640,
+    "height": 550,
+    "color": "hsl(183, 70%, 60%)"
+  },
+  "Mechanized Production Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 26520,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(158, 70%, 60%)"
+  },
+  "Mechanized Production Age - Fire, Combustion & Heat Management": {
+    "x": 27180,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(67, 70%, 60%)"
+  },
+  "Mechanized Production Age - Fuels & Energy Sources": {
+    "x": 27840,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(234, 70%, 60%)"
+  },
+  "Mechanized Production Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 28500,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(310, 70%, 60%)"
+  },
+  "Mechanized Production Age - Engines, Turbines & Industrial Power": {
+    "x": 29160,
+    "y": 10450.000000000002,
+    "width": 880,
+    "height": 550,
+    "color": "hsl(228, 70%, 60%)"
+  },
+  "Mechanized Production Age - Electricity & Magnetism": {
+    "x": 30200,
+    "y": 10450.000000000002,
+    "width": 640,
+    "height": 550,
+    "color": "hsl(299, 70%, 60%)"
+  },
+  "Mechanized Production Age - Power Transmission, Grids & Storage": {
+    "x": 31000,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(46, 70%, 60%)"
+  },
+  "Mechanized Production Age - Shelter, Housing & Domestic Architecture": {
+    "x": 31660,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(356, 70%, 60%)"
+  },
+  "Mechanized Production Age - Urban Infrastructure & Public Works": {
+    "x": 32320,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(287, 70%, 60%)"
+  },
+  "Mechanized Production Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 32980,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(167, 70%, 60%)"
+  },
+  "Mechanized Production Age - Climate Control, Heating & Ventilation": {
+    "x": 33640,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(100, 70%, 60%)"
+  },
+  "Mechanized Production Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 34300,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(134, 70%, 60%)"
+  },
+  "Mechanized Production Age - Navigation, Orientation & Exploration": {
+    "x": 34960,
+    "y": 10450.000000000002,
+    "width": 640,
+    "height": 550,
+    "color": "hsl(76, 70%, 60%)"
+  },
+  "Mechanized Production Age - Warfare, Weapons & Fortification": {
+    "x": 35760,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(195, 70%, 60%)"
+  },
+  "Mechanized Production Age - Health, Medicine & Public Health": {
+    "x": 36420,
+    "y": 10450.000000000002,
+    "width": 640,
+    "height": 550,
+    "color": "hsl(352, 70%, 60%)"
+  },
+  "Mechanized Production Age - Uncategorized / Cross-cutting Systems": {
+    "x": 37220,
+    "y": 10450.000000000002,
+    "width": 500,
+    "height": 550,
+    "color": "hsl(91, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(91, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Beliefs, Ritual & Religion": {
+    "x": 700,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(20, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Law, Justice & Contract": {
+    "x": 1360,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(321, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Governance, Administration & Institutions": {
+    "x": 2020,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(71, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Trade, Markets & Finance": {
+    "x": 2680,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(177, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Science, Education & Inquiry": {
+    "x": 3340,
+    "y": 11000.000000000002,
+    "width": 1120,
+    "height": 880,
+    "color": "hsl(247, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Mathematics & Quantification": {
+    "x": 4620,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(193, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Timekeeping, Weights & Measures": {
+    "x": 5280,
+    "y": 11000.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(158, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Cartography & Geographic Knowledge": {
+    "x": 6080,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(359, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Writing & Notation Systems": {
+    "x": 6740,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(22, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Texts, Print & Archives": {
+    "x": 7400,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(294, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Communication & Telecommunications": {
+    "x": 8060,
+    "y": 11000.000000000002,
+    "width": 880,
+    "height": 880,
+    "color": "hsl(229, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Algorithms, Data & AI": {
+    "x": 9100,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(278, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Music, Rhythm & Dance": {
+    "x": 9760,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(6, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Visual Art & Iconography": {
+    "x": 10420,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(236, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Cosmetics, Dress & Body Adornment": {
+    "x": 11080,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(89, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 11740,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(311, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Agriculture & Field Systems": {
+    "x": 12400,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(171, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Plant Domestication & Crop Diversity": {
+    "x": 13060,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(171, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Pastoralism, Herding & Draft Animals": {
+    "x": 13720,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(172, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Irrigation & Water Management": {
+    "x": 14380,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(262, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Landscape & Environmental Engineering": {
+    "x": 15040,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(224, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Crop Improvement, Soils & Fertility": {
+    "x": 15700,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(240, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 16360,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(228, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Lithics & Early Tool Materials": {
+    "x": 17020,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(13, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Wood, Bone & Organic Craft": {
+    "x": 17680,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(264, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Textiles & Clothing": {
+    "x": 18340,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(250, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Ceramics, Pottery & Kilns": {
+    "x": 19000,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(131, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Bricks, Masonry & Mortars": {
+    "x": 19660,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(177, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Glass & Optics": {
+    "x": 20320,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(278, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Mining & Ore Processing": {
+    "x": 20980,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(25, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 21640,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(288, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Metallurgy: Iron & Steel": {
+    "x": 22300,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(45, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 22960,
+    "y": 11000.000000000002,
+    "width": 1600,
+    "height": 880,
+    "color": "hsl(84, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Precision Manufacturing & Machine Tools": {
+    "x": 24720,
+    "y": 11000.000000000002,
+    "width": 880,
+    "height": 880,
+    "color": "hsl(66, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 25760,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(41, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Fire, Combustion & Heat Management": {
+    "x": 26420,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(40, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Fuels & Energy Sources": {
+    "x": 27080,
+    "y": 11000.000000000002,
+    "width": 880,
+    "height": 880,
+    "color": "hsl(207, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 28120,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(283, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Engines, Turbines & Industrial Power": {
+    "x": 28780,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(201, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Electricity & Magnetism": {
+    "x": 29440,
+    "y": 11000.000000000002,
+    "width": 3520,
+    "height": 880,
+    "color": "hsl(182, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Power Transmission, Grids & Storage": {
+    "x": 33120,
+    "y": 11000.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(289, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Shelter, Housing & Domestic Architecture": {
+    "x": 33920,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(329, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Urban Infrastructure & Public Works": {
+    "x": 34580,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(170, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 35240,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(140, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Climate Control, Heating & Ventilation": {
+    "x": 35900,
+    "y": 11000.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(73, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 36700,
+    "y": 11000.000000000002,
+    "width": 1360,
+    "height": 880,
+    "color": "hsl(107, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Navigation, Orientation & Exploration": {
+    "x": 38220,
+    "y": 11000.000000000002,
+    "width": 640,
+    "height": 880,
+    "color": "hsl(319, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Warfare, Weapons & Fortification": {
+    "x": 39020,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(168, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Health, Medicine & Public Health": {
+    "x": 39680,
+    "y": 11000.000000000002,
+    "width": 2080,
+    "height": 880,
+    "color": "hsl(325, 70%, 60%)"
+  },
+  "Fossil-Industrial Age - Uncategorized / Cross-cutting Systems": {
+    "x": 41920,
+    "y": 11000.000000000002,
+    "width": 500,
+    "height": 880,
+    "color": "hsl(334, 70%, 60%)"
+  },
+  "Information Age - Cognition, Learning & Symbolic Thought": {
+    "x": 40,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(305, 70%, 60%)"
+  },
+  "Information Age - Beliefs, Ritual & Religion": {
+    "x": 700,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(234, 70%, 60%)"
+  },
+  "Information Age - Law, Justice & Contract": {
+    "x": 1360,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(355, 70%, 60%)"
+  },
+  "Information Age - Governance, Administration & Institutions": {
+    "x": 2020,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(105, 70%, 60%)"
+  },
+  "Information Age - Trade, Markets & Finance": {
+    "x": 2680,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(151, 70%, 60%)"
+  },
+  "Information Age - Science, Education & Inquiry": {
+    "x": 3340,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(341, 70%, 60%)"
+  },
+  "Information Age - Mathematics & Quantification": {
+    "x": 4000,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(287, 70%, 60%)"
+  },
+  "Information Age - Timekeeping, Weights & Measures": {
+    "x": 4660,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(72, 70%, 60%)"
+  },
+  "Information Age - Cartography & Geographic Knowledge": {
+    "x": 5320,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(93, 70%, 60%)"
+  },
+  "Information Age - Writing & Notation Systems": {
+    "x": 5980,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(236, 70%, 60%)"
+  },
+  "Information Age - Texts, Print & Archives": {
+    "x": 6640,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(328, 70%, 60%)"
+  },
+  "Information Age - Communication & Telecommunications": {
+    "x": 7300,
+    "y": 11880.000000000002,
+    "width": 880,
+    "height": 2640,
+    "color": "hsl(323, 70%, 60%)"
+  },
+  "Information Age - Algorithms, Data & AI": {
+    "x": 8340,
+    "y": 11880.000000000002,
+    "width": 2560,
+    "height": 2640,
+    "color": "hsl(72, 70%, 60%)"
+  },
+  "Information Age - Music, Rhythm & Dance": {
+    "x": 11060,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(160, 70%, 60%)"
+  },
+  "Information Age - Visual Art & Iconography": {
+    "x": 11720,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(210, 70%, 60%)"
+  },
+  "Information Age - Cosmetics, Dress & Body Adornment": {
+    "x": 12380,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(243, 70%, 60%)"
+  },
+  "Information Age - Foraging, Gathering & Wild Resource Use": {
+    "x": 13040,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(105, 70%, 60%)"
+  },
+  "Information Age - Agriculture & Field Systems": {
+    "x": 13700,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(325, 70%, 60%)"
+  },
+  "Information Age - Plant Domestication & Crop Diversity": {
+    "x": 14360,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(145, 70%, 60%)"
+  },
+  "Information Age - Pastoralism, Herding & Draft Animals": {
+    "x": 15020,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(146, 70%, 60%)"
+  },
+  "Information Age - Irrigation & Water Management": {
+    "x": 15680,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(296, 70%, 60%)"
+  },
+  "Information Age - Landscape & Environmental Engineering": {
+    "x": 16340,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(138, 70%, 60%)"
+  },
+  "Information Age - Crop Improvement, Soils & Fertility": {
+    "x": 17000,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(274, 70%, 60%)"
+  },
+  "Information Age - Food Processing, Preservation & Bioprocessing": {
+    "x": 17660,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(22, 70%, 60%)"
+  },
+  "Information Age - Lithics & Early Tool Materials": {
+    "x": 18320,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(347, 70%, 60%)"
+  },
+  "Information Age - Wood, Bone & Organic Craft": {
+    "x": 18980,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(118, 70%, 60%)"
+  },
+  "Information Age - Textiles & Clothing": {
+    "x": 19640,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(164, 70%, 60%)"
+  },
+  "Information Age - Ceramics, Pottery & Kilns": {
+    "x": 20300,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(45, 70%, 60%)"
+  },
+  "Information Age - Bricks, Masonry & Mortars": {
+    "x": 20960,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(91, 70%, 60%)"
+  },
+  "Information Age - Glass & Optics": {
+    "x": 21620,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(132, 70%, 60%)"
+  },
+  "Information Age - Mining & Ore Processing": {
+    "x": 22280,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(59, 70%, 60%)"
+  },
+  "Information Age - Metallurgy: Copper, Bronze & Nonferrous": {
+    "x": 22940,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(82, 70%, 60%)"
+  },
+  "Information Age - Metallurgy: Iron & Steel": {
+    "x": 23600,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(19, 70%, 60%)"
+  },
+  "Information Age - Polymers, Rubber, Plastics & Composites": {
+    "x": 24260,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(238, 70%, 60%)"
+  },
+  "Information Age - Precision Manufacturing & Machine Tools": {
+    "x": 24920,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(220, 70%, 60%)"
+  },
+  "Information Age - Simple Machines, Mechanisms & Mechanical Transmission": {
+    "x": 25580,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(75, 70%, 60%)"
+  },
+  "Information Age - Fire, Combustion & Heat Management": {
+    "x": 26240,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(134, 70%, 60%)"
+  },
+  "Information Age - Fuels & Energy Sources": {
+    "x": 26900,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(301, 70%, 60%)"
+  },
+  "Information Age - Prime Movers: Muscle, Water & Wind": {
+    "x": 27560,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(17, 70%, 60%)"
+  },
+  "Information Age - Engines, Turbines & Industrial Power": {
+    "x": 28220,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(175, 70%, 60%)"
+  },
+  "Information Age - Electricity & Magnetism": {
+    "x": 28880,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(216, 70%, 60%)"
+  },
+  "Information Age - Power Transmission, Grids & Storage": {
+    "x": 29540,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(323, 70%, 60%)"
+  },
+  "Information Age - Shelter, Housing & Domestic Architecture": {
+    "x": 30200,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(63, 70%, 60%)"
+  },
+  "Information Age - Urban Infrastructure & Public Works": {
+    "x": 30860,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(204, 70%, 60%)"
+  },
+  "Information Age - Water Supply, Sanitation & Waste Systems": {
+    "x": 31520,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(234, 70%, 60%)"
+  },
+  "Information Age - Climate Control, Heating & Ventilation": {
+    "x": 32180,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(287, 70%, 60%)"
+  },
+  "Information Age - Transport & Vehicles (Land, Sea & Air)": {
+    "x": 32840,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(321, 70%, 60%)"
+  },
+  "Information Age - Navigation, Orientation & Exploration": {
+    "x": 33500,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(233, 70%, 60%)"
+  },
+  "Information Age - Warfare, Weapons & Fortification": {
+    "x": 34160,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(22, 70%, 60%)"
+  },
+  "Information Age - Health, Medicine & Public Health": {
+    "x": 34820,
+    "y": 11880.000000000002,
+    "width": 880,
+    "height": 2640,
+    "color": "hsl(179, 70%, 60%)"
+  },
+  "Information Age - Uncategorized / Cross-cutting Systems": {
+    "x": 35860,
+    "y": 11880.000000000002,
+    "width": 500,
+    "height": 2640,
+    "color": "hsl(248, 70%, 60%)"
+  }
+}

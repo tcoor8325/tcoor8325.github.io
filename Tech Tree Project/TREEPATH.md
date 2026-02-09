@@ -1,0 +1,669 @@
+# TREEPATH
+
+- X Opportunistic Tool Use
+- Lomekwian Stone Tools
+- Basic Bone Breaking & Marrow Extraction
+- Basic Wood Tools
+- Opportunistic Carrying Aids
+- Carrying Devices
+- Water Carrying (Pre-Pottery)
+- Body Decoration (Ochre Use)
+- Pigment Preparation
+- Fiber Processing
+- Music (Percussion & Voice)
+- Dance
+- Hide Smoking/Curing
+- Parietal Art (Cave Painting)
+- Musical Instruments
+- Bone Flutes
+- Basic Lamellophone
+- Counting & Tallying
+- Food Smoking & Drying
+- Resource Caching
+- Gift Exchange Networks
+- Spatial Mapping
+- Mat-Making
+- Game Drives
+- The Atlatl
+- Basketry
+- Controlled Burning for Hunting
+- Fish Weirs
+- Wild Fermentation Recognition
+- Shelter Insulation
+- Specialized Resource Sites
+- Composite Digging Tools
+- Sleeping Site Selection
+- Camps
+- Cooperative Hunting
+- Earth Construction
+- Dry Stone Construction
+- Stonemasonry
+- Brickmasonry
+- Defensive Walls
+- Cooperative Care
+- Teaching
+- Kinship Systems
+- Social Hierarchies
+- Social Inequality & Large-Scale Cooperation
+- Sequential Planning
+- Wayfinding
+- Collective Fictions
+- Basic Gathering
+- Patterned Gathering
+- Wild Honey Collection
+- Accidental Planting
+- Tending Wild Stands
+- Deliberate Planting
+- Floodplain and Marsh Planting
+- Water Containers
+- Manual Plant Watering
+- Hoe Agriculture
+- Fields & Plots
+- Weeding & Cultivation
+- Seed Storage Protocols
+- Irrigation Furrows & Ditches
+- Early Composting
+- Pest & Predator Management
+- Multi-cropping & Garden Plots
+- Informal Crop Rotation
+- Fodder Cultivation
+- Plant Propagation (Cuttings & Grafting)
+- Basic Terracing
+- Deliberate Throwing
+- Tracking & Sign Reading
+- The Spear
+- Oldowan Stone Tools
+- Systematic Butchery
+- Basic Hide Scraping
+- Acheulean Stone Tools
+- Tool Curation Behavior
+- Balance Scale
+- Mousterian Stone Tools
+- Aurignacian Stone Tools
+- Efficient Hunting Points
+- Re-sharpening & Repair Practices
+- Woodworking
+- Woodworking Tool Diversity
+- Control of Fire
+- Basic Artificial Shelters
+- Roofing & Thatched Covers
+- Post-and-Lintel Framing
+- Weather-Resistant Houses
+- Reed/Grass Construction
+- Wattle-and-Daub
+- Lashing & Joinery
+- Smoke Management Systems
+- Flooring Technologies
+- Timber Framing
+- Multi-Room Houses
+- Village Layout Planning
+- Community Buildings
+- Stone Gateways
+- Opportunistic Fire Control
+- Fire Maintenance
+- Basic Cooking
+- Basic Vocal Signaling
+- Spoken Language
+- Oral Traditions
+- Early Adhesives
+- Hafting
+- Glue Production
+- Tool Hafting Diversity
+- Basic Cordage
+- Stone Axes & Adzes
+- Sickle Blades
+- Ground Stone Technology
+- Modular Tool Repair
+- Nets and Snares
+- The Oar
+- Basic Raft
+- The Sail
+- Bone Tools
+- Barbed Points
+- Decorative Bone Objects
+- Composite Bow
+- Plate Armor
+- Hide Clothing
+- Bow and Arrow
+- Dugout Canoe
+- Sewing Needle
+- Abacus
+- Microlith
+- Sewn Boat
+- Lashed-Lug Boat
+- Clinker Boat Construction
+- Drydock
+- Carvel Boat Construction
+- Semi-Permanent Shelters
+- Sedentary Foraging Settlements
+- Fire-based Land Management
+- Early Open-Fire Pottery
+- Earthenware
+- The Tournette (Slow Wheel)
+- Pit Kilns
+- Updraft Kilns
+- Downdraft Kilns
+- Charcoal Production
+- Distillation
+- Sulfuric Acid
+- Hydrochloric Acid
+- Sun-dried Mud Bricks
+- Kiln-Fired Bricks
+- Lime Mortar
+- Lime Calcination
+- Carpentry
+- The Arch
+- Early Suspension Bridge
+- Threshing
+- Winnowing
+- Pit Storage
+- Granaries & Raised Storage
+- Controlled Fermentation
+- Beer Brewing
+- Drying Racks
+- Root Cellars
+- Smokehouses
+- Oil Pressing
+- Oil Lamps
+- Fish Fermentation
+- Butter & Yogurt Making
+- Vegetable Fermentation
+- Fruit Wine Fermentation
+- Seed Selection
+- Selective Animal Breeding
+- Bread Baking
+- Bartering
+- Village Governance
+- Gift Exchange / Prestige Economy
+- Exchange Centers
+- Informal Debt / Credit
+- Part-Time Craft Specialization
+- Craft Specialization
+- Long-Distance Trade Networks
+- Marriage Alliances
+- Common-Pool Resource Management
+- Conflict Resolution Mechanisms
+- Urban Water Planning
+- Aqueduct
+- Intensive Selective Hunting & Game Management
+- Live Capture & Short-Term Keeping
+- Herd Shadowing
+- Corralls and Weirs
+- Tribal Chiefdoms
+- Feasting
+- Agricultural Festivals
+- Agricultural Ritual Calendars
+- Fertility Cults
+- Earth / Land Spirits
+- Sacrifice / Offerings
+- Foundation Rituals
+- Agricultural Magic
+- Intensified Agriculture
+- Population Growth (Neolithic)
+- Ancestor Fields
+- Harnesses
+- Regular Fallowing
+- Legume-Cereal Alternation
+- Scientific Crop Rotation
+- Domestication of Dogs
+- Domestication of Sheep
+- Domestication of Goats
+- Domestication of Cattle
+- Mobile Shelters (Hide, Leather, Cloth)
+- Pastoral Nomadism
+- Sledges
+- Trail Maintenance
+- Simple Bridges
+- Pack Saddles
+- Domestication of Horses
+- Domestication of Pigs
+- Domestication of Chickens
+- Domestication of Wheat
+- Mortar and Pestle
+- Grinding Stone
+- Quern-Stone
+- Domestication of Barley
+- Domestication of Rice
+- Domestication of Millet
+- Domestication of Maize
+- Domestication of Cotton
+- Domestication of Flax
+- Fiber Preparation (Retting & Beating)
+- Linen
+- Domestication of Potatoes
+- Domestication of Fruit Trees
+- Domestication of Legumes
+- Domestication of Silkworms
+- Domestication of Honey Bees
+- Salt Mining
+- Salt Evaporation
+- Salt Preservation
+- Candles
+- Surface Oil Collection
+- Raw Rubber
+- Cured Rubber
+- Organic Fertilization
+- Plowshares
+- Domestication of Dromedary Camels
+- Domestication of Llamas and Alpacas
+- Yoke for Plowing
+- Ard Plough
+- Draft Animal Plowing
+- Horse Collar
+- Mold-Board Plow
+- Seed Drill
+- Leathermaking
+- Tanning Pits & Frames
+- Saponification
+- Sewing
+- Tailored Clothing
+- Personal Ornamentation
+- Standardized Bead Production
+- Portable Art
+- Cheesemaking
+- Milking
+- Nixtamalization
+- Native Metal Gathering
+- Percussive Mining
+- The Crucible
+- Copper Smelting
+- Lead Smelting
+- Stone Quarrying
+- Firesetting Mining
+- Hushing Mining
+- Potter's Wheel
+- Tempered Stoneware
+- Stoneware
+- Porcelain
+- Glazed Ceramics
+- Basic Field Shaping
+- Property Boundaries
+- Land Tenure Systems
+- Inheritance Systems
+- Reservoir
+- Canals
+- Manual Water Lifts
+- Wheel & Axle
+- Screw
+- Hand-spinning
+- Spindle Whorl
+- Spindle Diversification
+- Spinning Wheel
+- Roads
+- Waterwheels
+- Flash Lock
+- Pound Lock
+- Lens Grinding
+- Reading Stones
+- Bronze Metallurgy
+- Iron Metallurgy
+- Bloomery
+- Blast Furnace Ironmaking
+- Crucible Steelmaking
+- Early Number Systems
+- Numerical Notation System
+- Accounting Tokens
+- Clay Bullae & Sealed Envelopes
+- Clay Tablets
+- Pictographs
+- Logograms
+- Bureaucratic Record Keeping
+- Phoneticization & Rebus Principle
+- Consonantal Alphabet (Abjad)
+- Chinese Character Tradition
+- Mesoamerican Glyphic Systems
+- Full Alphabet (with Vowels)
+- Papyrus
+- Parchment
+- Plant-Fiber Paper (East Asian)
+- Scrolls
+- Woodpulp Paper
+- Rag Paper
+- The Book
+- Metal Movable Type
+- Block Printing
+- Movable Type System
+- Gunpowder Weaponry
+- Fireworks
+- Rocketry
+- Crossbow
+- Mechanical Clockwork
+- Mechanical Calculators
+- Flywheel
+- Helical Spring
+- Electrostatic Generator
+- Leyden Jar
+- Capacitor
+- Solenoid
+- Catapult
+- Chainmail
+- Lamellar Armor
+- Trebuchet
+- Volta's Pile
+- Electrolysis
+- Piezoelectric Effect
+- Crystal Oscillator
+- Oersted Effect
+- Ampere's Law
+- Biot-Savart Law
+- Resistor
+- Ohm's Law
+- Faraday's Law
+- Inductor
+- Maxwell's Equations
+- Vacuum Tube
+- Cavity Magnetron
+- Microwave Oven
+- Information Theory
+- Fast Fourier Transform (FFT)
+- Digital Filters
+- Electric Dynamo
+- Precision Machining
+- Nitroglycerin
+- Pasteurization
+- Refrigeration
+- Heat Pump
+- Air Conditioner
+- Coke Production
+- Printing Press
+- Suction Pump
+- Mercury Barometer
+- Vacuum Pump
+- Condenser
+- Metal Boilers
+- Steam Engine
+- The Factory
+- Industrial Automation
+- CNC Machine
+- Assembly Line Production
+- Windmills
+- Solvent Dissolved Rubber
+- Aeolipile
+- Vulcanization
+- Ebonite
+- Electricity Generation & Distribution
+- Pneumatic Tire
+- Solar Panels
+- Wind Turbine
+- Lithium Battery
+- Astrolabe
+- Gyroscope
+- Pulley
+- Digital Signaling (Conceptual)
+- Telegraph Infrastructure
+- Marine Chronometer
+- Petroleum Refining
+- Internal Combustion Engine
+- de Laval Nozzle
+- Turbosupercharger
+- Turbojet
+- Turbofan
+- Ramjet
+- Pulsejet
+- Bicycles
+- Lighter-Than-Air Flight
+- Automobiles
+- Catalytic Converter
+- Three-point Seatbelt
+- Continuous Tracks
+- Rubber Compounding
+- Heavier-Than-Air Flight
+- Helicopter
+- Steel Ship
+- Shipping Container
+- Container Ship
+- Submarine
+- Nuclear Submarine
+- Aircraft Carrier
+- Aluminum Smelting
+- Synthetic Rubber
+- Incandescent Lightbulb
+- Semiconductor Transistor
+- Zone Refining
+- Photolithography
+- The Planar Process
+- MOSFET
+- Light-Emitting Diode
+- Integrated Circuits
+- VLSI
+- Microprocessor
+- Packet Switching
+- Early Computer Networking
+- Fiber Optics
+- Internet Protocol Suite
+- Hypertext Concepts & Early Systems
+- World Wide Web
+- Data Centers & Cloud Computing
+- Early Smartphones
+- Modern Smartphones
+- GPUs for General Compute / Accelerators for Deep Learning
+- Multilayer Perceptrons
+- Backpropagation & Gradient Descent Training
+- Deep Learning (High-Depth Neural Networks)
+- Sequence Models & Word Embeddings
+- Transformer Architecture
+- Large Language Models
+- Early Codified Law
+- Territorial States
+- Standing Armies
+- Divine Kingship
+- Citizen Assembly Democracy
+- Slavery
+- Coinage
+- Taxation
+- Feudal Contracts & Vassalage
+- Imperial Civil Service Examinations
+- Patent Systems
+- Double-Entry Bookkeeping
+- Guilds
+- Universities
+- Banking
+- Paper Money
+- Flying Cash
+- Joint-Stock Corporation
+- Insurance
+- Futures Trading
+- Investment Banks
+- Derivatives Trading
+- Central Banking
+- Abolitionism
+- Enlightenment Humanism
+- The Scientific Method
+- Mass Public Schooling
+- Algebra
+- Geometry
+- Positional Notation
+- Zero
+- Calculus
+- Statistics
+- Classical Kinematics
+- General Relativity
+- Geocentrism
+- Ritual
+- Cognitive Agency Detection
+- Animism
+- Spirit Appeasement Rituals
+- Totemism
+- Symbolic Burial & Grave Goods
+- Afterlife Beliefs
+- Ritual Time
+- Lunar Calendar
+- Solar Calendar
+- Luni-solar Calendar
+- State Calendar
+- Sundial
+- Mythic Systems & Creation Cosmologies
+- Ancestor Veneration
+- Ritual Specialists & Shamans
+- Temples
+- Temple Priesthoods
+- Local Gods & Spirit Patrons
+- Sacred Places & Shrines
+- Temple Cults
+- Polytheistic Pantheons & State Cults
+- State Religions
+- Henotheism
+- Scripture
+- Monotheism
+- Moralizing High Gods
+- Universal Deism (Universalizing Monotheism)
+- Missionary Religions
+- Spear Fishing
+- Horseback Riding
+- Saddles
+- Stirrups
+- Pack Animal Caravans
+- Two- and Four-Wheeled Carts & Wagons
+- Chariot
+- Horseboots
+- Horseshoes
+- Celestial Calendar
+- North Star Navigation
+- Globe Model
+- Latitude and Longitude
+- Sericulture
+- Mat Weaving
+- Basic Weaving
+- Dye Production
+- Fabric Clothing
+- Loom Weaving
+- Serfdom
+- Cotton Gin
+- Marxism
+- Oceanic Sailing Ships
+- Magnetic Compass
+- Octant
+- Glassmaking & Glassblowing
+- The Mirror
+- Greenhouse
+- Float Glass
+- Radioactivity
+- Optical Lenses (Spectacles)
+- Geometric Optics
+- Compound Microscope
+- The Cell
+- Refractor Telescope
+- Reflector Telescope
+- Hydraulic Pozzolanic Concrete
+- Bessemer Steelmaking
+- Mechanized Farm Equipment
+- Steam Railways
+- Steam Ship
+- Photography
+- Telephone
+- Radio Communication
+- Frequency Hopping
+- Radio Telescope
+- Moving Coil Acoustic Transducer
+- Loudspeaker
+- Headphones
+- Earbuds
+- The Tank
+- Main Battle Tank
+- Torpedo
+- Night Vision Goggles
+- Radar
+- Ballistic Missile
+- Vaccination
+- Germ Theory of Disease
+- Antibiotics (Penicillin)
+- Haber-Bosch Ammonia Synthesis
+- Synthetic Polymers (Plastics)
+- Polyethylene
+- Plastic Packaging
+- Kevlar
+- Nuclear Fission Power
+- Orbital Launch & Artificial Satellites
+- Global Positioning System
+- Drones
+- Personal Computer
+- Social Health Taboos
+- Basic Empirical Health Knowledge / Food Safety
+- Health & Purity Taboo System
+- Childcare Arrangements
+- Formalized Midwifery
+- Weaning Practices
+- Birth Spacing Practices
+- Systematic Herbal Medicine
+- Bone Setting & Trephination
+- Formalized Bone-Setting
+- Patterned-Mined Pharmacology
+- Codified Pharmacology
+- Anatomy
+- Thermoscope
+- Hygrometer
+- Gas Thermometer
+- Mercury Thermometer
+- Bimetallic Strip
+- Thermocouple
+- Thermistor
+- Thermometer
+- Autoclave
+- Stethoscope
+- Anesthesia
+- Health Campaigns
+- Condoms
+- Genetics
+- Sanitary Pads
+- Principle of Falsification
+- X-Ray Machine
+- Synthetic Medicine
+- Marker Degradation
+- Oral Contraceptives
+- Oral Rehydration Therapy
+- Nuclear Magnetic Resonance
+- MRI Machine
+- Polymerase Chain Reaction
+- Robotic Surgery
+- Monoclonal Antibodies
+- Targeted Therapies
+- Personalized Medicine
+- Discovery and Characterization of CRISPR Loci
+- CRISPR-Cas9 Genome Editing
+- Police Force
+- Air Quality Regulations
+- Formal Judiciary
+- Hospitals
+- Domestic Servitude
+- Engineering
+- Birthing Forceps
+- Wooden Shield
+- Shield
+- Helmet
+- Sword
+- Pike
+- Ballista
+- Counterweight Trebuchet
+- Fuse
+- Fire Lance
+- Eruptor
+- Handgonne
+- Bombard
+- Basic Grenade
+- Musket
+- Bayonet
+- Percussion Cap
+- Rifled Bore
+- Breech-Load Mechanism
+- Fulling Mill
+- Water Clock
+- Hourglass
+- Endless Chain Drive
+- Nitric Acid
+- Long Division
+- Algorithm
+- Arithmetic Mean
+- Flying Shuttle
+- Spinning Jenny
+- Detent Escapement
+- Lever Escapement
+- Cream of Tartar
+- Baking Powder
+- S-Trap
+- Flush Toilet
+- Boring Machine
+- Puddling
+- I-Beam
+- Combine Harvester
+- Atomic Theory
+- Periodic Table
