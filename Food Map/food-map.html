@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.17.0/dist/maplibre-gl.css">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1d1b1a;
+      --paper: #f6f1e8;
+      --border: #1d1b1a;
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "IBM Plex Mono", "Courier New", monospace;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    .page {
+      padding: 32px 6vw 48px;
+      display: grid;
+      gap: 32px;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+    }
+
+    header p {
+      margin: 0;
+      max-width: 60ch;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .map-panel {
+      background: var(--panel);
+      border: 2px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .map-caption {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    #map {
+      width: 100%;
+      height: clamp(280px, 40vh, 480px);
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #000000;
+    }
+
+    .layer-controls {
+      display: grid;
+      gap: 10px;
+    }
+
+    .layer-title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .crop-list {
+      display: grid;
+      gap: 10px;
+      max-height: 360px;
+      overflow: auto;
+      padding-right: 6px;
+    }
+
+    .crop-row {
+      display: grid;
+      grid-template-columns: minmax(140px, 1fr) minmax(0, 2fr);
+      gap: 10px;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #d7d1c6;
+    }
+
+    .crop-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .crop-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .metric-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .metric-button {
+      border: 2px solid var(--border);
+      background: #fdfbf7;
+      color: var(--ink);
+      font-family: inherit;
+      font-size: 0.75rem;
+      padding: 6px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .metric-button.active {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .metric-button.unavailable {
+      opacity: 0.4;
+    }
+
+    .layer-status {
+      margin: 0;
+      font-size: 0.85rem;
+    }
+
+    .text-panel {
+      background: var(--panel);
+      border: 2px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .text-panel h2 {
+      margin: 0 0 6px;
+      font-size: 1.2rem;
+    }
+
+    .text-panel p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .text-panel ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Food Map</h1>
+      <p>Exploring where foods are grown and harvested, with a growing map-based data layer.</p>
+    </header>
+
+    <section class="content">
+      <div class="map-panel">
+        <div id="map"></div>
+          <p class="map-caption">SPAM 2020 production layers.</p>
+        <div class="layer-controls">
+          <p class="layer-title">Crop layers (one active at a time)</p>
+          <div id="crop-list" class="crop-list"></div>
+          <p id="layer-status" class="layer-status">Select a crop production layer.</p>
+        </div>
+      </div>
+
+      <div class="text-panel">
+        <div>
+          <h2>Notes</h2>
+          <p><strong>Production</strong> is the total harvested output (typically in mass units).</p>
+        </div>
+        <div>
+          <h2>Next steps</h2>
+          <ul>
+            <li>Add foods with verified sources.</li>
+            <li>Connect each food to a data layer.</li>
+            <li>Refine map styling and legends.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://unpkg.com/maplibre-gl@5.17.0/dist/maplibre-gl.js"></script>
+  <script>
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: 'https://demotiles.maplibre.org/globe.json',
+      center: [0, 0],
+      zoom: 1
+    });
+
+    const crops = [
+      { code: 'BANA', name: 'Bananas' },
+      { code: 'BARL', name: 'Barley' },
+      { code: 'BEAN', name: 'Beans' },
+      { code: 'CASS', name: 'Cassava' },
+      { code: 'CHIC', name: 'Chickpeas' },
+      { code: 'CITR', name: 'Citrus' },
+      { code: 'CNUT', name: 'Cashew nuts' },
+      { code: 'COCO', name: 'Cocoa' },
+      { code: 'COFF', name: 'Coffee' },
+      { code: 'COTT', name: 'Cotton' },
+      { code: 'COWP', name: 'Cowpeas' },
+      { code: 'GROU', name: 'Groundnuts' },
+      { code: 'LENT', name: 'Lentils' },
+      { code: 'MAIZ', name: 'Maize' },
+      { code: 'MILL', name: 'Millet' },
+      { code: 'OCER', name: 'Other cereals' },
+      { code: 'OFIB', name: 'Other fibers' },
+      { code: 'OILP', name: 'Oil palm' },
+      { code: 'ONIO', name: 'Onions' },
+      { code: 'OOIL', name: 'Other oil crops' },
+      { code: 'OPUL', name: 'Other pulses' },
+      { code: 'ORTS', name: 'Other roots and tubers' },
+      { code: 'PIGE', name: 'Pigeon peas' },
+      { code: 'PLNT', name: 'Plantains' },
+      { code: 'PMIL', name: 'Pearl millet' },
+      { code: 'POTA', name: 'Potatoes' },
+      { code: 'RAPE', name: 'Rapeseed' },
+      { code: 'RCOF', name: 'Robusta coffee' },
+      { code: 'REST', name: 'Other crops (rest)' },
+      { code: 'RICE', name: 'Rice' },
+      { code: 'RUBB', name: 'Rubber' },
+      { code: 'SESA', name: 'Sesame' },
+      { code: 'SORG', name: 'Sorghum' },
+      { code: 'SOYB', name: 'Soybeans' },
+      { code: 'SUGB', name: 'Sugar beet' },
+      { code: 'SUGC', name: 'Sugarcane' },
+      { code: 'SUNF', name: 'Sunflower' },
+      { code: 'SWPO', name: 'Sweet potatoes' },
+      { code: 'TEAS', name: 'Tea' },
+      { code: 'TEMF', name: 'Temperate fruits' },
+      { code: 'TOBA', name: 'Tobacco' },
+      { code: 'TOMA', name: 'Tomatoes' },
+      { code: 'TROF', name: 'Tropical fruits' },
+      { code: 'VEGE', name: 'Vegetables' },
+      { code: 'WHEA', name: 'Wheat' },
+      { code: 'YAMS', name: 'Yams' }
+    ];
+
+    const datasets = [
+      { key: 'production', label: 'Production' }
+    ];
+
+    const availableLayers = new Set(
+      crops.flatMap((crop) => datasets.map((dataset) => `${crop.code}|${dataset.key}`))
+    );
+    const cropList = document.getElementById('crop-list');
+    const layerStatus = document.getElementById('layer-status');
+    const layerButtonMap = new Map();
+    const sourceId = 'spam-crop';
+    const layerId = 'spam-crop-layer';
+
+    const setLayerStatus = (text) => {
+      if (layerStatus) {
+        layerStatus.textContent = text;
+      }
+    };
+
+    const setActiveButton = (key) => {
+      layerButtonMap.forEach((button, buttonKey) => {
+        button.classList.toggle('active', buttonKey === key);
+      });
+    };
+
+    const setCropLayer = (crop, dataset) => {
+      const key = `${crop.code}|${dataset.key}`;
+      if (map.getLayer(layerId)) {
+        map.removeLayer(layerId);
+      }
+      if (map.getSource(sourceId)) {
+        map.removeSource(sourceId);
+      }
+
+      if (!availableLayers.has(key)) {
+        setActiveButton(key);
+        setLayerStatus(`${crop.name} — ${dataset.label} tiles are not generated yet.`);
+        return;
+      }
+
+      map.addSource(sourceId, {
+        type: 'raster',
+        tiles: [`tiles/spam2020_global_${dataset.key}_${crop.code.toLowerCase()}/{z}/{x}/{y}.png`],
+        tileSize: 256,
+        maxzoom: 4
+      });
+
+      map.addLayer({
+        id: layerId,
+        type: 'raster',
+        source: sourceId,
+        paint: {
+          'raster-opacity': 0.8
+        }
+      });
+
+      setActiveButton(key);
+      setLayerStatus(`${crop.name} — ${dataset.label} layer active.`);
+    };
+
+    crops.forEach((crop) => {
+      const row = document.createElement('div');
+      row.className = 'crop-row';
+
+      const name = document.createElement('div');
+      name.className = 'crop-name';
+      name.textContent = crop.name;
+
+      const buttons = document.createElement('div');
+      buttons.className = 'metric-buttons';
+
+      datasets.forEach((dataset) => {
+        const key = `${crop.code}|${dataset.key}`;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'metric-button';
+        button.textContent = dataset.label;
+        if (!availableLayers.has(key)) {
+          button.classList.add('unavailable');
+        }
+        button.addEventListener('click', () => setCropLayer(crop, dataset));
+        buttons.appendChild(button);
+        layerButtonMap.set(key, button);
+      });
+
+      row.appendChild(name);
+      row.appendChild(buttons);
+      cropList.appendChild(row);
+    });
+
+    map.on('load', () => {
+      if (map.getLayer('countries-fill')) {
+        map.setPaintProperty('countries-fill', 'fill-color', '#ffffff');
+      }
+      if (map.getLayer('crimea-fill')) {
+        map.setPaintProperty('crimea-fill', 'fill-color', '#ffffff');
+      }
+      if (map.getLayer('countries-boundary')) {
+        map.setPaintProperty('countries-boundary', 'line-color', '#000000');
+      }
+      const rice = crops.find((crop) => crop.code === 'RICE');
+      const production = datasets.find((dataset) => dataset.key === 'production');
+      if (rice && production) {
+        setCropLayer(rice, production);
+      }
+      map.resize();
+    });
+
+    window.addEventListener('resize', () => map.resize());
+  </script>
+</body>
+</html>
