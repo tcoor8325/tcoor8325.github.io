@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingredients Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-top">
+        <a class="back-link" href="../index.html">← Back to Home</a>
+        <div class="status">
+          <span class="status-pill">Live prototype</span>
+          <span id="status-text">Loading foods…</span>
+        </div>
+      </div>
+      <h1>Ingredients Analyzer</h1>
+      <p class="lede">
+        Click a food to pin it and re-sort every category by semantic distance.
+        Each category has its own search bar for fast filtering.
+      </p>
+    </header>
+
+    <main class="workspace">
+      <section class="board">
+        <div class="board-header">
+          <h2>Categories</h2>
+          <p>Scroll horizontally to explore every tag.</p>
+        </div>
+        <div class="categories" id="categories" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const CATEGORY_ORDER = [
+      "Vegetable",
+      "Protein",
+      "Carbohydrate",
+      "Fruit",
+      "Herb",
+      "Spice",
+      "Aromatic",
+      "Fat",
+      "Acid",
+      "Sweet",
+      "Bitter",
+      "Umami",
+      "Salt",
+      "Warm",
+      "Heat (Cooking Method)"
+    ];
+
+    const state = {
+      foods: [],
+      selected: null,
+      search: new Map()
+    };
+
+    const statusText = document.getElementById("status-text");
+    const categoriesEl = document.getElementById("categories");
+
+    const cosineSimilarity = (a, b) => {
+      if (!a || !b) return 0;
+      let dot = 0;
+      let aMag = 0;
+      let bMag = 0;
+      for (let i = 0; i < a.length; i += 1) {
+        dot += a[i] * b[i];
+        aMag += a[i] * a[i];
+        bMag += b[i] * b[i];
+      }
+      const denom = Math.sqrt(aMag) * Math.sqrt(bMag);
+      return denom === 0 ? 0 : dot / denom;
+    };
+
+    const getScore = (item) => {
+      if (!state.selected) return null;
+      const selectedItem = state.foods.find((food) => food.name === state.selected);
+      if (!selectedItem) return null;
+      return cosineSimilarity(selectedItem.embedding, item.embedding);
+    };
+
+    const render = () => {
+      const selectedName = state.selected;
+      categoriesEl.innerHTML = "";
+
+      CATEGORY_ORDER.forEach((category) => {
+        const searchTerm = (state.search.get(category) || "").toLowerCase();
+        const items = state.foods.filter((food) => (food.tags || []).includes(category));
+        let filtered = items.filter((food) => food.name.toLowerCase().includes(searchTerm));
+
+        filtered = filtered.map((food) => ({
+          ...food,
+          score: getScore(food)
+        }));
+
+        if (selectedName) {
+          filtered.sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+        } else {
+          filtered.sort((a, b) => a.name.localeCompare(b.name));
+        }
+
+        if (selectedName) {
+          const selectedIndex = filtered.findIndex((food) => food.name === selectedName);
+          if (selectedIndex > 0) {
+            filtered.unshift(filtered.splice(selectedIndex, 1)[0]);
+          }
+        }
+
+        const column = document.createElement("article");
+        column.className = "category";
+
+        const header = document.createElement("div");
+        header.className = "category-header";
+        header.innerHTML = `
+          <h3>${category}</h3>
+          <span class="count">${filtered.length}</span>
+        `;
+
+        const input = document.createElement("input");
+        input.type = "search";
+        input.placeholder = "Search foods";
+        input.value = state.search.get(category) || "";
+        input.setAttribute("aria-label", `Search ${category}`);
+        input.addEventListener("input", (event) => {
+          state.search.set(category, event.target.value);
+          render();
+        });
+
+        const list = document.createElement("ul");
+        list.className = "food-list";
+
+        if (!filtered.length) {
+          const empty = document.createElement("li");
+          empty.className = "empty";
+          empty.textContent = "No matches yet";
+          list.appendChild(empty);
+        } else {
+          filtered.forEach((food) => {
+            const li = document.createElement("li");
+            li.className = "food-item";
+            if (food.name === selectedName) {
+              li.classList.add("selected");
+            }
+
+            const button = document.createElement("button");
+            button.type = "button";
+
+            const bar = document.createElement("span");
+            bar.className = "food-bar";
+
+            const nameSpan = document.createElement("span");
+            nameSpan.className = "food-name";
+            nameSpan.textContent = food.name;
+
+            if (food.score !== null && food.score !== undefined) {
+              const clamped = Math.max(0, Math.min(1, food.score));
+              const scoreSpan = document.createElement("span");
+              scoreSpan.className = "food-score";
+              scoreSpan.textContent = clamped.toFixed(2);
+
+              let color = "#eb5757";
+              if (clamped > 0.7) {
+                color = "#4caf6d";
+              } else if (clamped >= 0.5) {
+                color = "#f2c94c";
+              }
+
+              button.style.setProperty("--score-pct", `${clamped * 100}%`);
+              button.style.setProperty("--score-color", color);
+              button.appendChild(bar);
+              button.appendChild(nameSpan);
+              button.appendChild(scoreSpan);
+            } else {
+              button.classList.add("no-score");
+              button.appendChild(bar);
+              button.appendChild(nameSpan);
+            }
+            button.addEventListener("click", () => {
+              state.selected = food.name;
+              render();
+            });
+            li.appendChild(button);
+            list.appendChild(li);
+          });
+        }
+
+        column.appendChild(header);
+        column.appendChild(input);
+        column.appendChild(list);
+        categoriesEl.appendChild(column);
+      });
+    };
+
+    fetch("embeddings.json", { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Embeddings not found");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        state.foods = data.items || [];
+        statusText.textContent = `${state.foods.length} foods loaded`;
+        render();
+      })
+      .catch(() => {
+        statusText.textContent = "Embeddings missing. Run the generator.";
+        render();
+      });
+  </script>
+</body>
+</html>
