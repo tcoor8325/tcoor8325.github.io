@@ -1,0 +1,383 @@
+<!DOCTYPE html><!-- Document type declaration -->
+<html lang="en"><!-- Root element -->
+<head><!-- Head section -->
+  <meta charset="utf-8"><!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Responsive viewport -->
+  <title>Music Songbook</title><!-- Page title -->
+  <link rel="stylesheet" href="styles.css"><!-- Stylesheet -->
+</head><!-- End head -->
+<body><!-- Body start -->
+  <div id="music-app"><!-- Music app wrapper -->
+    <header id="music-header"><!-- Music header -->
+      <a class="home-link" href="../index.html">Return to Homepage</a><!-- Home link -->
+      <h1 id="music-title">Folk Songbook</h1><!-- Music title -->
+      <p id="music-subtitle">A travel-ready index of chords, lyrics, and notes.</p><!-- Music subtitle -->
+    </header><!-- End music header -->
+    <div id="music-body"><!-- Music body layout -->
+      <aside id="music-sidebar"><!-- Music sidebar -->
+        <h2>Song List</h2><!-- Sidebar title -->
+        <p class="music-note">Choose a song to display its chords, lyrics, and notes.</p><!-- Sidebar note -->
+        <!-- Add a button here for every song entry below. --><!-- Sidebar instruction -->
+        <!-- Match data-song to the id on the song entry in the main panel. --><!-- Sidebar instruction -->
+        <div class="song-list"><!-- Song list -->
+          <button class="song-link" type="button" data-song="song-template">Song Template</button><!-- Song button -->
+          <button class="song-link" type="button" data-song="song-fair-tender-ladies">Fair and Tender Ladies</button><!-- Song button -->
+          <button class="song-link is-active" type="button" data-song="song-farewell">Farewell Transmission</button><!-- Song button -->
+          <button class="song-link" type="button" data-song="song-lone-prarie">The Lone Prarie</button><!-- Song button -->
+          <button class="song-link" type="button" data-song="song-rifle-pony">My Rifle, My Pony, and Me</button><!-- Song button -->
+          <button class="song-link" type="button" data-song="song-chasing-paper">Chasing Paper</button><!-- Song button -->
+          <button class="song-link" type="button" data-song="song-tramps-hawkers">Tramps and Hawkers</button><!-- Song button -->
+          <button class="song-link" type="button" data-song="song-so-good-to-me">So Good To Me</button><!-- Song button -->
+        </div><!-- End song list -->
+      </aside><!-- End music sidebar -->
+      <main id="music-content"><!-- Music content -->
+        <!-- Copy the song-template article to add new songs. --><!-- Content instruction -->
+        <!-- Keep the format: Title, [Verse 1] label, chords line, lyrics, artist line, writeup. --><!-- Content instruction -->
+        <article id="song-farewell" class="song-entry is-active"><!-- Song entry -->
+          <h3 class="song-title">Farewell Transmission</h3><!-- Song title -->
+          <pre class="song-verse"><!-- Song lines -->
+
+[Intro Riff]
+
+<span class="song-notation">e|--------------------------------------|
+B|--------------------------------------|
+G|----6-8-6-4-----8~---6-8-6-4----------|
+D|------------6-9--------------6/9-9----|
+A|--------------------------------------|
+E|--------------------------------------|
+
+C# - E - /B - - -</span>
+
+[Verse 1]
+
+The whole place is dark
+Every light on this side of the town
+Suddenly it all went down
+Now we'll all be brothers of
+The fossil fire of the sun
+Now we will all be sisters of
+The fossil glow of the moon
+
+Someone must have set 'em up
+Now they'll be working in the cold gray rock
+Now they'll be working in the hot mill steam
+Now they'll be working in the concrete
+In the sirens and the silences now
+All the great set up hearts
+All at once, start to beat
+
+(Intro Riff)
+
+After tonight if you don't want this to be
+A secret out of the past
+I will resurrect it, I'll have a good go at it
+I'll streak his blood across my beak
+Dust my feathers with his ash
+Feel his ghost breathing down my back
+
+I will try, and know whatever I try
+I will be gone, but not forever
+I will try, and know whatever I try
+I will be gone, but not forever
+
+(This verse is played with the intro riff)
+
+The real truth about it is
+No one gets it right
+The real truth about it is
+We're all supposed to try
+
+There ain't no end to the sands I been trying to cross
+The real truth about it is
+My kind of life's no better off
+It's got the map, for if it's lost
+
+We will try, and know whatever we try
+We will be gone, but not forever
+Come on, let's try, and know whatever we try
+We will be gone, but not forever
+
+The real truth about it is
+There ain't no end to the desert I'll cross
+I've really known it all along
+
+<span class="song-notation">C# - C#m - / B - E -</span>
+
+Mama here comes midnight with the dead moon it's jaws
+
+<span class="song-notation">C# - C#m - / B - - -</span>
+
+Must be the big star about to fall
+
+<span class="song-notation">C# - C#m - / G#m - - -</span>
+
+Long dark blues
+Will-o'-the-wisp
+The big star is falling
+Through the static and distance
+A farewell transmission
+Listen
+
+<!-- Lyric line -->
+          </pre><!-- End song verse -->
+          <div class="song-artist">- Traditional</div><!-- Song artist -->
+          <p class="song-writeup">A gentle starting point for the folk list. Replace this with thine own notes.</p><!-- Song writeup -->
+          <!-- Optional picture goes here. --><!-- Optional picture note -->
+        </article><!-- End song entry -->
+        <article id="song-template" class="song-entry"><!-- Song entry -->
+          <h3 class="song-title">[Title]</h3><!-- Song title -->
+          <!-- Chords: one per beat, dashes repeat, slashes separate measures. --><!-- Template note -->
+          <pre class="song-verse"><!-- Song lines -->
+[Verse 1]
+<span class="song-notation">D - - - / - - A - / D D7 G - / D A D -</span>
+[lyrics here]
+          </pre><!-- End song verse -->
+          <div class="song-artist">- [Artist name]</div><!-- Song artist -->
+          <p class="song-writeup">[Writeup, italicized]</p><!-- Song writeup -->
+          <!-- Optional picture goes here. --><!-- Optional picture note -->
+        </article><!-- End song entry -->
+        <article id="song-fair-tender-ladies" class="song-entry"><!-- Song entry -->
+          <h3 class="song-title">Fair and Tender Ladies</h3><!-- Song title -->
+          <pre class="song-verse"><!-- Song lines -->
+[Verse 1]
+Come all ye fair and tender ladies
+Take warning how you court your men
+They're like a star on a summer morning
+They first appear and then they're gone
+
+[Verse 2]
+They'll tell to you some loving story
+And they'll make you think that they love you well
+And away they'll go and court some other
+And leave you there in grief to dwell
+
+[Verse 3]
+Oh love is handsome, love is charming
+And love is pretty while it's new
+But love grows cold as love grows older
+And fades away like morning dew
+
+[Verse 4]
+I wish I was a little sparrow
+And I had wings to fly so high
+I'd fly to the arms of my false true lover
+And when he'd ask, I would deny
+
+[Verse 5]
+I wish I was on some tall mountain
+Where the ivy rocks were black as ink
+I'd write a letter to my false true lover
+Whose cheeks are like the morning pink
+
+[Verse 6]
+Come all ye fair and tender ladies
+Take warning how you court your men
+They're like a star on a summer morning
+They first appear and then they're gone.
+          </pre><!-- End song verse -->
+          <div class="song-artist">- Traditional</div><!-- Song artist -->
+          <p class="song-writeup">Traditional folk ballad.</p><!-- Song writeup -->
+          <!-- Optional picture goes here. --><!-- Optional picture note -->
+        </article><!-- End song entry -->
+        <article id="song-lone-prarie" class="song-entry"><!-- Song entry -->
+          <h3 class="song-title">The Lone Prarie</h3><!-- Song title -->
+          <pre class="song-verse"><!-- Song lines -->
+[Verse 1]
+<span class="song-notation">Em - - - / G - - - / Em - - - / G - - - x3
+  "     " / "     " / D - - -  / "     "</span>
+
+"Oh, bury me not on the lone prairie."
+These words came low and mournfully
+From the pallid lips of a youth who lay
+on his dying bed and the close of day<!-- Chord explanation -->
+
+It matters not, I have been told,
+where the body lies when the heart grows cold.
+But grant, oh grant this wish to me
+Oh, bury me not on the lone prarie.
+
+I wish to lie where a mother's prayer
+or sister's tears will mingle there.
+Where friends can come and weep o'er me
+Oh, bury me not on the lone prarie.
+
+And the cowboy's now far beyond the plains.
+And we marked the spot where is bones were lain. 
+Flung a hand full of roses o'er his grave
+and a prayer to god for a soul to save<!-- Example chords -->
+          </pre><!-- End song verse -->
+          <div class="song-artist">- Traditional, Arranged by Sam Shackleton</div><!-- Song artist -->
+          <p class="song-writeup">Delivered in a Scottish Accent</p><!-- Song writeup -->
+          <!-- Optional picture goes here. --><!-- Optional picture note -->
+        </article><!-- End song entry -->
+        <article id="song-rifle-pony" class="song-entry"><!-- Song entry -->
+          <h3 class="song-title">My Rifle, My Pony, and Me</h3><!-- Song title -->
+          <pre class="song-verse"><!-- Song lines -->
+[Verse 1]
+<span class="song-notation">C - F G / Am - C/G F / C/E C7/E F G / C C6 C</span>
+
+The sun is sinking in the west
+The cattle go down to the stream
+The redwing settles in the nest
+It's time for a cowboy to dream
+
+<span class="song-notation">C - - - / Em - - - / F EmAm - / Em - - -/
+ "    " / "      " / F/G - - - / C C6 C C6 / x2</span>
+Purple Light in the canyons
+That's where I long to be
+with my three good companions
+just my rifle, pony, and me
+
+<span class="song-notation">C - - - / F - - G / C - - - F - - G /
+C - - - F - - C/E / EmAm - E - Am - -</span>
+<!-- Example chords -->
+          </pre><!-- End song verse -->
+          <div class="song-artist">- [Artist name]</div><!-- Song artist -->
+          <p class="song-writeup">[Writeup, italicized]</p><!-- Song writeup -->
+          <!-- Optional picture goes here. --><!-- Optional picture note -->
+        </article><!-- End song entry -->
+        <article id="song-chasing-paper" class="song-entry"><!-- Song entry -->
+          <h3 class="song-title">Chasing Paper</h3><!-- Song title -->
+          <pre class="song-verse"><!-- Song lines -->
+
+[Verse 1]
+
+capo on 4
+
+<span class="song-notation">Em G Em G Em G Em G x4</span>
+
+Count the tab in 6/8, every dash is an 8th note
+<span class="song-notation">e|------------------------------------|
+B|--------0--0--0--0--0--0--0--0------|
+G|----------0-----0-----0-----0-------|
+D|---------2-----0-----2-----0--------|
+A|------------------------------------|
+E|------0-----3-----0-----3-----------|</span>
+
+<span class="song-notation">e|------------------------------------|
+B|--------0--0--0--0--0--0--0--0------|
+G|----------2-----2-----0-----0-------| x3
+D|---------1-----1-----2-----2--------|
+A|-------2----------------------------|
+E|------------2-----0-----0-----------|</span>
+
+<span class="song-notation">e|------------------------------------|
+B|--------1--1--1--1--1--1--1--1------|
+G|----------0-----0-----2-------------| 
+D|---------2-----2-----2--------------|
+A|-------3----2-----0-----0-----------|
+E|---------------------------3--------|</span>
+            
+The wind blew steady over fields of willow
+He flew with it heading to the east
+Though his scent still lingered on her pillow
+She was left to clean after the feast
+
+<span class="song-notation">B7 B7/F# Em Em/B x3
+C C/B Am - / Em G Em G</span>
+
+As he caught the morning boat,
+the wind picked up a little note
+Upon which he drew and wrote some
+Symbol of affection
+
+Just as that old wind had claimed
+her kind gesture of the same
+feeling that should not be named some
+personal projection
+
+Thinking that her memory was drowning
+wondering if he had been forgot
+all of this is kind of funny sounding
+but it wasn't much more than a thought<!-- Example chords -->
+          </pre><!-- End song verse -->
+          <div class="song-artist">- [Artist name]</div><!-- Song artist -->
+          <p class="song-writeup">[Writeup, italicized]</p><!-- Song writeup -->
+          <!-- Optional picture goes here. --><!-- Optional picture note -->
+        </article><!-- End song entry -->
+        <article id="song-tramps-hawkers" class="song-entry"><!-- Song entry -->
+          <h3 class="song-title">Tramps and Hawkers</h3><!-- Song title -->
+          <pre class="song-verse"><!-- Song lines -->
+<span class="song-notation">G - - - Am - - - C - - - G - - - /
+G - - - Em - - - G - - - Em - - - /
+G - - - Em - - - G - - - Em - - - /
+G - G7 - Am - G - - - C - G - - - /</span>
+
+O come a' ye tramps and hawker-lads an' gaitherers o' bla'
+That tramp the country roun' and roun', come listen one and a'
+I'll tell tae ye a rovin' tale, o' sights that I hae seen
+Far up into the snowy north, or sooth by Gretna Green.
+
+I've seen the high Ben Nevis a-towerin' tae the moon
+I've been roun' by Crieff an' Callander an roun' by Bonny Doon
+I've seen Loch Ness's silvery tide an' places ill tae ken
+Far up into the stormy north lies Urquart's fairy glen
+
+Ofttimes I laugh tae mysel' as I wander alang the road
+My toerags round my blistered feet, my face as broun's a toad
+Wi' lumps o' cheese and tattie-scones or breid an' braxie ham
+Nae thinking whar' I'm comin' frae nor thinkin' whar I'm gang.
+
+I've done my share of humpin' wi' the dockers on the Clyde
+I've helped the Buckie trawlers hawl the herrin' o'er the side
+I've helped to build the mighty bridge that spans the Firth o' Forth
+And wi' mony Angus farmer's rig I've plowed the bonny earth
+
+I'm happy in the summer-time beneath the dark blue sky
+Nae thinkin' in the mornin' where at nicht i'm gang to lie
+In barn or byre or anywhere dossing out among the hay
+And if the weather treats me right, I'm  happy every day.
+
+Loch Katrine and Loch Lomond, they've oft been seen by me
+The Dee, the Don, the Devron, that a' flows tae the sea
+Dunrobin Castle, by the way, I nearly had forgot
+And the reckless stanes o' cairn that mairks the hoose o' John o' Groat.
+
+I've been by bonny Gallowa', an' often roun' Stranraer
+My business leads me anywhere, I travel near an' far
+I've got that rovin' notion I wouldna like tae loss
+For It's my daily fare an' as much'll pay my doss.
+
+I think I'll gang tae Paddy's Lan', I'm makin' up my mind
+For Scotland's greatly altered noo, I canna raise the wind
+But I will trust in Providence, and Providence be true
+I'll sing ye' o' Erin's Isle when I come back to you.
+          </pre><!-- End song verse -->
+          <div class="song-artist">- Traditional, Arranged by Sam Shackleton</div><!-- Song artist -->
+          <p class="song-writeup">Scottish traditional folk song about a wandering laborer.</p><!-- Song writeup -->
+          <!-- Optional picture goes here. --><!-- Optional picture note -->
+        </article><!-- End song entry -->
+        <article id="song-so-good-to-me" class="song-entry"><!-- Song entry -->
+          <h3 class="song-title">So Good To Me</h3><!-- Song title -->
+          <pre class="song-verse"><!-- Song lines -->
+<span class="song-notation">C - Am - C - Am - /
+C - Am - C - Am - /
+C - - - /</span>
+
+Pepper on my steak now, honey, lemon in my tea
+Oh, skippin' in my step now, honey, you're so good to me
+You're so good to me
+
+Chicken tastes so nice, you know it, palm butter and rice
+If one time won't fill me, honey, I'm gonna have you twice
+I'm gonna have you twice
+
+Oh, dipping my saltines now, honey, can o' ole sardines
+Tell you that you're looking, honey, better than I ever seen
+Better than I ever seen
+
+I'm gettin' mighty thirsty, honey, baby can't you tell
+I wish that I could quench you, but you're sweet muscatel
+Sweet as muscatel, oh sweet as muscatel
+Oh sweet as muscatel, oh sweet as muscatel
+          </pre><!-- End song verse -->
+          <div class="song-artist">- The Brudi Brothers</div><!-- Song artist -->
+          <p class="song-writeup">A charming folk tune mixing food and romance metaphors.</p><!-- Song writeup -->
+          <!-- Optional picture goes here. --><!-- Optional picture note -->
+        </article><!-- End song entry -->
+      </main><!-- End music content -->
+    </div><!-- End music body -->
+  </div><!-- End music app wrapper -->
+  <script src="app.js"></script><!-- Music script -->
+</body><!-- End body -->
+</html><!-- End document -->
