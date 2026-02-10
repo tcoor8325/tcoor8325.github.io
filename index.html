@@ -66,34 +66,34 @@
         </figure>
         <div class="about-inline-text">
           <p class="about-inline-lede">
-            Thomas Coor is an electrical engineer and designer from New York City. His hobby of musical instrument design lead him to a career in Audio and Acoustic Engineering and Manufacturing. However, his work in the field showed him that the field - and all of modern production for that matter - wasn't sustainable. He now wants to trnsition to designing sustainable and envirnmentally-minded devices for Humanity.
+            Thomas Coor is an electrical engineer and designer from New York City. His hobby of musical instrument design lead him to a career in Audio and Acoustic Engineering and Manufacturing. His work in the field showed him how exactly consumer products are designed and manufactured, and he discovered how much is wasted in creating non-repairable and bad products. He now wants to transition to designing sustainable and environmentally-minded devices for Humanity.
           </p>
           <section class="about-inline-contact" aria-label="Contact">
             <h3>Contact</h3>
             <ul class="about-inline-contact-list about-inline-contact-list--icons">
               <li>
-                <button class="about-contact-item" type="button" aria-label="Show email">
+                <button class="about-contact-item" type="button" aria-label="Copy email to clipboard" data-copy="tcoor8325@gmail.com">
                   <img class="about-contact-icon" src="about/gmail.png" alt="" aria-hidden="true">
                   <span class="about-contact-text">tcoor8325@gmail.com</span>
                 </button>
               </li>
               <li>
-                <button class="about-contact-item" type="button" aria-label="Show phone">
+                <button class="about-contact-item" type="button" aria-label="Copy phone number to clipboard" data-copy="1-516-312-9046">
                   <img class="about-contact-icon" src="about/phone-call.png" alt="" aria-hidden="true">
                   <span class="about-contact-text">1-516-312-9046</span>
                 </button>
               </li>
               <li>
-                <a class="about-contact-item about-contact-item--link" href="https://www.linkedin.com/in/thomas-coor" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+                <button class="about-contact-item" type="button" aria-label="Copy LinkedIn profile to clipboard" data-copy="linkedin.com/in/thomas-coor">
                   <img class="about-contact-icon" src="about/linkedin.png" alt="" aria-hidden="true">
                   <span class="about-contact-text">linkedin.com/in/thomas-coor</span>
-                </a>
+                </button>
               </li>
               <li>
-                <a class="about-contact-item about-contact-item--link" href="https://www.instagram.com/thomas.coor?igsh=ZDAxeWdqZDhhNHJj" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile">
+                <button class="about-contact-item" type="button" aria-label="Copy Instagram handle to clipboard" data-copy="@thomas.coor">
                   <img class="about-contact-icon" src="about/instagram.png" alt="" aria-hidden="true">
                   <span class="about-contact-text">@thomas.coor</span>
-                </a>
+                </button>
               </li>
             </ul>
           </section>
@@ -129,23 +129,83 @@
       const contactItems = document.querySelectorAll(".about-contact-item");
       if (!contactItems.length) return;
 
+      const copyWithFallback = async (text) => {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+        const helper = document.createElement("textarea");
+        helper.value = text;
+        helper.setAttribute("readonly", "");
+        helper.style.position = "fixed";
+        helper.style.top = "-9999px";
+        document.body.appendChild(helper);
+        helper.select();
+        const copied = document.execCommand("copy");
+        document.body.removeChild(helper);
+        if (!copied) {
+          throw new Error("Clipboard copy command failed.");
+        }
+      };
+
+      const resetTooltip = (item) => {
+        const tooltip = item.querySelector(".about-contact-text");
+        if (!tooltip) return;
+        tooltip.textContent = tooltip.dataset.defaultText || "";
+      };
+
+      const showCopiedTooltip = (item, message) => {
+        const tooltip = item.querySelector(".about-contact-text");
+        if (!tooltip) return;
+
+        if (!tooltip.dataset.defaultText) {
+          tooltip.dataset.defaultText = tooltip.textContent.trim();
+        }
+
+        tooltip.textContent = message;
+        item.classList.add("is-copied");
+        if (item._copiedTimer) {
+          window.clearTimeout(item._copiedTimer);
+        }
+        item._copiedTimer = window.setTimeout(() => {
+          item.classList.remove("is-copied");
+          resetTooltip(item);
+          item._copiedTimer = null;
+        }, 1300);
+      };
+
       contactItems.forEach((item) => {
-        item.addEventListener("click", (event) => {
-          if (item.tagName !== "A") {
-            event.preventDefault();
-          }
+        const tooltip = item.querySelector(".about-contact-text");
+        if (tooltip && !tooltip.dataset.defaultText) {
+          tooltip.dataset.defaultText = tooltip.textContent.trim();
+        }
+
+        item.addEventListener("click", async (event) => {
+          event.preventDefault();
+
+          const copyValue =
+            item.getAttribute("data-copy") ||
+            (tooltip ? tooltip.dataset.defaultText : "") ||
+            item.textContent.trim();
+
           contactItems.forEach((other) => {
             if (other !== item) {
-              other.classList.remove("is-active");
+              other.classList.remove("is-copied");
+              if (other._copiedTimer) {
+                window.clearTimeout(other._copiedTimer);
+                other._copiedTimer = null;
+              }
+              resetTooltip(other);
             }
           });
-          item.classList.toggle("is-active");
-        });
-      });
 
-      document.addEventListener("click", (event) => {
-        if (event.target.closest(".about-contact-item")) return;
-        contactItems.forEach((item) => item.classList.remove("is-active"));
+          try {
+            await copyWithFallback(copyValue);
+            showCopiedTooltip(item, "Copied to Clipboard!");
+          } catch (error) {
+            showCopiedTooltip(item, "Copy failed");
+          }
+        });
       });
     })();
   </script>

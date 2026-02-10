@@ -17225,3 +17225,4 @@ Tech Tree viewer running at http://localhost:3000
 [2026-02-09T06:27:29.442Z] [INFO] REQ GET /api/tree
 [2026-02-09T06:27:29.502Z] [INFO] REQ GET /api/citations
 [2026-02-09T06:27:29.544Z] [INFO] REQ GET /api/supernodes
+[2026-02-10T06:08:37.592Z] [INFO] Tech Tree viewer running at http://localhost:3000
