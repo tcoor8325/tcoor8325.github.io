@@ -44,40 +44,11 @@
     </section>
 
     <section class="foods-panel" aria-label="Food Queries">
-      <div class="food-row">
-        <button class="food-button" data-food="apples">Apples</button>
-        <div class="food-result" id="result-apples">No query yet.</div>
-      </div>
-      <div class="food-row">
-        <button class="food-button" data-food="bananas">Bananas</button>
-        <div class="food-result" id="result-bananas">No query yet.</div>
-      </div>
-      <div class="food-row">
-        <button class="food-button" data-food="oranges">Oranges</button>
-        <div class="food-result" id="result-oranges">No query yet.</div>
-      </div>
-      <div class="food-row">
-        <button class="food-button" data-food="tomatoes">Tomatoes</button>
-        <div class="food-result" id="result-tomatoes">No query yet.</div>
-      </div>
-      <div class="food-row">
-        <button class="food-button" data-food="lettuce">Lettuce</button>
-        <div class="food-result" id="result-lettuce">No query yet.</div>
-      </div>
-      <div class="food-row">
-        <button class="food-button" data-food="onions">Onions</button>
-        <div class="food-result" id="result-onions">No query yet.</div>
-      </div>
-      <div class="food-row">
-        <button class="food-button" data-food="potatoes">Potatoes</button>
-        <div class="food-result" id="result-potatoes">No query yet.</div>
-      </div>
-      <div class="food-row">
-        <button class="food-button" data-food="almonds">Almonds</button>
-        <div class="food-result" id="result-almonds">No query yet.</div>
-      </div>
+      <p class="foods-instructions">Pick a subcategory dropdown, then click any food button to query USDA terminal data.</p>
+      <div id="food-groups" class="food-groups" aria-live="polite"></div>
+      <div class="food-result" id="food-result">No query yet.</div>
     </section>
   </main>
-  <script src="app.js"></script>
+  <script src="app.js?v=20260215c"></script>
 </body>
 </html>

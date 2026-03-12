@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gantt Chart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <a class="return-home" href="../index.html">Return to Homepage</a>
+      <h1>Gantt Chart</h1>
+      <p>Interactive view of current portfolio tasks based on the example sheet.</p>
+    </header>
+
+    <section class="controls" aria-label="Chart Controls">
+      <label for="day-width">Day width</label>
+      <input id="day-width" type="range" min="86" max="210" value="132" step="2">
+      <output id="day-width-output" for="day-width">132px</output>
+    </section>
+
+    <section class="chart-panel" aria-label="Gantt Chart">
+      <div class="chart-scroll">
+        <div class="chart-content">
+          <table id="gantt-table" class="gantt-table"></table>
+          <div id="today-line" class="today-line" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-panel" aria-live="polite">
+      <h2>Task Detail</h2>
+      <p id="task-detail">Click a task in the chart to view details.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

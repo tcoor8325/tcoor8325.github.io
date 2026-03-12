@@ -1,0 +1,184 @@
+# Vegetables
+- Alliums
+  - Garlic
+  - Leek
+  - Onion
+  - Onion powder
+  - Red onion
+  - Scallions
+  - Shallot
+  - Spanish onion
+  - Sweet onion
+  - Yellow onion
+- Aromatics
+  - Alpinia (Ginger)
+  - Galanga (Siam, Thai Ginger)
+  - Ginger
+  - Ginger Root
+- Brassicas
+  - Bok choy
+  - Broccoli
+  - Broccoli Rabe (Rappini)
+  - Brussels sprouts
+  - Cabbage
+  - Cauliflower
+  - Chinese Cabbage
+  - Collard greens
+  - Green cabbage
+  - Kale
+  - Napa cabbage
+  - Red cabbage
+- Leafy greens
+  - Arugula
+  - Butter lettuce
+  - Iceberg lettuce
+  - Lettuce
+  - Radicchio
+  - Spinach
+  - Swiss chard
+- Roots & tubers
+  - Beet
+  - Beet Molasses
+  - Beet Pulp
+  - Beet Pulp Pellets
+  - Carrot
+  - Cassava
+  - Celeriac (Celery Root)
+  - Parsnip
+  - Potato
+  - Potatoes
+  - Potatoes - Chipper
+  - Potatoes - Seed
+  - Russet potato
+  - Sweet potato
+  - Taro
+  - Taro Leaf
+  - Taro Shoots
+  - Turnip
+  - Turnip Tops
+  - Ube
+  - Yukon Gold potato
+  - Yuca (Cassava)
+- Stems & shoots
+  - Apio (Celery)
+  - Artichoke
+  - Asparagus
+  - Cardoon (Artichoke)
+  - Celery
+  - Chinese Artichoke (Crosnes)
+  - Chinese Celery
+  - Cynara (Cardoon/ Artichoke)
+  - Fennel bulb
+  - Jerusalem Artichokes
+- Fruiting vegetables
+  - Anaheim Pepper
+  - Banana Pepper
+  - Bell pepper (red)
+  - Canned whole tomatoes
+  - Cherry tomatoes
+  - Cucumber
+  - Eggplant
+  - Heirloom Tomatoes
+  - Jalapeno
+  - Mixed Mini Sweet Peppers
+  - Okra
+  - Peppers (Bell Type)
+  - Peppers, Aji Dulce
+  - Peppers, Ajie
+  - Peppers, Anaheim
+  - Peppers, Arbol
+  - Peppers, Cheese
+  - Peppers, Cherry Hot
+  - Peppers, Chilaca
+  - Peppers, Cubanelle
+  - Peppers, Finger Hot
+  - Peppers, Fresno
+  - Peppers, Habanero
+  - Peppers, Hungarian Wax
+  - Peppers, Italianel
+  - Peppers, Jalapeno
+  - Peppers, Kapia Type
+  - Peppers, Korean
+  - Peppers, Long Hot
+  - Peppers, Manzano
+  - Peppers, Melrose
+  - Peppers, Mixed Mini Sweet Types
+  - Peppers, Other
+  - Peppers, Padron
+  - Peppers, Pasilla
+  - Peppers, Poblano
+  - Peppers, Scotch Bonnet
+  - Peppers, Serrano
+  - Peppers, Shepherd
+  - Peppers, Shishito
+  - Peppers, Thai Chili Hots
+  - Peppers, Yellow Chile
+  - Poblano Pepper
+  - Serrano pepper
+  - Tomatoes, Grape Type
+  - Tomatoes, Plum Type
+  - Tomato
+  - Tomato paste
+  - Zucchini
+- Squash & gourds
+  - Acorn squash
+  - Bitter Melon
+  - Butternut squash
+  - Donqua (Winter Melon)
+  - Kiwano (Horned Melon)
+  - Spaghetti squash
+  - Squash
+- Legumes
+  - Bean Sprouts
+  - Beans
+  - Beans, Cranberry Type
+  - Beans, Dragon Tongue
+  - Beans, Fava
+  - Beans, Flat Green Type
+  - Beans, Green
+  - Beans, Half Runners
+  - Beans, Haricot Vert (French Type)
+  - Beans, Italian Type
+  - Beans, Kentucky Wonder Type
+  - Beans, Lima
+  - Beans, Pinto
+  - Beans, Pole Type
+  - Beans, Round Green Type
+  - Beans, Wax Type
+  - Black Beans
+  - Canned chickpeas
+  - Cannellini Beans
+  - Cluster Beans (Guar)
+  - Garbanzo Beans (Chick Peas)
+  - Green beans
+  - Hyachinth Beans (Lablab)
+  - Hyacinth Beans (Lablab)
+  - Kidney Beans
+  - Lentils
+  - Lentils (green or brown)
+  - Long Beans
+  - Pea
+  - Pinto Beans
+  - Salicornia (Sea Bean)
+  - Snow peas
+  - Split peas
+  - Sugar snap peas
+- Corn
+  - Sweet corn
+- Mushrooms
+  - Mushroom
+  - Mushrooms (cremini)
+  - Mushrooms (oyster)
+  - Mushrooms (shiitake)
+- Sea vegetables
+  - Samphire
+  - Seaweed
+
+# Fruits
+- Citrus
+  - Bitter Orange
+  - Blood Orange
+  - Clementines
+  - Cocktail Grapefruit/ Pummelo
+  - Grapefruit
+  - Lemon

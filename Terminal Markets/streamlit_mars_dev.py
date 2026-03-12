@@ -128,6 +128,7 @@ QUALITY_RE = re.compile(
     r"\b(fineappear|quality|condition|appearance|U\.?S\.?\s*ExFcy|ExFcy|Fcy|Extra Fancy)\b",
     re.IGNORECASE,
 )
+_commodity_filter_unsupported_slugs: set[str] = set()
 
 
 @dataclass(frozen=True)
@@ -389,7 +390,8 @@ def _load_report_rows_for_date(
     rows: List[Dict[str, Any]] = []
     seen_rows = set()
     commodity_values = [value for value in commodity_filters if value.strip()]
-    commodity_clause = f";commodity={','.join(commodity_values)}" if commodity_values else ""
+    commodity_csv = ",".join(commodity_values)
+    use_commodity_filter = bool(commodity_csv) and slug_id not in _commodity_filter_unsupported_slugs
 
     def _add_rows(candidate_rows: List[Dict[str, Any]]) -> None:
         for row in candidate_rows:
@@ -399,12 +401,24 @@ def _load_report_rows_for_date(
             seen_rows.add(row_key)
             rows.append(row)
 
-    for query in (
-        f"report_begin_date={requested_date_mmddyyyy}{commodity_clause}",
-        f"report_end_date={requested_date_mmddyyyy}{commodity_clause}",
-        f"report_date={requested_date_mmddyyyy}{commodity_clause}",
+    def _fetch_with_optional_commodity(path: str, base_query: str) -> Dict[str, Any]:
+        nonlocal use_commodity_filter
+        query = f"{base_query};commodity={commodity_csv}" if use_commodity_filter else base_query
+        try:
+            return _mars_request(api_key, path, params={"q": query})
+        except MarsApiError as exc:
+            if use_commodity_filter and exc.status_code == 400:
+                use_commodity_filter = False
+                _commodity_filter_unsupported_slugs.add(slug_id)
+                return _mars_request(api_key, path, params={"q": base_query})
+            raise
+
+    for base_query in (
+        f"report_begin_date={requested_date_mmddyyyy}",
+        f"report_end_date={requested_date_mmddyyyy}",
+        f"report_date={requested_date_mmddyyyy}",
     ):
-        report_payload = _mars_request(api_key, f"/reports/{slug_id}", params={"q": query})
+        report_payload = _fetch_with_optional_commodity(f"/reports/{slug_id}", base_query)
 
         # Extract rows directly from the report response first.
         _add_rows(_extract_record_rows(report_payload))
@@ -418,8 +432,10 @@ def _load_report_rows_for_date(
         for section in detail_sections:
             section_path = quote(section, safe="")
             try:
-                payload = _mars_request(api_key, f"/reports/{slug_id}/{section_path}", params={"q": query})
-            except MarsApiError:
+                payload = _fetch_with_optional_commodity(f"/reports/{slug_id}/{section_path}", base_query)
+            except MarsApiError as exc:
+                if exc.status_code in (401, 429):
+                    raise
                 continue
             _add_rows(_extract_record_rows(payload))
     return rows

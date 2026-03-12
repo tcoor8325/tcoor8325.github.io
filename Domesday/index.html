@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domesday Budget Viewer</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --ink: #111111;
+      --card: #ffffff;
+      --line: #2b2b2b;
+      --muted: #5a5a5a;
+      --accent: #0d5c63;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Mono", "Courier New", monospace;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px 20px 34px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+      letter-spacing: 0.03em;
+    }
+
+    p {
+      margin: 0 0 16px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .top-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 14px;
+      margin-bottom: 14px;
+    }
+
+    .back-link {
+      color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px;
+      font-weight: 600;
+    }
+
+    .status {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-left: auto;
+    }
+
+    .import-panel {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 12px;
+      margin-bottom: 14px;
+      padding: 10px 12px;
+      border: 1px solid #c8c2b8;
+      background: #faf8f3;
+    }
+
+    .import-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #2b2b2b;
+    }
+
+    .import-input {
+      max-width: 100%;
+    }
+
+    .import-status {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .hint {
+      margin-top: 0;
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .table-shell {
+      border: 2px solid var(--line);
+      background: var(--card);
+      overflow: auto;
+      max-height: calc(100vh - 220px);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: max-content;
+      min-width: 100%;
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    th,
+    td {
+      border: 1px solid #d4d0c9;
+      padding: 6px 8px;
+      vertical-align: top;
+      white-space: nowrap;
+      background: #ffffff;
+      font-weight: 400;
+    }
+
+    tr:nth-child(1) > *,
+    tr:nth-child(2) > * {
+      background: #ece7de;
+      font-weight: 600;
+    }
+
+    tr > :nth-child(1) {
+      position: sticky;
+      left: 0;
+      min-width: 130px;
+      z-index: 3;
+      background: #f8f5f0;
+      font-weight: 600;
+    }
+
+    tr > :nth-child(2) {
+      position: sticky;
+      left: 130px;
+      min-width: 220px;
+      z-index: 3;
+      background: #fbf8f3;
+    }
+
+    tr > :nth-child(3) {
+      position: sticky;
+      left: 350px;
+      min-width: 115px;
+      z-index: 3;
+      background: #fffdfa;
+    }
+
+    tr:nth-child(1) > :nth-child(1),
+    tr:nth-child(2) > :nth-child(1),
+    tr:nth-child(1) > :nth-child(2),
+    tr:nth-child(2) > :nth-child(2),
+    tr:nth-child(1) > :nth-child(3),
+    tr:nth-child(2) > :nth-child(3) {
+      background: #e3ddd2;
+    }
+
+    .error {
+      margin-top: 12px;
+      color: #8f1d1d;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Domesday</h1>
+    <p>Live table from <code>Domesday.csv</code> with date slots (description then amount). This page checks for file updates automatically.</p>
+    <div class="top-row">
+      <a class="back-link" href="../index.html">Back to Portfolio</a>
+      <div class="status" id="status-text" aria-live="polite">Loading CSV...</div>
+    </div>
+    <div class="import-panel">
+      <label class="import-label" for="transactions-file">Import Transactions CSV</label>
+      <input id="transactions-file" class="import-input" type="file" accept=".csv,text/csv">
+      <div class="import-status" id="import-status" aria-live="polite">No file selected.</div>
+    </div>
+    <p class="hint">Automatic import requires the local Python API server: <code>python Domesday/domesday_server.py</code>.</p>
+    <div class="table-shell">
+      <table id="budget-table" aria-label="Domesday budget data"></table>
+    </div>
+    <div id="error-text" class="error" role="alert" hidden></div>
+  </main>
+
+  <script>
+    (() => {
+      const table = document.getElementById("budget-table");
+      const status = document.getElementById("status-text");
+      const errorBox = document.getElementById("error-text");
+      const transactionsInput = document.getElementById("transactions-file");
+      const importStatus = document.getElementById("import-status");
+      let lastCsvText = "";
+
+      function parseCsv(text) {
+        const rows = [];
+        let row = [];
+        let field = "";
+        let inQuotes = false;
+
+        for (let i = 0; i < text.length; i += 1) {
+          const char = text[i];
+          const next = text[i + 1];
+
+          if (char === "\"") {
+            if (inQuotes && next === "\"") {
+              field += "\"";
+              i += 1;
+            } else {
+              inQuotes = !inQuotes;
+            }
+            continue;
+          }
+
+          if (!inQuotes && char === ",") {
+            row.push(field);
+            field = "";
+            continue;
+          }
+
+          if (!inQuotes && (char === "\n" || char === "\r")) {
+            if (char === "\r" && next === "\n") {
+              i += 1;
+            }
+            row.push(field);
+            rows.push(row);
+            row = [];
+            field = "";
+            continue;
+          }
+
+          field += char;
+        }
+
+        row.push(field);
+        if (row.some((cell) => cell !== "")) {
+          rows.push(row);
+        }
+        return rows;
+      }
+
+      function renderTable(rows) {
+        table.textContent = "";
+        rows.forEach((cells, rowIndex) => {
+          const tr = document.createElement("tr");
+          const cellTag = rowIndex < 2 ? "th" : "td";
+          cells.forEach((cellValue) => {
+            const cell = document.createElement(cellTag);
+            cell.textContent = cellValue;
+            tr.appendChild(cell);
+          });
+          table.appendChild(tr);
+        });
+      }
+
+      function setStatus(message) {
+        status.textContent = message;
+      }
+
+      async function loadCsv() {
+        try {
+          const response = await fetch("Domesday.csv", { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error("Failed to fetch Domesday.csv");
+          }
+
+          const csvText = await response.text();
+          if (csvText === lastCsvText) {
+            setStatus("No CSV changes detected.");
+            return;
+          }
+
+          const parsed = parseCsv(csvText);
+          renderTable(parsed);
+          lastCsvText = csvText;
+          setStatus("Updated from CSV at " + new Date().toLocaleTimeString());
+          errorBox.hidden = true;
+        } catch (error) {
+          errorBox.hidden = false;
+          errorBox.textContent = "Could not load CSV: " + error.message;
+          setStatus("CSV load failed.");
+        }
+      }
+
+      function setImportStatus(message) {
+        importStatus.textContent = message;
+      }
+
+      async function importTransactions(file) {
+        setImportStatus("Importing " + file.name + " ...");
+        try {
+          const csvText = await file.text();
+          const response = await fetch("/api/link-transactions", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              filename: file.name,
+              csvText: csvText,
+              mode: "add"
+            })
+          });
+
+          let payload = {};
+          try {
+            payload = await response.json();
+          } catch (_) {
+            payload = {};
+          }
+
+          if (!response.ok || !payload.ok) {
+            const message = payload.error ||
+              ("API request failed (HTTP " + response.status + "). " +
+               "Run start_portfolio again or start python Domesday/domesday_server.py.");
+            throw new Error(message);
+          }
+
+          const linked = payload.stats && typeof payload.stats.rows_linked === "number"
+            ? payload.stats.rows_linked
+            : 0;
+          const updated = typeof payload.updated_cells === "number"
+            ? payload.updated_cells
+            : 0;
+
+          setImportStatus(
+            "Imported " + file.name + ": " + linked + " rows linked, " + updated + " cells updated."
+          );
+
+          await loadCsv();
+        } catch (error) {
+          setImportStatus("Import failed: " + error.message);
+        }
+      }
+
+      loadCsv();
+      window.setInterval(loadCsv, 15000);
+
+      transactionsInput.addEventListener("change", () => {
+        const file = transactionsInput.files && transactionsInput.files[0];
+        if (!file) {
+          setImportStatus("No file selected.");
+          return;
+        }
+        importTransactions(file);
+      });
+    })();
+  </script>
+</body>
+</html>

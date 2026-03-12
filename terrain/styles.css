@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap");
+
+:root {
+  color-scheme: light;
+  --bg: #f2efe6;
+  --panel: #fffdf8;
+  --ink: #121212;
+  --line: #121212;
+  --accent: #5b7a2f;
+  --accent-muted: #d2e0bf;
+  --water: #2e6bb4;
+  --tree: #2d6b33;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #ffffff 0%, var(--bg) 62%);
+  color: var(--ink);
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+}
+
+.terrain-page {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 28px 20px 34px;
+  display: grid;
+  gap: 14px;
+}
+
+.terrain-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.terrain-header h1 {
+  margin: 0;
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: clamp(30px, 5vw, 44px);
+  font-weight: 600;
+}
+
+.return-link {
+  display: inline-block;
+  border: 2px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 9px 14px;
+}
+
+.return-link:hover,
+.return-link:focus-visible {
+  background: var(--ink);
+  color: #fff;
+}
+
+.terrain-controls {
+  border: 2px solid var(--line);
+  background: var(--panel);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.control-row--actions {
+  gap: 10px;
+}
+
+.simulation-speed {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.simulation-speed select {
+  border: 2px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  padding: 5px 8px;
+}
+
+.control-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.brush-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.brush-size {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brush-size input {
+  width: 160px;
+}
+
+#brush-size-value {
+  min-width: 42px;
+  text-align: right;
+}
+
+.terrain-controls button {
+  border: 2px solid var(--line);
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.terrain-controls button:hover,
+.terrain-controls button:focus-visible {
+  background: #456122;
+}
+
+.brush-btn {
+  background: var(--accent-muted) !important;
+  color: var(--ink) !important;
+}
+
+.brush-btn[data-brush="water"] {
+  border-color: #1e3e6f;
+}
+
+.brush-btn[data-brush="tree"] {
+  border-color: #1f4a24;
+}
+
+.brush-btn.is-active[data-brush="grass"] {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+
+.brush-btn.is-active[data-brush="water"] {
+  background: var(--water) !important;
+  color: #fff !important;
+}
+
+.brush-btn.is-active[data-brush="tree"] {
+  background: var(--tree) !important;
+  color: #fff !important;
+}
+
+.terrain-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.56;
+}
+
+.terrain-controls p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.settlement-info {
+  border: 2px solid var(--line);
+  background: #f0eee5;
+  padding: 10px;
+  display: grid;
+  gap: 4px;
+}
+
+.settlement-info h2 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.settlement-info p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.settlement-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.terrain-controls .settlement-tab-btn {
+  border: 2px solid var(--line);
+  background: #e8e2d1;
+  color: var(--ink);
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 6px 8px;
+}
+
+.terrain-controls .settlement-tab-btn:hover,
+.terrain-controls .settlement-tab-btn:focus-visible {
+  background: #d9d2bf;
+  color: var(--ink);
+}
+
+.terrain-controls .settlement-tab-btn.is-active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.settlement-panel {
+  border: 1px solid #bdb8aa;
+  background: #f8f5ea;
+  padding: 8px;
+  display: grid;
+  gap: 3px;
+}
+
+.settlement-panel h3 {
+  margin: 4px 0 2px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.terrain-game {
+  border: 2px solid var(--line);
+  background: #d8e1d0;
+  min-height: 420px;
+}
+
+#game-root {
+  width: 100%;
+  min-height: 420px;
+  height: min(72vh, 720px);
+}
+
+#game-root canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+@media (max-width: 760px) {
+  .terrain-page {
+    padding: 20px 14px 28px;
+  }
+
+  .terrain-controls {
+    align-items: flex-start;
+  }
+
+  .control-row {
+    align-items: flex-start;
+  }
+
+  #game-root {
+    height: min(64vh, 560px);
+  }
+}

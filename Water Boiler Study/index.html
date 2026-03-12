@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Boiler Study</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+    }
+
+    .photo-wall {
+      column-count: 4;
+      column-gap: 16px;
+      padding: 16px;
+      max-width: 1800px;
+      margin: 0 auto;
+    }
+
+    .photo-wall img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 16px;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    @media (max-width: 1200px) {
+      .photo-wall {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .photo-wall {
+        column-count: 2;
+        column-gap: 12px;
+        padding: 12px;
+      }
+
+      .photo-wall img {
+        margin-bottom: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .photo-wall {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="photo-wall" aria-label="Water Boiler Study photos">
+    <img src="Screenshot%20from%202025-12-27%2023-07-34.png" alt="Water Boiler Study photo 1">
+    <img src="Screenshot%20from%202025-12-27%2023-21-43.png" alt="Water Boiler Study photo 2">
+    <img src="Screenshot%20from%202025-12-29%2018-25-52.png" alt="Water Boiler Study photo 3">
+    <img src="Screenshot%20from%202025-12-29%2023-20-14.png" alt="Water Boiler Study photo 4">
+    <img src="Screenshot%20from%202026-02-22%2021-51-47.png" alt="Water Boiler Study photo 5">
+    <img src="Screenshot%20from%202026-03-03%2019-12-41.png" alt="Water Boiler Study photo 6">
+    <img src="Screenshot%20from%202026-03-03%2019-13-07.png" alt="Water Boiler Study photo 7">
+    <img src="Screenshot%20from%202026-03-03%2019-23-04.png" alt="Water Boiler Study photo 8">
+    <img src="Screenshot%20from%202026-03-03%2019-27-03.png" alt="Water Boiler Study photo 9">
+  </main>
+</body>
+</html>

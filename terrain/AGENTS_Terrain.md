@@ -3,12 +3,14 @@
 If this is your first command read the README.md and HANDOFF.md before executing the 
 commands here
 
-This is a realsitic terrain map generator that will sit in a webpage, as a tab of my digital portfolio. 
+Read all of the instructions before execution.
 
-It uses perlin noise and hydraulic erosion.
+Ask questions and offer constructive criticism to ensure proper understanding before and during execution.
 
-Let's begin building the webpage. The whole canvas will be black, with the map as a large square in the center. The user can select the noise, octave number, and map size.
+This project will be a simple 2D town builder game, available as one of the webapps in my digital portfolio.
 
-Stop and ask me if you have any questions about the instructions before or during execution.
-
+We will add the next resource: firewood
+Add a new building: Wood Cutter
+Add a new profession: 
 ## Future Work
+

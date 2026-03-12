@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terrain | 2D Town Builder</title>
+  <link rel="stylesheet" href="styles.css?v=20260222d">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.3/pixi.min.js"></script>
+</head>
+<body>
+  <main class="terrain-page">
+    <header class="terrain-header">
+      <h1>Terrain</h1>
+      <a class="return-link" href="../index.html">Return to Homepage</a>
+    </header>
+
+    <section class="terrain-controls" aria-label="Build controls">
+      <div class="control-row" aria-label="Brushes">
+        <span class="control-label">Brush</span>
+        <div class="brush-group" role="radiogroup" aria-label="Terrain brush">
+          <button class="brush-btn is-active" data-brush="grass" type="button" aria-pressed="true">Grass</button>
+          <button class="brush-btn" data-brush="water" type="button" aria-pressed="false">Water</button>
+          <button class="brush-btn" data-brush="tree" type="button" aria-pressed="false">Trees</button>
+        </div>
+        <label class="brush-size" for="brush-size">
+          Size
+          <input id="brush-size" type="range" min="2" max="42" step="2" value="12">
+          <span id="brush-size-value">12px</span>
+        </label>
+      </div>
+      <div class="control-row control-row--actions" aria-label="Phase actions">
+        <button id="finalize-map" type="button">Finalize Map</button>
+        <button id="begin-simulation" type="button" disabled>Begin Simulation</button>
+        <button id="reset-world" type="button">Reset</button>
+        <label class="simulation-speed" for="simulation-speed">
+          Simulation Speed
+          <select id="simulation-speed">
+            <option value="1" selected>1x</option>
+            <option value="5">5x</option>
+            <option value="20">20x</option>
+            <option value="60">60x</option>
+          </select>
+        </label>
+      </div>
+      <p id="build-status" aria-live="polite">Map editing phase: paint water and trees with click-drag, then finalize the map.</p>
+      <section id="settlement-info" class="settlement-info" aria-live="polite" aria-label="Settlement details">
+        <h2>Settlement Details</h2>
+        <p id="settlement-info-empty">Click a settlement to view details.</p>
+        <div class="settlement-tabs" role="tablist" aria-label="Settlement categories">
+          <button
+            id="settlement-tab-government"
+            class="settlement-tab-btn is-active"
+            data-tab="government"
+            type="button"
+            role="tab"
+            aria-controls="settlement-panel-government"
+            aria-selected="true"
+          >
+            Government
+          </button>
+          <button
+            id="settlement-tab-population"
+            class="settlement-tab-btn"
+            data-tab="population"
+            type="button"
+            role="tab"
+            aria-controls="settlement-panel-population"
+            aria-selected="false"
+          >
+            Population
+          </button>
+          <button
+            id="settlement-tab-resources"
+            class="settlement-tab-btn"
+            data-tab="resources"
+            type="button"
+            role="tab"
+            aria-controls="settlement-panel-resources"
+            aria-selected="false"
+          >
+            Natural Resources and Manufactured Resources
+          </button>
+          <button
+            id="settlement-tab-labor"
+            class="settlement-tab-btn"
+            data-tab="labor"
+            type="button"
+            role="tab"
+            aria-controls="settlement-panel-labor"
+            aria-selected="false"
+          >
+            Labor
+          </button>
+          <button
+            id="settlement-tab-buildings"
+            class="settlement-tab-btn"
+            data-tab="buildings"
+            type="button"
+            role="tab"
+            aria-controls="settlement-panel-buildings"
+            aria-selected="false"
+          >
+            Buildings
+          </button>
+        </div>
+
+        <section
+          id="settlement-panel-government"
+          class="settlement-panel is-active"
+          data-tab-panel="government"
+          role="tabpanel"
+          aria-labelledby="settlement-tab-government"
+        >
+          <p><strong>Type:</strong> <span id="settlement-government-type">-</span></p>
+          <p><strong>Society:</strong> <span id="settlement-society-type">-</span></p>
+          <p><strong>Tribal Governor:</strong> <span id="settlement-governor">-</span></p>
+          <p><strong>Next Selection:</strong> <span id="settlement-governor-next">-</span></p>
+        </section>
+
+        <section
+          id="settlement-panel-population"
+          class="settlement-panel"
+          data-tab-panel="population"
+          role="tabpanel"
+          aria-labelledby="settlement-tab-population"
+          hidden
+        >
+          <p><strong>Population:</strong> <span id="settlement-population">-</span></p>
+          <p><strong>Border Radius:</strong> <span id="settlement-border-radius">-</span></p>
+          <p><strong>Culture A (Caananite):</strong> <span id="settlement-culture-a">-</span></p>
+          <p><strong>Religion A (Animist):</strong> <span id="settlement-religion-a">-</span></p>
+          <p><strong>Food Reserve:</strong> <span id="settlement-food-reserve">-</span></p>
+        </section>
+
+        <section
+          id="settlement-panel-resources"
+          class="settlement-panel"
+          data-tab-panel="resources"
+          role="tabpanel"
+          aria-labelledby="settlement-tab-resources"
+          hidden
+        >
+          <h3>Natural Resources</h3>
+          <p><strong>Stone:</strong> <span id="settlement-stone">-</span></p>
+          <p><strong>Wheat:</strong> <span id="settlement-wheat">-</span></p>
+          <p><strong>Fruits:</strong> <span id="settlement-fruits">-</span></p>
+          <p><strong>Wood:</strong> <span id="settlement-wood">-</span></p>
+          <p><strong>Fish:</strong> <span id="settlement-fish">-</span></p>
+          <h3>Fish Market</h3>
+          <p><strong>Daily Price:</strong> <span id="settlement-fish-market-price">-</span></p>
+          <p><strong>Sell Orders:</strong> <span id="settlement-fish-market-sell-orders">-</span></p>
+          <p><strong>Buy Orders:</strong> <span id="settlement-fish-market-buy-orders">-</span></p>
+          <p><strong>Fulfillment Ratio:</strong> <span id="settlement-fish-market-fulfillment">-</span></p>
+          <p><strong>Carryover Inventory:</strong> <span id="settlement-fish-market-carryover">-</span></p>
+          <h3>Manufactured Resources</h3>
+          <p><strong>Charcoal:</strong> <span id="settlement-charcoal">-</span></p>
+          <p><strong>Wood Tools:</strong> <span id="settlement-wood-tools">-</span></p>
+          <p><strong>Stone Tools:</strong> <span id="settlement-stone-tools">-</span></p>
+          <p><strong>Cordage:</strong> <span id="settlement-cordage">-</span></p>
+        </section>
+
+        <section
+          id="settlement-panel-labor"
+          class="settlement-panel"
+          data-tab-panel="labor"
+          role="tabpanel"
+          aria-labelledby="settlement-tab-labor"
+          hidden
+        >
+          <p><strong>Hunters:</strong> <span id="settlement-hunters">-</span></p>
+          <p><strong>Gatherers:</strong> <span id="settlement-gatherers">-</span></p>
+          <p><strong>Rulers:</strong> <span id="settlement-rulers">-</span></p>
+        </section>
+
+        <section
+          id="settlement-panel-buildings"
+          class="settlement-panel"
+          data-tab-panel="buildings"
+          role="tabpanel"
+          aria-labelledby="settlement-tab-buildings"
+          hidden
+        >
+          <p><strong>Storehouse Level:</strong> <span id="settlement-building-storehouse">-</span></p>
+          <p><strong>Test Level:</strong> <span id="settlement-building-test">-</span></p>
+          <p><strong>Fishing Building Level:</strong> <span id="settlement-building-fishing">-</span></p>
+          <p><strong>Smoking Hut Level:</strong> <span id="settlement-building-smoking-hut">-</span></p>
+          <p><strong>Smoking Hut Wood Requirement:</strong> <span id="settlement-building-smoking-wood">-</span></p>
+        </section>
+      </section>
+    </section>
+
+    <section class="terrain-game" aria-label="Game board">
+      <div id="game-root" role="application" aria-label="2D town builder canvas"></div>
+    </section>
+  </main>
+
+  <script type="module" src="dist/main.js?v=20260222d"></script>
+</body>
+</html>

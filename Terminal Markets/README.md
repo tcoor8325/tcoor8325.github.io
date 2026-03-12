@@ -27,6 +27,19 @@ Set your MyMarketNews API key before starting:
 export MARS_API_KEY='<your_key>'
 ```
 
+Persistent setup (so you do not re-export each time):
+- `start_portfolio.sh` auto-loads these files if present:
+  - `~/.config/terminal-markets.env`
+  - `./.env.local`
+  - `./Terminal Markets/.env.local`
+- File format example:
+
+```bash
+MARS_API_KEY='your_key'
+```
+
+Later files override earlier ones if multiple are present.
+
 Optional env vars:
 - `TERMINAL_MARKETS_MARS_API_KEY` (alternate key variable)
 - `TERMINAL_MARKETS_PORT` (proxy port, default `8070`)
