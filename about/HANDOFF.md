@@ -7,7 +7,7 @@ Minimal About page with a portrait on the left, blurb + contact info on the righ
 - index.html: page content and structure.
 - styles.css: layout, typography, and portrait sizing.
 - assets/pictures/ThomasDodec.png: current portrait image.
-- assets/documents/Thomas Coor Resume Fall 2025.pdf: resume PDF.
+- assets/documents/Thomas Coor Resume Spring 2026.pdf: resume PDF.
 
 ## Current layout
 - Top of page shows only "Thomas Coor" plus a "Return to Homepage" button.
@@ -25,4 +25,3 @@ Minimal About page with a portrait on the left, blurb + contact info on the righ
 - Contact info: update the <ul class="contact-list"> in index.html.
 - Portrait size: adjust .photo max-width and .about-content grid columns in styles.css.
 - Swap portrait: change the img src in index.html.
-

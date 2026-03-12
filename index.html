@@ -14,11 +14,11 @@
         <img src="Tab%20Pictures/Board%20Game%20Picture.jpg" alt="Board Game project preview">
         <span class="project-title">Board Game</span>
       </a>
-      <div class="project-card is-inactive" aria-label="Chord Organ (coming soon)">
+      <div class="project-card is-inactive" aria-label="Chord Organ (coming soon)" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Chord%20Organ%20Picture.png" alt="Chord Organ project preview">
         <span class="project-title">Chord Organ</span>
       </div>
-      <div class="project-card is-inactive" aria-label="Cicadas (coming soon)">
+      <div class="project-card is-inactive" aria-label="Cicadas (coming soon)" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Cicadas%20Picture.jpg" alt="Cicadas project preview">
         <span class="project-title">Cicadas</span>
       </div>
@@ -30,7 +30,7 @@
         <img src="Tab%20Pictures/Ingredient%20Analyzer%20Picture.png" alt="Ingredients Analyzer project preview">
         <span class="project-title">Ingredients Analyzer</span>
       </a>
-      <div class="project-card is-inactive" aria-label="Lorentz Violin (coming soon)">
+      <div class="project-card is-inactive" aria-label="Lorentz Violin (coming soon)" data-under-construction="Under Construction">
         <img src="Tab%20Pictures/Lorentz%20Violin%20Picture.jpg" alt="Lorentz Violin project preview">
         <span class="project-title">Lorentz Violin</span>
       </div>
@@ -49,14 +49,7 @@
       <a class="project-card project-card--blank-image" href="Dumb%20Apps/index.html" aria-label="Dumb Apps project" data-under-construction="Under Construction">
         <span class="project-title">Dumb Apps</span>
       </a>
-      <a class="project-card" href="Terminal%20Markets/index.html" aria-label="Terminal Markets project" data-under-construction="Under Construction">
-        <img src="Tab%20Pictures/Terminal%20Markets.png" alt="Terminal Markets project preview">
-        <span class="project-title">Terminal Markets</span>
-      </a>
       <!-- Add data-under-construction="Under Construction" on any project-card link to temporarily gate it. -->
-      <a class="project-card project-card--placeholder" href="World%20Sim/index.html" aria-label="World simulation project" data-under-construction="Under Construction">
-        <span class="project-title">Divlab</span>
-      </a>
     </section>
     <section class="about-inline" aria-labelledby="about-inline-title">
       <h2 id="about-inline-title" class="about-inline-title">About</h2>
@@ -66,7 +59,7 @@
         </figure>
         <div class="about-inline-text">
           <p class="about-inline-lede">
-            Thomas Coor is an electrical engineer and designer from New York City. His hobby of musical instrument design lead him to a career in Audio and Acoustic Engineering and Manufacturing. His work in the field showed him how exactly consumer products are designed and manufactured, and he discovered how much is wasted in creating non-repairable and bad products. He now wants to transition to designing sustainable and environmentally-minded devices for Humanity.
+            Thomas Coor is an electrical engineer and designer from Oyster Bay on Long Island, outside of New York City. Growing up in the rich ecological region instilled a love of the natural world and a desire to preserve it. Efforts to improve his bassoon reeds in high school introduced him to the world of acoustics, and he studied electrical engineering at the Cooper Union in New York City to explore this fascination further. There he built many musical instruments and was a finalist in the Guthman Musical Instrument Design Competition. Since graduating, Thomas has worked in Audio Electronics manufacturing, learning about how devices are designed for modern production. It has fiercely reignited his interest in ecology. Thomas isn't sure what to make of this just yet, but he is considering how to steer his career based on his feelings.
           </p>
           <section class="about-inline-contact" aria-label="Contact">
             <h3>Contact</h3>
@@ -98,7 +91,7 @@
             </ul>
           </section>
           <p class="about-inline-resume">
-            <a class="about-inline-download" href="about/assets/documents/Thomas%20Coor%20Resume%20Fall%202025.pdf?v=20260202a">Resume (PDF)</a>
+            <a class="about-inline-download" href="about/assets/documents/Thomas%20Coor%20Resume%20Spring%202026.pdf?v=20260311a">Resume (PDF)</a>
           </p>
         </div>
       </div>
@@ -122,6 +115,26 @@
         card.addEventListener("click", (event) => {
           event.preventDefault();
         });
+      });
+    })();
+
+    (() => {
+      const PASSWORD = "Grapes";
+      const dumbAppsCard = document.querySelector('.project-card[href="Dumb%20Apps/index.html"]');
+      if (!dumbAppsCard) return;
+      if (dumbAppsCard.hasAttribute("data-under-construction")) return;
+
+      dumbAppsCard.addEventListener("click", (event) => {
+        const targetHref = dumbAppsCard.getAttribute("href");
+        if (!targetHref) return;
+
+        event.preventDefault();
+        const entry = window.prompt("Enter password:");
+        if (entry !== PASSWORD) {
+          return;
+        }
+
+        window.location.href = targetHref;
       });
     })();
 
