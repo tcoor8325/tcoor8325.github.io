@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSE NYC Project Mock-Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <main class="page">
+    <header class="masthead">
+      <div class="masthead-tools">
+        <p class="kicker">Dumb App / Cosmetic Mock-Up</p>
+        <button class="auth-button" id="authButton" type="button" aria-pressed="false" aria-label="Choose a mock user">
+          <span class="auth-avatar auth-avatar-placeholder" id="authAvatar" aria-hidden="true"></span>
+          <span class="auth-name" id="authName">Log In</span>
+        </button>
+      </div>
+      <div class="masthead-row">
+        <div class="masthead-copy">
+          <h1 id="heroTitle">Open Source Ecology NYC</h1>
+          <p class="lede" id="heroSummary">Project detail mock-up with contribution links, timeline notes, and weekly updates.</p>
+        </div>
+        <a class="back-link" href="index.html">Back to Project Grid</a>
+      </div>
+    </header>
+
+    <section class="project-view" aria-labelledby="project-title">
+      <div class="project-heading">
+        <p class="eyebrow">Inside A Project Tab</p>
+        <div>
+          <h2 id="project-title"></h2>
+          <p class="project-summary" id="projectSummary"></p>
+        </div>
+      </div>
+
+      <div class="detail-layout">
+        <aside class="task-drawer" id="taskDrawer">
+          <div class="drawer-copy">
+            <p class="section-title-chip section-title-chip-highlight" id="taskSectionTitle" hidden>Tasks</p>
+            <h2 class="task-panel-title" id="taskPanelTitle">Open Tasks</h2>
+            <p class="drawer-note" id="taskPanelNote" hidden></p>
+            <div class="task-list" id="taskList"></div>
+          </div>
+        </aside>
+
+        <section class="timeline-panel">
+          <div class="brief-drawer-wrap brief-drawer-wrap-integrated" id="projectBriefWrap" hidden>
+            <aside class="brief-drawer" id="projectBriefDrawer">
+              <button class="brief-toggle section-title-banner" id="projectBriefToggle" type="button" aria-expanded="false" aria-controls="projectBriefSections">
+                <span class="brief-toggle-label" id="projectBriefToggleLabel">Project Goals + Features</span>
+                <span class="brief-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="brief-drawer-copy">
+                <p class="drawer-label section-title-banner" id="projectBriefTitle">Project Goals + Features</p>
+                <p class="brief-goal" id="projectBriefGoal"></p>
+                <div class="brief-sections" id="projectBriefSections"></div>
+              </div>
+            </aside>
+          </div>
+
+          <section class="story-panel" id="storyPanel" hidden>
+            <div class="panel-head">
+              <p class="panel-label section-title-banner" id="storyPanelTitle">Build Journal</p>
+              <p class="panel-note" id="storyPanelNote"></p>
+            </div>
+            <div class="story-slideshow">
+              <div class="story-slides-viewport" id="storyViewport">
+                <div class="story-slides" id="storySlides"></div>
+              </div>
+            </div>
+          </section>
+          <div class="timeline-content">
+            <div class="panel-head">
+              <p class="panel-label section-title-banner" id="timelinePanelTitle">Progress Timeline</p>
+            </div>
+            <div class="timeline-panel-body" id="timelinePanelBody">
+              <p class="panel-note" id="timelinePanelNote"></p>
+              <div class="timeline-grid" id="timelineGrid"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-panel" id="infoPanel">
+          <p class="panel-kicker section-title-banner" id="stageLabel"></p>
+          <div class="info-panel-copy" id="infoPanelCopy">
+            <div class="link-stack" id="linkStack"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bottom-banner" aria-label="Mock site footer">
+    <a href="#">Store</a>
+    <a href="#">About</a>
+    <a href="#">FAQ</a>
+    <a href="#">Blog</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="project.js"></script>
+</body>
+</html>

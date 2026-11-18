@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSE NYC Mock-Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-page">
+  <main class="page">
+    <header class="masthead">
+      <div class="masthead-tools">
+        <p class="kicker">Dumb App / Cosmetic Mock-Up</p>
+        <button class="auth-button" id="authButton" type="button" aria-pressed="false" aria-label="Choose a mock user">
+          <span class="auth-avatar auth-avatar-placeholder" id="authAvatar" aria-hidden="true"></span>
+          <span class="auth-name" id="authName">Log In</span>
+        </button>
+      </div>
+      <div class="masthead-row">
+        <div>
+          <h1>Open Source Ecology<br>NYC</h1>
+          <p class="lede landing-lede">Open consumer-goods projects built to be repaired, documented, and improved in public.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="bottom-banner top-banner" aria-label="Mock site navigation">
+      <a href="#">Store</a>
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="#">Blog</a>
+      <a href="#">How to Contribute</a>
+    </nav>
+
+    <section class="gallery" aria-label="Project Grid">
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+  </main>
+
+  <section class="closing-quote" aria-label="Design quote">
+    <blockquote>
+      <p>“If it can’t be reduced, reused, repaired, rebuilt, refurbished, refinished, resold, recycled or composted, then it should be restricted, redesigned or removed from production.”</p>
+      <footer>― Pete Seeger</footer>
+    </blockquote>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -3,214 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ingredients Analyzer</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Design recipes, explore ingredients, and keep a personal recipe library.">
+  <title>Recipe Notebook</title>
+  <link rel="stylesheet" href="styles.css?v=recipes-7">
+  <script src="recipes.js?v=recipes-7" defer></script>
 </head>
 <body>
-  <div class="page">
-    <header class="hero">
-      <div class="hero-top">
-        <a class="back-link" href="../index.html">← Back to Home</a>
-        <div class="status">
-          <span class="status-pill">Live prototype</span>
-          <span id="status-text">Loading foods…</span>
-        </div>
-      </div>
-      <h1>Ingredients Analyzer</h1>
-      <p class="lede">
-        Click a food to pin it and re-sort every category by semantic distance.
-        Each category has its own search bar for fast filtering.
-      </p>
+  <nav class="page-navigation" aria-label="Recipes">
+    <button id="new-recipe" type="button">New Recipe</button>
+    <button id="open-library" type="button">Recipe Library</button>
+    <a href="../index.html">Main Menu</a>
+  </nav>
+  <main>
+    <header>
+      <h1>Recipe Notebook</h1>
     </header>
+    <p id="storage-status" class="data-note" role="status">Checking recipe saving…</p>
+    <p id="message" role="status" aria-live="polite"></p>
 
-    <main class="workspace">
-      <section class="board">
-        <div class="board-header">
-          <h2>Categories</h2>
-          <p>Scroll horizontally to explore every tag.</p>
-        </div>
-        <div class="categories" id="categories" aria-live="polite"></div>
-      </section>
-    </main>
-  </div>
+    <section id="library" aria-labelledby="library-heading">
+      <div class="section-heading">
+        <h2 id="library-heading">Recipe Library</h2>
+        <button id="export-library" type="button">Download Library</button>
+      </div>
+      <p id="empty-library">No published recipes yet.</p>
+      <ul id="recipe-list"></ul>
+    </section>
 
-  <script>
-    const CATEGORY_ORDER = [
-      "Vegetable",
-      "Protein",
-      "Carbohydrate",
-      "Fruit",
-      "Herb",
-      "Spice",
-      "Aromatic",
-      "Fat",
-      "Acid",
-      "Sweet",
-      "Bitter",
-      "Umami",
-      "Salt",
-      "Warm",
-      "Heat (Cooking Method)"
-    ];
+    <section id="viewer" aria-labelledby="view-title" hidden>
+      <h2 id="view-title" class="recipe-title" tabindex="-1"></h2>
+      <button id="edit-recipe" type="button">Edit Recipe</button>
+      <p id="view-servings"></p>
+      <h2>Ingredients</h2>
+      <ul id="view-ingredients"></ul>
+      <h2>Preparation</h2>
+      <ol id="view-preparation"></ol>
+      <h2>Cooking</h2>
+      <ol id="view-cooking"></ol>
+    </section>
 
-    const state = {
-      foods: [],
-      selected: null,
-      search: new Map()
-    };
+    <section id="editor" aria-label="Recipe editor" hidden>
+      <label class="sr-only" for="recipe-title">Recipe name</label>
+      <input id="recipe-title" class="recipe-title" type="text" value="untitled" placeholder="untitled" maxlength="200">
+      <div class="recipe-actions">
+        <button id="save-recipe" type="button">Save Recipe</button>
+        <button id="cancel-edit" type="button">Cancel</button>
+        <span id="save-status" aria-live="polite">Unsaved recipe</span>
+      </div>
+      <div class="servings-controls">
+        <label>Servings <input id="servings" type="number" min="0.1" step="any" value="2"></label>
+        <label>Scale to <input id="scale-servings" type="number" min="0.1" step="any" value="2"></label>
+        <button id="scale-recipe" type="button">Scale Recipe</button>
+      </div>
 
-    const statusText = document.getElementById("status-text");
-    const categoriesEl = document.getElementById("categories");
+      <h2>Ingredients</h2>
+      <ul id="ingredients"></ul>
+      <button id="add-ingredient" class="add-button" type="button" aria-label="Add ingredient">+</button>
 
-    const cosineSimilarity = (a, b) => {
-      if (!a || !b) return 0;
-      let dot = 0;
-      let aMag = 0;
-      let bMag = 0;
-      for (let i = 0; i < a.length; i += 1) {
-        dot += a[i] * b[i];
-        aMag += a[i] * a[i];
-        bMag += b[i] * b[i];
-      }
-      const denom = Math.sqrt(aMag) * Math.sqrt(bMag);
-      return denom === 0 ? 0 : dot / denom;
-    };
+      <h2>Preparation</h2>
+      <p id="step-keyboard-help" class="data-note">Enter moves to the next step. Esc finishes editing. Shift+Enter adds a new line.</p>
+      <ol id="preparation-steps"></ol>
+      <button id="add-preparation" class="add-button step-toggle" type="button" aria-label="Add preparation step" aria-controls="preparation-form" aria-expanded="false">+</button>
+      <form id="preparation-form" class="step-form" hidden>
+        <label class="sr-only" for="preparation-input">New preparation step</label>
+        <textarea id="preparation-input" placeholder="Add a preparation step…" rows="2"></textarea>
+        <button type="submit" aria-label="Add preparation step">+</button>
+      </form>
 
-    const getScore = (item) => {
-      if (!state.selected) return null;
-      const selectedItem = state.foods.find((food) => food.name === state.selected);
-      if (!selectedItem) return null;
-      return cosineSimilarity(selectedItem.embedding, item.embedding);
-    };
+      <h2>Cooking</h2>
+      <ol id="cooking-steps"></ol>
+      <button id="add-cooking" class="add-button step-toggle" type="button" aria-label="Add cooking step" aria-controls="cooking-form" aria-expanded="false">+</button>
+      <form id="cooking-form" class="step-form" hidden>
+        <label class="sr-only" for="cooking-input">New cooking step</label>
+        <textarea id="cooking-input" placeholder="Add a cooking step…" rows="2"></textarea>
+        <button type="submit" aria-label="Add cooking step">+</button>
+      </form>
+    </section>
+  </main>
 
-    const render = () => {
-      const selectedName = state.selected;
-      categoriesEl.innerHTML = "";
-
-      CATEGORY_ORDER.forEach((category) => {
-        const searchTerm = (state.search.get(category) || "").toLowerCase();
-        const items = state.foods.filter((food) => (food.tags || []).includes(category));
-        let filtered = items.filter((food) => food.name.toLowerCase().includes(searchTerm));
-
-        filtered = filtered.map((food) => ({
-          ...food,
-          score: getScore(food)
-        }));
-
-        if (selectedName) {
-          filtered.sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
-        } else {
-          filtered.sort((a, b) => a.name.localeCompare(b.name));
-        }
-
-        if (selectedName) {
-          const selectedIndex = filtered.findIndex((food) => food.name === selectedName);
-          if (selectedIndex > 0) {
-            filtered.unshift(filtered.splice(selectedIndex, 1)[0]);
-          }
-        }
-
-        const column = document.createElement("article");
-        column.className = "category";
-
-        const header = document.createElement("div");
-        header.className = "category-header";
-        header.innerHTML = `
-          <h3>${category}</h3>
-          <span class="count">${filtered.length}</span>
-        `;
-
-        const input = document.createElement("input");
-        input.type = "search";
-        input.placeholder = "Search foods";
-        input.value = state.search.get(category) || "";
-        input.setAttribute("aria-label", `Search ${category}`);
-        input.addEventListener("input", (event) => {
-          state.search.set(category, event.target.value);
-          render();
-        });
-
-        const list = document.createElement("ul");
-        list.className = "food-list";
-
-        if (!filtered.length) {
-          const empty = document.createElement("li");
-          empty.className = "empty";
-          empty.textContent = "No matches yet";
-          list.appendChild(empty);
-        } else {
-          filtered.forEach((food) => {
-            const li = document.createElement("li");
-            li.className = "food-item";
-            if (food.name === selectedName) {
-              li.classList.add("selected");
-            }
-
-            const button = document.createElement("button");
-            button.type = "button";
-
-            const bar = document.createElement("span");
-            bar.className = "food-bar";
-
-            const nameSpan = document.createElement("span");
-            nameSpan.className = "food-name";
-            nameSpan.textContent = food.name;
-
-            if (food.score !== null && food.score !== undefined) {
-              const clamped = Math.max(0, Math.min(1, food.score));
-              const scoreSpan = document.createElement("span");
-              scoreSpan.className = "food-score";
-              scoreSpan.textContent = clamped.toFixed(2);
-
-              let color = "#eb5757";
-              if (clamped > 0.7) {
-                color = "#4caf6d";
-              } else if (clamped >= 0.5) {
-                color = "#f2c94c";
-              }
-
-              button.style.setProperty("--score-pct", `${clamped * 100}%`);
-              button.style.setProperty("--score-color", color);
-              button.appendChild(bar);
-              button.appendChild(nameSpan);
-              button.appendChild(scoreSpan);
-            } else {
-              button.classList.add("no-score");
-              button.appendChild(bar);
-              button.appendChild(nameSpan);
-            }
-            button.addEventListener("click", () => {
-              state.selected = food.name;
-              render();
-            });
-            li.appendChild(button);
-            list.appendChild(li);
-          });
-        }
-
-        column.appendChild(header);
-        column.appendChild(input);
-        column.appendChild(list);
-        categoriesEl.appendChild(column);
-      });
-    };
-
-    fetch("embeddings.json", { cache: "no-store" })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Embeddings not found");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        state.foods = data.items || [];
-        statusText.textContent = `${state.foods.length} foods loaded`;
-        render();
-      })
-      .catch(() => {
-        statusText.textContent = "Embeddings missing. Run the generator.";
-        render();
-      });
-  </script>
+  <dialog id="ingredient-picker" aria-labelledby="picker-heading">
+    <div class="section-heading">
+      <h2 id="picker-heading">Choose an ingredient</h2>
+      <button id="close-picker" type="button">Close</button>
+    </div>
+    <div class="picker-filters">
+      <label>Search <input id="food-search" type="search" placeholder="Find an ingredient…"></label>
+      <label>Category <select id="food-category"><option value="">All categories</option></select></label>
+    </div>
+    <p id="food-status" role="status">Loading ingredients…</p>
+    <p id="similarity-note">Select an ingredient to explore related foods. Darker shading means greater semantic similarity, not a nutrition or flavor score.</p>
+    <div class="picker-selection">
+      <span id="selected-food">No ingredient selected</span>
+      <button id="clear-selection" type="button" hidden>Clear selection</button>
+      <button id="confirm-ingredient" type="button" disabled>Add Ingredient</button>
+    </div>
+    <div id="food-categories"></div>
+  </dialog>
 </body>
 </html>

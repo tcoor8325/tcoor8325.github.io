@@ -1,26 +1,92 @@
 <!DOCTYPE html>
+<!-- Edit journal entries directly in this file. No build step is needed. -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rotary Subwoofer | Digital Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Rotary Subwoofer project journal: notes and images.">
+  <title>Rotary Subwoofer | Project Journal</title>
+  <link rel="stylesheet" href="../Chord%20Organ/styles.css?v=journal-controls-2">
+  <script src="../Chord%20Organ/journal.js?v=journal-controls-2" defer></script>
+  <style>
+    .rotary-photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px 16px;
+      margin: 32px 0;
+      align-items: start;
+    }
+    .rotary-photo-grid figure { min-width: 0; margin: 0; }
+    .rotary-photo-grid img { width: 100%; height: auto; }
+    @media (max-width: 600px) {
+      .rotary-photo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-  <main class="page">
-    <header class="page-header">
+  <main>
+    <header>
       <h1>Rotary Subwoofer</h1>
-      <a class="back-button" href="../index.html">Back to Main Menu</a>
+      <a class="main-menu" href="../index.html">Main Menu</a>
+      <button class="jump-newest" type="button" hidden>Jump to Newest</button>
+      <button class="jump-oldest" type="button">Jump to Oldest</button>
     </header>
+    <article id="journal" aria-label="Rotary Subwoofer journal">
+<!-- Initial collection date; individual photos may predate this entry. -->
+<h2>January 24, 2025</h2>
+<p>Actually writing this in late 2026 as I put together the blogs on my website. I have made no progress on this project since the above date, but if I do return to it I'll know exactly where I left off.</p>
+<p>A rotary subwoofer is a special type of speaker that uses flapping fan blades to create exceptionally powerful low-frequency acoustic vibration. I wouldn't even say 'sound' here necessarily because its bandwidth is often below that of human hearing. But when people build these things, the effect is crazy. It's able to move an immense amount of air very quickly, and I've seen videos of all the doors in a house opening and closing every second. They're often mounted in house window frames because of the backvolume of air they need.</p>
+<figure>
+  <img src="../Tab%20Pictures/Rotary%20Subwoofer.png" alt="Rotary subwoofer design preview" width="1263" height="889" loading="lazy" decoding="async">
+  <figcaption>Rotary subwoofer design preview.</figcaption>
+</figure>
+<p>Imagine a normal fan spinning in one direction, its blades angled one way to deflect air and push it in a direction; <i>DC air</i>. If we flip the angle of deflection while keeping the motor spinning the same way, the air now flows the other way; <i>negative DC air</i>. Now let's change the angle of deflection of the blades back and forth, and now the air flows one way and then the other; <i>AC air,</i> which is sound! The systems I've seen to do this use a large transducer with its cone removed to control the angle of the blades, while a shaft runs through the middle of the transducer to a motor. </p>
+<div class="rotary-photo-grid">
+<figure>
+  <img src="Pictures/swashPlateUp.png" alt="CAD view with the swash plate raised and the fan blades tilted." width="1333" height="894" loading="lazy" decoding="async">
+  <figcaption>The swash plate in its raised position.</figcaption>
+</figure>
+<figure>
+  <img src="Pictures/swashPlateDown.png" alt="CAD view with the swash plate lowered and the blade angle changed." width="1333" height="894" loading="lazy" decoding="async">
+  <figcaption>The swash plate in its lowered position.</figcaption>
+</figure>
+</div>
+<p>I was interested in this project originally as a potential senior project. There are a number of hobbyists that have experimented with it, but never in an academic or research setting. Very little about them has been measured, and very few experiments have been conducted to explore their limits. There are a lot of potential avenues to explore with researching rotary subwoofers, including:</p>
+<ul>
+  <li>Upper frequency limits</li>
+  <li>Lower frequency limits</li>
+  <li>Frequency Response</li>
+  <li>Blade design</li>
+  <li>Blade count</li>
+  <li>Maximum Blade Deflection Angle</li>
+  <li>Mechanical Noise Control</li>
+  <li>Optimal Motor Speed</li>
+  <li>Optimal Transducer Design</li>
+  <li>Optimal Transducer Input Signal</li>
+  <li>Baffle and Backvolume Design</li>
+</ul>  
+<p>The construction of these things is really weird, and actually has a lot in common with helicopters! The transducer connects to a <i>swashplate,</i> a disk that rides up and down the main shaft. Small arms called <i>linkages</i> connect from the swashplate to the blades, which are rotated about an axle on a hub. It took a lot of time to wrap my head around how to pass a rotating axle through a transducer, and then I realized that many transducers have a hole in their base as an acoustic port.</p>
+<div class="rotary-photo-grid">
+<figure>
+  <img src="Pictures/helicopterRotor.png" alt="A diagram of a helicopter rotor" width="1263" height="889" loading="lazy" decoding="async">
+  <figcaption>A diagram of a helicopter rotor.</figcaption>
+</figure>
+<figure>
+  <img src="Pictures/speakerAnatomy.jpg" alt="A diagram of a speaker driver" width="1263" height="889" loading="lazy" decoding="async">
+  <figcaption>A diagram of a speaker driver.</figcaption>
+</figure>
+</div>
+<figure>
+  <img src="Pictures/fromBelow.png" alt="CAD detail from below showing the blade linkages and swash plate around the central shaft." width="800" height="650" loading="lazy" decoding="async">
+  <figcaption>The blade linkages and swash plate viewed from below.</figcaption>
+</figure>
+<p>I built some of the components you see in the CAD drawings, but then I got the job at Frontier Audio Labs and haven't touched this since.</p>
+<figure>
+  <img src="Pictures/fromAbove.png" alt="CAD view of the rotary subwoofer from above, showing the four blades and supporting frame." width="846" height="803" loading="lazy" decoding="async">
+  <figcaption>The rotary subwoofer design from above.</figcaption>
+</figure>
 
-    <section class="card" aria-label="Rotary subwoofer project preview">
-      <figure class="project-image">
-        <img src="../Tab%20Pictures/Rotary%20Subwoofer.png" alt="Rotary subwoofer design preview">
-      </figure>
-      <p>
-        This page is reserved for the Rotary Subwoofer project. More details, demos, and notes will be added here.
-      </p>
-    </section>
+    </article>
   </main>
 </body>
 </html>

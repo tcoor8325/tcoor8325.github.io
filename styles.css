@@ -16,11 +16,33 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   min-height: 100vh;
   font-family: "IBM Plex Mono", "Courier New", monospace;
-  background: var(--bg);
+  background: var(--garden-sky, #f3f2ee);
   color: var(--ink);
+}
+
+#garden-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.landing {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
+/* Keep the growing background from competing with the biography. */
+.about-inline-text {
+  color: #ffffff;
+  background: #000000;
 }
 
 .landing {
@@ -30,16 +52,17 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
-  padding: 28px 32px 32px;
-  --grid-top-offset: max(98px, calc(35vh - 84px));
-  --title-drop: max(18px, calc((var(--grid-top-offset) * 0.5) - 18px));
+  padding: 64px 32px;
+  --grid-top-offset: max(850px, 115vh);
 }
 
 .landing-title {
+  translate: 0 100px;
+  padding: 8px 12px;
   margin: 0;
   width: min(980px, 100%);
   position: relative;
-  top: var(--title-drop);
+  top: 0;
   font-family: "Fraunces", "Georgia", serif;
   font-size: clamp(32px, 4.4vw, 58px);
   font-weight: 600;
@@ -51,17 +74,18 @@ body {
 }
 
 .project-grid {
+  translate: 0 -200px;
   width: min(980px, 100%);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 52px 24px;
   margin-top: var(--grid-top-offset);
 }
 
 .project-card {
   position: relative;
   display: block;
-  overflow: hidden;
+  overflow: visible;
   border: 2px solid var(--border);
   background: #000;
   text-decoration: none;
@@ -71,12 +95,37 @@ body {
   transition: transform 0.2s ease;
 }
 
+.project-status {
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: -2px;
+  z-index: 3;
+  padding: 5px 9px;
+  border: 0;
+  border-radius: 6px 6px 0 0;
+  color: #000;
+  font: 700 11px/1.2 system-ui, sans-serif;
+  letter-spacing: 0.06em;
+  pointer-events: none;
+}
+
+.project-status--ongoing { background: #b6f548; }
+.project-status--stalled { background: #ff7770; }
+.project-status--completed { background: #a8dcf5; }
+
 .project-card--placeholder {
   background: #000;
 }
 
 .project-card--blank-image {
   background: #000;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .project-card img {
@@ -89,6 +138,31 @@ body {
 
 .project-card--board-game {
   background: #111;
+}
+
+.project-card--tide-time {
+  background:
+    radial-gradient(circle at 50% 36%, rgba(240, 210, 92, 0.95) 0 18%, transparent 19%),
+    linear-gradient(180deg, #dcefeb 0 48%, #2f8f9d 49% 100%);
+}
+
+.project-card--tide-time::before {
+  content: "";
+  position: absolute;
+  left: -12%;
+  right: -12%;
+  bottom: 23%;
+  height: 22%;
+  z-index: 0;
+  background:
+    radial-gradient(60% 90% at 20% 20%, transparent 48%, rgba(255, 255, 255, 0.8) 49% 52%, transparent 53%),
+    radial-gradient(60% 90% at 52% 26%, transparent 48%, rgba(255, 255, 255, 0.75) 49% 52%, transparent 53%),
+    radial-gradient(60% 90% at 84% 20%, transparent 48%, rgba(255, 255, 255, 0.8) 49% 52%, transparent 53%);
+  opacity: 0.9;
+}
+
+.project-card--tide-time .project-title {
+  opacity: 1;
 }
 
 .project-card--board-game img {
@@ -171,49 +245,22 @@ body {
   outline-offset: 3px;
 }
 
-.project-card[data-under-construction] {
-  cursor: not-allowed;
-}
-
-.under-construction-tooltip {
-  position: absolute;
-  left: 50%;
-  bottom: 14px;
-  transform: translate(-50%, 6px);
-  z-index: 3;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.42);
-  background: rgba(0, 0, 0, 0.88);
-  color: #ffffff;
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.18s ease, transform 0.18s ease;
-}
-
-.project-card[data-under-construction]:hover .under-construction-tooltip,
-.project-card[data-under-construction]:focus-visible .under-construction-tooltip {
-  opacity: 1;
-  transform: translate(-50%, 0);
-}
-
 .project-card.is-inactive {
   cursor: default;
 }
 
 .about-inline {
   width: min(980px, 100%);
-  margin-top: 88px;
+  margin-top: 480px;
+  color: #ffffff;
   padding: 0;
   border: 0;
   background: transparent;
 }
 
 .about-inline-title {
+  color: #f3f2ee;
+  text-shadow: 0 2px 8px #0c1531;
   margin: 0 0 14px;
   font-family: "Fraunces", "Georgia", serif;
   font-size: clamp(26px, 3vw, 36px);
@@ -341,7 +388,7 @@ body {
 }
 
 .about-inline-download {
-  color: #0a1630;
+  color: #ffffff;
   text-decoration: none;
   font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 17px;
@@ -355,6 +402,10 @@ body {
   text-decoration: underline;
 }
 
+.about-contact-icon[src*="phone-call"] {
+  filter: invert(1);
+}
+
 @media (max-width: 900px) {
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -363,9 +414,8 @@ body {
 
 @media (max-width: 600px) {
   .landing {
-    padding: 20px;
-    --grid-top-offset: max(68px, calc(28vh - 50px));
-    --title-drop: max(12px, calc((var(--grid-top-offset) * 0.5) - 14px));
+    padding: 40px 20px 64px;
+    --grid-top-offset: max(850px, 115vh);
   }
 
   .landing-title {
@@ -374,7 +424,7 @@ body {
 
   .project-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 48px;
     margin-top: var(--grid-top-offset);
   }
 
@@ -408,4 +458,16 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Reversible homepage motion switch; keep the heading visible without its fade. */
+html[data-animations="off"] *,
+html[data-animations="off"] *::before,
+html[data-animations="off"] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+html[data-animations="off"] .landing-title {
+  opacity: 1;
 }

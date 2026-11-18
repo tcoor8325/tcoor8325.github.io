@@ -1,154 +1,261 @@
 <!DOCTYPE html>
+<!-- Edit journal entries directly in this file. No build step is needed. -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Board Game | Digital Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Board Game project journal: work-in-progress notes and photos.">
+  <title>Board Game | Project Journal</title>
+  <link rel="stylesheet" href="../Chord%20Organ/styles.css?v=journal-controls-2">
+  <style>
+    .unit-types .unit-entry {
+      display: grid;
+      grid-template-columns: min(10em, 40%) minmax(0, 1fr);
+      column-gap: 0.5em;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: start;
+      margin: 32px 0;
+    }
+    .image-grid figure { margin: 0; min-width: 0; }
+    .image-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    @media (max-width: 600px) {
+      .image-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script src="../Chord%20Organ/journal.js?v=journal-controls-2" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="../index.html">Digital Portfolio</a>
-      <nav class="nav" aria-label="Portfolio pages">
-        <a class="nav-link" href="../about/index.html">About</a>
-        <a class="nav-link" href="../DSP%20Sandbox/index.html">DSP Sandbox</a>
-        <a class="nav-link" href="http://localhost:3000">Tech Tree</a>
-        <a class="nav-link" href="../music/index.html">Music</a>
-        <a class="nav-link is-active" href="index.html">Board Game</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page">
-    <header class="title">
-      <h1>Board Game</h1>
-      <p class="subtitle">
-        Map building sandbox (no build tools required).
-      </p>
+  <main>
+    <header>
+      <h1>Untitled Board Game</h1>
+      <a class="main-menu" href="../index.html">Main Menu</a>
+      <button class="jump-newest" type="button" hidden>Jump to Newest</button>
+      <button class="jump-oldest" type="button">Jump to Oldest</button>
     </header>
+    <article id="journal" aria-label="Board Game journal">
+<!-- Initial collection date; individual photos may predate this entry. -->
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/gameTable.jpg" alt="The game table assembled with the map in place." width="1600" height="900" loading="lazy" decoding="async">
+  <figcaption>The game table assembled with the map in place.</figcaption>
+</figure>
 
-    <div class="grid">
-      <section aria-label="Map Builder Sandbox">
-        <div class="sim sim--bare">
-          <div class="sim-stage sim-stage--fullscreen sim-stage--bare">
-            <div class="stage-toolbar overlay-toolbar" aria-label="Piece palette">
-              <div class="stage-toolbar-title">Pieces</div>
-              <div class="stage-toolbar-group" role="group" aria-label="Team 1 pieces">
-                <span class="stage-toolbar-label">Team 1</span>
-                <button id="spawn-t1-inf" type="button" class="spawn-button" disabled>Infantry</button>
-                <button id="spawn-t1-cav" type="button" class="spawn-button" disabled>Cavalry</button>
-                <button id="spawn-t1-art" type="button" class="spawn-button" disabled>Artillery</button>
-              </div>
-              <div class="stage-toolbar-group" role="group" aria-label="Team 2 pieces">
-                <span class="stage-toolbar-label">Team 2</span>
-                <button id="spawn-t2-inf" type="button" class="spawn-button" disabled>Infantry</button>
-                <button id="spawn-t2-cav" type="button" class="spawn-button" disabled>Cavalry</button>
-                <button id="spawn-t2-art" type="button" class="spawn-button" disabled>Artillery</button>
-              </div>
-              <div class="turn-controls" aria-label="Turn controls">
-                <div id="turn-indicator" class="turn-indicator" aria-live="polite">Turn: -</div>
-                <button id="end-turn" type="button" class="end-turn" disabled>End Turn</button>
-              </div>
-            </div>
+<h2>December 24, 2025</h2>
+<p>Ok, a bit longer than expected, but I've fully assembled the game table! I've also drawn a cute little contour map with some of the features that I want to explore! That one black piece on the board is 3D printed in PLA and I depressed a little neo magnet into its back. I know that heat can mess with magnetism, so I gave the hole a good amount of tolerance to so it would mostly just slot in. But I think it looks great! The next step is to make more game pieces, and then to design and build some kind of score/unit statistics tally chart. As I move around the piec ewith the cursor, it wants to rotate around the magnet. I'll have to either use 2 magnets, or use a bar magnet to prevent this rotation.</p>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/boardTopUnderConstruction.jpg" alt="Building and clamping the tabletop frame." width="900" height="1600" loading="eager" decoding="async">
+  <figcaption>The clamp removed and the two picture frames sandwiching the acrylic sheet!.</figcaption>
+</figure>
 
-            <div class="overlay-stack" aria-label="Left sidebar">
-              <div id="map-settings" class="controls overlay-panel overlay-controls" aria-label="Map generator controls">
-                <label class="field">
-                  <span>Map Size</span>
-                  <input id="map-size" type="number" min="256" max="2048" step="256" value="1024">
-                </label>
-                <label class="field">
-                  <span>Noise Scale</span>
-                  <input id="noise-scale" type="number" min="8" max="2048" step="1" value="160">
-                </label>
-                <label class="field">
-                  <span>Octaves</span>
-                  <input id="octaves" type="number" min="1" max="8" step="1" value="4">
-                </label>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/gameMap.jpg" alt="The game map in its wooden frame." width="1600" height="900" loading="lazy" decoding="async">
+  <figcaption>The game map in its wooden frame.</figcaption>
+</figure>
+<h2>December 15, 2025</h2>
+<p>Ok, I found plenty of scrap pine 2x4's at my makerspace, so I'll use that. I'm thinking that the game board itself will be two rectangular frames that sandwich over an acrylic plate that will act as the rigid game board surface. Screws will pass through both halves of the frame and the plate and then screw into a wood insert in the table leg.</p>
+<p>I decided to experiment with making the frame with miter joints. I took a lot of care to measure and draw the proper angle, and then line it up on the circle saw. I still had to touch up some slight overhangs on the disk sander, which I think is a good strategy to employ in the future. Another member had this awesome clamp specifically designed for making frames; imagine four rigid right angles that can be moved along a loop of seatbelt material, with a crankable feeder controlling the total perimeter. It could cinch up tightly around the corners of any rectangle. I put glue on the miter corners and will come back to this tomorrow.</p>
+<figure>
+  <img src="images/beltClamp.jpeg" alt="A belt clamp holding the four corners of a wooden frame together on a workbench." width="498" height="330" loading="lazy" decoding="async">
+  <figcaption>Not mine; an example belt clamp holding a wooden frame together.</figcaption>
+</figure>
+<h2>November 13, 2025</h2>
+<h4>Introducing the new board game project!</h4>
+<p>Ok, so I honestly don't play board games much at all, but I was strangely compelled to make one. In brief, the game is inspired by 19th-century warfare, with players commanding regiments that can move freely around geographically-accurate maps. The gameplay is inspired from real battlefield tactics where geography and careful maneuvering determine the outcome of the game. The game is played on a raised table to allow the players to move the small pieces around the map accurately with magnetic cursors.</p>
+<h4>Historical inspiration</h4>
+<p>I'm saying the game is set during the Napoleonic Wars (1803-1815) but it could also represent most conflicts between western nations from the early 18th century to the mid-19th century, where foot soldiers fought in tight formations and wielded slow-firing muskets tipped with bayonets, horsemen charged with sabers and lances, cannonballs whizzed by overhead, and everyone dressed like they were on parade. The Seven Year's War, American Revolutionary War, War of 1812, Crimean War, and American Civil War could all more or less be represented by this game, and could add interesting maps and flavor.</p>
+<div class="image-grid">
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/napoleonicScene.jpg" alt="A Kriegsspiel match played on a map." width="611" height="428" loading="lazy" decoding="async">
+  <figcaption>An illustration of a Napoleonic-era battle.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/englishSoldiers.jpg" alt="English soldiers in formation." width="516" height="387" loading="lazy" decoding="async">
+  <figcaption>English soldiers in formation.</figcaption>
+</figure>
+</div>
 
-                <div class="toolbox" aria-label="Drawing tools">
-                  <div class="toolbox-title">Tools</div>
-                  <div class="toolbox-buttons" role="group" aria-label="Draw tools">
-                    <button id="tool-forest" type="button" class="tool-button is-active">Forest</button>
-                    <button id="tool-river" type="button" class="tool-button">River</button>
-                  </div>
-                  <p class="toolbox-hint">Click + drag on the map to paint.</p>
-                </div>
+<p>I grew up playing video games from the <i>Total War</i> series, where you fight large-scale battles from Ancient Rome to the Napoleonic era. I float high above the battlefield, and order thousands of soldiers to march, charge, retreat, or hold their ground. I can zoom in and see them engage in hand-to-hand fighting. I can pan out and see the waves of armored men crash into each other. I especially liked the Napoleonic setting because I felt there was a clean balance between infantry, cavalry, and artillery, which made each game feel interesting and different. The geography of the battlefield, and even the relative positions of each troop on the terrain seemed to matter a lot too. I'm an ecologist, and I wanted to make a board game to represent this time period because I wanted a physical medium to talk about geography and cartography, and tie it into the wider ecological picture.</p> 
+<div class="image-grid">
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/romeTotalWar2.jpg" alt="A Kriegsspiel match played on a map." width="611" height="428" loading="lazy" decoding="async">
+  <figcaption>A screenshot from Rome: Total War 2</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/napoleonTotalWar.jpg" alt="Red and blue Kriegsspiel pieces arranged on a map." width="516" height="387" loading="lazy" decoding="async">
+  <figcaption>A screenshot from Napoleon: Total War</figcaption>
+</figure>
+</div>
 
-                <div class="buttons">
-                  <button id="start" type="button">Start</button>
-                  <button id="reset" type="button">Clear</button>
-                  <button id="finalize-map" type="button" aria-controls="map-settings">Finalize Map</button>
-                </div>
-              </div>
-            </div>
+<h4>Ecology through a Wargame</h4>
+<p>I live in New York City, and as you drive around here you could be under the impression that Humanity has tamed nature with the power of excavators and bulldozers to build a comfortable world for ourselves. Few of us understand that when a wetland becomes a residential district, it will soon become a wetland again unless constant energy is exerted. When we pave right over natural features like that we lose sight of their power as well as their purpose. Napoleon paid very close attention to the geography of his surroundings and carefully chose his battlefields to give himself the strongest advantage. That could mean placing his artillery on the highest hill to keep the enemy in range, or keeping infantry safe from cavalry by setting their flank against a river, or advancing a group of light cavalry through a forest to set an ambush. These commanders understood the importance of the landscape on their strategic success, even if they weren't environmentalists themselves. When I'm out on a hike I'm constantly recognizing the geographic features I come across and try to tie it back to the wider ecosystem, how it's been changed by Humanity, and finally how I will attempt to cross it.</p>
+<div class="image-grid">
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/oldContourMap.png" alt="A Kriegsspiel match played on a map." width="611" height="428" loading="lazy" decoding="async">
+  <figcaption>A topographical map from the 19th century. Slopes are represented by lines travelling up the slope.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/contourMap.jpeg" alt="Red and blue Kriegsspiel pieces arranged on a map." width="516" height="387" loading="lazy" decoding="async">
+  <figcaption>With improved surveying technology we started plotting lines of equal elevation, also called contour lines. Closely packed lines convey steepness.</figcaption>
+</figure>
+</div>
+<h4>Tabletop Predecessors</h4>
+<p>I'm not the first person to try building a 19th-century warfare tabletop game. That distinction probably goes to <i>Kriegsspiel</i>, an infamously complex warfare simulator and teaching tool developed by Prussian military colleges in 1824 after their experience fighting Napoleon. I invite you to look into the game yourself, it is quite fascinating. The trouble is that Kriegsspiel is far from a light and fun tabletop game. Sure it has players and dice, but it's meant to be played 30 <i>vs.</i> 30, double-blind in two separate rooms, with an umpire running between them to ensure each team had the right (lack of) information. Games would play out in real time and cadets would spend hours or even days in stuffy rooms wearing their uniforms. Absolutely everything they could think of was modeled, including Fog of War, unit supplies, orders physically coming and going from command, and individual soldier numbers. All of this had to be calculated and recalculated constantly. The <i>Total War</i> computer games handle calculations like these effortlessly, and turn an accounting nightmare into an extremely enjoyable and almost relaxing experience.</p>
+<div class="image-grid">
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/Kriegsspiel-match.jpg" alt="A Kriegsspiel match played on a map." width="611" height="428" loading="lazy" decoding="async">
+  <figcaption>A Kriegsspiel match played on a map.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/kriegsspielPieces.jpeg" alt="Red and blue Kriegsspiel pieces arranged on a map." width="516" height="387" loading="lazy" decoding="async">
+  <figcaption>Red and blue Kriegsspiel pieces arranged on a map.</figcaption>
+</figure>
+</div>
+<h4>Another Data Point</h4>
+<p>While doing research for my board game I came across a new video game that had just been released called <i>Lines of Battle</i> by the indie developer Sophie Games. It is a turn-based strategy game also set during the Napoleonic Wars, at the same level of abstraction as <i>Napoleon: Total War</i>. They're both extremely similar in terms of mechanics; where each unit has a Soldier Count, Morale, Firing Range, Accuracy, Hand-to-Hand Fighting Skill, Movement Speed, and sensitivity to terrain. The turns in <i>Lines of Battle</i> are played simultaneously, which creates a flow that feels very similar to a real-time game. The biggest difference in feel is that <i>Lines of Battle</i> doesn't model individual soldiers and so can instead support larger armies, which raises the scale of the game a bit higher off the ground from <i>Total War</i>. And though its graphics make it look an awful lot like a board game, <i>Lines of Battle</i> is still too calculation-heavy to play without a computer.</p>
+<figure>
+  <img style="width: auto; height: auto; max-width: 60%; max-height: 800px;" src="images/linesOfBattle.png" alt="British soldiers in formation with a mounted officer." width="900" height="598" loading="lazy" decoding="async">
+  <figcaption>A screencapture from Lines of Battle by Sophie Games.</figcaption>
+</figure>
+<h3>Game Plan</h3>
+<p>How will my game strike the balance between realism and abstraction? I'm really not sure but I need to do a lot of testplaying; that's why I'm building the game board right now. I'll use the following section to try to organize my thoughts about gameplay into different sections</p>
+<h4>Unit Types</h4>
+<figure>
+  <img style="width: auto; height: auto; max-width: 150%; max-height: 800px;" src="images/soldierTypes.png" alt="A German source of the many uniforms." width="900" height="598" loading="lazy" decoding="async">
+  <figcaption>A German illustration of the uniforms of many types of soldiers in the 19th century.</figcaption>
+</figure>
 
-            <canvas id="board" width="820" height="520" aria-label="Elevation map canvas"></canvas>
-            <div id="hover-attack-tooltip" class="hover-tooltip is-hidden" role="status" aria-live="polite"></div>
+<p>I like the era of musket battles and line formations because of the mix of soldiers, each having their specialized roles. The basic types of infantry, cavalry, and artillery have a lot more diversity and color that can make choosing the composition of your army a very strategic and worthwhile game mechanic. Below is a non-comprehensive list of the types of soldiers from that time:</p>
+<ul class="unit-types">
+    <li>Infantry
+        <ul>
+            <li><span class="unit-entry"><span class="unit-name">Line Infantry -</span><span class="unit-description">Basic, well-rounded foot soldier. Armed with a musket and a bayonet, and ammunition. Moderate speed, morale, and discipline. Knows how to form into a square as a defense against cavalry attacks. Weak to attacks from the rear and sides.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Light Infantry -</span><span class="unit-description">Slight faster than line infantry on all terrains. Often fights in a looser formation. Might not be as competant at hand-to-hand combat.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Grenadiers -</span><span class="unit-description">Infantry trained to lead assaults, and often armed with grenades.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Lifeguards -</span><span class="unit-description">The elite infantry of an army. Goes by many different names depending on country. Can often help rally surrounding troops.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Skirmishers -</span><span class="unit-description">Light infantry that operates in loose formations, often used for scouting and harassing the enemy. Sometimes armed with more accurate, slower loading rifles.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Militia -</span><span class="unit-description">Much cheaper infantry than regular troops that is often less well-trained and equipped.</span></span></li>
+        </ul>
+    </li>
+    <li>Cavalry
+        <ul>
+            <li><span class="unit-entry"><span class="unit-name">Heavy Cavalry -</span><span class="unit-description">Heavily armored and armed cavalry, often used for shock charges and breaking enemy lines. Regional types included Cuirassiers and Carabiniers.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Light Cavalry -</span><span class="unit-description">Fast and agile cavalry, often used for scouting, screening, and harassing the enemy. Regional types included Hussars and Chasseurs.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Dragoons -</span><span class="unit-description">Armed with carbines and sabers, often used for both mounted and dismounted combat. Sometimes considered mounted infantry.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Lancers -</span><span class="unit-description">Armed with lances, made them highly effective in charges, but much weaker when attacked themselves.</span></span></li>
+        </ul>
+    </li>
+    <li>Artillery
+        <ul>
+            <li><span class="unit-entry"><span class="unit-name">Cannon -</span><span class="unit-description">A standard battlefield artillery piece used for long-range bombardment of enemy positions. Came in a variety of sizes and calibers.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Howitzer -</span><span class="unit-description">A versatile artillery piece capable of firing at high angles, effective against troops hiding behind cover.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Mortar -</span><span class="unit-description">An even more extreme version of the howitzer, used for very high-angle fire, often in sieges and urban warfare.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Rocket Artillery -</span><span class="unit-description">A specialized form of artillery used by a few nations at the time. Was highly inaccurate but had a significant psychological impact on the enemy.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Horse Artillery -</span><span class="unit-description">Any artillery piece moved by horses, allowing for rapid deployment and repositioning on the battlefield.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Canister Shot -</span><span class="unit-description">Not a type of artillery, but a type of round fired by an artillery piece. Instead of a solid ball, it contains numerous small metal balls, making it highly effective against troops at close range.</span></span></li>
+        </ul>
+    </li>
+    <li>Miscellaneous
+        <ul>
+            <li><span class="unit-entry"><span class="unit-name">Engineers/Sappers -</span><span class="unit-description">Specialized soldiers responsible for constructing defensive works. Could be interesting to explore modifications to the terrain.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Generals Staff -</span><span class="unit-description">It could be interesting to have a unit that represented the commanding officers of the army. Perhaps their presence could influence the morale of nearby troops, and attacking them could end the game. They could be mounted or on foot.</span></span></li>
+            <li><span class="unit-entry"><span class="unit-name">Logistics -</span><span class="unit-description">This type of unit doesn't exist in any <i>Total War</i> game as far as I'm aware, and may only make sense at higher levels of abstraction. This unit might be supply wagons that can transport equipment or reinforcement to soldiers.</span></span></li>
+        </ul>
+    </li>
+</ul>
+<h4>Movement</h4>
+<p>I like how <i>Lines of Battle</i> handles movement in a turn-based game. Each turn, each unit can move a certain distance according to its stats and the terrain features. The player uses their mouse to draw a path for the unit to follow. As a board game, I think this can be further simplified into 2 interchangeable steps: <i>Rotate</i>, and <i>Translate</i>.</p>
+<p>I want to experiment with using a <i>divider</i> used in drafting for measuring the proper movement distances on the board. Let's say the player wants to move a unit of line infantry. First they rotates the unit. Then they set the divider length to match the distance corresponding to that unit's movement score. It could be a number in millimeters measured out on a ruler, or a physical line on a unit information card that is matched to. The player then places one arm of the divider next to the unit's current position, then slides the piece up to the other arm. <i>Lines of Battle</i> has a few kinds of movement:</p>
+<ul class="unit-types">
+    <li><span class="unit-entry"><span class="unit-name">Walk -</span><span class="unit-description">The unit marches forward across the terrain. <i>Lines of Battle</i> calculates the total traversable distance of that turn based on the total distance spent on different kinds of terrain. Units move slower uphill, through forest and marshes, and across streams. Some features like buildings, cliffs, rivers, and lakes are fully nontraversable. </span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Run -</span><span class="unit-description">Lets them traverse a greater distance at the expense of energy and morale, but running <i>into</i> an enemy creates a charge which has special effects on damage and morale on both sides.</span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Fallback -</span><span class="unit-description">The unit moves backwards to a safer position. Walking backwards while facing the enemy preserves more morale than turning around and running away. A unit can't walk backwards as far as it can going forwards.</span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Fire &amp; Advance -</span><span class="unit-description">The unit advances slightly while also performing a limited ranged attack. This probably has limited use in my board game because of the complexity of ranged attacks which I'll get to in a later section.</span></span></li>
+</ul>
+<h4>Dividers and Cursors</h4>
+<p>These pieces are small and to allow for precise board maneuvers without accidentally pushing other pieces out of place on the gridless board, I think it would be interesting to experiment with using magnets below the board to move the pieces. Each piece could have a small magnet on the bottom and beneath the board could be some kind of handle or cursor with another magnet to grab onto the piece. Each piece will have its own magnetic cursor that will stay attached for the whole game. Keeping one hand on the dividers and another hand on the cursor means that the actual game pieces on the board should never have to be directly touched. So far I haven't found any other games where components are moved around using magnets under the board, but I do understand that in order to make this possible the board must be elevated off the table surface to allow for space for the cursors and your hands, and that the board must be both rigid and thin to allow for the magnetic attraction to be strong enough while preventing structural problems.</p>
+<figure>
+  <img style="width: auto; height: auto; max-width: 50%; max-height: 800px;" src="images/dividers.jpg" alt="British soldiers in formation with a mounted officer." width="900" height="598" loading="lazy" decoding="async">
+  <figcaption>Drafting dividers a player uses to measure movement distances.</figcaption>
+</figure>
+<h4>Combat and Recording Damage</h4>
+<p>Between all of the games I've researched, there are a lot of <i>quantities</i> ascribed to each unit that change throughout gameplay. I'll attempt to outline them here.</p>
+<ul class="unit-types">
+    <li><span class="unit-entry"><span class="unit-name">Troop Number -</span><span class="unit-description">The physical number of soldiers existing in the abstracted unit gamepiece. This number is important because it is a metric of the maximum amount of damage that unit can do, i.e. a unit with 100 muskets could kill some portion of 100 enemy soldiers per turn. If a unit loses many soldiers quickly, that could hurt its morale. Troop counts vary greatly between types of units and between different countries and armies. The organization of armies in this era is extremely complicated, and the standardizations done by Napoleon are one of his most famous contributions to warfare. That is to say that my board game will not attempt to have accurate number of soldiers per unit, nor is teaching 19th  century military organization a goal of the game.</span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Morale -</span><span class="unit-description">A soldier's willingness to fight. If this value gets too low the unit may break and flee from the battlefield uncontrollably. Morale can be affected by pretty much anything; the number of soldiers, their rate of losses, their position relative to enemies and to each other, their exhaustion, and so on.</span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Exhaustion -</span><span class="unit-description">How tired a unit is. An exhausted unit may not be able to move as fast and be less effective in combat. They might also lose morale faster. A unit might have to rest to reduce exhaustion, which might mean spending turns not moving or attacking.</span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Order/Discipline -</span><span class="unit-description">This skill might correspond to the speed at which they move between formations and orders, and might influence the rate at which they lose morale.</span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Ammunition -</span><span class="unit-description">A straightforward number of how many more times a unit can fire, assuming all soldiers in a unit fire at the same time. Some systems allow soldiers to recover unused ammunition from fallen soldiers. This mechanic is more interesting and realistic for artillery I think, which makes their deployment more meaningful.</span></span></li>
+</ul>
+<h4>Number Tracking</h4>
+<p>A quick aside to keeping track of big numbers like these in a board game. I spent a lot of time researching systems that let the user reference quickly, allowed for easy updating, and were physically uncomplicated. Video games do a great job of keeping all the complicated statistics flying around organized on the screen and readable with just a glance. I'm imagining (imagine with me because I haven't drawn a mockup yet) a reference sheet that stands up next to the players with numbers corresponding to a number written on each piece. Information about the piece is updated on the reference sheet instead of on or by the piece itself. Recall that I don't want people touching the pieces directly.</p>
+<ul class="unit-types">
+    <li><span class="unit-entry"><span class="unit-name">Circular Counters -</span><span class="unit-description">Concentric wheels with numbers 0-9 around their circumference, corresponding to orders of magnitude. Three disks could represent any whole number between 0 and 999. This could be very effective at recording soldiers in a unit.</span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Sliders -</span><span class="unit-description">A sliding rectangle can be extended or completely hidden. Can represent any continuous value between two points. There is potential to combine this system with the dividers, where certain graphed functions could represent the damage a unit takes based on distance, which when plotted at scale could correspond to an exact distance the slider will move. (I really like this idea but it needs a lot of careful planning and coordination. I'll do research to see similar implementations.)</span></span></li>
+    <li><span class="unit-entry"><span class="unit-name">Stackable Tokens -</span><span class="unit-description">For values less than 10, I could use small, interlocking or slightly magnetic game pieces. They could be effective at representing external temporary effectors on a unit, like being attacked from behind, or supported by other units, or exhausted after running.</span></span></li>    
+</ul>
+<div class="image-grid">
+<figure>
+  <img style="width: auto; height: auto; max-width: 60%; max-height: 800px;" src="images/magnetStack.png" alt="Two stacks of disc magnets beside a penny for scale." width="948" height="1196" loading="lazy" decoding="async">
+  <figcaption>Disc magnets beside a penny for scale.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 60%; max-height: 800px;" src="images/boardGameCounter.jpeg" alt="A rotating wooden board game counter with numbered dials." width="554" height="554" loading="lazy" decoding="async">
+  <figcaption>A rotating counter for tracking numbers.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/paperBar.png" alt="A handmade paper slider with a numbered scale." width="2318" height="1210" loading="lazy" decoding="async">
+  <figcaption>A paper slider for tracking a changing value.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 60%; max-height: 800px;" src="images/battleship.jpeg" alt="A player placing a red peg in a Battleship game." width="447" height="447" loading="lazy" decoding="async">
+  <figcaption>Battleship uses pegs to track hits.</figcaption>
+</figure>
 
-            <aside class="unit-panel overlay-panel overlay-unit" aria-label="Selected unit">
-	              <div class="unit-panel-title">Selected Unit</div>
-	              <div class="unit-panel-body">
-	                <div class="unit-stats">
-	                  <div><span class="k">Name</span> <span id="status-piece"></span></div>
-	                  <div><span class="k">Type</span> <span id="status-type"></span></div>
-	                  <div><span class="k">Team</span> <span id="status-team"></span></div>
-	                  <div><span class="k">Morale</span> <span id="status-morale"></span></div>
-	                  <div><span class="k">Move Range</span> <span id="status-move-range"></span></div>
-	                  <div><span class="k">Ranged Radius</span> <span id="status-ranged-radius"></span></div>
-	                  <div><span class="k">Melee Radius</span> <span id="status-melee-radius"></span></div>
-	                </div>
-
-	                <div class="unit-actions" aria-label="Moves left">
-	                  <div class="unit-actions-title">Moves Left (This Turn)</div>
-	                  <div id="status-move-row" class="availability">
-	                    <span class="k">Move</span> <span id="status-move"></span>
-	                  </div>
-	                  <div id="status-rotate-row" class="availability">
-	                    <span class="k">Rotate</span> <span id="status-rotate"></span>
-	                  </div>
-	                  <div id="status-attack-row" class="availability">
-	                    <span class="k">Attack</span> <span id="status-attack"></span>
-	                  </div>
-	                  <button id="rest" type="button" class="unit-action-button">Rest (+2 morale)</button>
-	                </div>
-              </div>
-            </aside>
-          </div>
-
-          <div class="sim-below" aria-label="Log and damage matrix">
-            <div class="log overlay-panel overlay-log" aria-label="Generator log">
-              <div class="log-title">Log</div>
-              <pre id="log"></pre>
-            </div>
-
-              <div id="attack-matrix" class="overlay-panel overlay-attack" aria-label="Attack damage matrix">
-	                <div class="attack-title">Attack Damage Matrix</div>
-	                <div class="attack-hint">Each defender column splits into Ranged (left) and Melee (right). Right-click an enemy unit to attack (if in range).</div>
-	                <div class="attack-actions" aria-label="Matrix persistence controls">
-	                  <button id="matrix-export-csv" type="button">Export CSV</button>
-	                  <span id="matrix-save-status" class="matrix-status" aria-live="polite"></span>
-	                </div>
-	              <div class="attack-hint">
-	                If you run <code>python3 dev-server.py</code>, edits auto-save to <code>damage-matrix.md</code> (otherwise they stay in your
-                browser).
-              </div>
-              <div id="attack-matrix-table" class="attack-table-wrap" aria-label="Damage matrix table"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+</div>
+<h4>Exploring a Morale-focused Ruleset</h4>
+<p>After the discussion of various directions for performing combat, I want to first try one based on morale. Let's say every unit has a different morale score. This is their morale's health and represents the amount of 'bad' things that can happen to them before they break. I've categorized these effectors below:</p>
+<ul>
+    <li> Things that reduce morale on an arbitrary 1-10 scale
+        <ul>
+          <li>Ranged attack (1)</li>
+          <li>Infantry melee attack (2)</li>
+          <li>Cavalry melee attack (3)</li>
+          <li>Artillery attack (1)</li>
+          <li>Artillery attack from side (3) (This does more damage because more soldiers are in the field of fire when they stand in a line)</li>          
+        </ul>  
+    </li>
+    <li> Things that increase morale on an arbitrary 1-10 scale
+        <ul>
+          <li>Proximity to elite units (1)</li>
+          <li>Proximity to general (2)</li>
+          <li>Resting for a full turn (1)</li>
+        </ul>
+    </li>
+    <li> Things that scale the above morale effects
+        <ul>
+          <li>Being exhausted (-1)</li>
+          <li>Attacked from the side (-1)</li>
+          <li>Attacked from the rear (-2)</li>
+          <li>Attacker is at higher elevation (-1)</li>
+          <li>Dealt ranged or artillery attack while in a loose formation (+1)</li>
+          <li>Dealt ranged or artillery attack while in a forest (+1)</li>
+          <li>Dealt ranged or artillery attack while in or behind a fortification or building (+1)</li>
+          <li>Dealt cavalry attack while in a square formation (+2)</li>
+          <li>Dealt ranged or artillery attack while in a square formation (-1)</li>
+        </ul>
+    </li>
+    <li> Things that scale how much total morale a unit can have
+        <ul>
+          <li>Unit Type. Some troops have more training than others. I think there are some very specific unit vs. unit combinations that will have to be explained with unit cards. For example, all infantry is weaker than all cavalry in melee, but becomes almost untouchable to cavalry when in square formation.</li>
+        </ul>
+    </li>
+</ul>
+<p>This isn't at all exhaustive, and you can see how this list might be better suited for a table, where contests of Unit A vs Unit B can be looked up. I like this limited ruleset because it abstracts a lot of the complexity, and might even move at a quick pace.</p>
+    </article>
   </main>
-
-  <footer class="site-footer">
-    <span>© <span id="year"></span> Digital Portfolio</span>
-  </footer>
-
-  <script src="simulation.js"></script>
-  <script>
-    document.getElementById("year").textContent = String(new Date().getFullYear());
-  </script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap");
+
+:root {
+  color-scheme: light;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  color: #111;
+  background: #f3f2ee;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1000px; margin: auto; padding: 32px 20px 64px; }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+h1 { margin: 0; font-size: clamp(28px, 4vw, 42px); }
+h2 { margin: 48px 0 20px; font-size: 22px; }
+p { line-height: 1.7; margin: 20px 0 28px; }
+.back-link { padding: 10px 16px; border: 2px solid; color: inherit; background: white; font-size: 12px; text-underline-offset: 3px; }
+.back-link:hover { background: #111; color: white; }
+a:focus-visible { outline: 3px solid #111; outline-offset: 4px; }
+figure { margin: 0; padding: 16px; border: 2px solid #111; background: white; }
+figure img { display: block; width: 100%; height: auto; max-height: 620px; object-fit: contain; }
+figcaption { margin-top: 14px; font-size: 12px; line-height: 1.6; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 22px; }
+.gallery img { max-height: 480px; }
+footer { margin-top: 40px; }
+@media (max-width: 600px) {
+  .gallery { grid-template-columns: 1fr; }
+  main { padding-top: 24px; }
+}

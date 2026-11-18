@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Edit journal entries directly in this file. No build step is needed. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cicadas project journal: notes and images.">
+  <title>Cicadas | Project Journal</title>
+  <link rel="stylesheet" href="../Chord%20Organ/styles.css?v=journal-controls-2">
+  <script src="../Chord%20Organ/journal.js?v=journal-controls-2" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Cicadas</h1>
+      <a class="main-menu" href="../index.html">Main Menu</a>
+      <button class="jump-newest" type="button" hidden>Jump to Newest</button>
+      <button class="jump-oldest" type="button">Jump to Oldest</button>
+    </header>
+    <article id="journal" aria-label="Cicadas journal">
+<!-- Initial collection date; individual photos may predate this entry. -->
+<h2>May 14, 2024</h2>
+<p>
+  My final project for Cooper Union's Generative Machine Learning for Architecture course was <i>Cicadas</i>, a ridiculous project where little robotic bugs chirp randomly, and slowly try to chirp at the same pitch. It didn't use any ML, but it certainly <i>generated</i> a lot of fun sounds every time we turned them on.
+ </p>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/cicadaTree.jpg" alt="Cicadas arranged on a wooden stand." width="1600" height="1281" loading="eager" decoding="async">
+  <figcaption>Cicadas hanging out on their wooden tree home.</figcaption>
+</figure>
+<p>
+  Each cicada has a speaker and a microphone. On startup, the cicada randomly chooses a tone between 300 and 1kHz to play through its speakers as a 1-second chirp. At the same time, the microphone is recording its surroundings and performing an FFT of what it captures. The 2nd-highest magnitude signal it measures (the 1st being its own chirp) is stored, and its next chirp is played at a frequency roughly 20% in the direction of what it just heard. This means thats chirps will slowly match another chirp being played near it. If two cicadas are near enough to hear each other, then after just a handful of chirps they will be chirping the same note.
+</p>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/cicadaCircle.jpg" alt="The cicadas arranged in a circle." width="1600" height="1444" loading="lazy" decoding="async">
+  <figcaption>The cicadas arranged in a circle.</figcaption>
+</figure>
+<p>
+  With our platoon of eight critters, after fewer than 10 seconds a clatter of the worst sounds ever melts into one <i> single worst sound ever</i> (I'm writing a separate blog about speaker design for makers). If a fire alarm was sounding while the cicadas were on, that fixed sound would likely dominate and they would all drift its way.
+</p>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/cicadaWork.jpg" alt="Cicadas with their guts spilling out." width="900" height="1600" loading="lazy" decoding="async">
+  <figcaption>Cicadas on the workbench.</figcaption>
+</figure>
+<p>
+  As monumental, Earth-shattering, and nation-defining as this project is, it is still the most bare implementation of the bare concept and there is plenty of room for further tomfoolery. 
+</p>
+<h4>Synchronized Chirps</h4>
+<p>
+  The Smokies Synchronous Firefly, <i>Photinus Carolinus</i>, is a species of North American Firefly that synchronize their blinks with one another. The pattern is a call and response between the males and females of the species, and the blink pattern differs with sex and ambient temperature. Because our <i>Cicadas</i> are asexual <i>[citation needed]</i> a simple chirp time coordination would be sufficient for them, and not all that hard to do. 
+</p>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/cicadaSchematic.jpg" alt="Circuit sketch and notes." width="1600" height="900" loading="lazy" decoding="async">
+  <figcaption>The Cicada Circuit Schematic :)</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/cicadaCall.jpg" alt="Demonstrating a cicada." width="900" height="1600" loading="lazy" decoding="async">
+  <figcaption>Demonstrating a cicada.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/cicadaFriends.jpg" alt="Project display." width="900" height="1600" loading="lazy" decoding="async">
+  <figcaption>Project display.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="images/cicadaText.jpg" alt="Printed project description." width="900" height="1600" loading="lazy" decoding="async">
+  <figcaption>Printed project description.</figcaption>
+</figure>
+    </article>
+  </main>
+</body>
+</html>

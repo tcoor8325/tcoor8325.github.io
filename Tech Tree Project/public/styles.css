@@ -81,7 +81,8 @@ header {
   flex-wrap: wrap;
 }
 
-.controls button {
+.controls button,
+#tech-tree-intro button {
   background: var(--button);
   color: var(--text);
   border: 1px solid var(--border);
@@ -91,8 +92,40 @@ header {
   cursor: pointer;
 }
 
-.controls button:hover {
+.controls button:hover,
+#tech-tree-intro button:hover {
   background: var(--button-hover);
+}
+
+#tech-tree-intro {
+  width: min(30rem, calc(100% - 2rem));
+  max-height: calc(100% - 2rem);
+  padding: clamp(1rem, 5vw, 2rem);
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+#tech-tree-intro::backdrop {
+  background: rgb(0 0 0 / 55%);
+}
+
+#tech-tree-intro p {
+  margin: 0;
+}
+
+#tech-tree-intro form {
+  float: right;
+  margin-left: 0.75rem;
+}
+
+#tech-tree-intro button {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.25rem;
 }
 
 .controls .home-link {

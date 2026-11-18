@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Edit journal entries directly in this file. No build step is needed. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A photo journal documenting the design and construction of a chord organ.">
+  <title>Chord Organ | Project Journal</title>
+  <link rel="stylesheet" href="styles.css?v=journal-controls-3">
+  <style>
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: start;
+      margin: 32px 0;
+    }
+    .image-grid figure { margin: 0; min-width: 0; }
+    @media (max-width: 600px) {
+      .image-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script src="journal.js?v=journal-controls-3" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Chord Organ</h1>
+      <a class="main-menu" href="../index.html">Main Menu</a>
+      <button class="jump-newest" type="button" hidden>Jump to Newest</button>
+      <button class="jump-oldest" type="button">Jump to Oldest</button>
+    </header>
+    <article id="journal" aria-label="Chord Organ journal">
+<h2>November 9, 2026</h2>
+<p>Another test with the motor! Wow, this was super exciting. This was me just connecting the motor straight to a 12V supply (eating ~0.57A) and letting it spin at whatever speed it wants to. The motor noise is in-sane and entirely unuseable, so low vibration, low whine motors are a point of further research. The next step is certainly to add a lil LN298 motor controller and regulate the speed a bit. </p>
+<p>Let's quickly review the dimensions of control of a bowed violin string:</p>
+<ul>
+<li>Bow-String friction, controlled by rosin</li>
+<li>Bow pressure</li>
+<li>String Tension</li>
+<li>String Material</li>
+<li>String Length (changes with fret position)</li>
+<li>Bowing Speed</li>
+</ul>
+<p>All of these variables are controllable by the musician, but some we can consider fixed during a performance. A Hurdy Gurdy player can easily change their cranking speed, and this becomes a very deep dimension to their sound. Imagine a palm-controlled 'accelerator pedal' on the Chord Organ to allow for dynamic wheel speeds through the motor.</p>
+<div class="image-grid">
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD overview of the chord organ frame and neck" decoding="async" loading="lazy" src="Pictures/CAD1.jpg" /><figcaption>CAD overview of the frame and neck.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD close-up of a wheel and its shaft" decoding="async" loading="lazy" src="Pictures/CAD2.jpg" /><figcaption>Wheel and shaft detail in CAD.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD view of the mechanism above the strings" decoding="async" loading="lazy" src="Pictures/CAD3.jpg" /><figcaption>The mechanism positioned above the strings in CAD.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Underside view of a wheel inside the aluminum frame" decoding="async" loading="lazy" src="Pictures/underbelly.png" /><figcaption>The wheel assembly from underneath.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Two wooden wheels beside aluminum frame rails" decoding="async" loading="lazy" src="Pictures/finishedWheels.jpg" /><figcaption>Finished wooden wheels.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="A wheel and shaft assembly held in front of the frame" decoding="async" loading="lazy" src="Pictures/wheelAssembly.jpg" /><figcaption>Wheel and shaft assembly.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="The frame and neck before the top plate is installed" decoding="async" loading="lazy" src="Pictures/beforeTopPlate.jpg" /><figcaption>Assembly before the top plate.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Side view of a wheel through the frame opening" decoding="async" loading="lazy" src="Pictures/WheelFromSide.jpg" /><figcaption>Wheel viewed from the side.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="A wooden wheel beside the bridge and strings" decoding="async" loading="lazy" src="Pictures/wheelAndBridge.jpg" /><figcaption>Wheel and bridge detail.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="View along the strings from the head toward the mechanism" decoding="async" loading="lazy" src="Pictures/fromHead.jpg" /><figcaption>View from the head toward the mechanism.</figcaption>
+</figure>
+<p>I made the first two large wheels for this project on a lathe. It is vital that the wheel-axle system is as rotationally symmetric as possible, since any eccentricity would mean a change in wheel-string pressure along the rotation, which might have an audible effect. </p>
+</div>
+<h2>March 9th, 2026</h2>
+<p>I spent a lot of time CAD'ing out a brand new mechanism where the power transimssion was parallelized instead of in a single belt pulley, which got stuck immediately. This system also uses a toothed belt, which will eliminate slip. I love he tensioner I made to keep the belt taught. Everything was again resin printed for a tight tolerance.</p>
+<p>While designing this iteration I briefly onsidered a fixed wheel system, where small pulleys which had their own motors were stretched along a vertical axle. I scrapped the idea, but these little axle joiners are worth exploring. The axles are inserted with a close fit, and are secured with a set screw. The current shape of the joint is a square, but could be made smaller. I'm calling them 'T-joints' right now and am considering having a few CNC'd to see how practical they are as a micro modular construction system</p>
+<div class="image-grid">
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD view of the vertical motion mechanism" decoding="async" loading="lazy" src="Pictures/verticalMotion.jpg" /><figcaption>Vertical motion mechanism.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD view of the wheel drive and belt tensioners" decoding="async" loading="lazy" src="Pictures/Tensioners.jpg" /><figcaption>Wheel drive and belt tensioners.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Early assembled mechanism with a wheel and belt drive" decoding="async" loading="lazy" src="Pictures/earlyTest1.jpg" /><figcaption>Early test assembly.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Close-up of the early belt-driven mechanism above the guitar body" decoding="async" loading="lazy" src="Pictures/EarlyTest2.jpg" /><figcaption>Early test: belt drive detail.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Early mechanism mounted over the strings near the sound hole" decoding="async" loading="lazy" src="Pictures/EarlyTest3.jpg" /><figcaption>Early test: mechanism above the strings.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Side view of the early mechanism mounted to the frame" decoding="async" loading="lazy" src="Pictures/EarlyTest4.jpg" /><figcaption>Early test: side view of the assembly.</figcaption>
+</figure>
+</div>
+<h2>October 14th, 2025</h2>
+<p>To build my first prototype I found myself a very cheap, busted up guitar that I had no issues dotting with boreholes and slathering with epoxy. I need a decently sturdy, decently resonant box as a testbench for all the components, and an old guitar would save me a lot of time and cost spent building something new. </p>
+<div class="image-grid">
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD front view of the wheel mechanisms and motor drive" decoding="async" loading="lazy" src="Pictures/Screenshot%20from%202025-09-21%2020-20-08.png" /><figcaption>CAD overview of the wheel mechanisms and motor drive.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD view of the wheels and strings from below" decoding="async" loading="lazy" src="Pictures/wheelsFromBelow.png" /><figcaption>The wheels and strings viewed from below.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD detail of the pulleys and belts transmitting power to the wheels" decoding="async" loading="lazy" src="Pictures/powerTransmission.png" /><figcaption>Power transmission through the pulley and belt system.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD front view of six spring-loaded mechanisms" decoding="async" loading="lazy" src="Pictures/keysFromFront.png" /><figcaption>Front view of the spring-loaded mechanisms.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="CAD view of the mechanisms mounted above the guitar strings" decoding="async" loading="lazy" src="Pictures/keysFromAbove.png" /><figcaption>The mechanisms viewed from above.</figcaption>
+</figure>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Assembled mechanism with smooth belts above the guitar body" decoding="async" loading="lazy" src="Pictures/withUntoothedBelts.png" /><figcaption>Assembly with untoothed belts.</figcaption>
+<figure><img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" alt="Close-up of a belt routed around small pulleys" decoding="async" loading="lazy" src="Pictures/beltInSeries.jpg" /><figcaption>Belt routing around the pulleys.</figcaption>
+</figure>
+
+</figure>
+</div>
+<h2>October 5th, 2025</h2>
+<p>Hello! This is my first entry for a new musical instrument (see chaos weapon) that I'm calling the "Chord Organ". It is heavily inspired by the Hurdy Gurdy, an instrument from Medival Europe that uses a cranked wheel to actuate strings, like a violinist using a bow. The Hurdy Gurdy's sound is haunting, the melodies played on it are animating, and the engineering design of this old instrument is ripe for experimentation with modern tools and methods. </p>
+<p>I think it's necessary to understand the Hurdy Gurdy in more detail first, because my work really starts where the Gurdy ends. The Hurdy Gurdy has a few types of strings, all of which are bowed by the cranked wheel. Pitch is selected from the melody strings with a chromatic keyboard of levers, instead of a fretboard or fingerboard. Drone strings are unfretted and continually ring out the same note as the wheel is cranked, like the drones on a bagpipe. I love the sound of the melody and drone strings together. It's extremely rich but still pleasant, much moreso than the bagpipes, and I would argue is capable of more human expression through the wheel than what pipers can achieve with breath and pressure. </p>
+<div class="image-grid">
+  <figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="Pictures/oldGurdyPlayer.jpg" alt="A labeled diagram of a hurdy-gurdy." width="611" height="428" loading="lazy" decoding="async">
+  <figcaption>A historical depiction of a hurdy-gurdy player.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="Pictures/modernGurdyPlayer.jpg" alt="A violin and bow." width="516" height="387" loading="lazy" decoding="async">
+  <figcaption>A modern hurdy-gurdy player.</figcaption>
+</figure>
+</div>
+<p>I am primarily interested in making a Hurdy Gurdy that can play different chords. I want to do away with the drone strings and build a more complicated system that can support four to six melody strings playing simultaneously. I am imagining a sound similar to a string quartet holding out a chord together. A lofty goal I know, it's hard to imagine a sound so dependent on human articulation, strength, haptic and auditory feedback, and skill.</p>
+<div class="image-grid">
+  <figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="Pictures/GurdyDiagram.png" alt="A labeled diagram of a hurdy-gurdy." width="611" height="428" loading="lazy" decoding="async">
+  <figcaption>Anatomy of a Hurdy-Gurdy. Notice the similarities and differences with the violin picture.</figcaption>
+</figure>
+<figure>
+  <img style="width: auto; height: auto; max-width: 100%; max-height: 800px;" src="Pictures/Violin.jpeg" alt="A violin and bow." width="516" height="387" loading="lazy" decoding="async">
+  <figcaption>A violin and bow for comparison with the hurdy-gurdy.</figcaption>
+</figure>
+</div>
+    </article>
+  </main>
+</body>
+</html>

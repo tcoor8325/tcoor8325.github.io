@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dumb Apps</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=unlocked-1">
 </head>
 <body>
   <main class="launcher">
@@ -14,33 +14,22 @@
     </header>
 
     <nav class="tab-grid" aria-label="Dumb app links">
-      <a class="tab-link is-locked" href="apps/startup-generator/index.html" data-under-construction="Under Construction">Startup Generator</a>
-      <a class="tab-link is-locked" href="apps/tone-generator/index.html" data-under-construction="Under Construction">Tone Generator</a>
-      <a class="tab-link is-locked" href="../Terminal%20Markets/index.html" data-under-construction="Under Construction">Terminal Markets</a>
-      <a class="tab-link is-locked" href="../Gantt%20Chart/index.html" data-under-construction="Under Construction">Gantt Chart</a>
-      <a class="tab-link is-locked" href="../Water%20Boiler%20Study/index.html" data-under-construction="Under Construction">Water Boiler Study</a>
-      <a class="tab-link is-locked" href="../Domesday/index.html" data-under-construction="Under Construction">Domesday</a>
-      <a class="tab-link is-locked" href="../terrain/index.html" data-under-construction="Under Construction">Terrain</a>
-      <a class="tab-link is-locked" href="../World%20Sim/index.html" data-under-construction="Under Construction">Divlab</a>
+      <a class="tab-link" href="../Ingredients%20Analyzer/index.html">Ingredients Analyzer</a>
+      <a class="tab-link" href="../Food%20Map/food-map.html">Food Map</a>
+      <a class="tab-link" href="apps/ose-nyc-mockup/index.html">OSE NYC Mock-Up</a>
+      <a class="tab-link" href="apps/startup-generator/index.html">Startup Generator</a>
+      <a class="tab-link" href="apps/tone-generator/index.html">Tone Generator</a>
+      <a class="tab-link" href="../Terminal%20Markets/index.html">Terminal Markets</a>
+      <a class="tab-link" href="../Gantt%20Chart/index.html">Gantt Chart</a>
+      <a class="tab-link" href="../Water%20Boiler%20Study/index.html">Water Boiler Study</a>
+      <a class="tab-link" href="../Domesday/index.html">Domesday</a>
+      <a class="tab-link" href="../terrain/index.html">Terrain</a>
+      <a class="tab-link" href="../World%20Sim/index.html">Divlab</a>
+      <a class="tab-link" href="../Tech%20Tree%20Project/public/index.html">Tech Tree</a>
     </nav>
 
     <a class="back-link" href="../index.html">Return to Portfolio</a>
   </main>
 
-  <script>
-    (() => {
-      const blockedTabs = document.querySelectorAll(".tab-link[data-under-construction]");
-      if (!blockedTabs.length) return;
-
-      blockedTabs.forEach((tab) => {
-        const statusText = tab.getAttribute("data-under-construction") || "Under Construction";
-        tab.setAttribute("aria-disabled", "true");
-        tab.title = statusText;
-        tab.addEventListener("click", (event) => {
-          event.preventDefault();
-        });
-      });
-    })();
-  </script>
 </body>
 </html>

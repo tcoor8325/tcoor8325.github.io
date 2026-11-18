@@ -1,9 +1,7 @@
-# Agent Notes (Board Game)
+# Board Game journal instructions
 
-If this is your first command read the README.md and HANDOFF.md before executing the commands here
-
-Artillery should not be able to attack when it is inside a forest.
-
-Remove the automatic +1 morale gain by every unit per turn.
-
-Please stop before or during your run to ask clarifications, give feedback, or suggest improvements.
+Read README and HANDOFF before editing. The Board Game page is now a text and
+image blog matching Chord Organ, Cicadas, and Lorentz Violin. Edit index.html
+directly; do not restore the game applet or use a Markdown generator. Keep newer
+entries above older entries. Use the shared Chord Organ stylesheet and journal.js.
+Store journal images in images/ and reference them directly; do not maintain a duplicate Pictures/ folder.

@@ -1,0 +1,7 @@
+Read README and HANDOFF.md before editing. This page is now a text and image
+project journal matching Chord Organ. Edit entries directly in index.html;
+do not replace the blog with an applet or use a Markdown generator. Shared
+formatting and scrolling behavior come from ../Chord Organ/styles.css and
+../Chord Organ/journal.js. Keep newer entries above older entries.
+
+The previous simulator is preserved in simulator.html with its original styles.css.

@@ -62,6 +62,15 @@
         </div>
       </div>
     </main>
+    <dialog id="tech-tree-intro" aria-label="Tech Tree welcome" aria-describedby="tech-tree-intro-text">
+      <form method="dialog">
+        <button aria-label="Close welcome message" autofocus>×</button>
+      </form>
+      <p id="tech-tree-intro-text">Welcome to the Human T</p>
+    </dialog>
+    <script>
+      document.getElementById('tech-tree-intro').showModal();
+    </script>
     <script src="app.js"></script>
   </body>
 </html>

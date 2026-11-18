@@ -1,0 +1,71 @@
+[
+  {
+    "id": "4b069e67-cf7b-4dc3-ba47-5b4f873034aa",
+    "title": "gleep stew",
+    "servings": 2,
+    "ingredients": [],
+    "preparation": [],
+    "cooking": [],
+    "updatedAt": "2026-11-16T02:34:21.512Z"
+  },
+  {
+    "id": "7799adc4-0eb7-40f6-bb18-b666890553c2",
+    "title": "yum balls",
+    "servings": 2,
+    "ingredients": [
+      {
+        "name": "Black Beans",
+        "quantity": "2",
+        "unit": "mL"
+      }
+    ],
+    "preparation": [],
+    "cooking": [
+      "zissle em up"
+    ],
+    "updatedAt": "2026-11-16T02:48:55.493Z"
+  },
+  {
+    "id": "359ab7e8-8c91-4294-9a5b-d43288cd40a5",
+    "title": "fungum",
+    "servings": 3,
+    "ingredients": [
+      {
+        "name": "Pearl barley",
+        "quantity": "1",
+        "unit": ""
+      },
+      {
+        "name": "Thyme",
+        "quantity": "2",
+        "unit": "dash"
+      },
+      {
+        "name": "Radicchio",
+        "quantity": "5",
+        "unit": "kg"
+      },
+      {
+        "name": "Fish Sauce",
+        "quantity": "1/2",
+        "unit": "slice"
+      }
+    ],
+    "preparation": [
+      "tupple"
+    ],
+    "cooking": [
+      "duplpe"
+    ],
+    "updatedAt": "2026-11-16T03:01:17.436Z"
+  },
+  {
+    "id": "9dcffafb-8b9a-4826-baec-f9f4d3c112f4",
+    "title": "crunchy guys",
+    "servings": 2,
+    "ingredients": [],
+    "preparation": [],
+    "cooking": [],
+    "updatedAt": "2026-11-16T03:05:45.142Z"
+  }
+]
